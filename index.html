@@ -1,12 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Coding35</title>
+    <title>Document</title>
 </head>
+
 <body>
-    Hello World!!!! lol
+    <div id="Remind"></div>
+    <!-- <button id="SyncBtn">Sync</button>-->
+    <script>
+
+        const jsonUrl = 'https://raw.githubusercontent.com/coding35/remind/main/json.json';
+        
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        let remind = document.getElementById("Remind");
+        let db;
+
+        let indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB || window.shimIndexedDB;
+        const request = indexedDB.open("RemindDb", 1);
+
+        request.onerror = (event) => {
+            remind.innerHTML = "IndexedDB database not found";
+        }
+
+        request.onsuccess = (event) => {
+            db = event.target.result;
+            remind.innerHTML = "IndexedDB database found";
+            getRandomPhrase();
+        }
+
+        request.onupgradeneeded = (event) => {
+            const db = event.target.result;
+            let objectStore = db.createObjectStore("RemindStore", { keyPath: "id", autoIncrement: true });
+            objectStore.createIndex("phrase", "phrase", { unique: true });
+            objectStore.transaction.oncomplete = (event) => {
+                console.info("Create Database Transaction Complete.")
+            };
+        }
+
+        fetchData = function () {
+            fetch(jsonUrl)
+                .then((response) => response.json())
+                .then((data) => {
+                    const transaction = db.transaction(['RemindStore'], "readwrite");
+
+                    transaction.oncomplete = (event) => {
+                        console.info("Transaction Complete.");
+                        getRandomPhrase();
+                    };
+
+                    transaction.onerror = (event) => {
+                        console.error(`Transaction Error. ${event}`);
+                    };
+                    const objectStore = transaction.objectStore("RemindStore");
+                    const objectStoreRequest = objectStore.clear();
+                    data.forEach(element => {
+                        const request = objectStore.add(element);
+                        request.onsuccess = (event) => {
+                            console.log("Successful Insert.");
+                        };
+                        request.onerror = (event) => {
+                            console.log("Unsuccessful Insert.");
+                        };
+                    });
+                });
+        }
+
+        getRandomPhrase = function () {
+            const transaction = db.transaction(['RemindStore'], "readonly");
+
+            transaction.oncomplete = (event) => {
+                console.info("Transaction Complete.");
+            };
+
+            transaction.onerror = (event) => {
+                console.error(`Transaction Error. ${event}`);
+            };
+
+            const objectStore = transaction.objectStore("RemindStore");
+
+            var done = function (ob) {
+                remind.innerHTML = ob.value.Phrase;
+            };
+
+            objectStore.count().onsuccess = function (event) {
+                var total = event.target.result;
+                if (total === 0) {
+                    fetchData();
+                } else {
+                    var needRandom = true;
+                    objectStore.openCursor().onsuccess = function (e) {
+                        var cursor = e.target.result;
+                        if (needRandom) {
+                            var advance = getRandomInt(0, total - 1);
+                            if (advance > 0) {
+                                needRandom = false;
+                                cursor.advance(advance);
+                            } else {
+                                done(cursor);
+                            }
+                        } else {
+                            done(cursor);
+                        }
+                    };
+                }
+            }
+        }
+
+      /*  document.getElementById('SyncBtn').addEventListener('click', event => {
+            fetchData();
+        });
+*/
+    </script>
 </body>
+
 </html>
