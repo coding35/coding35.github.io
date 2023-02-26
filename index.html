@@ -6,15 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <style>
+        html{
+            background-color: purple;
+        }
+        #Remind {
+            color: white;
+        }
+        #CodeBtn {
+            position: absolute;
+            bottom: 5px;
+        }
+
+        #SyncBtn,
+        #CodeInput {
+            display: none;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
 </head>
 
 <body>
-    <div id="Remind"></div>
-    <!-- <button id="SyncBtn">Sync</button>-->
+    <div class="container text-center">
+        <div class="row align-items-center">
+            <div class="col">
+                <div class="position-absolute top-50 start-50 translate-middle">
+                    <h3 id="Remind"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <button id="SyncBtn">Sync</button>
+    <button id="CodeBtn">Code</button>
+    <div id="CodeInput">
+        <input id="CodeTextInput" type="text" />
+        <button id="SaveCode">Save</button>
+    </div>
     <script>
 
-        const jsonUrl = 'https://raw.githubusercontent.com/coding35/remind/main/json.json';
-        
+        const encryptedUrl = 'U2FsdGVkX1977UuSv70QiXHhdIqVZkl2iPQz0A2czCFiQ6QVkcU4IvVmWK0Obb5iA6TjfZJ+7bKmbmzTgqtWfbdLnsNfZJqDn08kf+4joKIT/qj+RrZ8xxE6yERc6qEf';
+
         function getRandomInt(min, max) {
             return Math.floor(Math.random() * (max - min + 1)) + min;
         }
@@ -45,7 +87,11 @@
         }
 
         fetchData = function () {
-            fetch(jsonUrl)
+            let key = localStorage.getItem('code');
+            if (!key) return;
+            let decryptedUrl = CryptoJS.AES.decrypt(encryptedUrl, key).toString(CryptoJS.enc.Utf8);
+
+            fetch(decryptedUrl)
                 .then((response) => response.json())
                 .then((data) => {
                     const transaction = db.transaction(['RemindStore'], "readwrite");
@@ -113,10 +159,22 @@
             }
         }
 
-      /*  document.getElementById('SyncBtn').addEventListener('click', event => {
+        // Event Listeners
+        document.getElementById('SyncBtn').addEventListener('click', event => {
             fetchData();
         });
-*/
+
+        document.getElementById('CodeBtn').addEventListener('click', event => {
+            document.getElementById('CodeInput').style.display = 'block';
+            document.getElementById('SaveCode').addEventListener('click', event => {
+                let code = document.getElementById('CodeTextInput').value;
+                localStorage.setItem('code', code);
+                document.getElementById('SaveCode').removeEventListener('click', event);
+                document.getElementById('CodeInput').style.display = 'none';
+            });
+        });
+
+
     </script>
 </body>
 
