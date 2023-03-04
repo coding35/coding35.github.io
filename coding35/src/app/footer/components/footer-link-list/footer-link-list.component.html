@@ -1,0 +1,7 @@
+
+<ul>
+    <h3>{{links?.title}}</h3>
+    <li *ngFor="let link of links?.linkList">
+        <a [href]="link.url">{{ link.title }}</a>
+    </li>
+</ul>

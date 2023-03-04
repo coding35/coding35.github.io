@@ -1,0 +1,17 @@
+ul {
+    list-style: none;
+    li {
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 1.5;
+            display: block;
+            padding: 5px 0;
+            &:hover {
+                color: #c5cbd1;
+                text-decoration: none;
+            }
+        }
+    }
+}
