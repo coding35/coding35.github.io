@@ -17,7 +17,8 @@ import { MainModule } from './main/main.module';
     HeaderModule,
     MainModule,
     FooterModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
 
   ],
   providers: [],

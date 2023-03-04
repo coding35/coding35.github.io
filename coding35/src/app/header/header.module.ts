@@ -7,6 +7,7 @@ import { SearchComponent } from './components/search/search.component';
 import { BottomBarComponent } from './components/bottom-bar/bottom-bar.component';
 import { HeaderComponent } from './header/header.component';
 import {MatButtonModule} from '@angular/material/button';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -16,11 +17,12 @@ import {MatButtonModule} from '@angular/material/button';
     LogoComponent,
     SearchComponent,
     BottomBarComponent,
-    HeaderComponent
+    HeaderComponent,
   ],
   imports: [
     CommonModule,
-    MatButtonModule
+    MatButtonModule,
+    RouterModule
   ],
   exports: [HeaderComponent]
 })

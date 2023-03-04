@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  .box {
+     justify-content: space-evenly;
+  }
+  .one {
+    padding: 0 10em;
+    flex-basis: 75%;
+  }
+
+  .two {
+    flex-basis: 25%;
+  }
+}

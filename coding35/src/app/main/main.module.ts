@@ -5,6 +5,7 @@ import { ContentComponent } from './components/content/content.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { RightNavComponent } from './components/right-nav/right-nav.component';
 import { SharedModule } from '../shared/shared.module';
+import {MatListModule} from '@angular/material/list'; 
 
 @NgModule({
   declarations: [
@@ -14,8 +15,9 @@ import { SharedModule } from '../shared/shared.module';
   ],
   imports: [
     CommonModule,
-    AppRoutingModule,
-    SharedModule
+    SharedModule,
+    MatListModule,
+    AppRoutingModule
   ],
   exports: [ContentComponent]
   

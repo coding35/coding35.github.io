@@ -6,7 +6,8 @@ import { ContentComponent } from './main/components/content/content.component';
 
 const routes: Routes = [
   { path: 'blog/:id', component: BlogComponent, data: { page: 'blog' } },
-  { path: 'video', component: ContentComponent, data: { page: 'video' } }
+  { path: 'video', component: ContentComponent, data: { page: 'video' } },
+  { path: '', component: BlogComponent, data: { page: 'blog' } }
 ];
 
 @NgModule({

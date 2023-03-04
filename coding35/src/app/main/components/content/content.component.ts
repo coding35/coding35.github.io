@@ -7,7 +7,6 @@ import { ContentModel } from 'src/app/shared/models/content-model';
   styleUrls: ['./content.component.scss']
 })
 export class ContentComponent {
-
   constructor() { 
   }
 

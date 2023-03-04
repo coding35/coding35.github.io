@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { JsonPipe } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
 import { LinkListModel } from 'src/app/shared/models/link-list-model';
 import { LinkModel } from 'src/app/shared/models/link-model';
 
@@ -7,28 +8,15 @@ import { LinkModel } from 'src/app/shared/models/link-model';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })
-export class FooterComponent {
+export class FooterComponent implements OnInit {
 
-  linkLists: LinkListModel[] = [
-    new LinkListModel(
-      'Site',
-      [
-        new LinkModel('Blog', '/', 'home', '_self'),
-        new LinkModel('Videos', '/', 'home', '_self'),
-        new LinkModel('Books', '/', 'home', '_self'),
-        new LinkModel('About', '/', 'home', '_self')
-      ]),
-    new LinkListModel(
-      'Social Media', [
-      new LinkModel('LinkedIn', '/', 'home', '_self'),
-      new LinkModel('Facebook', '/', 'home', '_self'),
-      new LinkModel('Twitter', '/', 'home', '_self')
-    ]),
-
-  ];
+  linkLists: LinkListModel[] = [];
 
   constructor() {
-
   }
-
+  ngOnInit(): void {
+    fetch('../../assets/footer-links.json').then(response => response.json()).then(meta => {
+      this.linkLists = meta as LinkListModel[];
+    });
+  }
 }
