@@ -14,8 +14,6 @@ import { MainModule } from './main/main.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    
     HeaderModule,
     MainModule,
     FooterModule,

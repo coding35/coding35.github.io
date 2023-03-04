@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ContentModel } from 'src/app/shared/models/content-model';
 
 @Component({
   selector: 'app-content',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./content.component.scss']
 })
 export class ContentComponent {
+
+  constructor() { 
+  }
 
 }

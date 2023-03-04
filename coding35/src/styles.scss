@@ -50,8 +50,14 @@ app-root {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-
   app-content {
+    display: flex;
     flex: 1;
+    app-blog, app-video {
+      flex-grow: 6;
+    }
+    app-right-nav {
+      flex-grow: 1;
+    }
   }
 }

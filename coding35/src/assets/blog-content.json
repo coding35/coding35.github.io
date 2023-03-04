@@ -1,0 +1,46 @@
+[
+    {
+        "id": "1",
+        "title": "title test lol",
+        "subtitle": "sub title test",
+        "date": "2023-03-04T19:08:51.568Z",
+        "author": "author test",
+        "readTime": 5,
+        "content": "content test",
+        "tags": [
+            "test",
+            "test2"
+        ],
+        "image": "image test",
+        "references": [
+            "reference test",
+            "reference test2"
+        ],
+        "categories": [
+            "category test",
+            "category test2"
+        ]
+    },
+    {
+        "id": "2",
+        "title": "title test",
+        "subtitle": "sub title test",
+        "date": "2023-03-04T19:08:51.568Z",
+        "author": "author test",
+        "readTime": 5,
+        "content": "content test",
+        "tags": [
+            "test",
+            "test2"
+        ],
+        "image": "image test",
+        "references": [
+            "reference test",
+            "reference test2"
+        ],
+        "categories": [
+            "category test",
+            "category test2"
+        ]
+    }
+]

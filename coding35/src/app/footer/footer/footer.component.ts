@@ -28,7 +28,7 @@ export class FooterComponent {
   ];
 
   constructor() {
-    console.log(this.linkLists);
+
   }
 
 }

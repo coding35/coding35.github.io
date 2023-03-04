@@ -11,7 +11,7 @@ export class FooterLinkListComponent {
 @Input() links : LinkListModel | undefined;
 
 constructor() { 
-  console.log(this.links);
+
 }
 
 }

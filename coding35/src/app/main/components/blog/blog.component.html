@@ -1,0 +1,8 @@
+<article *ngIf="!notFound; else notFoundTemplate">
+    <h2>{{blogContent?.title}}</h2>
+    <span>{{blogContent?.date | date}} | Posted By: {{blogContent?.author }} | {{blogContent?.readTime}} min read</span>
+    <div [innerHtml]="blogContent?.content"></div>
+</article>
+<ng-template #notFoundTemplate>
+    <app-not-found-component></app-not-found-component>
+</ng-template>
