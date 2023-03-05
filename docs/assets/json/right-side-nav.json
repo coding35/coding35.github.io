@@ -1,0 +1,49 @@
+[
+    {
+        "title": "Categories",
+        "linkList": [
+            {
+                "title": "Architecture",
+                "url": "/",
+                "target": "_self"
+            },
+            {
+                "title": "Authentication",
+                "url": "/",
+                "target": "_self"
+            },
+            {
+                "title": "Security",
+                "url": "/",
+                "target": "_self"
+            }
+            
+        ]
+    },
+    {
+        "title": "Tags",
+        "linkList": [
+            {
+                "title": "C#",
+                "url": "/",
+                "icon": "home",
+                "target": "_self"
+            },
+            {
+                "title": ".NET",
+                "url": "/",
+                "target": "_self"
+            },
+            {
+                "title": "JavaScript",
+                "url": "/",
+                "target": "_self"
+            },
+            {
+                "title": "8 bit",
+                "url": "/",
+                "target": "_self"
+            }
+        ]
+    }
+]

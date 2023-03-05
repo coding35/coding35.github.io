@@ -1,0 +1,61 @@
+[
+    {
+        "title": "Site",
+        "linkList": [
+            {
+                "title": "Research",
+                "url": "/research",
+                "icon": "home",
+                "target": "_self"
+            },
+            {
+                "title": "Videos",
+                "url": "/video",
+                "icon": "home",
+                "target": "_self"
+            },
+            {
+                "title": "Books",
+                "url": "/book",
+                "icon": "home",
+                "target": "_self"
+            },
+            {
+                "title": "About",
+                "url": "/",
+                "icon": "home",
+                "target": "_self"
+            }
+            ,
+            {
+                "title": "Content",
+                "url": "/",
+                "icon": "home",
+                "target": "_self"
+            }
+        ]
+    },
+    {
+        "title": "Social Media",
+        "linkList": [
+            {
+                "title": "LinkedIn",
+                "url": "/",
+                "icon": "home",
+                "target": "_self"
+            },
+            {
+                "title": "Facebook",
+                "url": "/",
+                "icon": "home",
+                "target": "_self"
+            },
+            {
+                "title": "Twitter",
+                "url": "/",
+                "icon": "home",
+                "target": "_self"
+            }
+        ]
+    }
+]
