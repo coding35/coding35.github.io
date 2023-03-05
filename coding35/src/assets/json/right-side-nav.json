@@ -3,50 +3,45 @@
         "title": "Categories",
         "linkList": [
             {
-                "title": "Blog",
+                "title": "Architecture",
                 "url": "/",
-                "icon": "home",
                 "target": "_self"
             },
             {
-                "title": "Videos",
+                "title": "Authentication",
                 "url": "/",
-                "icon": "home",
                 "target": "_self"
             },
             {
-                "title": "Books",
+                "title": "Security",
                 "url": "/",
-                "icon": "home",
-                "target": "_self"
-            },
-            {
-                "title": "About",
-                "url": "/",
-                "icon": "home",
                 "target": "_self"
             }
+            
         ]
     },
     {
         "title": "Tags",
         "linkList": [
             {
-                "title": "LinkedIn",
+                "title": "C#",
                 "url": "/",
                 "icon": "home",
                 "target": "_self"
             },
             {
-                "title": "Facebook",
+                "title": ".NET",
                 "url": "/",
-                "icon": "home",
                 "target": "_self"
             },
             {
-                "title": "Twitter",
+                "title": "JavaScript",
                 "url": "/",
-                "icon": "home",
+                "target": "_self"
+            },
+            {
+                "title": "8 bit",
+                "url": "/",
                 "target": "_self"
             }
         ]

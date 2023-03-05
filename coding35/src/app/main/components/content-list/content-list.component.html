@@ -1,0 +1,26 @@
+<h2>{{pageTitle}}</h2>
+
+
+<div class="container" *ngIf="!notFound; else notFoundTemplate">
+  <div *ngFor="let item of contentList" class="card">
+    <mat-card class="content-card">
+      <mat-card-header>
+        <mat-card-title>{{item.title}}</mat-card-title>
+        <mat-card-subtitle>{{item.subtitle}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="{{item.image}}" alt="{{item.imageAlt}}">
+      <mat-card-content>
+        <p>
+          {{item.description}}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <!--<button mat-button>SHARE</button>-->
+        <button mat-button (click)="handleReadMore(item.id)">READ MORE</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+<ng-template #notFoundTemplate>
+  <app-not-found-component></app-not-found-component>
+</ng-template>

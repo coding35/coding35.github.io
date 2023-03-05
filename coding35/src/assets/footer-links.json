@@ -3,7 +3,7 @@
         "title": "Site",
         "linkList": [
             {
-                "title": "Blog",
+                "title": "Research",
                 "url": "/",
                 "icon": "home",
                 "target": "_self"

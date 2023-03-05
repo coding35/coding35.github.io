@@ -12,7 +12,7 @@ export class RightNavComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    fetch('../../assets/right-side-nav.json').then(response => response.json()).then(meta => {
+    fetch('../../assets/json/right-side-nav.json').then(response => response.json()).then(meta => {
       this.categoryLinks = meta as LinkListModel[];
     });
   }

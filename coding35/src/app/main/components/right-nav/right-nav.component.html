@@ -1,8 +1,11 @@
 <div>
     <mat-list role="list" *ngFor="let categoryLink of categoryLinks">
-        <div>{{categoryLink.title}}</div>
-        <mat-list-item role="listitem" *ngFor="let link of categoryLink.linkList">
-            <a [href]="link.url">{{ link.title }}</a>
+        <div class="list-title">{{categoryLink.title}}</div>
+        <mat-list-item class="list-item" role="listitem" *ngFor="let link of categoryLink.linkList">
+            <span class="list-item-cell">
+                <a class="list-item-link" [href]="link.url">{{ link.title }}</a>
+                <mat-icon class="mat-icon-list-item">keyboard_arrow_right</mat-icon>
+            </span>
         </mat-list-item>
     </mat-list>
 </div>

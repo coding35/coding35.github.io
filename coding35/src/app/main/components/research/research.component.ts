@@ -4,12 +4,12 @@ import { Subscription } from 'rxjs';
 import { ContentModel } from 'src/app/shared/models/content-model';
 
 @Component({
-  selector: 'app-blog',
-  templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.scss']
+  selector: 'app-research',
+  templateUrl: './research.component.html',
+  styleUrls: ['./research.component.scss']
 })
-export class BlogComponent implements OnInit {
-  blogContent: ContentModel | undefined;
+export class ResearchComponent implements OnInit {
+  researchContent: ContentModel | undefined;
   id: any | undefined;
   notFound: boolean = false;
   routerSubscription: Subscription = new Subscription;
@@ -19,19 +19,16 @@ export class BlogComponent implements OnInit {
 
   ngOnInit(): void {
     this.routerSubscription = this.router.events.subscribe((val) => {
-      // see also 
-      console.log(val);
       if (val instanceof NavigationEnd || val instanceof Scroll) {
         let id = this.route.snapshot.paramMap.get('id');
-        console.log(id);
-        fetch('../../assets/blog-content.json').then(response => response.json()).then(meta => {
+        fetch('../../assets/json/research-content.json').then(response => response.json()).then(meta => {
           fetch(`../../assets/templates/${id}.html`).then(response => response.text()).then(html => {
             let json = meta as ContentModel[];
-            this.blogContent = json.filter((item: ContentModel) => item.id === id).pop() as ContentModel;
-            if (this.blogContent === undefined) {
+            this.researchContent = json.filter((item: ContentModel) => item.id === id).pop() as ContentModel;
+            if (this.researchContent === undefined) {
               this.notFound = true;
             } else {
-              this.blogContent.content = html;
+              this.researchContent.content = html;
             }
           });
         });

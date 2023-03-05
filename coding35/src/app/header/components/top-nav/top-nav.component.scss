@@ -1,4 +1,8 @@
-ul  {
+.container {
+    background-color: aliceblue;
+}
+
+ul {
     display: flex;
     align-items: stretch;
     justify-content: center;
@@ -7,12 +11,31 @@ ul  {
     padding: 0;
     column-gap: 5em;
 }
+
 li {
-    flex: 0 1 auto; 
+    flex: 0 1 auto;
     list-style-type: none;
+
+    a {
+        font-size: 20px;
+        display: block;
+        padding: .25em;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #004987;
+    }
+
+    a:hover {
+        color: #fff;
+        font-weight: 500;
+    }
 }
 
-.social-nav-item{
+.header-list-item:hover {
+    background-color: #007ec0;
+}
+
+.social-nav-item {
     column-gap: 1em;
 }
 

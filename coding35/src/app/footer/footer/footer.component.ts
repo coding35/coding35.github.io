@@ -15,7 +15,7 @@ export class FooterComponent implements OnInit {
   constructor() {
   }
   ngOnInit(): void {
-    fetch('../../assets/footer-links.json').then(response => response.json()).then(meta => {
+    fetch('../../assets/json/footer-links.json').then(response => response.json()).then(meta => {
       this.linkLists = meta as LinkListModel[];
     });
   }
