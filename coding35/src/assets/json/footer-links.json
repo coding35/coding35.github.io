@@ -4,24 +4,31 @@
         "linkList": [
             {
                 "title": "Research",
-                "url": "/",
+                "url": "/research",
                 "icon": "home",
                 "target": "_self"
             },
             {
                 "title": "Videos",
-                "url": "/",
+                "url": "/video",
                 "icon": "home",
                 "target": "_self"
             },
             {
                 "title": "Books",
-                "url": "/",
+                "url": "/book",
                 "icon": "home",
                 "target": "_self"
             },
             {
                 "title": "About",
+                "url": "/",
+                "icon": "home",
+                "target": "_self"
+            }
+            ,
+            {
+                "title": "Content",
                 "url": "/",
                 "icon": "home",
                 "target": "_self"

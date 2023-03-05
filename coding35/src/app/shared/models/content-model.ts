@@ -1,7 +1,9 @@
 export class ContentModel {
+    type!: string;
     title!: string;
     subtitle!: string;
     description!: string;
+    avatar! : string;
     date! : Date;
     author!: string;
     readTime!: number;
@@ -11,9 +13,14 @@ export class ContentModel {
     imageAlt!: string;
     id!: string;
     references!: Reference[];
-    categories!: Category[];
+    categories!: string[];
+}
 
-
+export enum ContentType{
+    Research = "research",
+    Video = "video",
+    Book = "book",
+    Any = "any"
 }
 
 export class Tag{
@@ -25,5 +32,6 @@ export class Reference{
 }
 
 export class Category{
+
     
 }

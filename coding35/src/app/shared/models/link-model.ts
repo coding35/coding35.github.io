@@ -1,13 +1,11 @@
 export class LinkModel {
-   constructor(title: string, url: string, icon: string, target: string) {
+   constructor(title: string) {
         this.title = title;
-        this.url = url;
-        this.icon = icon;
-        this.target = target || '_self';
+        this.url = title.toLowerCase();
     }
 
     title: string;
-    url: string;
-    icon: string;
-    target: string;
+    url: string = ''
+    icon: string = '';
+    target: string = '_self';
 }

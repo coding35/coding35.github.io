@@ -7,15 +7,17 @@ import { RightNavComponent } from './components/right-nav/right-nav.component';
 import { SharedModule } from '../shared/shared.module';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
+import {MatChipsModule} from '@angular/material/chips'; 
 import { ContentListComponent } from './components/content-list/content-list.component';
-import { MatCardModule } from '@angular/material/card';
+import { MatCardAvatar, MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
-import { ResearchComponent } from './components/research/research.component';
+import { PageComponent } from './components/page/page.component';
+
 
 @NgModule({
   declarations: [
     ContentComponent,
-    ResearchComponent,
+    PageComponent,
     RightNavComponent,
     ContentListComponent
   ],
@@ -25,6 +27,7 @@ import { ResearchComponent } from './components/research/research.component';
     MatListModule,
     MatIconModule,
     MatCardModule,
+    MatChipsModule,
     MatButtonModule,
     AppRoutingModule
   ],

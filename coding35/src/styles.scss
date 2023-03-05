@@ -53,11 +53,26 @@ app-root {
   app-content {
     display: flex;
     flex: 1;
-    app-relserch, app-video {
+    app-research, app-video {
       flex-grow: 6;
     }
     app-right-nav {
       flex-grow: 3;
     }
+  }
+}
+
+.mdc-evolution-chip-set__chips{
+  justify-content: flex-end;
+  .mat-mdc-chip-action-label {
+    font-size: 9px;
+    text-transform: capitalize;
+  }
+}
+
+
+app-top-nav {
+  .container {
+      padding: 10px 0 0 0;
   }
 }
