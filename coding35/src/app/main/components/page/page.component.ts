@@ -20,14 +20,12 @@ export class PageComponent implements OnInit {
     this.routerSubscription = this.router.events.subscribe((val) => {
       if (val instanceof NavigationEnd || val instanceof Scroll) {
         let id = this.route.snapshot.paramMap.get('id');
-        console.log(id)
         fetch('../../assets/json/content.json').then(response => response.json()).then(meta => {
           fetch(`../../assets/templates/${id}.html`)
           .then(response => response.text())
           .then(html => {
             let json = meta as ContentModel[];
             this.pageContent = json.filter((item: ContentModel) => item.id === id).pop() as ContentModel;
-            console.log(html)
             if (this.pageContent === undefined || html.indexOf('Cannot GET /assets') > -1) {
               this.notFound = true;
             } else {
