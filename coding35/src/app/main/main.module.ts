@@ -12,6 +12,8 @@ import { ContentListComponent } from './components/content-list/content-list.com
 import { MatCardAvatar, MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { PageComponent } from './components/page/page.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { PageComponent } from './components/page/page.component';
     ContentComponent,
     PageComponent,
     RightNavComponent,
-    ContentListComponent
+    ContentListComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,
