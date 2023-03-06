@@ -4,19 +4,17 @@
         "type" : "research",
         "title": "Ambassador Pattern",
         "subtitle": "Offload common client connectivity tasks in a language agnostic way.",
-        "description": "but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "description": "Based on the Sidecar pattern, the Ambassador is an application that runs alongside client applications to provide additional connectivity functionality such as routing, logging, monitoring, authentication, resilience and more.",
         "date": "2023-03-04T19:08:51.568Z",
         "author": "Adam Reed",
         "avatar" : "AR",
         "readTime": 5,
-        "content": "content test",
+        "content": "",
         "tags": [
         ],
         "image": "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg",
-        "imageAlt": "image alt test",
+        "imageAlt": "",
         "references": [
-            "reference test",
-            "reference test2"
         ],
         "categories": [
             "architecture"
