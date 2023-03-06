@@ -22,14 +22,14 @@
             },
             {
                 "title": "About",
-                "url": "/",
+                "url": "/about",
                 "icon": "home",
                 "target": "_self"
             }
             ,
             {
-                "title": "Content",
-                "url": "/",
+                "title": "Contact",
+                "url": "/contact",
                 "icon": "home",
                 "target": "_self"
             }
@@ -40,21 +40,9 @@
         "linkList": [
             {
                 "title": "LinkedIn",
-                "url": "/",
+                "url": "https://www.linkedin.com/in/adam-reed-060854240/",
                 "icon": "home",
-                "target": "_self"
-            },
-            {
-                "title": "Facebook",
-                "url": "/",
-                "icon": "home",
-                "target": "_self"
-            },
-            {
-                "title": "Twitter",
-                "url": "/",
-                "icon": "home",
-                "target": "_self"
+                "target": "_blank"
             }
         ]
     }

@@ -6,13 +6,11 @@
         "subtitle": "Offload common client connectivity tasks in a language agnostic way.",
         "description": "but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
         "date": "2023-03-04T19:08:51.568Z",
-        "author": "author test",
+        "author": "Adam Reed",
         "avatar" : "AR",
         "readTime": 5,
         "content": "content test",
         "tags": [
-            "C#",
-            ".NET"
         ],
         "image": "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg",
         "imageAlt": "image alt test",
@@ -21,8 +19,7 @@
             "reference test2"
         ],
         "categories": [
-            "architecture",
-            "performance"
+            "architecture"
         ]
     }
 ]

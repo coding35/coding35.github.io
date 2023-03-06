@@ -21,7 +21,7 @@ export class PageComponent implements OnInit {
       if (val instanceof NavigationEnd || val instanceof Scroll) {
         let id = this.route.snapshot.paramMap.get('id');
         fetch('../../assets/json/content.json').then(response => response.json()).then(meta => {
-          fetch(`../../assets/templates/${id}.html`)
+          fetch(`../../assets/templates/${id}/${id}.html`)
           .then(response => response.text())
           .then(html => {
             let json = meta as ContentModel[];
