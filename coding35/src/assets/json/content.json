@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "type" : "research",
+        "type" : "architecture",
         "title": "Ambassador Pattern",
         "subtitle": "Offload common client connectivity tasks in a language agnostic way.",
         "description": "Based on the Sidecar pattern, the Ambassador is an application that runs alongside client applications to provide additional connectivity functionality such as routing, logging, monitoring, authentication, resilience and more.",
@@ -22,7 +22,7 @@
     },
     {
         "id": "2",
-        "type" : "research",
+        "type" : "architecture",
         "title": "Sidecar Pattern",
         "subtitle": "Separate the functionality of an applicaiton into co-located components running along side the core application.",
         "description": "Sidecar components are specialized co-located containers that communicate to the main application over a network interface using lightweight communication protocols such as HTTP, gRPC, or WebSockets.",
@@ -40,6 +40,29 @@
         ],
         "categories": [
             "architecture"
+        ]
+    },
+    {
+        "id": "3",
+        "type" : "coding",
+        "title": "Chaos Engineering",
+        "subtitle": "A tool to introduce failure into the system intentionally.",
+        "description": "The Chaos Engineering methodology is to build confidence in the system's capability to withstand turbulent conditions in production by intentionally injecting failures into the system.",
+        "date": "2023-03-10T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 7,
+        "content": "",
+        "tags": [
+            "snippet"
+        ],
+        "image": "../assets/templates/2/shane-rounce-1ZZ96uESRJQ-unsplash-resize.jpg",
+        "imageAlt": "",
+        "references": [
+
+        ],
+        "categories": [
+            "coding"
         ]
     }
 ]

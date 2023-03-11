@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 import { ContentModel } from 'src/app/shared/models/content-model';
 import { LinkListModel } from 'src/app/shared/models/link-list-model';
 import { LinkModel } from 'src/app/shared/models/link-model';
@@ -10,13 +11,12 @@ import { LinkModel } from 'src/app/shared/models/link-model';
   styleUrls: ['./right-nav.component.scss']
 })
 export class RightNavComponent implements OnInit {
+
   categoryLinks : LinkListModel[] = [];
 
-  constructor() { }
+  constructor(private router : Router) { }
 
   ngOnInit(): void {
-
-    
     fetch('../../assets/json/content.json').then(response => response.json()).then(meta => {
       let content = meta as ContentModel[];
       let flat = content.map(m => m.categories).flat();
@@ -26,4 +26,8 @@ export class RightNavComponent implements OnInit {
       this.categoryLinks = list;
     });
   }
+
+  handleClick(url: string) {
+    this.router.navigate(['/category/' + url]);
+    }
 }

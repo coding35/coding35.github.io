@@ -30,9 +30,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/third-party/prettify-small/google-code-prettify/prettify.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/third-party/prettify-small/google-code-prettify/prettify.js"
+            ]
           },
           "configurations": {
             "production": {

@@ -14,7 +14,7 @@ export class ContentListComponent implements OnInit {
   notFound: boolean = false;
   pageTitle: string = "Not Found";
   fetchUrl = '../../assets/json/content.json';
-  filter: ContentType = ContentType.Research;
+  filter: ContentType = ContentType.Architecture;
   routerSubscription: Subscription = new Subscription;
   category: string = "";
 
@@ -26,9 +26,13 @@ export class ContentListComponent implements OnInit {
 
         let page = this.route.snapshot.data['page'];
         switch (page) {
-          case 'research':
-            this.filter = ContentType.Research;
-            this.pageTitle = "Research Content";
+          case 'architecture':
+            this.filter = ContentType.Architecture;
+            this.pageTitle = "Architecture";
+            break;
+          case 'coding':
+            this.filter = ContentType.Coding;
+            this.pageTitle = "Coding";
             break;
           case 'video':
             this.filter = ContentType.Video;
@@ -56,6 +60,7 @@ export class ContentListComponent implements OnInit {
           } else {
             this.contentList = list.filter(f => f.type == this.filter);
           }
+          console.log(this.filter, this.contentList);
         });
       }
     })

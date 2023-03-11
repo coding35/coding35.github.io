@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "type" : "research",
+        "type" : "architecture",
         "title": "Ambassador Pattern",
         "subtitle": "Offload common client connectivity tasks in a language agnostic way.",
         "description": "Based on the Sidecar pattern, the Ambassador is an application that runs alongside client applications to provide additional connectivity functionality such as routing, logging, monitoring, authentication, resilience and more.",
@@ -22,7 +22,7 @@
     },
     {
         "id": "2",
-        "type" : "research",
+        "type" : "architecture",
         "title": "Sidecar Pattern",
         "subtitle": "Separate the functionality of an applicaiton into co-located components running along side the core application.",
         "description": "Sidecar components are specialized co-located containers that communicate to the main application over a network interface using lightweight communication protocols such as HTTP, gRPC, or WebSockets.",

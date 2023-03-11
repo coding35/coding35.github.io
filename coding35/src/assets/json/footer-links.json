@@ -3,8 +3,8 @@
         "title": "Site",
         "linkList": [
             {
-                "title": "Research",
-                "url": "/research",
+                "title": "Architecture",
+                "url": "/architecture",
                 "icon": "home",
                 "target": "_self"
             },

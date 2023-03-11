@@ -15,7 +15,8 @@
     font-weight: 700;
     margin-bottom: 4px;
     background-color: #9dc3d6;
-    a {
+ 
+    span {
         color: #004987;
         text-decoration: none;
         flex: 1;
@@ -27,9 +28,10 @@
     }
 
 }
-.list-item:hover {
+.list-item:hover {   
+    cursor: pointer;
     background-color: #007ec0;
-    a {
+    span {
             color: #fff;
     }
 
