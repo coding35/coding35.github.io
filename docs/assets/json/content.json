@@ -41,5 +41,28 @@
         "categories": [
             "architecture"
         ]
+    },
+    {
+        "id": "3",
+        "type" : "coding",
+        "title": "Chaos Engineering",
+        "subtitle": "A tool to introduce failure into the system intentionally.",
+        "description": "The Chaos Engineering methodology is to build confidence in the system's capability to withstand turbulent conditions in production by intentionally injecting failures into the system.",
+        "date": "2023-03-10T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 7,
+        "content": "",
+        "tags": [
+            "snippet"
+        ],
+        "image": "../assets/templates/2/shane-rounce-1ZZ96uESRJQ-unsplash-resize.jpg",
+        "imageAlt": "",
+        "references": [
+
+        ],
+        "categories": [
+            "coding"
+        ]
     }
 ]
