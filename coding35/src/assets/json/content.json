@@ -19,5 +19,27 @@
         "categories": [
             "architecture"
         ]
+    },
+    {
+        "id": "2",
+        "type" : "research",
+        "title": "Sidecar Pattern",
+        "subtitle": "Separate the functionality of an applicaiton into co-located components running along side the core application.",
+        "description": "Sidecar components are specialized co-located containers that communicate to the main application over a network interface using lightweight communication protocols such as HTTP, gRPC, or WebSockets.",
+        "date": "2023-03-10T19:08:51.568Z",
+        "author": "author test",
+        "avatar" : "AR",
+        "readTime": 5,
+        "content": "content test",
+        "tags": [
+        ],
+        "image": "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg",
+        "imageAlt": "image alt test",
+        "references": [
+
+        ],
+        "categories": [
+            "architecture"
+        ]
     }
 ]
