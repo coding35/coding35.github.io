@@ -1,15 +1,17 @@
-.container {
+.container-main {
   display: flex;
-  width: 100%;
-  .box {
-     justify-content: space-evenly;
-  }
-  .one {
+  flex-direction: row;
+/*   .one {
     padding: 0 10em;
     flex-basis: 75%;
   }
 
-  .two {
-    flex-basis: 25%;
-  }
+  .two { 
+    flex-basis: 25%; 
+    flex-basis: 25%; flex-direction: column-reverse;
+  } */
+}
+
+@media screen {
+  
 }

@@ -62,7 +62,10 @@ export class ContentListComponent implements OnInit {
   }
 
   handleReadMore(id: string) {
-    this.router.navigate([`/${this.route.snapshot.data['page']}/${id}`]);
+    console.log(this.contentList);
+    console.log(this.filter);
+    let route = this.contentList.find(f => f.id == id)?.type;
+    this.router.navigate([`/${route}/${id}`]);
   }
 
   handleCategoryChipClick(chip: string) {

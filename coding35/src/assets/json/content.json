@@ -12,7 +12,7 @@
         "content": "",
         "tags": [
         ],
-        "image": "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg",
+        "image": "../assets/templates/2/shane-rounce-1ZZ96uESRJQ-unsplash-resize.jpg",
         "imageAlt": "",
         "references": [
         ],
@@ -27,14 +27,14 @@
         "subtitle": "Separate the functionality of an applicaiton into co-located components running along side the core application.",
         "description": "Sidecar components are specialized co-located containers that communicate to the main application over a network interface using lightweight communication protocols such as HTTP, gRPC, or WebSockets.",
         "date": "2023-03-10T19:08:51.568Z",
-        "author": "author test",
+        "author": "Adam Reed",
         "avatar" : "AR",
         "readTime": 3,
-        "content": "content test",
+        "content": "",
         "tags": [
         ],
         "image": "../assets/templates/2/shane-rounce-1ZZ96uESRJQ-unsplash-resize.jpg",
-        "imageAlt": "image alt test",
+        "imageAlt": "",
         "references": [
 
         ],

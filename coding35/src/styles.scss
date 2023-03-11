@@ -52,13 +52,14 @@ app-root {
   flex-direction: column;
   app-content {
     display: flex;
-    flex: 1;
-    app-research, app-video {
+/*     flex: 1; */
+    padding: 0 0 0 10%;
+/*     app-research, app-video {
       flex-grow: 6;
     }
     app-right-nav {
       flex-grow: 3;
-    }
+    } */
   }
 }
 
