@@ -25,6 +25,7 @@ export class ContentListComponent implements OnInit {
       if (val instanceof NavigationEnd || val instanceof Scroll) {
 
         let page = this.route.snapshot.data['page'];
+        console.log(page)
         switch (page) {
           case 'architecture':
             this.filter = ContentType.Architecture;
@@ -42,6 +43,10 @@ export class ContentListComponent implements OnInit {
             this.filter = ContentType.Book;
             this.pageTitle = "Book List";
             break;
+          case 'electronics':
+              this.filter = ContentType.Electronics;
+              this.pageTitle = "Electronics";
+              break;
           case 'category':
             this.filter = ContentType.Any;
             this.pageTitle = "Filtering by Category: ";
@@ -60,15 +65,12 @@ export class ContentListComponent implements OnInit {
           } else {
             this.contentList = list.filter(f => f.type == this.filter);
           }
-          console.log(this.filter, this.contentList);
         });
       }
     })
   }
 
   handleReadMore(id: string) {
-    console.log(this.contentList);
-    console.log(this.filter);
     let route = this.contentList.find(f => f.id == id)?.type;
     this.router.navigate([`/${route}/${id}`]);
   }

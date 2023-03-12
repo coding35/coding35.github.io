@@ -17,13 +17,15 @@ export class ContentModel {
 }
 
 
-export enum ContentType {
-    Architecture = "architecture",
-    Video = "video",
-    Book = "book",
-    Coding = "coding",
-    Any = "any",
 
+
+export enum ContentType {
+  Architecture = "architecture",
+  Video = "video",
+  Book = "book",
+  Coding = "coding",
+  Any = "any",
+  Electronics = "electronics"
 }
 
 export class Tag {

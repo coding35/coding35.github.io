@@ -64,5 +64,26 @@
         "categories": [
             "coding"
         ]
+    },
+    {
+        "id": "4",
+        "type" : "electronics",
+        "title": "4-bit Full Adder",
+        "subtitle": "Add two 4-bit numbers together using logic gates.",
+        "description": "A schematic and breadboard layout of a 4-bit adder using logic gates.",
+        "date": "2023-03-11T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 5,
+        "content": "",
+        "tags": [
+        ],
+        "image": "../assets/templates/2/shane-rounce-1ZZ96uESRJQ-unsplash-resize.jpg",
+        "imageAlt": "",
+        "references": [
+        ],
+        "categories": [
+            "electronics"
+        ]
     }
 ]

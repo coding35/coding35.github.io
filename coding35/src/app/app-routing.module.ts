@@ -13,6 +13,8 @@ const routes: Routes = [
   { path: 'coding', component: ContentListComponent, data: { page: 'coding' } },
   { path: 'video/:id', component: PageComponent, data: { page: 'video' } },
   { path: 'video', component: ContentListComponent, data: { page: 'video' } },
+  { path: 'electronics/:id', component: PageComponent, data: { page: 'electronics' } },
+  { path: 'electronics', component: ContentListComponent, data: { page: 'electronics' } },
   { path: 'book/:id', component: PageComponent, data: { page: 'book' } },
   { path: 'book', component: ContentListComponent, data: { page: 'book' } },
   { path: 'category/:search', component: ContentListComponent, data: { page: 'category' } },
