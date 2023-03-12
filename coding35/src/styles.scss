@@ -31,13 +31,8 @@ $coding35-theme: mat.define-light-theme((color: (primary: $coding35-primary,
 
 /* You can add global styles to this file, and also import other style files */
 
-body {
-  margin: auto;
-}
-
-html,
-body {
-  height: 100%;
+html, body {
+  height: 100vh;
 }
 
 body {
@@ -47,17 +42,10 @@ body {
 }
 
 app-root {
-  display: flex;
   min-height: 100vh;
-  flex-direction: column;
-  app-content {
-    display: flex;
-    padding: 0 0 0 10%;
-  }
 }
 
 .mdc-evolution-chip-set__chips{
-  justify-content: flex-end;
   .mat-mdc-chip-action-label {
     font-size: 9px;
     text-transform: capitalize;

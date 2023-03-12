@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Route } from '@angular/router';
 import { LinkListModel } from 'src/app/shared/models/link-list-model';
 
 
@@ -8,10 +9,10 @@ import { LinkListModel } from 'src/app/shared/models/link-list-model';
   styleUrls: ['./footer-link-list.component.scss']
 })
 export class FooterLinkListComponent {
-@Input() links : LinkListModel | undefined;
+  @Input() links: LinkListModel | undefined;
 
-constructor() { 
+  constructor() {
 
-}
+  }
 
 }

@@ -9,7 +9,6 @@
 }
 
 .list-item {
-    display: flex;
     color: #004987;
     font-size: 18px;
     font-weight: 700;
@@ -19,11 +18,9 @@
     span {
         color: #004987;
         text-decoration: none;
-        flex: 1;
     }
 
     .list-item-cell{
-        display: flex;
         color: #fff;
     }
 

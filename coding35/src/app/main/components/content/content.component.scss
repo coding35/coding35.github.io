@@ -1,17 +1,29 @@
-.container-main {
-  display: flex;
-  flex-direction: row;
-/*   .one {
-    padding: 0 10em;
-    flex-basis: 75%;
-  }
+ .container-main {
+     display: grid;
+     grid-template-areas:
+         "content-area sidebar"
+ }
 
-  .two { 
-    flex-basis: 25%; 
-    flex-basis: 25%; flex-direction: column-reverse;
-  } */
-}
+ .content-area {
+     grid-area: content-area;
+ }
 
-@media screen {
-  
-}
+ .sidebar {
+     grid-area: sidebar;
+     position: absolute;
+     right: 0;
+     top: 20%;
+ }
+
+ @media screen and (max-width: 768px) {
+     .sidebar {
+         grid-area: unset;
+         position: initial;
+     }
+
+
+     .container-main {
+         grid-template-areas:
+             "content-area"
+     }
+ }

@@ -1,7 +1,7 @@
 .container-list{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
-
 
 .card {
   padding: 5px;
