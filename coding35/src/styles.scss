@@ -58,3 +58,15 @@ app-top-nav {
       padding: 10px 0 0 0;
   }
 }
+
+
+.flex-parent{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-child{
+  flex: 1;
+  padding: 0 15px 0 0;
+}

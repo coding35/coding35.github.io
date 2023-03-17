@@ -22,7 +22,7 @@ export class RightNavComponent implements OnInit {
       let flat = content.map(m => m.categories).flat();
       let unique = flat.filter((v, i, a) => a.indexOf(v) === i).map(m => new LinkModel(m));
       let list = new Array<LinkListModel>();
-      list.push(new LinkListModel("Categories",  unique));
+      list.push(new LinkListModel("Categories",  unique.sort((a, b) => a.title.localeCompare(b.title))));
       this.categoryLinks = list;
     });
   }

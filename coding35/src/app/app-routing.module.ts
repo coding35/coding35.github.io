@@ -9,6 +9,8 @@ import { PageComponent } from './main/components/page/page.component';
 const routes: Routes = [
   { path: 'architecture/:id', component: PageComponent, data: { page: 'architecture' } },
   { path: 'architecture', component: ContentListComponent, data: { page: 'architecture' } },
+  { path: 'design/:id', component: PageComponent, data: { page: 'design' } },
+  { path: 'design', component: ContentListComponent, data: { page: 'design' } },
   { path: 'coding/:id', component: PageComponent, data: { page: 'coding' } },
   { path: 'coding', component: ContentListComponent, data: { page: 'coding' } },
   { path: 'video/:id', component: PageComponent, data: { page: 'video' } },

@@ -5,10 +5,12 @@
         limited by the data structures of a legacy database or the APIs of a legacy system.
     </p>
 
-    <p>In short this pattern is used to isolate the domain model from external dependencies by
+    <p>In short this pattern is used to isolate an application domain from external dependencies by
         providing a translation layer between itself and dependant subsystems.
-        This layer ensures that the calling application is not beholden data structures, obsolete technologies and
-        APIs outside of its control.</p>
+        This layer ensures that the calling application is not beholden to data structures, obsolete technologies and
+        APIs outside of its control. This pattern can be particularly useful in legacy migrations or when two systems
+        with different data models or semantics need to communicate.
+    </p>
     </p>
     <h4>Example</h4>
     <figure>
@@ -24,9 +26,25 @@
 
     <p>
         By isolating the domain model from external dependencies, applications can be more easily maintained to
-        modern standards and technologies without impacting the rest of the system.
+        modern standards and technologies without impacting the rest of the system. In the above example, the
+        communication between systems is handled by the Anti-Corruption Layer. This layer is responsible for translating
+        data models and APIs between the separate systems.
     </p>
 
+    <h4>
+        Considerations
+    </h4>
+    <ul>
+        <li>Added latency</li>
+        <li>Management and scaling</li>
+        <li>Possible Partitioning</li>
+    </ul>
+
+
+    <p>
+        This pattern could be co-located with a parent application as a sidecar component or it could be
+        implemented as a separate microservice as show in the digram above.
+    </p>
 
 
 

@@ -31,6 +31,10 @@ export class ContentListComponent implements OnInit {
             this.filter = ContentType.Architecture;
             this.pageTitle = "Architecture";
             break;
+          case 'design':
+            this.filter = ContentType.Design;
+            this.pageTitle = "Design";
+            break;
           case 'coding':
             this.filter = ContentType.Coding;
             this.pageTitle = "Coding";
@@ -44,9 +48,9 @@ export class ContentListComponent implements OnInit {
             this.pageTitle = "Book List";
             break;
           case 'electronics':
-              this.filter = ContentType.Electronics;
-              this.pageTitle = "Electronics";
-              break;
+            this.filter = ContentType.Electronics;
+            this.pageTitle = "Electronics";
+            break;
           case 'category':
             this.filter = ContentType.Any;
             this.pageTitle = "Filtering by Category: ";

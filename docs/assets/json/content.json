@@ -63,7 +63,7 @@
         ],
         "categories": [
             "coding",
-            "architecture"
+            "design"
         ]
     },
     {
@@ -96,7 +96,7 @@
         "date": "2023-03-14T19:08:51.568Z",
         "author": "Adam Reed",
         "avatar" : "AR",
-        "readTime": 5,
+        "readTime": 3,
         "content": "",
         "tags": [
         ],
@@ -107,6 +107,119 @@
         ],
         "categories": [
             "architecture"
+        ]
+    },
+    {
+        "id": "6",
+        "type" : "design",
+        "title": "design",
+        "subtitle": "design.",
+        "description": "design",
+        "date": "2023-03-16T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 3,
+        "content": "",
+        "tags": [
+        ],
+        "image": "../assets/images/Image_by_PIRO_from_Pixabay.jpg",
+        "imageAlt": "",
+        "references": [
+
+        ],
+        "categories": [
+        "design"
+        ]
+    },
+    {
+        "id": "7",
+        "type" : "book",
+        "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+        "subtitle": "OOO design patterns and how to use them.",
+        "description": "Design Patterns is a book by the Gang of Four (Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides) that describes software design patterns. The book's authors are often referred to as the Gang of Four (GoF).",
+        "date": "2023-03-16T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 1,
+        "content": "",
+        "tags": [
+        ],
+        "image": "../../../assets/templates/7/designpatterns_gof.jpeg",
+        "imageAlt": "",
+        "references": [
+
+        ],
+        "categories": [
+            "books"
+        ]
+    }
+    ,
+    {
+        "id": "8",
+        "type" : "book",
+        "title": "Deep Work: Rules for Focused Success in a Distracted World",
+        "subtitle": "Amazing book on how to focus and get things done.",
+        "description": "Deep Work is a book by Cal Newport that describes how to focus on deep work and how to get things done. A must read for the modern day developer.",
+        "date": "2023-03-17T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 1,
+        "content": "",
+        "tags": [
+        ],
+        "image": "../../../assets/templates/8/deepwork.jpg",
+        "imageAlt": "",
+        "references": [
+
+        ],
+        "categories": [
+            "books",
+            "productivity"
+        ]
+    },
+    {
+        "id": "9",
+        "type" : "book",
+        "title": "The Pragmatic Programmer: Your Journey To Mastery, 20th Anniversary Edition (2nd Edition)",
+        "subtitle": "Get ready for a journey to mastery.",
+        "description": "The Pragmatic Programmer is a book by Andrew Hunt and David Thomas that describes how to be a better programmer. Another must read for the modern day developer.",
+        "date": "2023-03-17T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 1,
+        "content": "",
+        "tags": [
+        ],
+        "image": "../../../assets/templates/9/pragmaticprogrammer.jpg",
+        "imageAlt": "",
+        "references": [
+
+        ],
+        "categories": [
+            "books"
+        ]
+    },
+    {
+        "id": "10",
+        "type" : "book",
+        "title": "Extreme Programming Explained: Embrace Change, 2nd Edition (The XP Series) 2nd Edition",
+        "subtitle": "Great book to pickup to learn about XP.",
+        "description": "Wow, this book is great. It's a great book to pickup to learn about XP. Get ready for an awakening.",
+        "date": "2023-02-13T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 1,
+        "content": "",
+        "tags": [
+        ],
+        "image": "../../../assets/templates/10/xp_programming.jpg",
+        "imageAlt": "",
+        "references": [
+
+        ],
+        "categories": [
+            "books",
+            "productivity"
         ]
     }
 ]
