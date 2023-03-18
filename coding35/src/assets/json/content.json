@@ -112,17 +112,18 @@
     {
         "id": "6",
         "type" : "design",
-        "title": "design",
-        "subtitle": "design.",
-        "description": "design",
-        "date": "2023-03-16T19:08:51.568Z",
+        "title": "Object Composition",
+        "subtitle": "Favor object composition over class inheritance.",
+        "description": "In object-oriented programming, object composition is a technique for creating complex objects by combining simpler objects or components.",
+        "date": "2023-03-17T19:08:51.568Z",
         "author": "Adam Reed",
         "avatar" : "AR",
-        "readTime": 3,
+        "readTime": 5,
         "content": "",
         "tags": [
+            "snippet"
         ],
-        "image": "../assets/images/Image_by_PIRO_from_Pixabay.jpg",
+        "image": "../assets/images/Image_by_Magic_Creative_from_Pixabay.png",
         "imageAlt": "",
         "references": [
 
