@@ -1,4 +1,4 @@
-.container-list{
+.container-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
@@ -15,6 +15,7 @@
 .list-page-title {
   font-weight: 400;
   font-size: 25px;
+  padding-left: 15px;
 }
 
 

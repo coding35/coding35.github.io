@@ -6,10 +6,11 @@
     grid-template-rows: 1fr 1fr 1fr;
     /* Three rows, two with explicit widths */
     grid-template-areas:
-        "header header header"
-        ". main sidebar"
-        "footer footer footer";
+        "header header header header"
+        "main main . sidebar"
+        "footer footer footer footer";
 }
+
 .header {
     grid-area: header;
 }
@@ -24,4 +25,14 @@
 
 .footer {
     grid-area: footer;
+}
+
+
+@media screen and (max-width: 768px) {
+    .parent {
+        grid-template-areas:
+            "header header header header"
+            "main main main main"
+            "footer footer footer footer";
+    }
 }

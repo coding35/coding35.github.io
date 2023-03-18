@@ -1,40 +1,14 @@
-.container {
-    background-color: aliceblue;
+.menu-spacer {
+  flex: 1 1 auto;
 }
 
-ul {
-    display: flex;
-    align-items: stretch;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    justify-content: space-evenly;
+
+
+a.linkedin {
+  top: 8px;
+  position: relative;
 }
 
-li {
-    list-style-type: none;
-    a {
-        font-size: 20px;
-        display: block;
-        padding: .25em;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #004987;
-    }
-
-    a:hover {
-        color: #fff;
-    }
-}
-
-.header-list-item:hover {
-    background-color: #007ec0;
-}
-
-.social-nav-item {
-    column-gap: 1em;
-}
-
-button {
-    text-transform: uppercase
+.menu-link-list a{
+    text-decoration: none;
 }

@@ -33,6 +33,7 @@ $coding35-theme: mat.define-light-theme((color: (primary: $coding35-primary,
 
 html, body {
   height: 100vh;
+  min-height: 110vh;
 }
 
 body {
@@ -53,12 +54,6 @@ app-root {
 }
 
 
-app-top-nav {
-  .container {
-      padding: 10px 0 0 0;
-  }
-}
-
 
 .flex-parent{
   display: flex;
@@ -69,4 +64,29 @@ app-top-nav {
 .flex-child{
   flex: 1;
   padding: 0 15px 0 0;
+}
+
+article{
+  width: 85%;
+}
+
+img.img-responsive {
+  width: 100%;
+}
+
+.mat-toolbar.mat-primary {
+  background: aliceblue;
+  color: #054f7d;
+}
+
+@media screen and (min-width: 768px) {
+  article {
+    padding-right: 1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  article {
+    width: 91%;
+  }
 }

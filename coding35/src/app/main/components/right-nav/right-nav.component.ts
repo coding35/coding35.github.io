@@ -12,9 +12,9 @@ import { LinkModel } from 'src/app/shared/models/link-model';
 })
 export class RightNavComponent implements OnInit {
 
-  categoryLinks : LinkListModel[] = [];
+  categoryLinks: LinkListModel[] = [];
 
-  constructor(private router : Router) { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     fetch('../../assets/json/content.json').then(response => response.json()).then(meta => {
@@ -22,12 +22,13 @@ export class RightNavComponent implements OnInit {
       let flat = content.map(m => m.categories).flat();
       let unique = flat.filter((v, i, a) => a.indexOf(v) === i).map(m => new LinkModel(m));
       let list = new Array<LinkListModel>();
-      list.push(new LinkListModel("Categories",  unique.sort((a, b) => a.title.localeCompare(b.title))));
+      list.push(new LinkListModel("Categories", unique.sort((a, b) => a.title.localeCompare(b.title))));
       this.categoryLinks = list;
     });
   }
 
   handleClick(url: string) {
+    scrollTo(0, 0);
     this.router.navigate(['/category/' + url]);
-    }
+  }
 }
