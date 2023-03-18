@@ -4,7 +4,7 @@ export class ContentModel {
     subtitle!: string;
     description!: string;
     avatar!: string;
-    date!: Date;
+    date: Date = new Date();
     author!: string;
     readTime!: number;
     content!: string;

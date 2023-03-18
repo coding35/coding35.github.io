@@ -222,5 +222,28 @@
             "books",
             "productivity"
         ]
+    },
+    {
+        "id": "11",
+        "type" : "design",
+        "title": "Class Inheritance",
+        "subtitle": "Extend functionality bt reusing functionality in parent classes.",
+        "description": "A rapid way to define an object that is based on another object, retaining similar characteristics.",
+        "date": "2023-03-18T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 5,
+        "content": "",
+        "tags": [
+            "snippet"
+        ],
+        "image": "../assets/images/Image_by_ Monika_Schröder_ from_Pixabay.jpg",
+        "imageAlt": "",
+        "references": [
+
+        ],
+        "categories": [
+        "design"
+        ]
     }
 ]

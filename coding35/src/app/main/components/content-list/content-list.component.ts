@@ -23,9 +23,7 @@ export class ContentListComponent implements OnInit {
   ngOnInit(): void {
     this.routerSubscription = this.router.events.subscribe((val) => {
       if (val instanceof NavigationEnd || val instanceof Scroll) {
-
         let page = this.route.snapshot.data['page'];
-        console.log(page)
         switch (page) {
           case 'architecture':
             this.filter = ContentType.Architecture;
@@ -65,9 +63,9 @@ export class ContentListComponent implements OnInit {
         fetch(this.fetchUrl).then(response => response.json()).then(meta => {
           let list = meta as ContentModel[];
           if (this.filter == ContentType.Any) {
-            this.contentList = list.filter(f => f.categories.includes(this.route.snapshot.params['search']));
+            this.contentList = list.filter(f => f.categories.includes(this.route.snapshot.params['search'])).sort((a,b) => new Date(b.date).getTime() - new Date(a.date).getTime());
           } else {
-            this.contentList = list.filter(f => f.type == this.filter);
+            this.contentList = list.filter(f => f.type == this.filter).sort((a,b) => new Date(b.date).getTime() - new Date(a.date).getTime());
           }
         });
       }
