@@ -14,7 +14,9 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ContentComponent } from './components/content/content.component';
 import { ForceDirectedTreeComponent } from './components/force-directed-tree/force-directed-tree.component';
-
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,9 @@ import { ForceDirectedTreeComponent } from './components/force-directed-tree/for
     MatCardModule,
     MatChipsModule,
     MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
     AppRoutingModule
   ],
   exports: [ContentComponent]

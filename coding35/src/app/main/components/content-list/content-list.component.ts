@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router, Scroll } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { ContentModel, ContentType } from 'src/app/shared/models/content-model';
+import { SearchService } from 'src/app/shared/service/search.service';
 
 @Component({
   selector: 'app-content-list',
@@ -18,7 +19,7 @@ export class ContentListComponent implements OnInit {
   routerSubscription: Subscription = new Subscription;
   category: string = "";
 
-  constructor(private route: ActivatedRoute, private router: Router) { }
+  constructor(private route: ActivatedRoute, private router: Router, private search: SearchService) { }
 
   ngOnInit(): void {
     this.routerSubscription = this.router.events.subscribe((val) => {
@@ -63,12 +64,29 @@ export class ContentListComponent implements OnInit {
         fetch(this.fetchUrl).then(response => response.json()).then(meta => {
           let list = meta as ContentModel[];
           if (this.filter == ContentType.Any) {
-            this.contentList = list.filter(f => f.categories.includes(this.route.snapshot.params['search'])).sort((a,b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+            this.contentList = list.filter(f => f.categories.includes(this.route.snapshot.params['search'])).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
           } else {
-            this.contentList = list.filter(f => f.type == this.filter).sort((a,b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+            this.contentList = list.filter(f => f.type == this.filter).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
           }
         });
       }
+    })
+
+    this.search.ee.subscribe((val) => {
+      this.category = val || "All";
+      this.filter = ContentType.Search;
+      fetch('../../assets/json/content.json').then(response => response.json()).then(meta => {
+        let content = meta as ContentModel[];
+        this.contentList = content
+          .filter(m =>
+            m.title.toLowerCase().includes(val.toLowerCase()) ||
+            m.subtitle.toLowerCase().includes(val.toLowerCase()) ||
+            m.categories.some(s => s.toLowerCase().includes(val.toLowerCase())) ||
+            m.tags.some(s => s.toLowerCase().includes(val.toLowerCase())) ||
+            m.description.toLowerCase()
+            .includes(val.toLowerCase()));
+        this.pageTitle = `Search returned ${this.contentList.length} results for term: `;
+      })
     })
   }
 
@@ -80,7 +98,6 @@ export class ContentListComponent implements OnInit {
   handleCategoryChipClick(chip: string) {
     this.router.navigate([`/category/${chip}`]);
   }
-
 
   ngOnDestroy() {
     this.routerSubscription.unsubscribe();

@@ -8,14 +8,13 @@ export class ContentModel {
     author!: string;
     readTime!: number;
     content!: string;
-    tags!: Tag[];
+    tags!: string[];
     image!: string;
     imageAlt!: string;
     id!: string;
     references!: Reference[];
     categories!: string[];
 }
-
 
 export enum ContentType {
   Architecture = "architecture",
@@ -24,18 +23,12 @@ export enum ContentType {
   Coding = "coding",
   Any = "any",
   Electronics = "electronics",
-  Design = "design"
+  Design = "design",
+  Search = "search"
 }
 
-export class Tag {
 
-}
 
 export class Reference {
-
-}
-
-export class Category {
-
 
 }

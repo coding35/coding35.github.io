@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { ContentModel } from 'src/app/shared/models/content-model';
 import { LinkListModel } from 'src/app/shared/models/link-list-model';
 import { LinkModel } from 'src/app/shared/models/link-model';
+import { SearchService } from 'src/app/shared/service/search.service';
 
 @Component({
   selector: 'app-right-nav',
@@ -12,9 +13,10 @@ import { LinkModel } from 'src/app/shared/models/link-model';
 })
 export class RightNavComponent implements OnInit {
 
+  value = '';
   categoryLinks: LinkListModel[] = [];
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private search: SearchService) { }
 
   ngOnInit(): void {
     fetch('../../assets/json/content.json').then(response => response.json()).then(meta => {
@@ -30,5 +32,9 @@ export class RightNavComponent implements OnInit {
   handleClick(url: string) {
     scrollTo(0, 0);
     this.router.navigate(['/category/' + url]);
+  }
+
+  searchEvent($event: any) {
+      this.search.ee.emit(this.value);
   }
 }

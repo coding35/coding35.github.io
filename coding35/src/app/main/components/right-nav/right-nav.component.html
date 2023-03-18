@@ -1,9 +1,17 @@
 <div>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Search</mat-label>
+        <input matInput [(ngModel)]="value" (ngModelChange)="searchEvent($event)">
+        <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+
     <mat-list role="list" *ngFor="let categoryLink of categoryLinks">
         <div class="list-title">{{categoryLink.title}}</div>
-        <mat-list-item class="list-item" role="listitem" *ngFor="let link of categoryLink.linkList" (click)="handleClick(link.url)">
-            <span class="list-item-cell" >
-                <span class="list-item-link" >{{ link.title | titlecase }}</span>
+        <mat-list-item class="list-item" role="listitem" *ngFor="let link of categoryLink.linkList"
+            (click)="handleClick(link.url)">
+            <span class="list-item-cell">
+                <span class="list-item-link">{{ link.title | titlecase }}</span>
                 <mat-icon class="mat-icon-list-item">keyboard_arrow_right</mat-icon>
             </span>
         </mat-list-item>

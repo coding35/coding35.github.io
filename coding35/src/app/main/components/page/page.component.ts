@@ -2,6 +2,7 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router, Scroll } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { ContentModel } from 'src/app/shared/models/content-model';
+import { SearchService } from 'src/app/shared/service/search.service';
 
 
 
@@ -23,7 +24,7 @@ export class PageComponent implements OnInit {
   notFound: boolean = false;
   routerSubscription: Subscription = new Subscription;
 
-  constructor(private route: ActivatedRoute, private router: Router) { }
+  constructor(private route: ActivatedRoute, private router: Router, private search: SearchService) { }
 
 
   ngOnInit(): void {
@@ -50,10 +51,15 @@ export class PageComponent implements OnInit {
         });
       }
     });
+    this.search.ee.subscribe((search: string) => {
+      console.log(search)
+      this.router.navigate(['search']);
+    });
   }
 
 
   ngOnDestroy() {
+    //this.search.ee.unsubscribe();
     this.routerSubscription.unsubscribe();
   }
 }

@@ -7,6 +7,7 @@ import { HeaderModule } from './header/header.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterModule } from './footer/footer.module';
 import { MainModule } from './main/main.module';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,9 @@ import { MainModule } from './main/main.module';
     AppRoutingModule
 
   ],
-  providers: [],
+  providers: [
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
