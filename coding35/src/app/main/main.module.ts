@@ -13,6 +13,7 @@ import { PageComponent } from './components/page/page.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ContentComponent } from './components/content/content.component';
+import { ForceDirectedTreeComponent } from './components/force-directed-tree/force-directed-tree.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ContentComponent } from './components/content/content.component';
     RightNavComponent,
     ContentListComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    ForceDirectedTreeComponent
   ],
   imports: [
     CommonModule,

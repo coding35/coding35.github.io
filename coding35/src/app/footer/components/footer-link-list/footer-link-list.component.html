@@ -2,6 +2,6 @@
 <ul>
     <h3>{{links?.title}}</h3>
     <li *ngFor="let link of links?.linkList">
-        <a [routerLink]="[link.url]" [target]="link.target" >{{ link.title }}</a>
+        <a (click)="handleLinkClick(link.url)" [target]="link.target" >{{ link.title }}</a>
     </li>
 </ul>

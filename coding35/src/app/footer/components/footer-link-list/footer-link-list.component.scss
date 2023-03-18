@@ -9,6 +9,7 @@ ul {
             display: block;
             padding: 5px 0;
             &:hover {
+                cursor: pointer;
                 color: #c5cbd1;
                 text-decoration: none;
             }
