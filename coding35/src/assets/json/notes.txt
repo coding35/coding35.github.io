@@ -1,9 +1,0 @@
-Class Inheritance vs Interface Inheritance
-It’s also important to understand the difference between class 
-inheritance and interface inheritance (or subtyping). 
-Class inheritance defines an object’s implementation in 
-terms of another object’s implementation. 
-In short, it’s a mechanism for code and representation sharing. 
-In contrast, interface inheritance (or subtyping) describes when an object can be used in place of another.
-
-Class types, Concrete types, and Abstract types

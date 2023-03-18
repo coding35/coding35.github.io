@@ -9,8 +9,14 @@
                 "target": "_self"
             },
             {
-                "title": "Videos",
-                "url": "/video",
+                "title": "Design",
+                "url": "/design",
+                "icon": "home",
+                "target": "_self"
+            },
+            {
+                "title": "Coding",
+                "url": "/coding",
                 "icon": "home",
                 "target": "_self"
             },
@@ -25,8 +31,7 @@
                 "url": "/about",
                 "icon": "home",
                 "target": "_self"
-            }
-            ,
+            },
             {
                 "title": "Contact",
                 "url": "/contact",

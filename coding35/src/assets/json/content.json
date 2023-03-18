@@ -267,5 +267,27 @@
         "categories": [
         "design"
         ]
+    },
+    {
+        "id": "13",
+        "type" : "book",
+        "title": "How Computers Really Work",
+        "subtitle": "A Hands-On Guide to the Inner Workings of the Machine",
+        "description": "This is a very interesting and entertaining ready with plenty of hands-on activities. From binary to the internet, this book covers it all.",
+        "date": "2023-01-11T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 1,
+        "content": "",
+        "tags": [
+        ],
+        "image": "../../../assets/templates/13/how-computers-really-work_fullcvr_v08_front.jpg",
+        "imageAlt": "",
+        "references": [
+
+        ],
+        "categories": [
+            "books"
+        ]
     }
 ]

@@ -6,4 +6,3 @@ terms of another object’s implementation.
 In short, it’s a mechanism for code and representation sharing. 
 In contrast, interface inheritance (or subtyping) describes when an object can be used in place of another.
 
-Class types, Concrete types, and Abstract types

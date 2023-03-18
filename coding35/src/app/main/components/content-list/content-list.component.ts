@@ -84,8 +84,10 @@ export class ContentListComponent implements OnInit {
             m.categories.some(s => s.toLowerCase().includes(val.toLowerCase())) ||
             m.tags.some(s => s.toLowerCase().includes(val.toLowerCase())) ||
             m.description.toLowerCase()
-            .includes(val.toLowerCase()));
-        this.pageTitle = `Search returned ${this.contentList.length} results for term: `;
+            .includes(val.toLowerCase()))
+            .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+            let count = this.contentList.length;
+        this.pageTitle = `Search returned ${count} ${count == 1 ? "result" : "results"} for term: `;
       })
     })
   }
