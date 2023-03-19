@@ -6,3 +6,47 @@ terms of another object’s implementation.
 In short, it’s a mechanism for code and representation sharing. 
 In contrast, interface inheritance (or subtyping) describes when an object can be used in place of another.
 
+
+
+Ambassador - ok
+Anti-corruption Layer - ok
+Asynchronous Request-Reply
+Backends for Frontends
+Bulkhead
+Cache-Aside
+Choreography
+Circuit Breaker
+Claim Check
+Compensating Transaction
+Competing Consumers
+Compute Resource Consolidation
+CQRS
+Deployment Stamps
+Edge Workload Configuration
+Event Sourcing
+External Configuration Store
+Federated Identity
+Gatekeeper
+Gateway Aggregation
+Gateway Offloading
+Gateway Routing
+Geode
+Health Endpoint Monitoring
+Index Table
+Leader Election
+Materialized View
+Pipes and Filters
+Priority Queue
+Publisher/Subscriber
+Queue-Based Load Leveling
+Rate Limiting
+Retry
+Saga
+Scheduler Agent Supervisor
+Sequential Convoy
+Sharding
+Sidecar
+Static Content Hosting
+Strangler Fig
+Throttling
+Valet Key

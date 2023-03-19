@@ -16,6 +16,8 @@ const routes: Routes = [
   { path: 'coding', component: ContentListComponent, data: { page: 'coding' } },
   { path: 'video/:id', component: PageComponent, data: { page: 'video' } },
   { path: 'video', component: ContentListComponent, data: { page: 'video' } },
+  { path: 'productivity/:id', component: PageComponent, data: { page: 'productivity' } },
+  { path: 'productivity', component: ContentListComponent, data: { page: 'productivity' } },
   { path: 'electronics/:id', component: PageComponent, data: { page: 'electronics' } },
   { path: 'electronics', component: ContentListComponent, data: { page: 'electronics' } },
   { path: 'book/:id', component: PageComponent, data: { page: 'book' } },

@@ -334,5 +334,28 @@
         "categories": [
         "books"
         ]
+    },
+    {
+        "id": "16",
+        "type" : "productivity",
+        "title": "SQ3R, Cornell Note Taking, and Spacing Effect",
+        "subtitle": "Survey, Question, Read, Recite, Review, Relate, Spacing",
+        "description": "SQ3R complimented with the Cornell Note Taking System and spacing effect is a hybrid reading comprehension strategy that helps you to read more efficiently and effectively. A great way to read technical books.",
+        "date": "2023-03-19T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 1,
+        "content": "",
+        "tags": [
+        ],
+        "image": "../assets/images/Image_by_ElasticComputeFarm_from_Pixabay.jpg",
+        "imageAlt": "",
+        "references": [
+
+        ],
+        "categories": [
+        "productivity"
+        ]
     }
+
 ]

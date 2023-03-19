@@ -1,4 +1,4 @@
-<div>
+<article>
     <p>
         Based on the Sidecar pattern, the Ambassador is an application that runs alongside client applications
         to provide additional connectivity functionality such as routing, logging, monitoring, authentication,
@@ -33,7 +33,7 @@
     </p>
     <figure>
         <img src="../../../assets/templates/1/ambassador.png" alt="Ambassador" class="img-responsive" />
-        <figcaption>Image Citation&nbsp;
+        <figcaption>Image Reference&nbsp;
             <cite><a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/ambassador">Ambassador
                     Pattern</a>
             </cite>&nbsp;<a href="https://learn.microsoft.com/"></a>Microsoft
@@ -45,92 +45,102 @@
         cost
         effective or feasible.
     </p>
-</div>
-<div>
-    <h4>
-        For Example
-    </h4>
+    </div>
+    <div>
+        <h4>
+            For Example
+        </h4>
+        <p>
+            During the Y2K scare, many companies were faced with the problem of migrating or modernizing their legacy
+            applications in order to ensure that they would continue to function after the year 2000. The problem was
+            that
+            many
+            of these
+            legacy applications were written in COBOL running on mainframes that were no longer supported by the
+            vendor. The cost of
+            migrating these applications was a major concern. One solution was to use the Ambassador to extend the
+            lifetime
+            of
+            the legacy applications
+            by co-locating the legacy application with the Ambassador whereby the Ambassador would manage date
+            conversions
+            and
+            thereby allowing the legacy application to continue operations until they could be patched or migrated to a
+            new
+            platform.
+        </p>
+    </div>
+    <div>
+        <h4>Considering the previous example we can break down the use case:</h4>
+        <p>
+            One or more legacy applications need additional connectivity functionality and are longer supported by the
+            vendor or
+            would
+            require significant effort to upgrade.
+
+            These applications are still in use and are critical to the business.
+            One option is to migrate the application to a new server or cloud platform but that may be costly and time
+            consuming.
+
+            The other option is to use the Ambassador to extend the lifetime of the legacy application by
+            co-locating the legacy application with the Ambassador and thereby allowing the legacy application to
+            continue to run on the old server with the additional connectivity functionality provided by the Ambassador.
+        </p>
+    </div>
+
     <p>
-        During the Y2K scare, many companies were faced with the problem of migrating or modernizing their legacy
-        applications in order to ensure that they would continue to function after the year 2000. The problem was that
-        many
-        of these
-        legacy applications were written in COBOL running on mainframes that were no longer supported by the
-        vendor. The cost of
-        migrating these applications was a major concern. One solution was to use the Ambassador to extend the lifetime
-        of
-        the legacy applications
-        by co-locating the legacy application with the Ambassador whereby the Ambassador would manage date conversions
-        and
-        thereby allowing the legacy application to continue operations until they could be patched or migrated to a new
-        platform.
+        The following image shows the Ambassador pattern in action.
     </p>
-</div>
-<div>
-    <h4>Considering the previous example we can break down the use case:</h4>
-    <p>
-        One or more legacy applications need additional connectivity functionality and are longer supported by the
-        vendor or
-        would
-        require significant effort to upgrade.
+    <figure>
+        <img src="../../../assets/templates/1/ambassador-in-action.png" alt="Ambassador" class="img-responsive"
+            width="800" />
+        <figcaption>Image Reference&nbsp;
+            <cite><a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/ambassador">Ambassador
+                    Pattern</a>
+            </cite>&nbsp;<a href="https://learn.microsoft.com/"></a>Microsoft
+        </figcaption>
+    </figure>
 
-        These applications are still in use and are critical to the business.
-        One option is to migrate the application to a new server or cloud platform but that may be costly and time
-        consuming.
+    <div>
+        <h4>
+            When to use the Ambassador pattern?
+        </h4>
+        <ul>
+            <li>One or more legacy applications needing common or cross-cutting connectivity features.</li>
+            <li>There are shared connectivity concerns that can be offloaded to a separate pipeline.</li>
+            <li>Cannot easily modify or migrate existing applications.</li>
+            <li>A low cost alternative is needed "wrap" existing applications with modern features.</li>
+        </ul>
 
-        The other option is to use the Ambassador to extend the lifetime of the legacy application by
-        co-locating the legacy application with the Ambassador and thereby allowing the legacy application to
-        continue to run on the old server with the additional connectivity functionality provided by the Ambassador.
-    </p>
-</div>
-
-<p>
-    The following image shows the Ambassador pattern in action.
-</p>
-<figure>
-    <img src="../../../assets/templates/1/ambassador-in-action.png" alt="Ambassador" class="img-responsive"
-        width="800" />
-    <figcaption>Image Citation&nbsp;
-        <cite><a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/ambassador">Ambassador Pattern</a>
-        </cite>&nbsp;<a href="https://learn.microsoft.com/"></a>Microsoft
-    </figcaption>
-</figure>
-
-<div>
-    <h4>
-        When to use the Ambassador pattern?
-    </h4>
-    <ul>
-        <li>One or more legacy applications needing common or cross-cutting connectivity features.</li>
-        <li>There are shared connectivity concerns that can be offloaded to a separate pipeline.</li>
-        <li>Cannot easily modify or migrate existing applications.</li>
-        <li>A low cost alternative is needed "wrap" existing applications with modern features.</li>
-    </ul>
-
-</div>
-<div>
-    <h4>
-        When <strong>not</strong> to use the Ambassador pattern?
-    </h4>
-    <ul>
-        <li>Latency concerns. The Ambassador providing additional connectivity concerns will introduce latency in
-            the request.</li>
-        <li>All legacy applications share a common language and framework. In this scenario a better approach would
-            be to develop a package or module that could be added to each application</li>
-        <li>There are no cross-cutting network connectivity concerns.</li>
-    </ul>
-</div>
-<div>
-    <h4>Citation</h4>
-    <ul>
-        <li> Abbott, M. (2020, March 24). Ambassador pattern: Description and advice on usage. AKF Partners. Retrieved
-            March 5,
-            2023, from https://akfpartners.com/growth-blog/ambassador-pattern-description-and-advice-on-usage</li>
-        <li>Ambassador. Java Design Patterns. (n.d.). Retrieved March 5, 2023, from
-            https://java-design-patterns.com/patterns/ambassador/#class-diagram </li>
-        <li>Michaels, P. (2022). 6. The Travel Rep Problem. In Software architecture by example: Using C# and .NET. essay, Apress. </li>
-        <li> Microsoft. (n.d.). Ambassador pattern - azure architecture center. Azure Architecture Center | Microsoft
-            Learn.
-            Retrieved March 5, 2023, from https://learn.microsoft.com/en-us/azure/architecture/patterns/ambassador</li>
-    </ul>
-</div>
+    </div>
+    <div>
+        <h4>
+            When <strong>not</strong> to use the Ambassador pattern?
+        </h4>
+        <ul>
+            <li>Latency concerns. The Ambassador providing additional connectivity concerns will introduce latency in
+                the request.</li>
+            <li>All legacy applications share a common language and framework. In this scenario a better approach would
+                be to develop a package or module that could be added to each application</li>
+            <li>There are no cross-cutting network connectivity concerns.</li>
+        </ul>
+    </div>
+    <div>
+        <h4>Reference</h4>
+        <ul>
+            <li> Abbott, M. (2020, March 24). Ambassador pattern: Description and advice on usage. AKF Partners.
+                Retrieved
+                March 5,
+                2023, from https://akfpartners.com/growth-blog/ambassador-pattern-description-and-advice-on-usage</li>
+            <li>Ambassador. Java Design Patterns. (n.d.). Retrieved March 5, 2023, from
+                https://java-design-patterns.com/patterns/ambassador/#class-diagram </li>
+            <li>Michaels, P. (2022). 6. The Travel Rep Problem. In Software architecture by example: Using C# and .NET.
+                essay, Apress. </li>
+            <li> Microsoft. (n.d.). Ambassador pattern - azure architecture center. Azure Architecture Center |
+                Microsoft
+                Learn.
+                Retrieved March 5, 2023, from https://learn.microsoft.com/en-us/azure/architecture/patterns/ambassador
+            </li>
+        </ul>
+    </div>
+</article>
