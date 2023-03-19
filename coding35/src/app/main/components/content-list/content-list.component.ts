@@ -93,6 +93,7 @@ export class ContentListComponent implements OnInit {
   }
 
   handleReadMore(id: string) {
+    scrollTo(0, 0);
     let route = this.contentList.find(f => f.id == id)?.type;
     this.router.navigate([`/${route}/${id}`]);
   }
