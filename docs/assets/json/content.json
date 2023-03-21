@@ -136,7 +136,7 @@
         "id": "7",
         "type" : "book",
         "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
-        "subtitle": "OOO design patterns and how to use them.",
+        "subtitle": "OOP design patterns and how to use them.",
         "description": "Design Patterns is a book by the Gang of Four (Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides) that describes software design patterns. The book's authors are often referred to as the Gang of Four (GoF).",
         "date": "2023-03-16T19:08:51.568Z",
         "author": "Adam Reed",
@@ -355,6 +355,28 @@
         ],
         "categories": [
         "productivity"
+        ]
+    },
+    {
+        "id": "17",
+        "type" : "design",
+        "title": "OOP Acquaintance (Weak) and Aggregation (Strong) Relationships",
+        "subtitle": "Knowing the difference between acquaintance and aggregation relationships.",
+        "description": "Aggregation owns the object it aggregates. Acquaintance does not own the object but knows of other objects it is acquainted with. Knowing the difference between the two is important for designing maintainable and extensible code.",
+        "date": "2023-03-20T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 1,
+        "content": "",
+        "tags": [
+        ],
+        "image": "../assets/images/Image_by_Francisco_Leão_from_Pixabay.jpg",
+        "imageAlt": "",
+        "references": [
+
+        ],
+        "categories": [
+        "design"
         ]
     }
 

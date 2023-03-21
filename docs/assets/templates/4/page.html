@@ -1,54 +1,69 @@
 <article>
-    <p>
-        A full adder is a combinational logic circuit that adds two bits
-        and a carry bit. This type of adder requires the carry bits to propagate, or
-        ripple, through the circuit. Therefore, this circuit is referred to as a ripple
-        carry adder.
-    </p>
-    <p>
-        Each carry bit that ripples to the next full adder introduces a small delay, so extending the design to handle
-        more bits makes the circuit slower and the output will be inaccurate until all the carry bits have the time
-        to propagate.
-    </p>
-    <p>
-        The ripple carry adder is the basis for more complex adder circuits, such as the carry look-ahead adder.
-    </p>
-    <div>
-        <img src="../../../assets/templates/4/bb2.jpg" alt="4-bit adder circuit on a bread board" class="img-responsive"
-        width="800" />
-    </div>
+  <p>
+    A full adder is a combinational logic circuit that adds two bits and a carry
+    bit. This type of adder requires the carry bits to propagate, or ripple,
+    through the circuit. Therefore, this circuit is referred to as a ripple
+    carry adder.
+  </p>
+  <p>
+    Each carry bit that ripples to the next full adder introduces a small delay,
+    so extending the design to handle more bits makes the circuit slower and the
+    output will be inaccurate until all the carry bits have the time to
+    propagate.
+  </p>
+  <p>
+    The ripple carry adder is the basis for more complex adder circuits, such as
+    the carry look-ahead adder.
+  </p>
+  <div>
+    <img
+      src="../../../assets/templates/4/bb2.jpg"
+      alt="4-bit adder circuit on a bread board"
+      class="img-responsive"
+      width="800"
+    />
+  </div>
 
-    <figure>
-        <img src="../../../assets/templates/4/4bitAddr.png" alt="4-bit adder circuit" class="img-responsive"
-        width="800" />
-        <figcaption>Diagram generated using Logisim Evolution v 3.8.0</figcaption>
-    </figure>
-    <h4>IC Components</h4>
+  <figure>
+    <img
+      src="../../../assets/templates/4/4bitAddr.png"
+      alt="4-bit adder circuit"
+      class="img-responsive"
+      width="800"
+    />
+    <figcaption>Diagram generated using Logisim Evolution v 3.8.0</figcaption>
+  </figure>
+  <h4>IC Components</h4>
+  <ul>
+    <li>XOR (7486) x2</li>
+    <li>AND (7408) x2</li>
+    <li>OR (7432) x1</li>
+  </ul>
+  <div>
+    <h4>Reference Material</h4>
     <ul>
-        <li>XOR (7486) x2</li>
-        <li>AND (7408) x2</li>
-        <li>OR (7432) x1</li>
+      <li>
+        Ben Eater provides a great tutorial and explaination of the circuit.
+        <br />
+        <a href="https://youtu.be/wvJc9CZcvBc" target="_blank"
+          >Learn how computers add numbers and build a 4 bit adder circuit</a
+        >
+      </li>
+      <li>
+        Highly recommended book on how computers work by No Starch Press.
+        <br />
+        <a href="https://nostarch.com/how-computers-really-work" target="_blank"
+          >How Computers Really Work</a
+        >
+      </li>
     </ul>
-    <div>
-        <h4>Reference Material</h4>
-        <ul>
-            <li>Ben Eater provides a great tutorial and explaination of the circuit.
-                <br> <a href="https://youtu.be/wvJc9CZcvBc" target="_blank">Learn how computers add numbers and build a
-                    4 bit
-                    adder
-                    circuit</a>
-            </li>
-            <li>
-                Highly recommended book on how computers work by No Starch Press.
-                <br> <a href="https://nostarch.com/how-computers-really-work" target="_blank">How Computers Really
-                    Work</a>
-            </li>
-        </ul>
-    </div>
-    <div>
-        <h4>Reference</h4>
-        <ul>
-            <li>Matthew Justice (2021). How Computers Really Work, No Starch Press.</li>
-        </ul>
-    </div>
+  </div>
+  <div>
+    <h4>Reference</h4>
+    <ul>
+      <li>
+        Matthew Justice (2021). How Computers Really Work, No Starch Press.
+      </li>
+    </ul>
+  </div>
 </article>

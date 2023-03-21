@@ -1,74 +1,93 @@
 <article>
+  <p>
+    The sidecar pattern is a common pattern used in distributed and
+    microservices architectures. It is often used in conjunction with ther
+    patterns and technologies such as container orchestration, service meshes,
+    and API gateways.
+  </p>
+  <p>
+    The pattern involves separating the functionality of an application into
+    components that are co-located alongside the main application. These
+    components are often referred to as sidecars and they are used to provide
+    additional functionality to the main application such as monitoring,
+    logging, routing, security, and resiliency patterns.
+  </p>
+  <p>
+    Sidecar components are specialized containers that communicate to the main
+    application over an internal host network interface using lightweight
+    communication protocols such as HTTP, gRPC, or WebSockets.
+  </p>
+  <h4>Microsoft documentation states</h4>
+  <blockquote>
     <p>
-        The sidecar pattern is a common pattern used in distributed and microservices architectures. It is often used in
-        conjunction with ther patterns
-        and technologies such as container orchestration, service meshes, and API gateways.
+      "This pattern is named Sidecar because it resembles a sidecar attached to
+      a motorcycle. In the pattern, the sidecar is attached to a parent
+      application and provides supporting features for the application. The
+      sidecar also shares the same lifecycle as the parent application, being
+      created and retired alongside the parent. The sidecar pattern is sometimes
+      referred to as the sidekick pattern and is a decomposition pattern."
+      <cite
+        ><a
+          href="https://learn.microsoft.com/en-us/azure/architecture/patterns/sidecar"
+          >Sidecar Pattern</a
+        >&nbsp;<a href="https://learn.microsoft.com/"></a>Microsoft
+      </cite>
     </p>
-    <p>
-        The pattern involves separating the functionality of an application into components that are co-located alongside the main
-        application.
-        These components are often referred to as sidecars and they are used to provide additional functionality to
-        the main application such as monitoring, logging, routing, security, and resiliency patterns.
-    </p>
-    <p>
-        Sidecar components are specialized containers that communicate to the main application over an internal host
-        network interface using lightweight communication protocols such as HTTP, gRPC, or WebSockets.
-    </p>
-    <h4>Microsoft documentation states</h4>
-    <blockquote>
-        <p>"This pattern is named Sidecar because it resembles a sidecar attached to a motorcycle. In the pattern, the
-            sidecar is
-            attached to a parent application and provides supporting features for the application. The sidecar also
-            shares the
-            same lifecycle as the parent application, being created and retired alongside the parent. The sidecar
-            pattern is
-            sometimes referred to as the sidekick pattern and is a decomposition pattern."
-            <cite><a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/sidecar">Sidecar
-                    Pattern</a>&nbsp;<a href="https://learn.microsoft.com/"></a>Microsoft
-            </cite>
-        </p>
-    </blockquote>
-    <h4>
-        The following image shows the Sidecar pattern in action.
-    </h4>
-    <figure>
-        <img src="../../../assets/templates/2/Sidecar Pattern.drawio.png" alt="sidecar" class="img-responsive"
-            width="800" />
-        <figcaption>
-            <span>Note that the core application and sidecars are on the same host.</span>
-        </figcaption>
-    </figure>
-    <div>
-        <h4>
-            Benefits of the Sidecar pattern.
-        </h4>
-        <ul>
-            <li>Add new functionality to existing applications without having to modify core application code.</li>
-            <li>The sidecar can be independently developed, tested and deployed.</li>
-            <li>Sidecars can be used to extend the lifetime of legacy applications.</li>
-            <li>
-                Providing additional functionality such as monitoring, logging, routing, security, and
-                resiliency patterns.
-            </li>
-        </ul>
-    </div>
-    <div>
-        <h4>Considerations</h4>
-        <ul>
-            <li>Added latency</li>
-            <li>Is the sidecar cross-cutting? If so a shared microservice might be a better approach.</li>
-            <li>Management and scaling.</li>
-        </ul>
-    </div>
-    <div>
-        <h4>Reference</h4>
-        <ul>
-            <li> Microsoft. (n.d.). Sidecar pattern - azure architecture center. Azure Architecture Center | Microsoft
-                Learn.
-                Retrieved March 5, 2023, from https://learn.microsoft.com/en-us/azure/architecture/patterns/sidecar</li>
-                <li>Michaels, P. (2022). 6. The Travel Rep Problem. In Software architecture by example: Using C# and .NET. essay, Apress. </li>
-            </ul>
-    </div>
-
-
+  </blockquote>
+  <h4>The following image shows the Sidecar pattern in action.</h4>
+  <figure>
+    <img
+      src="../../../assets/templates/2/Sidecar Pattern.drawio.png"
+      alt="sidecar"
+      class="img-responsive"
+      width="800"
+    />
+    <figcaption>
+      <span
+        >Note that the core application and sidecars are on the same host.</span
+      >
+    </figcaption>
+  </figure>
+  <div>
+    <h4>Benefits of the Sidecar pattern.</h4>
+    <ul>
+      <li>
+        Add new functionality to existing applications without having to modify
+        core application code.
+      </li>
+      <li>The sidecar can be independently developed, tested and deployed.</li>
+      <li>
+        Sidecars can be used to extend the lifetime of legacy applications.
+      </li>
+      <li>
+        Providing additional functionality such as monitoring, logging, routing,
+        security, and resiliency patterns.
+      </li>
+    </ul>
+  </div>
+  <div>
+    <h4>Considerations</h4>
+    <ul>
+      <li>Added latency</li>
+      <li>
+        Is the sidecar cross-cutting? If so a shared microservice might be a
+        better approach.
+      </li>
+      <li>Management and scaling.</li>
+    </ul>
+  </div>
+  <div>
+    <h4>Reference</h4>
+    <ul>
+      <li>
+        Microsoft. (n.d.). Sidecar pattern - azure architecture center. Azure
+        Architecture Center | Microsoft Learn. Retrieved March 5, 2023, from
+        https://learn.microsoft.com/en-us/azure/architecture/patterns/sidecar
+      </li>
+      <li>
+        Michaels, P. (2022). 6. The Travel Rep Problem. In Software architecture
+        by example: Using C# and .NET. essay, Apress.
+      </li>
+    </ul>
+  </div>
 </article>

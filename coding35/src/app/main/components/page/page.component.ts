@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit, Sanitizer } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router, Scroll } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { ContentModel } from 'src/app/shared/models/content-model';

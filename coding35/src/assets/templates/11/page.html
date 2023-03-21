@@ -1,58 +1,60 @@
 <article>
-    <p>
-        As fundamental object-orientated concept, class inheritance is useful for creating reusable and maintainable
-        code. Its
-        primary benefit is that it
-        allows for the creation of new classes that build upon existing classes without having to duplicate properties
-        and behaviors.
-    </p>
-    <p>
-        Class inheritance works by defining a parent class (aka. superclass or base class)
-        that contains the properties and
-        behaviors that are common to all classes, or a subset of classes used in the system, and then defining
-        subclasses (aka child or derived classes) that inherit the properties and behaviors of the parent class. The
-        Subclasses can then add or modify functionality as needed,
-        while still retaining the properties and behaviors of the parent class.
-    </p>
+  <p>
+    As fundamental object-orientated concept, class inheritance is useful for
+    creating reusable and maintainable code. Its primary benefit is that it
+    allows for the creation of new classes that build upon existing classes
+    without having to duplicate properties and behaviors.
+  </p>
+  <p>
+    Class inheritance works by defining a parent class (aka. superclass or base
+    class) that contains the properties and behaviors that are common to all
+    classes, or a subset of classes used in the system, and then defining
+    subclasses (aka child or derived classes) that inherit the properties and
+    behaviors of the parent class. The Subclasses can then add or modify
+    functionality as needed, while still retaining the properties and behaviors
+    of the parent class.
+  </p>
 
-    <p>
-        In addition to adding new behavior, a subclass can refine and redefine inherited behaviors. Subclasses can
-        override inherited methods allowing the subclass a chance to handle requests instead of the parent class.
-    </p>
+  <p>
+    In addition to adding new behavior, a subclass can refine and redefine
+    inherited behaviors. Subclasses can override inherited methods allowing the
+    subclass a chance to handle requests instead of the parent class.
+  </p>
 
-    <h4>Considerations</h4>
-    <ul>
-        <li>
-            Class inheritance is defined at compile time, you cannot change the implementation inherited at
-            run-time.
+  <h4>Considerations</h4>
+  <ul>
+    <li>
+      Class inheritance is defined at compile time, you cannot change the
+      implementation inherited at run-time.
+    </li>
+    <li>
+      Any change to the parent class will require changes to the subclasses,
+      which can lead to a fragile design and make the code difficult to
+      maintain.
+    </li>
+    <li>
+      Overuse can lead to a complex class hierarchy that is difficult to
+      understand and maintain. A better solution may be object composition in
+      complex systems. Favor object composition over class inheritance.
+    </li>
+    <li>
+      In complex systems abstract classes can be used to define the interface to
+      common properties and behaviors of a group of classes. This reduces
+      dependencies between classes and allows for more flexibility in the
+      design. Program to an interface, not an implementation.
+    </li>
+  </ul>
 
-        </li>
-        <li>
-            Any change to the parent class will require changes to the subclasses, which can
-            lead to a fragile design and make the code difficult to maintain.
-        </li>
-        <li>Overuse can lead to a complex class hierarchy that is difficult to understand and maintain. A better
-            solution may be object composition in complex systems.
-            Favor object composition over class inheritance.
-        </li>
-        <li>
-            In complex systems abstract classes can be used to define the interface to common properties and behaviors of a group of classes. 
-            This reduces dependencies between classes and allows for more flexibility in the design. Program to an interface, not an implementation.
-        </li>
-    </ul>
-
-    </p>
-
-    <p>
-        In the following example, the Animal class is the parent class, and the Dog and Cat classes are the subclasses.
-        The
-        Dog and Cat classes inherit the name property and vocalize method from the Animal class. The Dog class overrides
-        the vocalize method and adds a new fetch method. The Cat class overrides the vocalize method and adds a new
-        scratch method.
-    </p>
-    <div>
-        <h4>Example</h4>
-        <pre class="prettyprint">
+  <p>
+    In the following example, the Animal class is the parent class, and the Dog
+    and Cat classes are the subclasses. The Dog and Cat classes inherit the name
+    property and vocalize method from the Animal class. The Dog class overrides
+    the vocalize method and adds a new fetch method. The Cat class overrides the
+    vocalize method and adds a new scratch method.
+  </p>
+  <div>
+    <h4>Example</h4>
+    <pre class="prettyprint">
     #include &ltiostream&gt
 
     using namespace std;
@@ -114,19 +116,22 @@
         cat.purr();
         return 0;
     }
-        </pre>
-        <h5>Output</h5>
+        </pre
+    >
+    <h5>Output</h5>
 
-        <div>Rover barks!</div>
-        <div>Rover fetches the ball!</div>
-        <div>Fluffy meows!</div>
-        <div>Fluffy purrs!</div>
-    </div>
-    <div>
-        <h4>Reference</h4>
-        <ul>
-            <li>Gamma, E., Helm, R., Johnson, R., &amp; Vlissides, J. (2021). Design patterns: Elements of reusable
-                object-oriented software. </li>
-        </ul>
-    </div>
+    <div>Rover barks!</div>
+    <div>Rover fetches the ball!</div>
+    <div>Fluffy meows!</div>
+    <div>Fluffy purrs!</div>
+  </div>
+  <div>
+    <h4>Reference</h4>
+    <ul>
+      <li>
+        Gamma, E., Helm, R., Johnson, R., &amp; Vlissides, J. (2021). Design
+        patterns: Elements of reusable object-oriented software.
+      </li>
+    </ul>
+  </div>
 </article>

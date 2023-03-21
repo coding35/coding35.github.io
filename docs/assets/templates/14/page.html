@@ -1,35 +1,42 @@
 <article>
-    <p>In object-oriented programming, object composition is a technique for creating complex objects by combining
-        simpler objects or components. Unlike object inheritance where a class inherits the properties and behavior of a
-        parent class, object composition creates the situation where a class contains a reference to one or more
-        objects, which it uses to achieve its desired functionality. Sub-objects or components are combined to form the
-        new object, and each provides a specific set of features or behaviors.</p>
+  <p>
+    In object-oriented programming, object composition is a technique for
+    creating complex objects by combining simpler objects or components. Unlike
+    object inheritance where a class inherits the properties and behavior of a
+    parent class, object composition creates the situation where a class
+    contains a reference to one or more objects, which it uses to achieve its
+    desired functionality. Sub-objects or components are combined to form the
+    new object, and each provides a specific set of features or behaviors.
+  </p>
 
-    <p>Delegation is a form of object composition that introduces enhanced reuse capabilities of composed objects by
-        delegating specific task to another
-        object with the added benefit of being able to change the behavior of the composed object at runtime.
-    </p>
-    <p>
-        The advantage of delegation is that it allows composition of behaviors at run-time. This technique increases
-        flexibility
-        but also introduces complexity and can be difficult to understand. Additionally, usages can introduce
-        performance inefficiencies since the composed object is determined at runtime.
-    </p>
-    <p>
-        Overall, this approach is flexible and allows for greater reusability of code where smaller objects can be
-        composed together
-        and swapped in and out as needed.
-    </p>
-    <p>
-        In the following example, the Animal class is the parent class, and the Dog and Cat classes are the subclasses.
-        The
-        Dog and Cat classes inherit the name property and vocalize method from the Animal class. The Dog class overrides
-        the vocalize method and adds a new fetch method. The Cat class overrides the vocalize method and adds a new
-        scratch method.
-    </p>
-    <div>
-        <h4>Example</h4>
-        <pre class="prettyprint">
+  <p>
+    Delegation is a form of object composition that introduces enhanced reuse
+    capabilities of composed objects by delegating specific task to another
+    object with the added benefit of being able to change the behavior of the
+    composed object at runtime.
+  </p>
+  <p>
+    The advantage of delegation is that it allows composition of behaviors at
+    run-time. This technique increases flexibility but also introduces
+    complexity and can be difficult to understand. Additionally, usages can
+    introduce performance inefficiencies since the composed object is determined
+    at runtime.
+  </p>
+  <p>
+    Overall, this approach is flexible and allows for greater reusability of
+    code where smaller objects can be composed together and swapped in and out
+    as needed.
+  </p>
+  <p>
+    In the following example, the Animal class is the parent class, and the Dog
+    and Cat classes are the subclasses. The Dog and Cat classes inherit the name
+    property and vocalize method from the Animal class. The Dog class overrides
+    the vocalize method and adds a new fetch method. The Cat class overrides the
+    vocalize method and adds a new scratch method.
+  </p>
+  <div>
+    <h4>Example</h4>
+    <pre class="prettyprint">
     #include &ltiostream&gt
 
     using namespace std;
@@ -78,20 +85,24 @@
         return 0;
     }
     
-        </pre>
-        <h5>Output</h5>
+        </pre
+    >
+    <h5>Output</h5>
 
-        <div>Engine started.</div>
-        <div>Car started.</div>
-        <div>Engine idling. </div>
-        <div>Car idling. </div>
-        <div>Engine stopped.</div>
-        <div>Car stopped.</div>
-        <div>
-            <h4>Reference</h4>
-            <ul>
-                <li>Gamma, E., Helm, R., Johnson, R., &amp; Vlissides, J. (2021). Design patterns: Elements of reusable
-                    object-oriented software. </li>
-            </ul>
-        </div>
+    <div>Engine started.</div>
+    <div>Car started.</div>
+    <div>Engine idling.</div>
+    <div>Car idling.</div>
+    <div>Engine stopped.</div>
+    <div>Car stopped.</div>
+    <div>
+      <h4>Reference</h4>
+      <ul>
+        <li>
+          Gamma, E., Helm, R., Johnson, R., &amp; Vlissides, J. (2021). Design
+          patterns: Elements of reusable object-oriented software.
+        </li>
+      </ul>
+    </div>
+  </div>
 </article>

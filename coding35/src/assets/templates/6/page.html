@@ -1,40 +1,42 @@
 <article>
-    <p>
-        In object-oriented programming, object composition is a technique for creating complex objects by combining
-        simpler objects or components.
-        Unlike object inheritance where a class inherits the properties and behavior of a parent class, object
-        composition creates the situation
-        where a class contains a reference to one or more objects, which it uses to achieve its desired functionality.
-        Sub-objects or components
-        are combined to form the new object, and each provides a specific set of features or behaviors.
-    </p>
-    <p>
-        The benefit of object composition over inheritance is that it allows developers to create modular flexible code
-        that
-        can be reused and combined in different ways. If done correctly, it can also help to simplify the design and
-        implementation of complex systems,
-        as each component can be developed and tested independently, and then combined with other sub-objects or
-        components to create an
-        object with desired functionality.
-    </p>
-    <p>
-        Object composition encourages encapsulation, loose coupling, and keeps each component focused on a single task. Unlike inheritance,
-        class hierarchies will remain lightweight and easy to maintain, as each class will only contain a reference to a
-        sub-object or component, rather than
-        inheriting all the properties and behaviors of the parent class that can become complex and difficult
-        to manage over time.
-    </p>
-    <p>
-        In the following example, a car object is composed of two sub-objects or components, the engine and the brake assembly objects of which
-        each in their own right could be composed of other sub-objects or components. 
-        
-        When the car object is created, it is composed of the engine and brake assembly objects providing the car with
-        the desired functionality. The car object can then use the engine and brake assembly objects to achieve the desired functionality.
-    </p>
+  <p>
+    In object-oriented programming, object composition is a technique for
+    creating complex objects by combining simpler objects or components. Unlike
+    object inheritance where a class inherits the properties and behavior of a
+    parent class, object composition creates the situation where a class
+    contains a reference to one or more objects, which it uses to achieve its
+    desired functionality. Sub-objects or components are combined to form the
+    new object, and each provides a specific set of features or behaviors.
+  </p>
+  <p>
+    The benefit of object composition over inheritance is that it allows
+    developers to create modular flexible code that can be reused and combined
+    in different ways. If done correctly, it can also help to simplify the
+    design and implementation of complex systems, as each component can be
+    developed and tested independently, and then combined with other sub-objects
+    or components to create an object with desired functionality.
+  </p>
+  <p>
+    Object composition encourages encapsulation, loose coupling, and keeps each
+    component focused on a single task. Unlike inheritance, class hierarchies
+    will remain lightweight and easy to maintain, as each class will only
+    contain a reference to a sub-object or component, rather than inheriting all
+    the properties and behaviors of the parent class that can become complex and
+    difficult to manage over time.
+  </p>
+  <p>
+    In the following example, a car object is composed of two sub-objects or
+    components, the engine and the brake assembly objects of which each in their
+    own right could be composed of other sub-objects or components. When the car
+    object is created, it is composed of the engine and brake assembly objects
+    providing the car with the desired functionality. The car object can then
+    use the engine and brake assembly objects to achieve the desired
+    functionality.
+  </p>
 
-    <div>
-        <h4>Example</h4>
-        <pre class="prettyprint">
+  <div>
+    <h4>Example</h4>
+    <pre class="prettyprint">
             #include &ltiostream&gt
             using namespace std;
             
@@ -101,17 +103,17 @@
                 car.stop();
                 return 0;
             }
-        </pre>
+        </pre
+    >
+  </div>
 
-
-
-    </div>
-
-    <div>
-        <h4>Reference</h4>
-        <ul>
-            <li>Gamma, E., Helm, R., Johnson, R., &amp; Vlissides, J. (2021). Design patterns: Elements of reusable
-                object-oriented software. </li>
-        </ul>
-    </div>
+  <div>
+    <h4>Reference</h4>
+    <ul>
+      <li>
+        Gamma, E., Helm, R., Johnson, R., &amp; Vlissides, J. (2021). Design
+        patterns: Elements of reusable object-oriented software.
+      </li>
+    </ul>
+  </div>
 </article>

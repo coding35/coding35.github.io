@@ -50,3 +50,7 @@ Static Content Hosting
 Strangler Fig
 Throttling
 Valet Key
+
+Books
+Hunt, A. (2014). Pragmatic Thinking and Learning. Read Deliberately with SQ3R. The Pragmatic Bookshelf.
+Lifehacker: The guide to working smarter, faster, and better, third edition"
