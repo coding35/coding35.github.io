@@ -3,30 +3,6 @@
         "title": "Site",
         "linkList": [
             {
-                "title": "Architecture",
-                "url": "/architecture",
-                "icon": "home",
-                "target": "_self"
-            },
-            {
-                "title": "Design",
-                "url": "/design",
-                "icon": "home",
-                "target": "_self"
-            },
-            {
-                "title": "Coding",
-                "url": "/coding",
-                "icon": "home",
-                "target": "_self"
-            },
-            {
-                "title": "Books",
-                "url": "/book",
-                "icon": "home",
-                "target": "_self"
-            },
-            {
                 "title": "About",
                 "url": "/about",
                 "icon": "home",

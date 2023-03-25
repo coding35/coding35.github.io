@@ -360,7 +360,7 @@
     {
         "id": "17",
         "type" : "design",
-        "title": "OOP Acquaintance (Weak) and Aggregation (Strong) Relationships",
+        "title": "OOP Acquaintance and Aggregation Relationships",
         "subtitle": "Knowing the difference between acquaintance and aggregation relationships.",
         "description": "Aggregation owns the object it aggregates. Acquaintance does not own the object but knows of other objects it is acquainted with. Knowing the difference between the two is important for designing maintainable and extensible code.",
         "date": "2023-03-20T19:08:51.568Z",
