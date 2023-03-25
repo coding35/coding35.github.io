@@ -378,6 +378,27 @@
         "categories": [
         "design"
         ]
+    },
+    {
+        "id": "18",
+        "type" : "architecture",
+        "title": "Retry Pattern",
+        "subtitle": "Handle transient failures with the retry pattern.",
+        "description": "The retry pattern is a design pattern for the handling of transient failures. Transient failures are failures that are temporary and can be resolved by retrying the operation. ",
+        "date": "2023-03-25T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 5,
+        "content": "",
+        "tags": [
+        ],
+        "image": "../assets/images/Image_by_Michael_Siebert_from_Pixabay.jpg",
+        "imageAlt": "",
+        "references": [
+        ],
+        "categories": [
+            "architecture"
+        ]
     }
 
 ]

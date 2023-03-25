@@ -1,0 +1,92 @@
+<article>
+  <p>
+    Often found in use with distributed systems, the Retry Pattern addresses the
+    need to handle transient issues such as loss of network connectivity,
+    unavailability of a service, or timeout errors by transparently retrying
+    requests. Since transient errors are not uncommon and often temporary, these
+    errors are typically self correcting by retrying the request. There are
+    several retry strategies that can be used solely or in combination to handle
+    transient errors.
+  </p>
+  <h4>Retry Strategies</h4>
+  <ul>
+    <li>Cancel</li>
+    <li>Retry</li>
+    <li>Retry After Delay</li>
+  </ul>
+  <h4>Cancel</h4>
+  <p>
+    The cancel strategy will cancel the request if the issue is determined not
+    to be transient. It is important to detect the type of errors since retrying
+    a fault that is not transient is a waste of time, resources, and can cause
+    additional issues that may degrade the system or user experience.
+  </p>
+  <h4>Retry</h4>
+  <p>
+    The retry strategy will retry the request immediately if the fault is
+    determined to be unusual or transient. This strategy is useful for handling
+    faults that are not likely to be permanent. For example, a network timeout
+    error may be resolved by retrying the request immediately.
+  </p>
+  <h4>Retry After Delay</h4>
+  <p>
+    The retry after delay strategy will retry the request after a delay if the
+    fault is determined to be unusual or transient. This strategy is useful for
+    handling retry while allowing the system to recover from the fault. For
+    example, a network timeout error may be resolved by retrying the request
+    after a delay. The delay should be long enough to allow the system to
+    recover so as not to overwhelm the system with requests.
+  </p>
+  <h4>Logging</h4>
+  <p>
+    It is very important to make sure logging is in place to detect and react to
+    retry events. Retry events may indicate a number of issues that might go
+    unnoticed. Log early retry failures as informational or warning and late
+    retry or cancel events as errors. If retry logs indicate a high number of
+    failures, it may indicate a need to increase the retry delay or scale the
+    called service.
+  </p>
+  <h4>Tuning</h4>
+  <p>
+    The chosen retry strategy should be tuned to the specific use case. For
+    example small applications should fail faster and potentially retry less
+    often than large applications or batch processes. Its important to consider
+    the impact of aggressive retry logic with minimal delay on the called
+    service. If the called service is not designed to handle high volume of
+    requests, it may result in service degradation or even failure.
+  </p>
+  <h4>Idempotent</h4>
+  <p>
+    All retry logic should be designed to with idempotence in mind. This means
+    that the retry will not cause a side effect. For example, if a request is
+    retried, the called service will not create a duplicate record. If the
+    called service is not idempotent, it may result in duplicate records.
+  </p>
+  <h4>Testing</h4>
+  <p>
+    It probably goes without saying, but it is important to test retry logic to
+    ensure it is working as expected. Testing should include testing the retry
+    and cancel strategies. It is also important to test the retry logic with the
+    called service to ensure it is idempotent.
+  </p>
+  <h4>Impact</h4>
+  <p>
+    Make sure that the retry logic doesn't negatively impact performance,
+    reliability, cause excessive load on a service or resource, generate race
+    conditions, or bottlenecks. It is very important to understand the full
+    context of the request and the called service to ensure the retry logic is
+    designed accordingly.
+  </p>
+  <h4>When Not to Use</h4>
+  <ul>
+    <li>The fault is likely to be long lasting.</li>
+    <li>Handling errors that are not transient.</li>
+    <li>As an alternative to addressing scaling issues.</li>
+  </ul>
+
+  <li>
+    Microsoft. (n.d.). Retry pattern - azure architecture center. Azure
+    Architecture Center | Microsoft Learn. Retrieved March 25, 2023, from
+    https://learn.microsoft.com/en-us/azure/architecture/patterns/retry
+  </li>
+</article>
