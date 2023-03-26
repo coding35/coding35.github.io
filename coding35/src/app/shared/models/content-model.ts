@@ -18,8 +18,11 @@ export class ContentModel {
 }
 
 export class Callback{
+  styles!: string[];
+  dependencies!: string[];
   name!: string;
   params!: {};
+  delay!: number;
 }
 
 export enum ContentType {

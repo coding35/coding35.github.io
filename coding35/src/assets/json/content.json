@@ -455,13 +455,46 @@
         "readTime": 1,
         "content": "",
         "tags": [
-            "script"
         ],
         "callback" : {
             "name": "init",
             "params": {}
         },
         "image": "../assets/images/Image_by_Adrian_from_Pixabay.jpg",
+        "imageAlt": "",
+        "references": [
+
+        ],
+        "categories": [
+        "learning"
+        ]
+    },
+    {
+        "id": "22",
+        "type" : "learning",
+        "title": "Online Course List",
+        "subtitle": "A list of online courses.",
+        "description": "Online courses, resources and ratings.",
+        "date": "2023-03-25T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 1,
+        "content": "",
+        "tags": [
+        ],
+        "callback" : {
+            "styles": [
+
+            ],
+            "dependencies": [
+                "https://code.jquery.com/jquery-3.6.4.min.js",
+                "https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"
+            ],
+            "name": "init",
+            "params": {},
+            "delay": 2000
+        },
+        "image": "../assets/images/Image_by_Wynn_Pointaux_from_Pixabay.jpg",
         "imageAlt": "",
         "references": [
 
