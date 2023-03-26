@@ -18,6 +18,8 @@ const routes: Routes = [
   { path: 'video', component: ContentListComponent, data: { page: 'video' } },
   { path: 'productivity/:id', component: PageComponent, data: { page: 'productivity' } },
   { path: 'productivity', component: ContentListComponent, data: { page: 'productivity' } },
+  { path: 'learning/:id', component: PageComponent, data: { page: 'learning' } },
+  { path: 'learning', component: ContentListComponent, data: { page: 'learning' } },
   { path: 'electronics/:id', component: PageComponent, data: { page: 'electronics' } },
   { path: 'electronics', component: ContentListComponent, data: { page: 'electronics' } },
   { path: 'book/:id', component: PageComponent, data: { page: 'book' } },

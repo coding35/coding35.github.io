@@ -9,11 +9,17 @@ export class ContentModel {
     readTime!: number;
     content!: string;
     tags!: string[];
+    callback! : Callback;
     image!: string;
     imageAlt!: string;
     id!: string;
     references!: Reference[];
     categories!: string[];
+}
+
+export class Callback{
+  name!: string;
+  params!: {};
 }
 
 export enum ContentType {

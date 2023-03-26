@@ -1,0 +1,185 @@
+<style>
+  .placeholder {
+    font-style: italic;
+  }
+  .content-box {
+    border: 1px solid black;
+    height: 245px;
+    display: none;
+  }
+
+  @media print {
+    #Controls,
+    app-header,
+    .page-info,
+    .sidebar,
+    .footer {
+      display: none;
+    }
+    #Export {
+      width: 800px;
+    }
+    .page-break {
+      page-break-before: always;
+    } /* page-break-after works, as well */
+    .content-box {
+      display: block;
+    }
+  }
+</style>
+<article>
+  <div id="Controls">
+    <input type="text" id="Topic" /><button id="Print">Print</button>
+  </div>
+
+  <div id="Export">
+    <div>
+      <h4>What makes <span class="placeholder">{{topic}}</span> important?</h4>
+      <p>
+        Why is <span class="placeholder">{{topic}}</span> important? What is the
+        significance of the subject?
+      </p>
+
+      <h4>
+        What details of <span class="placeholder">{{topic}}</span> are important
+        and why?
+      </h4>
+      <p>
+        This question gets down into the specific elements of
+        <span class="placeholder">{{topic}}</span>.
+      </p>
+
+      <h4>
+        What are the differences between
+        <span class="placeholder">{{topic}}</span> and its competitor or
+        alternative viewpoint?
+      </h4>
+
+      <p>
+        A comparison of the subject to its competitor or alternative viewpoint
+        will aid in understand what sets the subject apart from its competitors.
+      </p>
+    </div>
+    <div class="page-break">
+      <h4>
+        How is <span class="placeholder">{{topic}}</span> related to the domain?
+      </h4>
+      <p>
+        This question sets up a description of how the subject relates to other
+        forces. What evidence can you provide for or against
+        <span class="placeholder">{{topic}}</span>? This question forces both
+        positive and negative aspects of the subject. Each subject or topic has
+        weaknesses and strengths regarding its applicability and universality.
+      </p>
+      <h4>
+        What patterns do you notice in
+        <span class="placeholder">{{topic}}</span>?
+      </h4>
+
+      <p>
+        This helps you seek repetitive elements and cause-and-effect
+        relationships, which almost always indicate importance. What are the
+        advantages and disadvantages of
+        <span class="placeholder">{{topic}}</span>? This question sets up
+        another comparison between the possible effects of
+        <span class="placeholder">{{topic}}</span>.
+      </p>
+
+      <h4>
+        When might <span class="placeholder">{{topic}}</span> be most useful and
+        why?
+      </h4>
+
+      <p>
+        This question seeks an example of how the concept is used in the real
+        world and can affect your life.
+      </p>
+    </div>
+    <div class="page-break">
+      <h4>
+        What criteria would you use to assess whether
+        <span class="placeholder">{{topic}}</span> are successful?
+      </h4>
+
+      <p>
+        This question seeks how to establish hard proof that a concept is
+        working or not and introduces the concept of specific metrics.
+      </p>
+
+      <h4>
+        What information would you need to make a decision about
+        <span class="placeholder">{{topic}}</span>?
+      </h4>
+
+      <p>
+        This question addresses the conditions in which Keynesian models can
+        thrive and generally what contextual information is important.
+      </p>
+
+      <h4>
+        What might happen if you combined
+        <span class="placeholder">{{topic}}</span> and other domain related
+        concepts?
+      </h4>
+
+      <p>
+        This question poses how the concept would flourish or fail when combined
+        with aspects of an alternative model.
+      </p>
+    </div>
+    <div class="page-break">
+      <h4>
+        What ideas could you add to
+        <span class="placeholder">{{topic}}</span> and how would these ideas
+        change it?
+      </h4>
+
+      <p>
+        This question challenges you to come up with your own educated ideas and
+        project how they would change the concept.
+      </p>
+
+      <h4>
+        Do you agree that <span class="placeholder">{{topic}}</span> works? Why
+        or why not?
+      </h4>
+
+      <p>
+        This question encourages you to use your own reasoning to judge the
+        merit of a certain concept.
+      </p>
+
+      <h4>
+        What solutions could you suggest to the problem of
+        <span class="placeholder">{{topic}}</span>? Which might be most
+        effective and why?
+      </h4>
+
+      <p>
+        Similarly, this question calls upon you to reason what could potentially
+        improve the theory.
+      </p>
+    </div>
+    <div class="page-break">
+      <h4>
+        How could you create or design a new model of
+        <span class="placeholder">{{topic}}</span>?
+      </h4>
+      <p>
+        Explain your thinking. This question encourages you to re-imagine the
+        concept in accordance with your own ideas and project how they could
+        work in the future.
+      </p>
+    </div>
+  </div>
+  <div>
+    <h4>Reference</h4>
+    <ul>
+      <li>
+        Hollins, P. (2022). The science of self-learning: How to teach yourself
+        anything, learn more in less time, and direct your own education. New
+        York, NY: Penguin Random House.
+      </li>
+    </ul>
+  </div>
+</article>

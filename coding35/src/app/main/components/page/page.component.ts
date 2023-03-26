@@ -46,20 +46,26 @@ export class PageComponent implements OnInit {
                     window.PR.prettyPrint();
                   }, 0);
                 }
+                if (this.pageContent.callback) {
+                  setTimeout(() => {
+                    fetch(`../../assets/templates/${id}/script.js`).then(response => response.text()).then(data => {
+                      var script =  document.createElement('script');
+                      script.innerHTML = data;
+                      document.getElementsByTagName('body')[0].appendChild(script);
+                    });
+                  }, 0);
+                };
               }
             });
         });
       }
     });
     this.search.ee.subscribe((search: string) => {
-      console.log(search)
       this.router.navigate(['search']);
     });
   }
 
-
   ngOnDestroy() {
-    //this.search.ee.unsubscribe();
     this.routerSubscription.unsubscribe();
   }
 }
