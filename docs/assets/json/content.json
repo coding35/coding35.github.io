@@ -399,6 +399,49 @@
         "categories": [
             "architecture"
         ]
+    },
+    {
+        "id": "19",
+        "type" : "assembly",
+        "title": "Factorial in Assembly",
+        "subtitle": "Understanding Opcodes and Registers.",
+        "description": "This is a simple factorial program written in assembly. It is a great way to understand how assembly works.",
+        "date": "2023-03-25T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 5,
+        "content": "",
+        "tags": [
+        ],
+        "image": "../assets/images/Image_by_Michael_Siebert_from_Pixabay.jpg",
+        "imageAlt": "",
+        "references": [
+        ],
+        "categories": [
+            "assembly"
+        ]
+    },
+    {
+        "id": "20",
+        "type" : "book",
+        "title": "The Science of Self-Learning",
+        "subtitle": "How to Learn Anything, Anytime, Anywhere",
+        "description": "The Science of Self-Learning by Peter Hollins is a must read for anyone who wants to learn more efficiently and effectively.",
+        "date": "2023-03-25T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 1,
+        "content": "",
+        "tags": [
+        ],
+        "image": "../../../assets/templates/20/The_Science_Of_Self_Learning.jpg",
+        "imageAlt": "",
+        "references": [
+
+        ],
+        "categories": [
+            "books"
+        ]
     }
 
 ]
