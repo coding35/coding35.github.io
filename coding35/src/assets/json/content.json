@@ -502,6 +502,27 @@
         "categories": [
         "learning"
         ]
+    },
+    {
+        "id": "23",
+        "type" : "architecture",
+        "title": "Rate Limiting Pattern",
+        "subtitle": "Avoid or minimize throttling errors with the rate limiting pattern.",
+        "description": "The Rate Limiting Pattern is a design pattern for the handling of throttled services or APIs that limit the number of requests that can be made within a given time period.",
+        "date": "2023-03-27T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 5,
+        "content": "",
+        "tags": [
+        ],
+        "image": "../assets/images/Image_by_PublicDomainPictures_from_Pixabay.jpg",
+        "imageAlt": "",
+        "references": [
+        ],
+        "categories": [
+            "architecture"
+        ]
     }
 
 ]

@@ -1,0 +1,143 @@
+<style>
+  table,
+  th,
+  td {
+    text-align: end;
+    border: 1px solid;
+  }
+</style>
+
+<article>
+  <p>
+    Implementing a rate limiting pattern can be necessary when systems are
+    interacting with services or APIs that have rate limits. Often used in
+    conjunction with large scale repetitive and automated tasks, rate limiting
+    can be used to ensure that the system does not exceed the rate limits of the
+    service or API. This ensures that the system can safely operate within the
+    limits of the throttled resource.
+  </p>
+  <p>
+    Calling a service or API that has rate limits without consideration to the
+    ingest restrictions can result in increased traffic, throughput issues,
+    memory,and CPU utilization resulting in increased costs and degraded
+    performance. It is also risky since retrying buffered records could be lost
+    if there is a system outage or failure.
+  </p>
+  <p>
+    For example. If a system needs to send 1000 records to an API that has a
+    rate limit of 100 records per second, the system would need to send the
+    records in batches until all the records have been accepted.
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Attempt</th>
+        <th>Sent</th>
+        <th>Accepted</th>
+        <th>Rejected</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>1000</td>
+        <td>100</td>
+        <td>900</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>900</td>
+        <td>100</td>
+        <td>800</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>800</td>
+        <td>100</td>
+        <td>700</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>700</td>
+        <td>100</td>
+        <td>600</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>600</td>
+        <td>100</td>
+        <td>500</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>500</td>
+        <td>100</td>
+        <td>400</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>400</td>
+        <td>100</td>
+        <td>300</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>300</td>
+        <td>100</td>
+        <td>200</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>200</td>
+        <td>100</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    In this example, the system is making a call to an API that has a rate limit
+    of 100 records per second. The system is sending more records than the
+    limit. Since the API is only accepting 100 records per second. The system is
+    rejecting all records over the limit.
+  </p>
+  <p>
+    The rejected records must be tracked and resent to the API and if the rate
+    is again exceeded, subsequent calls made until all records are accepted.
+  </p>
+  <p>
+    Retrying rejected records results in sending 5500 records to the API which
+    is 5.5 times the original number of records.
+  </p>
+  <p>
+    Using the rate limit pattern is important to handle ingest restrictions to
+    ensure that the system does not exceed the rate limits of the service. A
+    controlled mechanism can be employed to manage the rate of records over a
+    specified time period thereby ensuring that the system does not exceed the
+    rate limits of the service or API.
+  </p>
+  <p>
+    One way to do this is by using a durable message store to buffer records
+    along with a distributed mutual exclusion system to manage rate of records
+    sent. A distributed mutual exclusion system is a system that ensures that
+    only one system is sending records at a time within the throttled limit of
+    the service or API. If systems share the rate limited resource, a
+    distributed mutual exclusion can ensure that only one system is sending
+    records within limit tolerances.
+  </p>
+
+  <h4>Reference</h4>
+  <ul>
+    <li>
+      Microsoft. (n.d.). Rate Limiting pattern - azure architecture center.
+      Azure Architecture Center | Microsoft Learn. Retrieved March 25, 2023,
+      from
+      https://learn.microsoft.com/en-us/azure/architecture/patterns/rate-limiting-pattern
+    </li>
+  </ul>
+</article>
