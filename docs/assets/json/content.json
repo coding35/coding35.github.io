@@ -555,7 +555,7 @@
         "date": "2023-03-29T19:08:51.568Z",
         "author": "Adam Reed",
         "avatar" : "AR",
-        "readTime": 1,
+        "readTime": 3,
         "content": "",
         "tags": [
         ],
@@ -566,6 +566,28 @@
         ],
         "categories": [
         "database"
+        ]
+    },
+    {
+        "id": "26",
+        "type" : "book",
+        "title": "Clean Code",
+        "subtitle": "A Handbook of Agile Software Craftsmanship",
+        "description": "Write better code with Clean Code by Robert C. Martin.",
+        "date": "2022-06-16T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 3,
+        "content": "",
+        "tags": [
+        ],
+        "image": "../assets/templates/26/clean_code_book.jpeg",
+        "imageAlt": "",
+        "references": [
+
+        ],
+        "categories": [
+        "books"
         ]
     }
 
