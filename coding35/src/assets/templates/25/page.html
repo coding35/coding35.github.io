@@ -1,0 +1,100 @@
+<style>
+  table,
+  th,
+  td {
+    text-align: end;
+    border: 1px solid;
+  }
+</style>
+
+<article>
+  <p>
+    The Entity-Attribute-Value model or EAV is a database design anti-pattern
+    that is intended to allow for the storage of entity attributes that are not
+    known at the time of database design. Also known as the open schema,
+    schemaless, and name-value pairs, it is a common pattern in relational
+    databases intended to provide flexibility at the cost of introducing
+    complexity. As such, it is not recommended for use in modern applications
+    and legitimate use cases are rare.
+  </p>
+  <p>
+    The EAV stores data in three columns: entities, attributes, and values as
+    depicted below.
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Entity</th>
+        <th>Attribute</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>name</td>
+        <td>John</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>age</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>name</td>
+        <td>Jack</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>age</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>occupation</td>
+        <td>beans</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    On the surface this appears to be a great way to create flexibility. We get
+    the benefit of few columns, and the ability to add new attributes without
+    having to modify the database schema. However, this comes at a cost. The EAV
+    model is not normalized, and as such, it is difficult to query,
+    conceptualize, and maintain. Additionally, you cannot enforce referential
+    integrity, SQL data types, or constraints. This means that you will have to
+    write a lot of custom code to ensure that the data is valid. Attempts have
+    been made to rectify these shortcomings such as adding additional columns to
+    specify the data type, constraints, and other metadata leads to a more
+    complex and difficult to manage database schema.
+  </p>
+  <h4>Alternatives</h4>
+  <ul>
+    <li>A different database!</li>
+    <li>
+      Store all related data in one table and extend as new attributes are
+      needed irregardless of NULLs.
+    </li>
+    <li>
+      Create a table for each subtype with duplicated columns shared across all
+      related types with custom attributes specific to the subtype table.
+    </li>
+    <li>
+      Use a base table for common attributes and addition subtype tables with
+      the custom attributes specific to the subtype table.
+    </li>
+    <li>
+      Use semi-structured data. Store data in a JSON or XML column. This is a
+      good option for extensible data that is not queried often.
+    </li>
+  </ul>
+  <h4>Reference</h4>
+  <ul>
+    <li>
+      KARWIN, B. I. L. L. (2022). Chapter 6 Entity-Attribute-Value. In SQL
+      antipatterns: Avoiding the pitfalls of Database Programming. essay,
+      O'REILLY MEDIA.
+    </li>
+  </ul>
+</article>

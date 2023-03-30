@@ -523,6 +523,50 @@
         "categories": [
             "architecture"
         ]
+    },
+    {
+        "id": "24",
+        "type" : "design",
+        "title": "Mixin Class",
+        "subtitle": "Promote code reusability and modularity",
+        "description": "A mixin class is a special type of class in object-oriented programming that provides a specific functionality that can be added to other classes without the need for inheritance.",
+        "date": "2023-03-28T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 1,
+        "content": "",
+        "tags": [
+        ],
+        "image": "../assets/images/Image_by_giovanni_gargiulo_from_Pixabay.jpg",
+        "imageAlt": "",
+        "references": [
+
+        ],
+        "categories": [
+        "design"
+        ]
+    },
+    {
+        "id": "25",
+        "type" : "database",
+        "title": "Entity-Attribute-Value Model",
+        "subtitle": "The antipattern known as Entity-Attribute-Value.",
+        "description": "The Entity-Attribute-Value (EAV) model is a data model that stores entity attributes as name-value pairs rather than as columns of a table.",
+        "date": "2023-03-29T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 1,
+        "content": "",
+        "tags": [
+        ],
+        "image": "../assets/images/Image_by_David_Zydd_from_Pixabay.png",
+        "imageAlt": "",
+        "references": [
+
+        ],
+        "categories": [
+        "database"
+        ]
     }
 
 ]
