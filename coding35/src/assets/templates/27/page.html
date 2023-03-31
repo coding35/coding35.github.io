@@ -1,0 +1,26 @@
+<artible>
+    <p>Depending on the message queue implementation, the size of the message payload is likely to be limited. This is usually done to prevent overwhelming the message bus.
+       
+        Given message queues work best with small messages (less than 1MB), the question is how to handle larger messages efficiently. 
+        One solution is to use a claim check pattern. In this pattern, the message queue only handles a reference to the message, 
+        and the message payload is stored in a separate location. This is very comparible to a valet or coat check at a hotel.
+        </p>
+        <p>
+        This strategy reduces the demand on the message bus, reduces costs, can improve performance, reliability, and in some cases security. 
+        </p>
+<p>
+    When considering to the use of the claim check pattern, there are a few things to keep in mind:
+
+    When not to use a message queue
+    <ul>
+        <li>When transfering large files, use a file transfer protocol.</li>
+        <li>When transfering large data sets, use a database.</li>
+        <li>When transfer large numbers of small messages using a publish/subscribe pattern.</li>
+        <li></li>
+    </ul>
+</p>
+        
+        Many message queus can have performance issues when handling large messges</p>
+
+
+</artible>

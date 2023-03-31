@@ -589,6 +589,27 @@
         "categories": [
         "books"
         ]
+    },
+    {
+        "id": "27",
+        "type" : "architecture",
+        "title": "Claim Check Pattern",
+        "subtitle": "Handle large messages with claim checking.",
+        "description": "The Claim Check Pattern is a design pattern for the handling of large messages that are too large to be processed in a single transaction.",
+        "date": "2023-03-27T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 5,
+        "content": "",
+        "tags": [
+        ],
+        "image": "../assets/images/Image_by_PublicDomainPictures_from_Pixabay.jpg",
+        "imageAlt": "",
+        "references": [
+        ],
+        "categories": [
+            "architecture"
+        ]
     }
 
 ]
