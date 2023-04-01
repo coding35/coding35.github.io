@@ -589,6 +589,49 @@
         "categories": [
         "books"
         ]
+    },
+    {
+        "id": "27",
+        "type" : "architecture",
+        "title": "Claim Check Pattern",
+        "subtitle": "Handle large messages with claim checking.",
+        "description": "The Claim Check Pattern is a design pattern for the handling of large messages that are too large to be processed in a single transaction.",
+        "date": "2023-03-30T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 5,
+        "content": "",
+        "tags": [
+        ],
+        "image": "../assets/images/Image_by_James_Henry_from_Pixabay.jpg",
+        "imageAlt": "",
+        "references": [
+        ],
+        "categories": [
+            "architecture"
+        ]
+    }
+    ,
+    {
+        "id": "28",
+        "type" : "book",
+        "title": "SQL Antipatterns",
+        "subtitle": "Avoid pitfalls and write better SQL",
+        "description": "A great read for anyone who writes SQL. Learn how to identify and avoid common SQL antipatterns.",
+        "date": "2023-03-31T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 1,
+        "content": "",
+        "tags": [
+        ],
+        "image": "../assets/templates/28/sql_antipatterns.jpeg",
+        "imageAlt": "",
+        "references": [
+        ],
+        "categories": [
+            "books"
+        ]
     }
 
 ]
