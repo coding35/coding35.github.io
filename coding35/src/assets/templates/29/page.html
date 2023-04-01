@@ -7,7 +7,7 @@
     bottom level nodes are called leaf nodes and have no children.
   </p>
   <p>
-    The following diagram from
+    The following D3 graph diagram from
     <a href="https://observablehq.com/@d3/force-directed-graph" target="_blank"
       >Observable</a
     >
@@ -36,13 +36,14 @@
   <p>There are several ways to store hierarchial data in SQL.</p>
   <h5>Adjacency List</h5>
   <p>
-    The most commonly used, the Adjacency List type of structure can be
-    considered somewhat of an anti-pattern in SQL. The Adjacency List structure
+    The most commonly used is the Adjacency List. Depending on the use case,
+    this type of structure can be considered somewhat of an anti-pattern in SQL
+    since its shortcomings outweigh its benefits. The Adjacency List structure
     uses a table that stores the parent-child relationships whereby each row
     contains a reference to the parent id. This structure may justifiably
     perform well for small or shallow hierarchial data sets, but as the data set
     grows, querying the data will require many joins which may degrade
-    performance. The alternative is to return all the data an build the tree in
+    performance. The alternative is to return all the data and build the tree in
     the application which is not optimal or to use a recursive query, but this
     is not supported in all SQL dialects.
   </p>
@@ -61,10 +62,9 @@
     </pre
   >
   <pre class="prettyprint">
-      WHERE path LIKE '1/4' || '%'; -- returns all desendants
+      WHERE path LIKE '1/4' || '%'; -- returns all descendants
     </pre
   >
-
   <h5>Nested Sets</h5>
   <p>
     A Nested Set structure uses a table that stores the parent-child
@@ -73,8 +73,16 @@
     structure performs best when its more important to query the data instead of
     insert, update, delete or sort.
   </p>
-
-
+  <h5>Closure Table</h5>
+  <p>
+    The closure table structure stores all paths throughout the tree and not
+    just the direct parent-child relationship. A separate table is used that
+    consists of two columns each with a foreign key to the parent table. The
+    first column is the parent id and the second column is the child id. The
+    closure table is used to store all the paths throughout the tree. This
+    structure is best suited for applications that require frequent queries of
+    the data.
+  </p>
   <h4>Reference</h4>
   <ul>
     <li>
@@ -84,3 +92,5 @@
     </li>
   </ul>
 </article>
+
+
