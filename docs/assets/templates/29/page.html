@@ -1,0 +1,86 @@
+<article>
+  <p>
+    Storing hierarchial data is a common application requirement and there are
+    several ways to accomplish the task in SQL. Hierarchial data is generally
+    structured as a tree, where each node has a parent and zero or more
+    children. The top level node is called the root node and has no parent. The
+    bottom level nodes are called leaf nodes and have no children.
+  </p>
+  <p>
+    The following diagram from
+    <a href="https://observablehq.com/@d3/force-directed-graph" target="_blank"
+      >Observable</a
+    >
+    shows an example of a fairly complex tree structure.
+  </p>
+  <div id="chart"></div>
+  <figure>
+    <figcaption>
+      <div>
+        <ul>
+          <li>Force-Directed Graph Copyright 2021 Observable, Inc.</li>
+          <li>Released under the ISC license.</li>
+          <li>
+            <a
+              href="https://observablehq.com/@d3/force-directed-graph"
+              target="_blank"
+              >https://observablehq.com/@d3/force-directed-graph</a
+            >
+          </li>
+        </ul>
+      </div>
+    </figcaption>
+  </figure>
+
+  <h4>Storing Hierarchial Data</h4>
+  <p>There are several ways to store hierarchial data in SQL.</p>
+  <h5>Adjacency List</h5>
+  <p>
+    The most commonly used, the Adjacency List type of structure can be
+    considered somewhat of an anti-pattern in SQL. The Adjacency List structure
+    uses a table that stores the parent-child relationships whereby each row
+    contains a reference to the parent id. This structure may justifiably
+    perform well for small or shallow hierarchial data sets, but as the data set
+    grows, querying the data will require many joins which may degrade
+    performance. The alternative is to return all the data an build the tree in
+    the application which is not optimal or to use a recursive query, but this
+    is not supported in all SQL dialects.
+  </p>
+  <h5>Path Enumeration</h5>
+  <p>
+    The Path Enumeration structure uses a table that stores the parent-child
+    relationships whereby each row contains a reference to the parent id and a
+    path enumeration. The path enumeration is a string that contains the
+    parent-child relationships in the form of a path. ie. "1/2/5/7". Some of the
+    benefits of this structure consist of ease of insert, update, and sort.
+    Referential integrity is not enforced in this structure, but can be managed
+    by the application.
+  </p>
+  <pre class="prettyprint">
+      WHERE '1/3/6/7/' LIKE path || '%'; -- returns all ancestors
+    </pre
+  >
+  <pre class="prettyprint">
+      WHERE path LIKE '1/4' || '%'; -- returns all desendants
+    </pre
+  >
+
+  <h5>Nested Sets</h5>
+  <p>
+    A Nested Set structure uses a table that stores the parent-child
+    relationships by storing information with each node that pertains to the set
+    of its descendants rather than the nodes immediate parent. This particular
+    structure performs best when its more important to query the data instead of
+    insert, update, delete or sort.
+  </p>
+
+
+  <h4>Reference</h4>
+  <ul>
+    <li>
+      KARWIN, B. I. L. L. (2022). Chapter 6 Entity-Attribute-Value. In SQL
+      antipatterns: Avoiding the pitfalls of Database Programming. essay,
+      O'REILLY MEDIA.
+    </li>
+  </ul>
+</article>

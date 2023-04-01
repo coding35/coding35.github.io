@@ -1,20 +1,40 @@
-export class ContentModel {
-    type!: string;
-    title!: string;
-    subtitle!: string;
-    description!: string;
-    avatar!: string;
+export interface IContentModel {
+  type: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  avatar: string;
+  date: Date;
+  author: string;
+  readTime: number;
+  content: string;
+  tags: string[];
+  callback : Callback;
+  image: string;
+  imageAlt: string;
+  id: string;
+  references: Reference[];
+  categories: string[];
+
+}
+
+export class ContentModel implements IContentModel {
+    type: string = '';
+    title: string = '';
+    subtitle: string = '';
+    description: string = '';
+    avatar: string = '';
     date: Date = new Date();
-    author!: string;
-    readTime!: number;
-    content!: string;
-    tags!: string[];
-    callback! : Callback;
-    image!: string;
-    imageAlt!: string;
-    id!: string;
-    references!: Reference[];
-    categories!: string[];
+    author: string = '';
+    readTime: number = 0;
+    content: string = '';
+    tags: string[] = [];
+    callback : Callback = new Callback();
+    image: string = '';
+    imageAlt: string = '';
+    id: string = '';
+    references: Reference[] = [];
+    categories: string[] = [];
 }
 
 export class Callback{
@@ -33,7 +53,8 @@ export enum ContentType {
   Any = "any",
   Electronics = "electronics",
   Design = "design",
-  Search = "search"
+  Search = "search",
+  Database = "database"
 }
 
 

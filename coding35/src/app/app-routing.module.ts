@@ -26,6 +26,8 @@ const routes: Routes = [
   { path: 'electronics', component: ContentListComponent, data: { page: 'electronics' } },
   { path: 'book/:id', component: PageComponent, data: { page: 'book' } },
   { path: 'book', component: ContentListComponent, data: { page: 'book' } },
+  { path: 'web/:id', component: PageComponent, data: { page: 'web' } },
+  { path: 'web', component: ContentListComponent, data: { page: 'web' } },
   { path: 'category/:search', component: ContentListComponent, data: { page: 'category' } },
   { path: 'about', component: AboutComponent, data: { page: 'about' } },
   { path: 'contact', component: ContactComponent, data: { page: 'contact' } },

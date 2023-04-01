@@ -1,27 +1,40 @@
-<h3 class="list-page-title">{{pageTitle}} {{category | titlecase}} </h3>
+<h3 class="list-page-title">{{ pageTitle }} {{ category | titlecase }}</h3>
 <div class="container-list" *ngIf="!notFound; else notFoundTemplate">
   <div *ngFor="let item of contentList" class="card">
     <mat-card class="content-card">
       <mat-card-header class="app-card-header">
-        <mat-card-title class="card-title">{{item.title}}</mat-card-title>
-        <mat-card-subtitle>{{item.subtitle}}</mat-card-subtitle>
+        <mat-card-title class="card-title">{{ item.title }}</mat-card-title>
+        <mat-card-subtitle>{{ item.subtitle }}</mat-card-subtitle>
       </mat-card-header>
-        <img mat-card-image class="image-responsive" src="{{item.image}}" alt="{{item.imageAlt}}" (click)="handleReadMore(item.id)"/>
+      <img
+        mat-card-image
+        class="image-responsive"
+        src="{{ item.image }}"
+        alt="{{ item.imageAlt }}"
+        (click)="handleReadMore(item.id)"
+      />
       <mat-card-content>
         <p>
-          {{item.description}}
+          {{ item.description }}
         </p>
         <mat-chip-listbox class="list-box" aria-label="Categories">
-          <mat-chip *ngFor="let chip of item.categories" (click)="handleCategoryChipClick(chip)">
-            {{chip}}
+          <mat-chip
+            *ngFor="let chip of item.categories"
+            (click)="handleCategoryChipClick(chip)"
+          >
+            {{ chip }}
           </mat-chip>
         </mat-chip-listbox>
-        <div class="card-footer">
-          <div class="card-footer-item-date">{{item.date | date}}</div>
-          <mat-card-actions class="card-footer-item">
-            <!--<button mat-button>SHARE</button>-->
-            <button mat-button (click)="handleReadMore(item.id)">READ MORE</button>
-          </mat-card-actions>
+        <div class="card-footer-container">
+          <div class="card-footer">
+            <div class="card-footer-item-date">{{ item.date | date }}</div>
+            <mat-card-actions class="card-footer-item">
+              <!--<button mat-button>SHARE</button>-->
+              <button mat-button (click)="handleReadMore(item.id)">
+                READ MORE
+              </button>
+            </mat-card-actions>
+          </div>
         </div>
       </mat-card-content>
     </mat-card>

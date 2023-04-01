@@ -24,7 +24,7 @@
         "id": "2",
         "type" : "architecture",
         "title": "Sidecar Pattern",
-        "subtitle": "Separate the functionality of an applicaiton into co-located components running along side the core application.",
+        "subtitle": "Separate the functionality of an application into co-located components running along side the core application.",
         "description": "Sidecar components are specialized co-located containers that communicate to the main application over a network interface using lightweight communication protocols such as HTTP, gRPC, or WebSockets.",
         "date": "2023-03-10T19:08:51.568Z",
         "author": "Adam Reed",
@@ -440,7 +440,8 @@
 
         ],
         "categories": [
-            "books"
+            "books",
+            "learning"
         ]
     },
     {
@@ -631,6 +632,66 @@
         ],
         "categories": [
             "books"
+        ]
+    },
+    {
+        "id": "29",
+        "type" : "database",
+        "title": "Hierarchy and Trees in SQL",
+        "subtitle": "How to model hierarchies and trees in SQL.",
+        "description": "Hierarchies and trees are a common data structure in many applications and there are several ways to model these structures in SQL. ",
+        "date": "2023-04-01T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 3,
+        "content": "",
+        "callback" : {
+            "styles": [
+
+            ],
+            "dependencies": [
+                "https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.4/d3.min.js"
+            ],
+            "name": "init",
+            "params": {},
+            "delay": 0
+        },
+        "tags": [
+            "snippet"
+        ],
+        "image": "../assets/images/Image_by_Joe_from_Pixabay.jpg",
+        "imageAlt": "",
+        "references": [
+
+        ],
+        "categories": [
+        "database"
+        ]
+    },
+    {
+        "id": "30",
+        "type" : "web",
+        "title": "IndexedDB",
+        "subtitle": "Client-side storage for structured data",
+        "description": "IndexedDB is a low-level API for client-side storage of significant amounts of structured data, including files/blobs.",
+        "date": "2023-04-01T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 3,
+        "content": "",
+        "callback" : {
+            "name": "init",
+            "params": {}
+        },
+        "tags": [
+        ],
+        "image": "../assets/images/Image_by_200_Degrees_from_Pixabay.png",
+        "imageAlt": "",
+        "references": [
+
+        ],
+        "categories": [
+        "web"
         ]
     }
 
