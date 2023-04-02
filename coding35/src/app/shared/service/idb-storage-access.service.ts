@@ -3,10 +3,13 @@ import { IContentModel, ContentModel } from '../models/content-model';
 
 @Injectable()
 export class IdbStorageAccessService {
-
   idb = this.windowObj.indexedDB;
   indexedDb!: IDBDatabase;
   data: IContentModel[] = [];
+
+  private readonly database = 'Coding35';
+  private readonly version = 3;
+  private readonly store = 'ContentStore';
 
   constructor(private windowObj: Window) {}
 
@@ -17,83 +20,86 @@ export class IdbStorageAccessService {
         data.forEach((element: IContentModel) => {
           this.data.push(new ContentModel(element));
         });
-        let request = this.idb.open('Coding35', 1);
-
-        request.onsuccess = (event: any) => {
-          this.indexedDb = event?.target?.result;
-          console.log('DB opened successfully');
-          const transaction = this.indexedDb.transaction(
-            ['ContentStore'],
-            'readwrite'
-          );
-          transaction.objectStore('ContentStore').clear();
-          this.data.forEach((element) => {
-            transaction.objectStore('ContentStore').add(element);
-          });
-        };
-
-        request.onerror = (event: any) => {
-          console.log('Error opening DB');
-        };
-
-        request.onupgradeneeded = (event: any) => {
-          this.indexedDb = event.target.result;
-          let objectStore = this.indexedDb.createObjectStore('ContentStore', {
-            keyPath: 'id',
-          });
-          objectStore.createIndex('content', 'content', { unique: false });
-
-          objectStore.transaction.oncomplete = (event: any) => {
-            console.info('Create Database Transaction Complete.');
-            const transaction = this.indexedDb.transaction(
-              ['ContentStore'],
-              'readwrite'
-            );
-            transaction.oncomplete = (event: any) => {
-              console.info('Transaction Complete.');
-            };
-            transaction.onerror = (event: any) => {
-              console.error(`Transaction Error. ${event}`);
-            };
-          };
-        };
       });
+
+    let request = this.idb.open(this.database, this.version);
+
+    request.onsuccess = (event: any) => {
+      this.insertData(event);
+    };
+
+    request.onerror = (event: any) => {
+      console.log('Error opening DB');
+    };
+
+    request.onupgradeneeded = (event: any) => {
+      this.createDatabase(event);
+    };
   }
 
-  get(id: string) : Promise<IContentModel> {
+  private insertData(event: any) {
+    this.indexedDb = event?.target?.result;
+    console.log('DB opened successfully');
+    const transaction = this.indexedDb.transaction([this.store], 'readwrite');
+    this.data.forEach((element) => {
+      transaction.objectStore(this.store).add(element);
+    });
+  }
+
+  private createDatabase(event: any) {
+    console.log('Creating DB');
+    this.indexedDb = event.target.result;
+
+    let objectStore = this.indexedDb.createObjectStore(this.store, {
+      keyPath: 'id',
+    });
+    objectStore.createIndex('content', 'content', { unique: false });
+
+    objectStore.transaction.oncomplete = (event: any) => {
+      console.info('Create Database Transaction Complete.');
+      const transaction = this.indexedDb.transaction([this.store], 'readwrite');  
+      transaction.objectStore(this.store).clear();
+      transaction.oncomplete = (event: any) => {
+        console.info('Transaction Complete.');
+      };
+      transaction.onerror = (event: any) => {
+        console.error(`Transaction Error. ${event}`);
+      };
+    };
+  }
+
+  get(id: string): Promise<IContentModel> {
     return new Promise((resolve, reject) => {
-      let request = this.idb.open('Coding35', 1);
+      let request = this.idb.open(this.database,this.version);
       request.onsuccess = (event: any) => {
         this.indexedDb = event?.target?.result;
         this.indexedDb
-          .transaction('ContentStore')
-          .objectStore('ContentStore')
-          .get(id)
-          .onsuccess = (event: any) => {
+          .transaction(this.store)
+          .objectStore(this.store)
+          .get(id).onsuccess = (event: any) => {
           resolve(event.target.result);
-        }
+        };
         onerror = (event: any) => {
           reject(event);
-        }
+        };
       };
     });
   }
 
   getAll(): Promise<IContentModel[]> {
     return new Promise((resolve, reject) => {
-      let request = this.idb.open('Coding35', 1);
+      let request = this.idb.open(this.database, this.version);
       request.onsuccess = (event: any) => {
         this.indexedDb = event?.target?.result;
         this.indexedDb
-          .transaction('ContentStore')
-          .objectStore('ContentStore')
-          .getAll()
-          .onsuccess = (event: any) => {
+          .transaction(this.store)
+          .objectStore(this.store)
+          .getAll().onsuccess = (event: any) => {
           resolve(event.target.result);
-        }
+        };
         onerror = (event: any) => {
           reject(event);
-        }
+        };
       };
     });
   }

@@ -76,7 +76,7 @@ export class ContentListComponent implements OnInit {
             this.notFound = true;
             break;
         }
-
+        
         this.indexDbSvc.getAll().then((data) => {
           const search = this.route.snapshot.params['search'] || '';
           if (this.filter == ContentType.Any) {
