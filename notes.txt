@@ -16,7 +16,7 @@ Bulkhead
 Cache-Aside
 Choreography
 Circuit Breaker
-Claim Check
+Claim Check - ok
 Compensating Transaction
 Competing Consumers
 Compute Resource Consolidation
@@ -33,13 +33,13 @@ Gateway Routing
 Geode
 Health Endpoint Monitoring
 Index Table
-Leader Election
+Leader Election 
 Materialized View
 Pipes and Filters
 Priority Queue
 Publisher/Subscriber
 Queue-Based Load Leveling
-Rate Limiting
+Rate Limiting = ok
 Retry
 Saga
 Scheduler Agent Supervisor

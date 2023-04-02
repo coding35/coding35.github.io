@@ -151,7 +151,8 @@
 
         ],
         "categories": [
-            "books"
+            "books",
+            "design"
         ]
     }
     ,
@@ -631,7 +632,8 @@
         "references": [
         ],
         "categories": [
-            "books"
+            "books",
+            "database"
         ]
     },
     {
@@ -692,6 +694,28 @@
         ],
         "categories": [
         "web"
+        ]
+    },
+    {
+        "id": "31",
+        "type" : "book",
+        "title": "Building Offline Applications with Angular",
+        "subtitle": "Develop Reliable, Performant Web Applications for Desktop and Mobile Platforms",
+        "description": "Author Venkata Keerti Kotaru shows you how to build offline applications with Angular.",
+        "date": "2023-04-01T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 1,
+        "content": "",
+        "tags": [
+        ],
+        "image": "../assets/templates/31/Building_Offline_Applications_with_Angular.jpeg",
+        "imageAlt": "",
+        "references": [
+        ],
+        "categories": [
+            "books",
+            "web"
         ]
     }
 
