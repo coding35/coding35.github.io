@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router, Scroll } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { ContentModel, ContentType } from 'src/app/shared/models/content-model';
+import {
+  ContentModel,
+  ContentType,
+  IContentModel,
+} from 'src/app/shared/models/content-model';
 import { IdbStorageAccessService } from 'src/app/shared/service/idb-storage-access.service';
 import { SearchService } from 'src/app/shared/service/search.service';
 
@@ -17,6 +21,7 @@ export class ContentListComponent implements OnInit {
   filter: ContentType = ContentType.Architecture;
   routerSubscription: Subscription = new Subscription();
   category: string = '';
+  eagerLoadImageList: string[] = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -59,10 +64,10 @@ export class ContentListComponent implements OnInit {
             this.pageTitle = 'Filtering by Category: ';
             this.category = this.route.snapshot.params['search'];
             break;
-            case 'list':
-              this.filter = ContentType.Any;
-              this.pageTitle = '';
-              break;
+          case 'list':
+            this.filter = ContentType.Any;
+            this.pageTitle = '';
+            break;
           case 'web':
             this.filter = ContentType.Book;
             this.pageTitle = 'Web';
@@ -76,20 +81,20 @@ export class ContentListComponent implements OnInit {
             this.notFound = true;
             break;
         }
-        
+
         this.indexDbSvc.getAll().then((data) => {
           const search = this.route.snapshot.params['search'] || '';
           if (this.filter == ContentType.Any) {
-            if(search){
-               this.contentList = data
-              .filter((f) => f.categories.includes(search) )
-            }else{
-              this.contentList = data
+            if (search) {
+              this.contentList = data.filter((f) =>
+                f.categories.includes(search)
+              );
+            } else {
+              this.contentList = data;
             }
             this.contentList.sort(
-                (a, b) =>
-                  new Date(b.date).getTime() - new Date(a.date).getTime()
-              );
+              (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+            );
           } else {
             this.contentList = data
               .filter((f) => f.type == this.filter)
@@ -98,6 +103,7 @@ export class ContentListComponent implements OnInit {
                   new Date(b.date).getTime() - new Date(a.date).getTime()
               );
           }
+          this.eagerLoadImageList = this.contentList.slice(0, 4).map((m) => m.id);
         });
       }
     });
@@ -106,28 +112,26 @@ export class ContentListComponent implements OnInit {
       this.category = val || 'All';
       this.filter = ContentType.Search;
       this.indexDbSvc.getAll().then((data) => {
-          let content = data as ContentModel[];
-          this.contentList = content
-            .filter(
-              (m) =>
-                m.title.toLowerCase().includes(val.toLowerCase()) ||
-                m.subtitle.toLowerCase().includes(val.toLowerCase()) ||
-                m.categories.some((s) =>
-                  s.toLowerCase().includes(val.toLowerCase())
-                ) ||
-                m.tags.some((s) =>
-                  s.toLowerCase().includes(val.toLowerCase())
-                ) ||
-                m.description.toLowerCase().includes(val.toLowerCase())
-            )
-            .sort(
-              (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-            );
-          let count = this.contentList.length;
-          this.pageTitle = `Search returned ${count} ${
-            count == 1 ? 'result' : 'results'
-          } for term: `;
-        });
+        let content = data as ContentModel[];
+        this.contentList = content
+          .filter(
+            (m) =>
+              m.title.toLowerCase().includes(val.toLowerCase()) ||
+              m.subtitle.toLowerCase().includes(val.toLowerCase()) ||
+              m.categories.some((s) =>
+                s.toLowerCase().includes(val.toLowerCase())
+              ) ||
+              m.tags.some((s) => s.toLowerCase().includes(val.toLowerCase())) ||
+              m.description.toLowerCase().includes(val.toLowerCase())
+          )
+          .sort(
+            (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+          );
+        let count = this.contentList.length;
+        this.pageTitle = `Search returned ${count} ${
+          count == 1 ? 'result' : 'results'
+        } for term: `;
+      });
     });
   }
 
@@ -139,6 +143,10 @@ export class ContentListComponent implements OnInit {
 
   handleCategoryChipClick(chip: string) {
     this.router.navigate([`/category/${chip}`]);
+  }
+
+  handleLazyLoadingImg(item: IContentModel) {
+    return this.eagerLoadImageList.includes(item.id) ? 'eager' : 'lazy';
   }
 
   ngOnDestroy() {

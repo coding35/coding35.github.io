@@ -8,7 +8,7 @@ export class IdbStorageAccessService {
   data: IContentModel[] = [];
 
   private readonly database = 'Coding35';
-  private readonly version = 3;
+  private readonly version = 1;
   private readonly store = 'ContentStore';
 
   constructor(private windowObj: Window) {}
@@ -41,8 +41,14 @@ export class IdbStorageAccessService {
     this.indexedDb = event?.target?.result;
     console.log('DB opened successfully');
     const transaction = this.indexedDb.transaction([this.store], 'readwrite');
+    const objectStore = transaction.objectStore(this.store);
     this.data.forEach((element) => {
-      transaction.objectStore(this.store).add(element);
+      if(objectStore.get(element.id)) {
+        transaction.objectStore(this.store).put(element);
+      }else{
+        transaction.objectStore(this.store).add(element);
+      }
+      
     });
   }
 

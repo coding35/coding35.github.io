@@ -318,7 +318,7 @@
         "type" : "book",
         "title": "Understanding Software",
         "subtitle": "Embrace simplicity in software development.",
-        "description": "Max Kanat-Alexander presents an insight software development in a highly relatable way. A great read or listen.e",
+        "description": "Max Kanat-Alexander presents an insight software development in a highly relatable way. A great read or listen.",
         "date": "2022-01-18T19:08:51.568Z",
         "author": "Adam Reed",
         "avatar" : "AR",
@@ -680,10 +680,6 @@
         "avatar" : "AR",
         "readTime": 3,
         "content": "",
-        "callback" : {
-            "name": "init",
-            "params": {}
-        },
         "tags": [
         ],
         "image": "../assets/images/Image_by_200_Degrees_from_Pixabay.png",
@@ -715,6 +711,28 @@
         "categories": [
             "books",
             "web"
+        ]
+    },
+    {
+        "id": "32",
+        "type" : "web",
+        "title": "Lazy Loading Images",
+        "subtitle": "Improve page load times by lazy loading images.",
+        "description": "Lazy loading images is a technique that improves page load times by loading images only when they are visible in the viewport.",
+        "date": "2023-04-02T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 3,
+        "content": "",
+        "tags": [
+        ],
+        "image": "../assets/images/relaxation-g823e33847_640.jpg",
+        "imageAlt": "",
+        "references": [
+
+        ],
+        "categories": [
+        "web"
         ]
     }
 

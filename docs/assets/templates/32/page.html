@@ -1,0 +1,44 @@
+<article>
+  <p>
+    Lazy loading images on a web page has been around for some time. It is a
+    technique that allows you to defer loading of images until they are needed.
+    When the user scrolls images are loaded on demand as required. This can
+    provide a performance gain by reducing the amount of data that needs to be
+    downloaded and rendered by the browser.
+  </p>
+  <p>
+    There are a number of ways to implement lazy loading. The most common is to
+    use JavaScript to detect when an image is in the viewport and then load the
+    image when it is. This is a good solution, but it does require JavaScript.
+    This technique implements a listener either on the scroll and/or resize
+    event. Another JavaScript solution would be to use the Inspection Observer
+    API. This API allows you to detect when an element is in the viewport as it
+    uses a placeholder image until the image is needed in the viewport.
+  </p>
+  <p>
+    Chrome and Firefox have implemented lazy loading natively. This is done by
+    adding the <code>loading="lazy"</code> attribute to the
+    <code>&lt;img&gt;</code> tag. This attribute tells the browser to defer
+    loading of the image.
+  </p>
+  <p>
+    Alternatively, you can use a library to polyfill the native lazy loading
+    feature and get similar results.
+  </p>
+  <p>
+    Due to the fact that lazy loading is a performance enhancement, it can be
+    overdone. One example of this is that it may negatively impact the
+    performance of your site if you lazy load all images on the page. The best
+    practice is to never lazy load images that are within the viewport on page
+    load.
+  </p>
+  <div>
+    <h4>Reference</h4>
+    <ul>
+      <li>
+        Lazy loading images. web.dev. Retrieved
+        April 2, 2023, from https://web.dev/lazy-loading-images/
+      </li>
+    </ul>
+  </div>
+</article>

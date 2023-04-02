@@ -12,6 +12,7 @@
         src="{{ item.image }}"
         alt="{{ item.imageAlt }}"
         (click)="handleReadMore(item.id)"
+        [loading]="handleLazyLoadingImg(item)"
       />
       <mat-card-content>
         <p>
@@ -20,8 +21,7 @@
         <mat-chip-listbox class="list-box" aria-label="Categories">
           <mat-chip
             *ngFor="let chip of item.categories"
-            (click)="handleCategoryChipClick(chip)"
-          >
+            (click)="handleCategoryChipClick(chip)">
             {{ chip }}
           </mat-chip>
         </mat-chip-listbox>
