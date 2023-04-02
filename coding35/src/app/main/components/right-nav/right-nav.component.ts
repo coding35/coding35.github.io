@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { ContentModel } from 'src/app/shared/models/content-model';
 import { LinkListModel } from 'src/app/shared/models/link-list-model';
 import { LinkModel } from 'src/app/shared/models/link-model';
+import { IdbStorageAccessService } from 'src/app/shared/service/idb-storage-access.service';
 import { SearchService } from 'src/app/shared/service/search.service';
 
 @Component({
@@ -16,10 +17,10 @@ export class RightNavComponent implements OnInit {
   value = '';
   categoryLinks: LinkListModel[] = [];
 
-  constructor(private router: Router, private search: SearchService) { }
+  constructor(private router: Router, private search: SearchService, private indexDbSvc: IdbStorageAccessService) { }
 
   ngOnInit(): void {
-    fetch('../../assets/json/content.json').then(response => response.json()).then(meta => {
+    this.indexDbSvc.getAll().then(meta => {
       let content = meta as ContentModel[];
       let flat = content.map(m => m.categories).flat();
       let unique = flat.filter((v, i, a) => a.indexOf(v) === i).map(m => new LinkModel(m));

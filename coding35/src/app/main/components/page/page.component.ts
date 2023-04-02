@@ -2,6 +2,7 @@ import { AfterViewInit, Component, OnInit, Sanitizer } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router, Scroll } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { ContentModel } from 'src/app/shared/models/content-model';
+import { IdbStorageAccessService } from 'src/app/shared/service/idb-storage-access.service';
 import { SearchService } from 'src/app/shared/service/search.service';
 
 declare global {
@@ -24,23 +25,23 @@ export class PageComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private search: SearchService
+    private search: SearchService,
+    private indexDbSvc: IdbStorageAccessService,
   ) {}
 
   ngOnInit(): void {
     this.routerSubscription = this.router.events.subscribe((val) => {
       if (val instanceof NavigationEnd || val instanceof Scroll) {
-        let id = this.route.snapshot.paramMap.get('id');
-        fetch('../../assets/json/content.json')
-          .then((response) => response.json())
-          .then((meta) => {
+        let id = this.route.snapshot.paramMap.get('id') || '-1';
+        if (id === '-1') {
+          this.notFound = true;
+        }
+        this.indexDbSvc.get(id).then((data) => {
             fetch(`../../assets/templates/${id}/page.html`)
               .then((response) => response.text())
               .then((html) => {
-                let json = meta as ContentModel[];
-                this.pageContent = json
-                  .filter((item: ContentModel) => item.id === id)
-                  .pop() as ContentModel;
+                let json = data as ContentModel;
+                this.pageContent = data as ContentModel;
                 if (
                   this.pageContent === undefined ||
                   html.indexOf('Cannot GET /assets') > -1
@@ -53,7 +54,7 @@ export class PageComponent implements OnInit {
                       window.PR.prettyPrint();
                     }, 0);
                   }
-                  if (this.pageContent.callback) {
+                  if (this.pageContent.callback.name) {
                     const callback = this.pageContent.callback;
                     setTimeout(() => {
                       if (callback.styles) {

@@ -32,8 +32,8 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent, data: { page: 'about' } },
   { path: 'contact', component: ContactComponent, data: { page: 'contact' } },
   { path: 'tree', component: ForceDirectedTreeComponent, data: { page: 'tree' } },
-  { path: '**', component: ContentListComponent, data: { page: 'architecture'} },
-  { path: '', component: ContentListComponent, data: { page: 'architecture' } }
+  { path: '**', component: ContentListComponent, data: { page: 'list'} },
+  { path: '', component: ContentListComponent, data: { page: 'list' } }
 ];
 
 @NgModule({

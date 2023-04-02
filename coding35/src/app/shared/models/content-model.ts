@@ -35,6 +35,10 @@ export class ContentModel implements IContentModel {
     id: string = '';
     references: Reference[] = [];
     categories: string[] = [];
+
+    constructor(data: IContentModel) {
+      Object.assign(this, data);
+    }
 }
 
 export class Callback{

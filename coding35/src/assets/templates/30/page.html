@@ -1,0 +1,45 @@
+<article>
+  <p>
+    Client side browser storage provides a means to maintain state on the
+    client. Technologies such as cookies, local storage, and session storage are
+    all available to the developer for small amounts of data. In addition to
+    these simple storage mechanisms, there are also more complex mechanisms such
+    as IndexedDB and the now deprecated WebSQL.
+  </p>
+  <p>
+    IndexedDB provides an API supported in modern browsers for persistent
+    storage of large amounts of structured data. IndexedDB is a NoSQL database
+    that is transactional and supports object stores and indexes. It stores
+    structured data in a key-value store. This storage strategy is great for use
+    cases where you need to store a large amount of data and you need to be able
+    to query the data based on a key. IndexedDB is a great solution for 
+    storage of data that is not time sensitive. For example, if you are storing
+    a user's preferences, you can store the data in IndexedDB and retrieve it
+    when the user returns to the application.
+  </p>
+  <figure>
+    <img
+      src="../../../assets/templates/30/indexdb_console.png"
+      alt="IndexedDB"
+      class="img-responsive"
+    />
+    <figcaption>
+      A screenshot of the IndexedDB console in Chrome DevTools
+    </figcaption>
+  </figure>
+  <div>
+    <h4>Reference</h4>
+    <ul>
+      <li>
+        IndexedDB API - web apis: MDN. Web APIs | MDN. (n.d.). Retrieved April
+        1, 2023, from
+        https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API
+      </li>
+      <li>
+        Kotaru, V. K. (2022). 7. Introduction to IndexedDB. In Building offline
+        applications with angular: Develop reliable, performant web applications
+        for desktop and mobile platforms. essay, Apress.
+      </li>
+    </ul>
+  </div>
+</article>
