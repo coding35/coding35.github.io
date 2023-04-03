@@ -413,7 +413,7 @@
         "content": "",
         "tags": [
         ],
-        "image": "../assets/images/Image_by_Michael_Siebert_from_Pixabay.jpg",
+        "image": "../assets/images/Image_binary_by_Gerd_Altmann_from_Pixabay.jpg",
         "imageAlt": "",
         "references": [
         ],
@@ -493,7 +493,7 @@
             ],
             "name": "init",
             "params": {},
-            "delay": 2000
+            "delay": 5000
         },
         "image": "../assets/images/Image_by_Wynn_Pointaux_from_Pixabay.jpg",
         "imageAlt": "",
@@ -733,6 +733,74 @@
         ],
         "categories": [
         "web"
+        ]
+    },
+    {
+        "id": "33",
+        "type" : "book",
+        "title": "Front-end Performance",
+        "subtitle": "Performance is a key factor in the success of any web application.",
+        "description": "This short book has a number of topics that are important to consider when building a web application.",
+        "date": "2023-04-02T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 1,
+        "content": "",
+        "tags": [
+        ],
+        "image": "../assets/templates/33/front_end_performance.jpeg",
+        "imageAlt": "",
+        "references": [
+
+        ],
+        "categories": [
+        "web",
+        "books"
+        ]
+    },
+    {
+        "id": "34",
+        "type" : "architecture",
+        "title": "ACID",
+        "subtitle": "Atomic, Consistent, Isolated, and Durable (ACID)",
+        "description": "Keep your application data consistent and reliable by using ACID transactions.",
+        "date": "2023-04-03T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 1,
+        "content": "",
+        "tags": [
+        ],
+        "image": "../assets/images/Image_by_PublicDomainPictures_from_Pixabay_2.jpg",
+        "imageAlt": "",
+        "references": [
+
+        ],
+        "categories": [
+        "architecture",
+        "database"
+        ]
+    },
+    {
+        "id": "35",
+        "type" : "architecture",
+        "title": "Saga Distributed Transaction Pattern",
+        "subtitle": "Manage consistency across microservices using the Saga pattern.",
+        "description": "A distributed microservice architecture can be challenging to manage. To ensure consistency across microservices, consideration must be given to ensuring that all microservices are updated successfully or none are updated. (ACID)",
+        "date": "2023-04-03T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 1,
+        "content": "",
+        "tags": [
+        ],
+        "image": "../assets/images/Image_by_Prawny_from_Pixabay.jpg",
+        "imageAlt": "",
+        "references": [
+
+        ],
+        "categories": [
+        "architecture"
         ]
     }
 

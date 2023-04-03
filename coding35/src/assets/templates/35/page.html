@@ -1,0 +1,76 @@
+<article>
+  <p>
+    In a distributed microservice architecture a transaction can span multiple
+    services. A valid concern is that a transaction may fail in one service but
+    succeed in another leading to inconsistencies. To guarantee validity of the
+    transaction across all services the concept of
+    <a href="./#/architecture/34" target="_blank">ACID</a> or atomicity,
+    consistency, isolation, and durability can be employed. Similar to how
+    <a href="./#/architecture/34" target="_blank">ACID</a> is used in DBMS, the
+    same concept can be applied in thinking about distributed transactions.
+  </p>
+  <p>
+    There are several types of transactions to consider when implementing a saga
+    pattern.
+  </p>
+  <ul>
+    <li>
+      Compensable: a transaction that can be reversed by another transaction. A
+      rollback.
+    </li>
+    <li>Pivot: a transaction is neither compensable or retryable.</li>
+    <li>
+      Retryable: a transaction that follows the pivot transaction and is
+      guaranteed to succeed.
+    </li>
+  </ul>
+
+  <p>
+    In order to ensure a distributed transaction succeeds across all services,
+    two approaches can be taken. The first approach is choreography and the
+    second is orchestration. In both cases messages are used to communicate if a
+    transaction is successful during each phase of the transaction and whether
+    or not to proceed to the next phase.
+  </p>
+  <h4>Choreography</h4>
+  <p>
+    In choreography each service is responsible for executing the transaction
+    and communicating the status of the transaction to the other services or
+    next service in the transaction. This approach is good for simple
+    workflows with few participating services. It does not require a new
+    management service to orchestrate the messaging and there is not a single
+    point of failure. A disadvantage is that it is difficult to implement
+    complex workflows with many services along with being difficult to to test
+    and maintain.
+  </p>
+
+  <h4>Orchestration</h4>
+  <p>
+    In orchestration a separate service is responsible for coordinating
+    transaction execution and communicating the status of the transaction. This
+    centralized controller informs participating services when it is safe to
+    execute its phase of the transaction. This approach manages requests,
+    interprets statuses and handles failure recovery. This approach is good for
+    complex workflows with many services and can be easier to test and maintain
+    however, it does add complexity to the system.
+  </p>
+  <h4>Considerations</h4>
+  <p>
+    Coordinating tasks across multiple services can be difficult. The saga
+    pattern is a way of thinking about how to ensure validity with
+    distributed transactions. It is important to consider the
+    countermeasures to handle situations when a transaction fails.
+  </p>
+
+  <div>
+    <h4>Reference</h4>
+    <ul>
+      <li>
+        Microsoft. (n.d.). Saga distributed transactions pattern - azure
+        architecture center. Azure Architecture Center | Microsoft Learn.
+        Retrieved March 4, 2023, from
+        https://learn.microsoft.com/en-us/azure/architecture/patterns/saga/saga
+      </li>
+    </ul>
+  </div>
+</article>

@@ -1,0 +1,44 @@
+<article>
+  <p>
+    A common concept in DBMS and microservice architecture is the ACID
+    transaction. This acronym stands for Atomicity, Consistency, Isolation, and
+    Durability. An ACID transaction is a transaction intended to guarantee
+    validity even in the event of an interruption during transaction. In short
+    ACID transactions are a set of rules that guarantee fault tolerance in
+    processing a request.
+  </p>
+  <h4>Atomicity</h4>
+  <p>
+    Transactions are atomic, meaning all changes are committed or no changes are
+    committed. Basically, if a transaction fails, the state changes are rolled
+    back to the state before the transaction started.
+  </p>
+  <h4>Consistency</h4>
+  <p>
+    A transaction is a correct operation. This means that the transaction should
+    not violate any integrity rules associated with state. The database should
+    be in a consistent state before and after the transaction.
+  </p>
+  <h4>Isolation</h4>
+  <p>
+    Each transaction is isolated from other transactions. This means that one
+    transaction is not visible to other transactions until it is committed. This
+    prevents transactions from interfering with each other.
+  </p>
+  <h4>Durability</h4>
+  <p>Once a transaction is committed, changes are permanent and durable.</p>
+  <div>
+    <h4>Reference</h4>
+    <ul>
+      <li>
+        Microsoft. (n.d.). Saga distributed transactions pattern - azure architecture center. Azure
+        Architecture Center | Microsoft Learn. Retrieved March 4, 2023, from
+        https://learn.microsoft.com/en-us/azure/architecture/patterns/saga/saga
+      </li>
+      <li>
+        Morgan Kaufmann Publishers In. (1992). 1.2 What Is a Transaction
+        Processing System? In Transaction processing.
+      </li>
+    </ul>
+  </div>
+</article>
