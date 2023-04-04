@@ -337,7 +337,7 @@
     },
     {
         "id": "16",
-        "type" : "learning",
+        "type" : "self-learning",
         "title": "SQ3R, Cornell Note Taking, and Spacing Effect",
         "subtitle": "Survey, Question, Read, Recite, Review, Relate, Spacing",
         "description": "SQ3R complimented with the Cornell Note Taking System and spacing effect is a hybrid reading comprehension strategy that helps you to read more efficiently and effectively. A great way to read technical books.",
@@ -354,7 +354,7 @@
 
         ],
         "categories": [
-        "learning"
+        "self learning"
         ]
     },
     {
@@ -441,12 +441,12 @@
         ],
         "categories": [
             "books",
-            "learning"
+            "self learning"
         ]
     },
     {
         "id": "21",
-        "type" : "learning",
+        "type" : "self-learning",
         "title": "Critical Thinking Questions",
         "subtitle": "Generate critical thinking questions.",
         "description": "Critical thinking question generator based on the The Science of Self-Learning by author Peter Hollins.",
@@ -467,12 +467,12 @@
 
         ],
         "categories": [
-        "learning"
+        "self learning"
         ]
     },
     {
         "id": "22",
-        "type" : "learning",
+        "type" : "self-learning",
         "title": "Online Course List",
         "subtitle": "A list of online courses.",
         "description": "Online courses, resources and ratings.",
@@ -501,7 +501,7 @@
 
         ],
         "categories": [
-        "learning"
+        "self learning"
         ]
     },
     {
@@ -688,7 +688,8 @@
 
         ],
         "categories": [
-        "web"
+        "web",
+        "database"
         ]
     },
     {
@@ -801,6 +802,50 @@
         ],
         "categories": [
         "architecture"
+        ]
+    },
+    {
+        "id": "36",
+        "type" : "web",
+        "title": "Service Workers",
+        "subtitle": "Intercept and handle network requests.",
+        "description": "A foundation for building modern web applications, service workers allow web apps to be installable, work offline, receive notifications, and are reliable in low-bandwidth situations.", 
+        "date": "2023-04-03T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 1,
+        "content": "",
+        "tags": [
+        ],
+        "image": "../assets/images/Image_by_PollyDot_from_Pixabay.jpg",
+        "imageAlt": "",
+        "references": [
+
+        ],
+        "categories": [
+        "web"
+        ]
+    },
+    {
+        "id": "37",
+        "type" : "machine-learning",
+        "title": "NLP",
+        "subtitle": "Natural Language Processing",
+        "description": "Natural Language Processing (NLP) is a subfield of computer science and artificial intelligence concerned with the interactions between computers and human (natural) languages, in particular how to program computers to process and analyze large amounts of natural language data.", 
+        "date": "2023-04-04T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 1,
+        "content": "",
+        "tags": [
+        ],
+        "image": "../assets/images/Image_by_Reto_Scheiwiller_from_Pixabay.jpg",
+        "imageAlt": "",
+        "references": [
+
+        ],
+        "categories": [
+        "machine learning"
         ]
     }
 
