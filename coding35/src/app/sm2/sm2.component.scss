@@ -1,0 +1,26 @@
+#ReviewPanel{
+    display: flex;
+    flex-direction: column;
+}
+
+#ReviewButtonGroup{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.review-btn{
+    min-width: 175px;
+}
+
+#ExportImport{
+    float: right;
+    top: 35%;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    #ReviewButtonGroup{
+        flex-direction: column;
+    }
+}
+    

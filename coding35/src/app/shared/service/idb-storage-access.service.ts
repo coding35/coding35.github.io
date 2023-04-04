@@ -8,7 +8,7 @@ export class IdbStorageAccessService {
   data: IContentModel[] = [];
 
   private readonly database = 'Coding35';
-  private readonly version = 2;
+  private readonly version = 1;
   private readonly store = 'ContentStore';
 
   constructor(private windowObj: Window) {}
@@ -64,7 +64,6 @@ export class IdbStorageAccessService {
     objectStore.transaction.oncomplete = (event: any) => {
       console.info('Create Database Transaction Complete.');
       const transaction = this.indexedDb.transaction([this.store], 'readwrite');  
-      transaction.objectStore(this.store).clear();
       transaction.oncomplete = (event: any) => {
         console.info('Transaction Complete.');
       };

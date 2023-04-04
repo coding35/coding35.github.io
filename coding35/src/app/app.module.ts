@@ -9,6 +9,7 @@ import { FooterModule } from './footer/footer.module';
 import { MainModule } from './main/main.module';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { IdbStorageAccessService } from './shared/service/idb-storage-access.service';
+import { Sm2Module } from './sm2/sm2.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { IdbStorageAccessService } from './shared/service/idb-storage-access.ser
     BrowserModule,
     HeaderModule,
     MainModule,
+    Sm2Module,
     FooterModule,
     BrowserAnimationsModule,
     AppRoutingModule
