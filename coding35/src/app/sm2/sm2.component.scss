@@ -5,11 +5,13 @@
 
 #ReviewButtonGroup{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    padding: 5px;
+    border: 1px solid lightblue;
 }
 
 .review-btn{
-    min-width: 175px;
+    min-width: 50px;
 }
 
 #ExportImport{

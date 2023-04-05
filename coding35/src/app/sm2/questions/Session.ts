@@ -4,7 +4,7 @@ import { IFlashCard } from '../interface/IFlashCard';
 
 const questions = [
   'What makes {{topic}} important?',
-  'What details of {{topic}} are important and why?',
+  'What is {{topic}}?',
   'When might {{topic}} be most useful and why?',
 ]
 

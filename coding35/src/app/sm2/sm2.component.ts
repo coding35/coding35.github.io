@@ -6,6 +6,7 @@ import { IdbStorageAccessService } from '../shared/service/idb-storage-access.se
 import { IFlashCard } from './interface/IFlashCard';
 import { Session } from './questions/Session';
 import { IdbSm2StorageAccessService } from './service/idb-sm2-storage-access.service';
+import { DropboxService } from './service/dropbox';
 
 @Component({
   selector: 'app-sm2',
@@ -18,9 +19,15 @@ export class Sm2Component implements OnInit {
   sessionData!: Session;
   allCards!: IFlashCard[];
   buttonToggle = false || undefined;
+  cardsToReview: number = 0;
+  cardsReviewed: number = 0;
+  reviewedCardIds: number[] = [];
+  dbxcId: string = 'sb15j7zwgodrkcw';
+
   constructor(
     private indexDbSvc: IdbStorageAccessService,
-    private indexDbSvcSm2: IdbSm2StorageAccessService
+    private indexDbSvcSm2: IdbSm2StorageAccessService,
+    private dropbox: DropboxService
   ) {}
 
   ngOnInit(): void {
@@ -34,27 +41,32 @@ export class Sm2Component implements OnInit {
               x.type !== 'self-learning'
           )
         );
-        sm2Content.flashcards.forEach((element: IFlashCard) => {
-          this.indexDbSvcSm2.update(element);
-        });
         this.indexDbSvcSm2.getAll().then((data) => {
           this.allCards = data;
           this.getCard();
+        });
+        sm2Content.flashcards.forEach((element: IFlashCard) => {
+          if (!pastSession.find((x) => x.contentId === element.contentId)) {
+            this.indexDbSvcSm2.insert(element);
+          } else {
+            let cardToUpdate = pastSession.find(
+              (x) => x.contentId === element.contentId
+            );
+            cardToUpdate?.back === element.back;
+            cardToUpdate?.front === element.front;
+            cardToUpdate?.type === element.type;
+            cardToUpdate?.path === element.path;
+            this.indexDbSvcSm2.update(cardToUpdate!);
+          }
         });
       });
     });
   }
 
   getCard(): void {
-    let cards = this.allCards.filter(
-      (x) => new Date(x.dueDate).getDate() < Date.now()
-    )!;
-    if (!cards) {
-      cards = this.allCards.filter(
-        (x) => new Date(x.dueDate).getDate() > Date.now() + 1
-      )!;
-    }
-
+    let cards = this.allCards.filter((x) => {
+      new Date(x.dueDate) < new Date() && !this.reviewedCardIds.includes(x.id);
+    })!;
     this.currentCard = cards[Math.floor(Math.random() * cards.length)];
   }
 
@@ -66,6 +78,7 @@ export class Sm2Component implements OnInit {
       .update(result)
       .then((data) => {
         this.buttonToggle = undefined;
+        this.reviewedCardIds.push(result.id);
         this.getCard();
       })
       .catch((err) => {
@@ -111,5 +124,62 @@ export class Sm2Component implements OnInit {
       }
     };
     input.click();
+  }
+
+  setKey(): void {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.json';
+    input.onchange = (event) => {
+      const target = event.target as HTMLInputElement;
+      const file = target.files?.item(0);
+      if (file) {
+        const reader = new FileReader();
+        reader.readAsText(file, 'UTF-8');
+        reader.onload = (readerEvent) => {
+          const content = readerEvent.target?.result;
+          if (content) {
+            const data = JSON.parse(content as string);
+            localStorage.setItem('dropboxKey', data.key);
+          }
+        };
+      }
+    };
+    input.click();
+  }
+
+  saveToDropbox(): void {
+    this.indexDbSvcSm2.getAll().then((allContent) => {
+      this.dropbox
+        .uploadFile(JSON.stringify(allContent),'/sm2.json')
+        .then(() => {
+          console.log('saved');
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    });
+  }
+
+  loadFromDropbox(): void {
+    this.dropbox
+      .downloadFile('/sm2.json')
+      .then((response: any) => {
+        const reader = new FileReader();
+        reader.readAsText(response.result.fileBlob, 'UTF-8');
+        reader.onload = (readerEvent) => {
+          const content = readerEvent.target?.result;
+          if (content) {
+            const data = JSON.parse(content as string);
+            this.indexDbSvcSm2.clear();
+            data.forEach((element: IFlashCard) => {
+              this.indexDbSvcSm2.update(element);
+            });
+          }
+        };
+      })
+      .catch((err: any) => {
+        console.error(err);
+      });
   }
 }
