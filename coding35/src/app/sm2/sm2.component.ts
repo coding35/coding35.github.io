@@ -33,7 +33,7 @@ export class Sm2Component implements OnInit {
     this.indexDbSvc.getAll().then((allContent) => {
       this.indexDbSvcSm2.getAll().then((pastSession: IFlashCard[]) => {
         let sm2Content = new Session(
-          allContent.filter((x) => x.tags.includes('sm2'))
+          allContent.filter((x) => x.tags.indexOf('sm2') > -1)
         );
         this.indexDbSvcSm2.getAll().then((data) => {
           this.allCards = data;
@@ -59,7 +59,7 @@ export class Sm2Component implements OnInit {
 
   getCard(): void {
     let cards = this.allCards.filter((x) => {
-      new Date(x.dueDate) < new Date() && !this.reviewedCardIds.includes(x.id);
+      return new Date(x.dueDate) <= new Date(Date.now()) && !this.reviewedCardIds.includes(x.id);
     })!;
     this.currentCard = cards[Math.floor(Math.random() * cards.length)];
   }
