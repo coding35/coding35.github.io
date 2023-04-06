@@ -53,7 +53,7 @@ export enum ContentType {
   Architecture = "architecture",
   Video = "video",
   Book = "book",
-  Coding = "coding",
+  Code = "code",
   Any = "any",
   Electronics = "electronics",
   Design = "design",

@@ -43,9 +43,9 @@ export class ContentListComponent implements OnInit {
             this.filter = ContentType.Design;
             this.pageTitle = 'Design';
             break;
-          case 'coding':
-            this.filter = ContentType.Coding;
-            this.pageTitle = 'Coding';
+          case 'code':
+            this.filter = ContentType.Code;
+            this.pageTitle = 'Code';
             break;
           case 'video':
             this.filter = ContentType.Video;

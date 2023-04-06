@@ -1,7 +1,77 @@
+<article>
+  <p>
+    The following ARM assembly program calculates the factorial of a number.
+  </p>
+  <p>n! = n x (n-1) x (n-2) x ... x 2 x 1</p>
 
-WIP
+  <p>
+    For example, 5! (read as "5 factorial") is equal to 5 x 4 x 3 x 2 x 1 = 120.
+  </p>
+  <p>The following assembly calculates the factorial of 5.</p>
 
+  <pre class="prettyprint">
+        .global _start
+ 
+        .text
+        _start:
+          ldr  r1, =n      @ set r1 = address of n
+          ldr  r0, [r1]    @ set r0 = the value of n
+          subs r3, r0, #1  @ set r3 = r0 - 1
+          ble  end         @ jump to end if r3 <= 0
+        loop:
+          mul  r0, r3, r0  @ set r0 = r3 x r0
+          subs r3, r3, #1  @ decrement r3
+          bne  loop        @ jump to loop if r3 > 0
+        end:
+          ldr  r1, =result @ set r1 = address of result
+          str  r0, [r1]    @ store r0 at result
+         
+        @ Exit the program
+          mov  r0, #0
+          mov  r7, #1
+          svc 0
+         
+        .data
+          n: .word 5
+          result: .word 0
 
-https://logicalmoon.com/2017/11/using-vs-code-to-create-a-6502-hello-world/
+    </pre
+  >
+  <h4>Compile Example</h4>
 
-https://medium.com/@muhammadmeeran2003/how-to-set-up-assembly-language-on-visual-studio-code-2021-587a7b01c9a1
+  <pre class="prettyprint">
+        ; Compile the assembly program
+        $ as -o factorial.o factorial.s
+        ; Link the object file
+        $ dl -o factorial factorial.o
+        ; Run the program
+        $ ./factorial
+    </pre>
+  <h4>Debug Example</h4>
+  <pre class="prettyprint">
+    ; Run the program in debug mode
+    $ gdb factorial
+    ; Set a breakpoint at memory address 0x100000 (the address of the first instruction)
+    (gdb) break *0x100000
+    ; Run the program
+    (gdb) run
+    ; Step through the program and continue until the end
+    (gdb) continue etc.
+    ; Dump of the assembler code
+    (gdb) disas
+    ; Dump of the registers
+    (gdb) info registers
+  </pre>
+  <div>
+    <h4>Additional Resources</h4>
+    <a href="#/assembly/39" target="_blank">Emulate Raspberry PI ARM on Linux</a>
+  </div>
+  <div>
+    <h4>Reference</h4>
+    <ul>
+      <li>
+        Matthew Justice (2021). How Computers Really Work, No Starch Press.
+      </li>
+    </ul>
+  </div>
+</article>

@@ -10,7 +10,6 @@ export class DropboxService {
 
     if(!key){
         console.log('DropboxService.init() - no key');
-        alert('No Dropbox key found. Please set one in the settings.');
         return;
     }
 

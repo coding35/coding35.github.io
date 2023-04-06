@@ -11,6 +11,7 @@
         "readTime": 5,
         "content": "",
         "tags": [
+            "sm2"
         ],
         "image": "../assets/images/shane-rounce-1ZZ96uESRJQ-unsplash-resize.jpg",
         "imageAlt": "",
@@ -32,6 +33,7 @@
         "readTime": 3,
         "content": "",
         "tags": [
+            "sm2"
         ],
         "image": "../assets/templates/2/Image_by_Peter_Morth_from_Pixabay.jpg",
         "imageAlt": "",
@@ -44,7 +46,7 @@
     },
     {
         "id": "3",
-        "type" : "coding",
+        "type" : "code",
         "title": "Chaos Engineering",
         "subtitle": "A tool to introduce failure into the system intentionally.",
         "description": "The Chaos Engineering methodology is to build confidence in the system's capability to withstand turbulent conditions in production by intentionally injecting failures into the system.",
@@ -54,6 +56,7 @@
         "readTime": 7,
         "content": "",
         "tags": [
+            "sm2",
             "snippet"
         ],
         "image": "../assets/images/Image_by_Lawrence_Monk_from_Pixabay.jpg",
@@ -62,7 +65,7 @@
 
         ],
         "categories": [
-            "coding",
+            "code",
             "design"
         ]
     },
@@ -99,6 +102,7 @@
         "readTime": 3,
         "content": "",
         "tags": [
+            "sm2"
         ],
         "image": "../assets/images/Image_by_PIRO_from_Pixabay.jpg",
         "imageAlt": "",
@@ -121,6 +125,7 @@
         "readTime": 5,
         "content": "",
         "tags": [
+            "sm2",
             "snippet"
         ],
         "image": "../assets/images/Image_by_Magic_Creative_from_Pixabay.png",
@@ -235,6 +240,7 @@
         "readTime": 5,
         "content": "",
         "tags": [
+            "sm2",
             "snippet"
         ],
         "image": "../assets/images/Image_by_ Monika_Schröder_ from_Pixabay.jpg",
@@ -258,6 +264,7 @@
         "readTime": 5,
         "content": "",
         "tags": [
+            "sm2"
         ],
         "image": "../assets/images/Image_by_Mike_Sweeney_from_Pixabay.jpg",
         "imageAlt": "",
@@ -302,6 +309,7 @@
         "readTime": 5,
         "content": "",
         "tags": [
+            "sm2",
             "snippet"
         ],
         "image": "../assets/images/Image_by_Gerd_Altmann_from_Pixabay.jpg",
@@ -337,7 +345,7 @@
     },
     {
         "id": "16",
-        "type" : "self-learning",
+        "type" : "learning",
         "title": "SQ3R, Cornell Note Taking, and Spacing Effect",
         "subtitle": "Survey, Question, Read, Recite, Review, Relate, Spacing",
         "description": "SQ3R complimented with the Cornell Note Taking System and spacing effect is a hybrid reading comprehension strategy that helps you to read more efficiently and effectively. A great way to read technical books.",
@@ -354,7 +362,7 @@
 
         ],
         "categories": [
-        "self learning"
+        "learning"
         ]
     },
     {
@@ -369,6 +377,7 @@
         "readTime": 1,
         "content": "",
         "tags": [
+            "sm2"
         ],
         "image": "../assets/images/Image_by_Francisco_Leão_from_Pixabay.jpg",
         "imageAlt": "",
@@ -391,6 +400,7 @@
         "readTime": 5,
         "content": "",
         "tags": [
+            "sm2"
         ],
         "image": "../assets/images/Image_by_Michael_Siebert_from_Pixabay.jpg",
         "imageAlt": "",
@@ -403,22 +413,23 @@
     {
         "id": "19",
         "type" : "assembly",
-        "title": "Factorial in Assembly",
+        "title": "Factorial in ARM Assembly",
         "subtitle": "Understanding Opcodes and Registers.",
-        "description": "This is a simple factorial program written in assembly. It is a great way to understand how assembly works.",
+        "description": "This is a simple factorial program written in ARM assembly.",
         "date": "2023-03-25T19:08:51.568Z",
         "author": "Adam Reed",
         "avatar" : "AR",
-        "readTime": 5,
+        "readTime": 1,
         "content": "",
         "tags": [
+            "snippet"
         ],
-        "image": "../assets/images/Image_binary_by_Gerd_Altmann_from_Pixabay.jpg",
+        "image": "../assets/images/arm.jpg",
         "imageAlt": "",
         "references": [
         ],
         "categories": [
-
+            "assembly"
         ]
     },
     {
@@ -441,12 +452,12 @@
         ],
         "categories": [
             "books",
-            "self learning"
+            "learning"
         ]
     },
     {
         "id": "21",
-        "type" : "self-learning",
+        "type" : "learning",
         "title": "Critical Thinking Questions",
         "subtitle": "Generate critical thinking questions.",
         "description": "Critical thinking question generator based on the The Science of Self-Learning by author Peter Hollins.",
@@ -467,12 +478,12 @@
 
         ],
         "categories": [
-        "self learning"
+        "learning"
         ]
     },
     {
         "id": "22",
-        "type" : "self-learning",
+        "type" : "learning",
         "title": "Online Course List",
         "subtitle": "A list of online courses.",
         "description": "Online courses, resources and ratings.",
@@ -501,7 +512,6 @@
 
         ],
         "categories": [
-        "self learning"
         ]
     },
     {
@@ -516,6 +526,7 @@
         "readTime": 5,
         "content": "",
         "tags": [
+            "sm2"
         ],
         "image": "../assets/images/Image_by_PublicDomainPictures_from_Pixabay.jpg",
         "imageAlt": "",
@@ -537,6 +548,7 @@
         "readTime": 1,
         "content": "",
         "tags": [
+            "sm2"
         ],
         "image": "../assets/images/Image_by_giovanni_gargiulo_from_Pixabay.jpg",
         "imageAlt": "",
@@ -559,6 +571,7 @@
         "readTime": 3,
         "content": "",
         "tags": [
+            "sm2"
         ],
         "image": "../assets/images/Image_by_David_Zydd_from_Pixabay.png",
         "imageAlt": "",
@@ -603,6 +616,7 @@
         "readTime": 5,
         "content": "",
         "tags": [
+            "sm2"
         ],
         "image": "../assets/images/Image_by_James_Henry_from_Pixabay.jpg",
         "imageAlt": "",
@@ -658,6 +672,7 @@
             "delay": 500
         },
         "tags": [
+            "sm2",
             "snippet"
         ],
         "image": "../assets/images/Image_by_Joe_from_Pixabay.jpg",
@@ -681,6 +696,7 @@
         "readTime": 3,
         "content": "",
         "tags": [
+            "sm2"
         ],
         "image": "../assets/images/Image_by_200_Degrees_from_Pixabay.png",
         "imageAlt": "",
@@ -726,6 +742,7 @@
         "readTime": 3,
         "content": "",
         "tags": [
+            "sm2"
         ],
         "image": "../assets/images/relaxation-g823e33847_640.jpg",
         "imageAlt": "",
@@ -771,6 +788,7 @@
         "readTime": 1,
         "content": "",
         "tags": [
+            "sm2"
         ],
         "image": "../assets/images/Image_by_PublicDomainPictures_from_Pixabay_2.jpg",
         "imageAlt": "",
@@ -794,6 +812,7 @@
         "readTime": 1,
         "content": "",
         "tags": [
+            "sm2"
         ],
         "image": "../assets/images/Image_by_Prawny_from_Pixabay.jpg",
         "imageAlt": "",
@@ -816,6 +835,7 @@
         "readTime": 1,
         "content": "",
         "tags": [
+            "sm2"
         ],
         "image": "../assets/images/Image_by_PollyDot_from_Pixabay.jpg",
         "imageAlt": "",
@@ -838,6 +858,7 @@
         "readTime": 1,
         "content": "",
         "tags": [
+            "sm2"
         ],
         "image": "../assets/images/Image_by_Reto_Scheiwiller_from_Pixabay.jpg",
         "imageAlt": "",
@@ -846,6 +867,50 @@
         ],
         "categories": [
         "machine learning"
+        ]
+    },
+    {
+        "id": "38",
+        "type" : "assembly",
+        "title": "Factorial in 6502 Assembly",
+        "subtitle": "Understanding Opcodes and Registers.",
+        "description": "This is a simple factorial program written in 6502 assembly.",
+        "date": "2023-04-05T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 5,
+        "content": "",
+        "tags": [
+        ],
+        "image": "../assets/images/6502.jpg",
+        "imageAlt": "",
+        "references": [
+        ],
+        "categories": [
+            "assembly"
+        ]
+    },
+    {
+        "id": "39",
+        "type" : "linux",
+        "title": "Emulate Raspberry PI ARM on Linux",
+        "subtitle": "ARM emulation on Linux.",
+        "description": "Emulate ARM using QEMU on Linux with just a few commands.", 
+        "date": "2023-04-06T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 1,
+        "content": "",
+        "tags": [
+            "snippet"
+        ],
+        "image": "../assets/images/Image_by_OpenClipart-Vectors_from_Pixabay.png",
+        "imageAlt": "",
+        "references": [
+        ],
+        "categories": [
+            "assembly",
+            "linux"
         ]
     }
 ]

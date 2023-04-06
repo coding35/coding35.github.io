@@ -1,0 +1,90 @@
+<article>
+  <p>
+    ARM or (Advanced RISC Machines) is a computer processor architecture used in
+    low power consumption devices. This processor is often found in mobile
+    phones, tablets, portable devices, and embedded systems due to its
+    efficiency and customization capabilities.
+  </p>
+  <p>
+    Since the ARM cpu is not available on most computers, an emulator or real
+    device is required when experimenting with the ARM assembly language. For
+    emulation, a solution is to use the
+    <a href="https://www.qemu.org/" target="_blank">QEMU</a> emulator. QEMU is a
+    free and open source emulator that can emulate a wide range of machine
+    architecture.
+  </p>
+  <p>
+    The following steps document the process of setting up QEMU on Fedora to run
+    Raspberry PI OS. These steps should be similar for other Linux
+    distributions.
+  </p>
+  <p>
+    A very good tutorial created by OliveStem can be found at
+    <a href="https://www.youtube.com/watch?v=WubAuz4hPpY" target="_blank"
+      >Introduction to Assembly Programming with ARM - Setting up Qemu for
+      ARM</a
+    >
+  </p>
+  <h4>These are the steps referenced in the tutorial</h4>
+  <p></p>
+  <ol>
+    <li>Download</li>
+    <ul>
+      <li>
+        <a
+          href="http://downloads.raspberrypi.org/raspbian/images/raspbian-2017-04-10/2017-04-10-raspbian-jessie.zip"
+          target="_blank"
+          >Raspberry Pi OS : Rasbian Jessie</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://github.com/dhruvvyas90/qemu-rpi-kernel/blob/master/kernel-qemu-4.4.34-jessie"
+          target="_blank"
+          >kernel-qemu-4.4.34-jessie</a
+        >
+      </li>
+    </ul>
+    <li>
+      Install QEMU and dependencies
+      <ul>
+        <li>Install qemu</li>
+        <li>Install qemu-system-arm</li>
+      </ul>
+    </li>
+    <li>
+      Execute the following command to setup the VM
+      <pre class="prettyprint">
+
+            $ qemu-system-arm \ 
+            -kernel ~/pi/kernel-qemu-4.4.34-jessie \
+            -cpu arm1176 \ 
+            -m 256 \ 
+            -M versatilepb \
+            -serial stdio \ 
+            -append "root=/dev/sda2 rootfstype=ext4 rw" \
+            -hda ~/pi/2017-04-10-raspbian-jessie.img \ 
+            -nic user,hostfwd=tcp::5022-:22 \
+            -no-reboot
+            /
+      </pre>
+    </li>
+    <li>
+      Optionally, SSH into the VM using the following command after enabling SSH on the Raspberry PI VM.
+      <pre class="prettyprint">
+            $ ssh pi@127.0.0.1 -p 5022
+        </pre
+      >
+      <p>pw: raspberry</p>
+    </li>
+  </ol>
+  <div>
+    <h4>Reference</h4>
+    <ul>
+      <li>
+        Introduction to Assembly Programming with ARM - Setting up Qemu for ARM
+        April 5, 2023, from https://www.youtube.com/watch?v=WubAuz4hPpY
+      </li>
+    </ul>
+  </div>
+</article>

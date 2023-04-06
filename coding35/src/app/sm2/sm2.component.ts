@@ -22,7 +22,6 @@ export class Sm2Component implements OnInit {
   cardsToReview: number = 0;
   cardsReviewed: number = 0;
   reviewedCardIds: number[] = [];
-  dbxcId: string = 'sb15j7zwgodrkcw';
 
   constructor(
     private indexDbSvc: IdbStorageAccessService,
@@ -34,12 +33,7 @@ export class Sm2Component implements OnInit {
     this.indexDbSvc.getAll().then((allContent) => {
       this.indexDbSvcSm2.getAll().then((pastSession: IFlashCard[]) => {
         let sm2Content = new Session(
-          allContent.filter(
-            (x) =>
-              x.type !== 'book' &&
-              x.type !== 'electronics' &&
-              x.type !== 'self-learning'
-          )
+          allContent.filter((x) => x.tags.includes('sm2'))
         );
         this.indexDbSvcSm2.getAll().then((data) => {
           this.allCards = data;
@@ -151,7 +145,7 @@ export class Sm2Component implements OnInit {
   saveToDropbox(): void {
     this.indexDbSvcSm2.getAll().then((allContent) => {
       this.dropbox
-        .uploadFile(JSON.stringify(allContent),'/sm2.json')
+        .uploadFile(JSON.stringify(allContent), '/sm2.json')
         .then(() => {
           console.log('saved');
         })

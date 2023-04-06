@@ -23,7 +23,6 @@ import { Sm2Module } from './sm2/sm2.module';
     FooterModule,
     BrowserAnimationsModule,
     AppRoutingModule
-
   ],
   providers: [
     IdbStorageAccessService,
