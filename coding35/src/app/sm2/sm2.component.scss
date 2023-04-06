@@ -1,6 +1,7 @@
 #ReviewPanel{
     display: flex;
     flex-direction: column;
+    padding: 1em;
 }
 
 #ReviewButtonGroup{
@@ -14,15 +15,17 @@
     min-width: 50px;
 }
 
-#ExportImport{
-    float: right;
-    top: 35%;
-    position: relative;
+#ReviewCount{
+    font-size: 14px;
+    display: flex;
+    justify-content: end;
 }
 
-@media screen and (max-width: 768px) {
-    #ReviewButtonGroup{
-        flex-direction: column;
-    }
+#ExportImport{
+    display: flex;
+    justify-content: right;
+    margin-top: 100px;
+    position: relative;
+    font-size: 13px;
 }
-    
+

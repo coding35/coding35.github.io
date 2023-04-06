@@ -37,6 +37,7 @@ export class Sm2Component implements OnInit {
         );
         this.indexDbSvcSm2.getAll().then((data) => {
           this.allCards = data;
+          this.cardsToReview = data.length;
           this.getCard();
         });
         sm2Content.flashcards.forEach((element: IFlashCard) => {
@@ -58,6 +59,7 @@ export class Sm2Component implements OnInit {
   }
 
   getCard(): void {
+    this.cardsReviewed = this.reviewedCardIds.length;
     let cards = this.allCards.filter((x) => {
       return new Date(x.dueDate) <= new Date(Date.now()) && !this.reviewedCardIds.includes(x.id);
     })!;

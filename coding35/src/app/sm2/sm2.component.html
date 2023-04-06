@@ -17,7 +17,8 @@
       </mat-accordion>
     </mat-expansion-panel>
   </mat-accordion>
-  <mat-button-toggle-group [(ngModel)]="buttonToggle"
+  <mat-button-toggle-group
+    [(ngModel)]="buttonToggle"
     id="ReviewButtonGroup"
     #group="matButtonToggleGroup"
     (change)="practice(currentCard, group.value)"
@@ -78,11 +79,13 @@
     </mat-button-toggle>
   </mat-button-toggle-group>
 </div>
-
-<div id="ExportImport">
-  <button mat-button color="Primary" (click)="export()">Export</button>
-  <button mat-button color="Primary" (click)="import()">Import</button>
-  <button mat-button color="Primary" (click)="loadFromDropbox()">Load</button>
-  <button mat-button color="Primary" (click)="saveToDropbox()">Save</button>
-  <button mat-button color="Primary" (click)="setKey()">Key</button>
+<div>
+  <div id="ReviewCount">{{ cardsReviewed }} of {{ cardsToReview }} Reviewed</div>
+  <div id="ExportImport">
+    <button mat-button color="Primary" (click)="export()">Export</button>
+    <button mat-button color="Primary" (click)="import()">Import</button>
+    <button mat-button color="Primary" (click)="loadFromDropbox()">Load</button>
+    <button mat-button color="Primary" (click)="saveToDropbox()">Save</button>
+    <button mat-button color="Primary" (click)="setKey()">Key</button>
+  </div>
 </div>
