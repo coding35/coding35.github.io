@@ -8,7 +8,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { RouterModule } from '@angular/router';
-import { IdbSm2StorageAccessService } from './service/idb-sm2-storage-access.service';
 import { ReviewComponent } from './components/review/review.component';
 import { SharedModule } from "../shared/shared.module";
 import { FormsModule } from '@angular/forms';
@@ -23,12 +22,6 @@ import { DropboxService } from './service/dropbox';
             provide: APP_INITIALIZER,
             useFactory: (svc: DropboxService) => () => svc.init(),
             deps: [DropboxService], multi: true
-        },
-        IdbSm2StorageAccessService,
-        {
-            provide: APP_INITIALIZER,
-            useFactory: (svc: IdbSm2StorageAccessService) => () => svc.init(),
-            deps: [IdbSm2StorageAccessService], multi: true
         },
         { provide: Window, useValue: window }
     ],

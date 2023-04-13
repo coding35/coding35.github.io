@@ -81,8 +81,8 @@ export class ContentListComponent implements OnInit {
             this.notFound = true;
             break;
         }
-
-        this.indexDbSvc.getAll().then((data) => {
+        
+        this.indexDbSvc.getAll<IContentModel[]>('ContentStore').then((data) => {
           const search = this.route.snapshot.params['search'] || '';
           if (this.filter == ContentType.Any) {
             if (search) {
@@ -111,7 +111,7 @@ export class ContentListComponent implements OnInit {
     this.search.ee.subscribe((val) => {
       this.category = val || 'All';
       this.filter = ContentType.Search;
-      this.indexDbSvc.getAll().then((data) => {
+      this.indexDbSvc.getAll<IContentModel[]>('ContentStore').then((data) => {
         let content = data as ContentModel[];
         this.contentList = content
           .filter(

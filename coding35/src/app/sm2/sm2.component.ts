@@ -5,8 +5,8 @@ import { SuperMemoGrade, supermemo } from 'supermemo';
 import { IdbStorageAccessService } from '../shared/service/idb-storage-access.service';
 import { IFlashCard } from './interface/IFlashCard';
 import { Session } from './questions/Session';
-import { IdbSm2StorageAccessService } from './service/idb-sm2-storage-access.service';
 import { DropboxService } from './service/dropbox';
+import { IContentModel } from '../shared/models/content-model';
 
 @Component({
   selector: 'app-sm2',
@@ -25,24 +25,25 @@ export class Sm2Component implements OnInit {
 
   constructor(
     private indexDbSvc: IdbStorageAccessService,
-    private indexDbSvcSm2: IdbSm2StorageAccessService,
     private dropbox: DropboxService
   ) {}
 
   ngOnInit(): void {
-    this.indexDbSvc.getAll().then((allContent) => {
-      this.indexDbSvcSm2.getAll().then((pastSession: IFlashCard[]) => {
+    this.indexDbSvc.getAll<IContentModel[]>('ContentStore').then((allContent) => {
+      this.indexDbSvc.getAll<IFlashCard[]>('Sm2Store').then((pastSession: IFlashCard[]) => {
         let sm2Content = new Session(
           allContent.filter((x) => x.tags.indexOf('sm2') > -1)
         );
-        this.indexDbSvcSm2.getAll().then((data) => {
+        this.indexDbSvc.getAll<IFlashCard[]>('Sm2Store').then((data) => {
           this.allCards = data;
           this.cardsToReview = data.length;
           this.getCard();
         });
+                    console.log(pastSession);
+
         sm2Content.flashcards.forEach((element: IFlashCard) => {
           if (!pastSession.find((x) => x.contentId === element.contentId)) {
-            this.indexDbSvcSm2.insert(element);
+            this.indexDbSvc.insert<IFlashCard>(element, 'Sm2Store');
           } else {
             let cardToUpdate = pastSession.find(
               (x) => x.contentId === element.contentId
@@ -51,7 +52,7 @@ export class Sm2Component implements OnInit {
             cardToUpdate?.front === element.front;
             cardToUpdate?.type === element.type;
             cardToUpdate?.path === element.path;
-            this.indexDbSvcSm2.update(cardToUpdate!);
+            this.indexDbSvc.update<IFlashCard>(cardToUpdate!, 'Sm2Store');
           }
         });
       });
@@ -70,8 +71,8 @@ export class Sm2Component implements OnInit {
     const { interval, repetition, efactor } = supermemo(flashcard, grade);
     const dueDate = dayjs(Date.now()).add(interval, 'day').toISOString();
     const result = { ...flashcard, interval, repetition, efactor, dueDate };
-    this.indexDbSvcSm2
-      .update(result)
+    this.indexDbSvc
+      .update<IFlashCard>(result, 'Sm2Store')
       .then((data) => {
         this.buttonToggle = undefined;
         this.reviewedCardIds.push(result.id);
@@ -84,7 +85,7 @@ export class Sm2Component implements OnInit {
   }
 
   export(): void {
-    this.indexDbSvcSm2.getAll().then((allContent) => {
+    this.indexDbSvc.getAll<IFlashCard[]>('Sm2Store').then((allContent) => {
       const dataStr =
         'data:text/json;charset=utf-8,' +
         encodeURIComponent(JSON.stringify(allContent));
@@ -111,9 +112,9 @@ export class Sm2Component implements OnInit {
           const content = readerEvent.target?.result;
           if (content) {
             const data = JSON.parse(content as string);
-            this.indexDbSvcSm2.clear();
+            this.indexDbSvc.clear('Sm2Store');
             data.forEach((element: IFlashCard) => {
-              this.indexDbSvcSm2.update(element);
+              this.indexDbSvc.update<IFlashCard>(element, 'Sm2Store');
             });
           }
         };
@@ -145,7 +146,7 @@ export class Sm2Component implements OnInit {
   }
 
   saveToDropbox(): void {
-    this.indexDbSvcSm2.getAll().then((allContent) => {
+    this.indexDbSvc.getAll<IFlashCard[]>('Sm2Store').then((allContent) => {
       this.dropbox
         .uploadFile(JSON.stringify(allContent), '/sm2.json')
         .then(() => {
@@ -167,9 +168,9 @@ export class Sm2Component implements OnInit {
           const content = readerEvent.target?.result;
           if (content) {
             const data = JSON.parse(content as string);
-            this.indexDbSvcSm2.clear();
+            this.indexDbSvc.clear('Sm2Store');
             data.forEach((element: IFlashCard) => {
-              this.indexDbSvcSm2.update(element);
+              this.indexDbSvc.update<IFlashCard>(element, 'Sm2Store');
             });
           }
         };

@@ -11,17 +11,17 @@ export class IdbStorageAccessService {
   private readonly version = 1;
   private readonly store = 'ContentStore';
 
-  constructor(private windowObj: Window) {}
+  constructor(private windowObj: Window) {
+    fetch('../../assets/json/content.json')
+    .then((response) => response.json())
+    .then((data) => {
+      data.forEach((element: IContentModel) => {
+        this.data.push(new ContentModel(element));
+      });
+    });
+  }
 
   init() {
-    fetch('../../assets/json/content.json')
-      .then((response) => response.json())
-      .then((data) => {
-        data.forEach((element: IContentModel) => {
-          this.data.push(new ContentModel(element));
-        });
-      });
-
     let request = this.idb.open(this.database, this.version);
 
     request.onsuccess = (event: any) => {
@@ -38,34 +38,33 @@ export class IdbStorageAccessService {
   }
 
   private insertData(event: any) {
-    this.indexedDb = event?.target?.result;
-    console.log('DB opened successfully');
+    this.indexedDb = event.target.result;
     const transaction = this.indexedDb.transaction([this.store], 'readwrite');
     const objectStore = transaction.objectStore(this.store);
     this.data.forEach((element) => {
-      if(objectStore.get(element.id)) {
+      if (objectStore.get(element.id)) {
         transaction.objectStore(this.store).put(element);
-      }else{
+      } else {
         transaction.objectStore(this.store).add(element);
       }
-      
     });
   }
 
   private createDatabase(event: any) {
-    console.log('Creating DB');
     this.indexedDb = event.target.result;
+    this.setupStore("ContentStore", "content");
+    this.setupStore("Sm2Store",  "session");
+  }
 
-    let objectStore = this.indexedDb.createObjectStore(this.store, {
+
+  private setupStore(store : string, index: string) {
+    let objectStore = this.indexedDb.createObjectStore(store, {
       keyPath: 'id',
     });
-    objectStore.createIndex('content', 'content', { unique: false });
-
+    objectStore.createIndex(index, index, { unique: false });
     objectStore.transaction.oncomplete = (event: any) => {
-      console.info('Create Database Transaction Complete.');
-      const transaction = this.indexedDb.transaction([this.store], 'readwrite');  
+      const transaction = this.indexedDb.transaction([store], 'readwrite');
       transaction.oncomplete = (event: any) => {
-        console.info('Transaction Complete.');
       };
       transaction.onerror = (event: any) => {
         console.error(`Transaction Error. ${event}`);
@@ -73,16 +72,16 @@ export class IdbStorageAccessService {
     };
   }
 
-  get(id: string): Promise<IContentModel> {
+  get<T>(id: string, store : string = 'ContentStore'): Promise<T> {
     return new Promise((resolve, reject) => {
-      let request = this.idb.open(this.database,this.version);
+      let request = this.idb.open(this.database, this.version);
       request.onsuccess = (event: any) => {
         this.indexedDb = event?.target?.result;
         this.indexedDb
-          .transaction(this.store)
-          .objectStore(this.store)
+          .transaction(store)
+          .objectStore(store)
           .get(id).onsuccess = (event: any) => {
-          resolve(event.target.result);
+          resolve(event.target.result as T);
         };
         onerror = (event: any) => {
           reject(event);
@@ -91,15 +90,69 @@ export class IdbStorageAccessService {
     });
   }
 
-  getAll(): Promise<IContentModel[]> {
+  getAll<T>(store : string = 'ContentStore'): Promise<T> {
+    return new Promise<T>((resolve, reject) => {
+      let request = this.idb.open(this.database, this.version);
+      request.onsuccess = (event: any) => {
+        this.indexedDb = event?.target?.result;
+        this.indexedDb
+          .transaction(store)
+          .objectStore(store)
+          .getAll().onsuccess = (event: any) => {
+          resolve(event.target.result as T);
+        };
+        onerror = (event: any) => {
+          reject(event);
+        };
+      };
+    });
+  }
+
+  insert<T>(item: T, store : string): Promise<T> {
+    return new Promise<T>((resolve, reject) => {
+      let request = this.idb.open(this.database, this.version);
+      request.onsuccess = (event: any) => {
+        this.indexedDb = event?.target?.result;
+        this.indexedDb
+          .transaction(store, 'readwrite')
+          .objectStore(store)
+          .add(item).onsuccess = (event: any) => {
+          resolve(event.target.result as T);
+        };
+        onerror = (event: any) => {
+          reject(event);
+        };
+      };
+    });
+  }
+
+  update<T>(item: T, store: string): Promise<T> {
+    return new Promise<T>((resolve, reject) => {
+      let request = this.idb.open(this.database, this.version);
+      request.onsuccess = (event: any) => {
+        this.indexedDb = event?.target?.result;
+        this.indexedDb
+          .transaction(store, 'readwrite')
+          .objectStore(store)
+          .put(item).onsuccess = (event: any) => {
+          resolve(event.target.result as T);
+        };
+        onerror = (event: any) => {
+          reject(event);
+        };
+      };
+    });
+  }
+
+  clear(store : string): Promise<void> {
     return new Promise((resolve, reject) => {
       let request = this.idb.open(this.database, this.version);
       request.onsuccess = (event: any) => {
         this.indexedDb = event?.target?.result;
         this.indexedDb
-          .transaction(this.store)
-          .objectStore(this.store)
-          .getAll().onsuccess = (event: any) => {
+          .transaction(store, 'readwrite')
+          .objectStore(store)
+          .clear().onsuccess = (event: any) => {
           resolve(event.target.result);
         };
         onerror = (event: any) => {
@@ -109,3 +162,5 @@ export class IdbStorageAccessService {
     });
   }
 }
+
+

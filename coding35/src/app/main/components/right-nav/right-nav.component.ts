@@ -1,7 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
-import { ContentModel } from 'src/app/shared/models/content-model';
+import { ContentModel, IContentModel } from 'src/app/shared/models/content-model';
 import { LinkListModel } from 'src/app/shared/models/link-list-model';
 import { LinkModel } from 'src/app/shared/models/link-model';
 import { IdbStorageAccessService } from 'src/app/shared/service/idb-storage-access.service';
@@ -20,7 +20,7 @@ export class RightNavComponent implements OnInit {
   constructor(private router: Router, private search: SearchService, private indexDbSvc: IdbStorageAccessService) { }
 
   ngOnInit(): void {
-    this.indexDbSvc.getAll().then(meta => {
+    this.indexDbSvc.getAll<IContentModel[]>().then(meta => {
       let content = meta as ContentModel[];
       let flat = content.map(m => m.categories).flat();
       let unique = flat.filter((v, i, a) => a.indexOf(v) === i).map(m => new LinkModel(m));

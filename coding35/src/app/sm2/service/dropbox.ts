@@ -18,14 +18,14 @@ export class DropboxService {
       accessToken: key
     });
 
-    this.dbx
+/*     this.dbx
       .filesListFolder({ path: '' })
       .then((response: any) => {
         //console.log(response);
       })
       .catch((err: any) => {
         console.log(err);
-      });
+      }); */
   }
 
   downloadFile(filePath: string): Promise<any> {

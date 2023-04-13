@@ -847,50 +847,6 @@
         ]
     },
     {
-        "id": "37",
-        "type" : "machine-learning",
-        "title": "NLP",
-        "subtitle": "Natural Language Processing",
-        "description": "Natural Language Processing (NLP) is a subfield of computer science and artificial intelligence concerned with the interactions between computers and human (natural) languages, in particular how to program computers to process and analyze large amounts of natural language data.", 
-        "date": "2023-04-04T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 1,
-        "content": "",
-        "tags": [
-            "sm2"
-        ],
-        "image": "../assets/images/Image_by_Reto_Scheiwiller_from_Pixabay.jpg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-        "machine learning"
-        ]
-    },
-    {
-        "id": "38",
-        "type" : "assembly",
-        "title": "Factorial in 6502 Assembly",
-        "subtitle": "Understanding Opcodes and Registers.",
-        "description": "This is a simple factorial program written in 6502 assembly.",
-        "date": "2023-04-05T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 5,
-        "content": "",
-        "tags": [
-        ],
-        "image": "../assets/images/6502.jpg",
-        "imageAlt": "",
-        "references": [
-        ],
-        "categories": [
-            "assembly"
-        ]
-    },
-    {
         "id": "39",
         "type" : "linux",
         "title": "Emulate Raspberry PI ARM on Linux",
@@ -911,6 +867,27 @@
         "categories": [
             "assembly",
             "linux"
+        ]
+    },
+    {
+        "id": "41",
+        "type" : "book",
+        "title": "Moonwalking with Einstein: The Art and Science of Remembering Everything",
+        "subtitle": "Authored by Joshua Foer",
+        "description": "A journalistic account of the author's journey to learn the art of memory.", 
+        "date": "2021-12-18T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 1,
+        "content": "",
+        "tags": [ ],
+        "image": "../assets/templates/41/moonwalking_with_einstein.jpg",
+        "imageAlt": "",
+        "references": [
+        ],
+        "categories": [
+            "books",
+            "learning"
         ]
     }
 ]
