@@ -10,6 +10,8 @@ import { MainModule } from './main/main.module';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { IdbStorageAccessService } from './shared/service/idb-storage-access.service';
 import { Sm2Module } from './sm2/sm2.module';
+import {MatDialogModule} from '@angular/material/dialog';
+import { CookieModule } from 'ngx-cookie';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { Sm2Module } from './sm2/sm2.module';
     Sm2Module,
     FooterModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatDialogModule,
+    CookieModule.withOptions()
   ],
   providers: [
     IdbStorageAccessService,

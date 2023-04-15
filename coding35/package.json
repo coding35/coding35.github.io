@@ -25,6 +25,7 @@
     "d3": "^7.8.2",
     "dayjs": "^1.11.7",
     "dropbox": "^10.34.0",
+    "ngx-cookie": "^6.0.1",
     "rxjs": "~7.8.0",
     "stream-browserify": "^3.0.0",
     "supermemo": "^2.0.17",
