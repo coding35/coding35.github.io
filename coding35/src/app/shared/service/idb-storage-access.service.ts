@@ -73,7 +73,7 @@ export class IdbStorageAccessService {
   }
 
   get<T>(id: string, store : string = 'ContentStore'): Promise<T> {
-    return new Promise((resolve, reject) => {
+    return new Promise<T>((resolve, reject) => {
       let request = this.idb.open(this.database, this.version);
       request.onsuccess = (event: any) => {
         this.indexedDb = event?.target?.result;

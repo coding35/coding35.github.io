@@ -889,5 +889,48 @@
             "books",
             "learning"
         ]
+    },
+    {
+        "id": "42",
+        "type" : "design",
+        "title": "Strategy Pattern aka (Policy Pattern)",
+        "subtitle": "Encapsulate behavior with object composition for enhanced code flexibility and runtime extensibility.",
+        "description": "A small demo project to highlight the basics of the Strategy Pattern.",
+        "date": "2023-04-15T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 5,
+        "content": "",
+        "tags": [
+            "sm2"
+        ],
+        "image": "../assets/images/Image_by_Pexels_from_Pixabay.jpg",
+        "imageAlt": "",
+        "references": [
+
+        ],
+        "categories": [
+        "design"
+        ]
+    },
+    {
+        "id": "43",
+        "type" : "book",
+        "title": "Head First Design Patterns, 2nd Edition",
+        "subtitle": "Authored By Eric Freeman, Elisabeth Robson",
+        "description": "A great introduction to design patterns.", 
+        "date": "2022-04-18T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 1,
+        "content": "",
+        "tags": [ ],
+        "image": "../assets/templates/43/HeadFirstDesignPatterns.jpeg",
+        "imageAlt": "",
+        "references": [
+        ],
+        "categories": [
+            "books"
+        ]
     }
 ]
