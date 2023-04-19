@@ -1,0 +1,23 @@
+<article>
+
+<p>Corporate proxies are a common way to control internet access. 
+However, they can cause problems when trying to access external services. 
+For example, when trying to access GitHub Copilot, the following error message is displayed:
+</p>
+
+<code>
+    [Error] An error occurred for 'RunOperation:RunOperation': StreamJsonRpc.RemoteInvocationException: Request signInInitiate failed with message: self signed certificate in certificate chain
+at StreamJsonRpc.JsonRpc.d__1451.MoveNext() --- End of stack trace from previous location where exception was thrown --- at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) at GitHub.Copilot.CopilotClient.<RunOperation>d__201.MoveNext()
+</code>
+
+<h4>Steps</h4>
+<ol>
+    <li>Navigate to Github.com.</li>
+    <li>Inspect the SSL certificate.</li>
+    <li>View the certificate hierarchy and export the top level certificate listed. </li>
+    <li>Open command prompt as admin.</li>
+    <li>Excecute setx NODE_EXTRA_CA_CERTS "path\to\cert.pem"</li>
+    <li>Restart Visual Studio.</li>
+</ol>
+
+</article>

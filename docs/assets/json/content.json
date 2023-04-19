@@ -932,5 +932,47 @@
         "categories": [
             "books"
         ]
+    },
+    {
+        "id": "44",
+        "type" : "development",
+        "title": "Copilot Self-signed certificate error on Windows with Visual Studio 2022",
+        "subtitle": "Documentation to assist with resolving the self-signed certificate error when using Copilot with Visual Studio 2022.",
+        "description": "[Error] An error occurred for 'RunOperation:RunOperation': StreamJsonRpc.RemoteInvocationException: Request signInInitiate failed with message: self signed certificate in certificate chain at StreamJsonRpc.JsonRpc.d__1451.MoveNext() --- End of stack trace from previous location where exception was thrown", 
+        "date": "2023-04-19T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 1,
+        "content": "",
+        "tags": [ "tip"],
+        "image": "../assets/images/Image_by_200_Degrees_from_Pixabay.png",
+        "imageAlt": "",
+        "references": [
+        ],
+        "categories": [
+            "development",
+            "windows"
+        ]
+    },
+    {
+        "id": "45",
+        "type" : "learning",
+        "title": "Spaced Repitition Learning", 
+        "subtitle": "Improve retention and recall with spaced repetition learning.",
+        "description": "A learning technique that incorporates increasing intervals of time between subsequent review of previously learned material in order to exploit the psychological spacing effect.", 
+        "date": "2023-04-19T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 1,
+        "content": "",
+        "tags": [ "tip"],
+        "image": "../assets/images/Image_by_200_Degrees_from_Pixabay.png",
+        "imageAlt": "",
+        "references": [
+        ],
+        "categories": [
+            "learning",
+            "productivity"
+        ]
     }
 ]
