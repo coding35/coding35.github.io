@@ -974,5 +974,28 @@
             "learning",
             "productivity"
         ]
+    },
+        {
+        "id": "46",
+        "type" : "design",
+        "title": "Observer Pattern",
+        "subtitle": "Notify all dependents when a state changes.",
+        "description": "The observer pattern is a software design pattern in which an object, called the subject, maintains a list of its dependents, called observers, and notifies them automatically when the subject state changes.",
+        "date": "2023-04-21T19:08:51.568Z",
+        "author": "Adam Reed",
+        "avatar" : "AR",
+        "readTime": 5,
+        "content": "",
+        "tags": [
+            "sm2"
+        ],
+        "image": "../assets/images/Image_by_200_Degrees_from_Pixabay.png",
+        "imageAlt": "",
+        "references": [
+
+        ],
+        "categories": [
+        "design"
+        ]
     }
 ]
