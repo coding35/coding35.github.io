@@ -904,7 +904,7 @@
         "tags": [
             "sm2"
         ],
-        "image": "../assets/images/Image_by_Pexels_from_Pixabay.jpg",
+        "image": "../assets/templates/42/UML.jpg",
         "imageAlt": "",
         "references": [
 
@@ -945,7 +945,7 @@
         "readTime": 1,
         "content": "",
         "tags": [ "tip"],
-        "image": "../assets/images/Image_by_200_Degrees_from_Pixabay.png",
+        "image": "../assets/images/Image_by_skylarvision_from_Pixabay.jpg",
         "imageAlt": "",
         "references": [
         ],
@@ -957,7 +957,7 @@
     {
         "id": "45",
         "type" : "learning",
-        "title": "Spaced Repitition Learning", 
+        "title": "Spaced Repetition Learning", 
         "subtitle": "Improve retention and recall with spaced repetition learning.",
         "description": "A learning technique that incorporates increasing intervals of time between subsequent review of previously learned material in order to exploit the psychological spacing effect.", 
         "date": "2023-04-19T19:08:51.568Z",
@@ -978,7 +978,7 @@
         {
         "id": "46",
         "type" : "design",
-        "title": "Observer Pattern",
+        "title": "Observer Pattern aka (Dependents, Publish-Subscribe)",
         "subtitle": "Notify all dependents when a state changes.",
         "description": "The observer pattern is a software design pattern in which an object, called the subject, maintains a list of its dependents, called observers, and notifies them automatically when the subject state changes.",
         "date": "2023-04-21T19:08:51.568Z",
@@ -989,7 +989,7 @@
         "tags": [
             "sm2"
         ],
-        "image": "../assets/images/Image_by_200_Degrees_from_Pixabay.png",
+        "image": "../assets/templates/46/observerpattern.jpg",
         "imageAlt": "",
         "references": [
 

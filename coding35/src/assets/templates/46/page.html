@@ -1,10 +1,41 @@
 <article>
-    <p>The observer pattern is a design pattern where by a one-to-many
-        relationship is defined between a set of objects. When the state
-        of one object changes, all of its dependents are notified and
-        updated automatically.</p>
-
-    
-
-
+  <p>
+    The observer pattern is a very common design pattern where by a one-to-many
+    relationship is defined between a set of objects. When the state of one
+    object changes, all of its dependents are notified using a common interface.
+    Any object can be an observer as long as it implements the observer
+    interface. Since the subject knows nothing about the observers the
+    relationship between the object is loosely coupled. This allows for the
+    addition of new observers without the need to change the subject.
+  </p>
+  <p>
+    This pattern is often used in event handling system such as graphical user
+    interfaces. By separating the presentational aspect from the underlying
+    application logic, the application can be more easily extended to support
+    new types of events.
+  </p>
+  <figure>
+    <img
+      src="../../../assets/templates/46/observerpattern.jpg"
+      alt="Observer Pattern"
+      class="img-responsive"
+    />
+    <figcaption></figcaption>
+  </figure>
+  <a href="https://github.com/coding35/observer-pattern" target="_blank"
+    >View Example Code on GitHub</a
+  >
+  <div>
+    <h4>Reference</h4>
+    <ul>
+      <li>
+        Addison-Wesley. (2000). Chapter 5. Behavioral Patterns. In Design
+        patterns: Elements of reusable object-oriented software.
+      </li>
+      <li>
+        Freeman, E., &amp; Robson, E. (2020). Head First Design Patterns, 2nd
+        Edition
+      </li>
+    </ul>
+  </div>
 </article>
