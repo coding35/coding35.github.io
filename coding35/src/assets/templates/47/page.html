@@ -1,0 +1,51 @@
+<article>
+  <p>
+    The decorator pattern allows for adding additional functionality to an
+    object at runtime without modifying the original object thereby following
+    the open/closed principle.
+  </p>
+  <p>
+    By conforming to the interface of the component a decorator decorates, its
+    presence is transparent to the client. The decorator can add additional
+    functionality before and/or after forwarding the request to the component.
+    Simple stated, the decorator pattern is a wrapper around another object. One
+    or more wrappers can enclose the original object.
+  </p>
+  <p>
+    One example would be to use a decorator to add additional functionality to a
+    http request such as logging, authentication, and authorization. Another example
+    may be to enrich a logging framework with additional functionality such as
+    tracing, auditing, and debugging.
+  </p>
+  <p>
+    This pattern can introduce complexity to code due to the need to instantiate
+    the component and wrap it with one or more decorators. To remedy this, the
+    decorator pattern is often used in conjunction with the factory pattern and
+    the builder pattern to create complex objects.
+  </p>
+  <p></p>
+  <figure>
+    <img
+      src="../../../assets/templates/47/decorator-pattern.jpg"
+      alt="Decorator Pattern"
+      class="img-responsive"
+    />
+    <figcaption></figcaption>
+  </figure>
+  <a href="https://github.com/coding35/decorator-pattern" target="_blank"
+    >View Example Code on GitHub</a
+  >
+  <div>
+    <h4>Reference</h4>
+    <ul>
+      <li>
+        Addison-Wesley. (2000). Chapter 4. Structural Patterns. In Design
+        patterns: Elements of reusable object-oriented software.
+      </li>
+      <li>
+        Freeman, E., &amp; Robson, E. (2020). Head First Design Patterns, 2nd
+        Edition
+      </li>
+    </ul>
+  </div>
+</article>

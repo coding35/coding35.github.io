@@ -1,1001 +1,773 @@
 [
-    {
-        "id": "1",
-        "type" : "architecture",
-        "title": "Ambassador Pattern",
-        "subtitle": "Offload common client connectivity tasks in a language agnostic way.",
-        "description": "Based on the Sidecar pattern, the Ambassador is an application that runs alongside client applications to provide additional connectivity functionality such as routing, logging, monitoring, authentication, resilience and more.",
-        "date": "2023-03-04T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 5,
-        "content": "",
-        "tags": [
-            "sm2"
-        ],
-        "image": "../assets/images/shane-rounce-1ZZ96uESRJQ-unsplash-resize.jpg",
-        "imageAlt": "",
-        "references": [
-        ],
-        "categories": [
-            "architecture"
-        ]
+  {
+    "id": "1",
+    "type": "architecture",
+    "title": "Ambassador Pattern",
+    "subtitle": "Offload common client connectivity tasks in a language agnostic way.",
+    "description": "Based on the Sidecar pattern, the Ambassador is an application that runs alongside client applications to provide additional connectivity functionality such as routing, logging, monitoring, authentication, resilience and more.",
+    "date": "2023-03-04T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../assets/images/shane-rounce-1ZZ96uESRJQ-unsplash-resize.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["architecture"]
+  },
+  {
+    "id": "2",
+    "type": "architecture",
+    "title": "Sidecar Pattern",
+    "subtitle": "Separate the functionality of an application into co-located components running along side the core application.",
+    "description": "Sidecar components are specialized co-located containers that communicate to the main application over a network interface using lightweight communication protocols such as HTTP, gRPC, or WebSockets.",
+    "date": "2023-03-10T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 3,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../assets/templates/2/Image_by_Peter_Morth_from_Pixabay.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["architecture"]
+  },
+  {
+    "id": "3",
+    "type": "code",
+    "title": "Chaos Engineering",
+    "subtitle": "A tool to introduce failure into the system intentionally.",
+    "description": "The Chaos Engineering methodology is to build confidence in the system's capability to withstand turbulent conditions in production by intentionally injecting failures into the system.",
+    "date": "2023-03-10T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 7,
+    "content": "",
+    "tags": ["sm2", "snippet"],
+    "image": "../assets/images/Image_by_Lawrence_Monk_from_Pixabay.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["code", "design"]
+  },
+  {
+    "id": "4",
+    "type": "electronics",
+    "title": "4-bit Full Adder",
+    "subtitle": "Add two 4-bit numbers together using logic gates.",
+    "description": "A schematic and breadboard layout of a 4-bit adder using logic gates.",
+    "date": "2023-03-11T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": [],
+    "image": "../assets/images/Image_by_axonite_from_Pixabay.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["electronics"]
+  },
+  {
+    "id": "5",
+    "type": "architecture",
+    "title": "Anti-corruption Layer Pattern",
+    "subtitle": "A pattern to ensure that an application's design is not limited by dependencies on outside subsystems.",
+    "description": "Translates requests that one subsystem makes to the other subsystem.",
+    "date": "2023-03-14T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 3,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../assets/images/Image_by_PIRO_from_Pixabay.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["architecture"]
+  },
+  {
+    "id": "6",
+    "type": "design",
+    "title": "Object Composition",
+    "subtitle": "Favor object composition over class inheritance.",
+    "description": "In object-oriented programming, object composition is a technique for creating complex objects by combining simpler objects or components.",
+    "date": "2023-03-17T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2", "snippet"],
+    "image": "../assets/images/Image_by_Magic_Creative_from_Pixabay.png",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
+  },
+  {
+    "id": "7",
+    "type": "book",
+    "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+    "subtitle": "OOP design patterns and how to use them.",
+    "description": "Design Patterns is a book by the Gang of Four (Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides) that describes software design patterns. The book's authors are often referred to as the Gang of Four (GoF).",
+    "date": "2023-03-16T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [],
+    "image": "../../../assets/templates/7/designpatterns_gof.jpeg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["books", "design"]
+  },
+  {
+    "id": "8",
+    "type": "book",
+    "title": "Deep Work: Rules for Focused Success in a Distracted World",
+    "subtitle": "Amazing book on how to focus and get things done.",
+    "description": "Deep Work is a book by Cal Newport that describes how to focus on deep work and how to get things done. A must read for the modern day developer.",
+    "date": "2023-03-17T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [],
+    "image": "../../../assets/templates/8/deepwork.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["books", "productivity"]
+  },
+  {
+    "id": "9",
+    "type": "book",
+    "title": "The Pragmatic Programmer: Your Journey To Mastery, 20th Anniversary Edition (2nd Edition)",
+    "subtitle": "Get ready for a journey to mastery.",
+    "description": "The Pragmatic Programmer is a book by Andrew Hunt and David Thomas that describes how to be a better programmer. Another must read for the modern day developer.",
+    "date": "2022-03-17T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [],
+    "image": "../../../assets/templates/9/pragmaticprogrammer.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["books"]
+  },
+  {
+    "id": "10",
+    "type": "book",
+    "title": "Extreme Programming Explained: Embrace Change, 2nd Edition (The XP Series) 2nd Edition",
+    "subtitle": "Great book to pickup to learn about XP.",
+    "description": "Wow, this book is great. It's a great book to pickup to learn about XP. Get ready for an awakening.",
+    "date": "2023-02-13T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [],
+    "image": "../../../assets/templates/10/xp_programming.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["books", "productivity"]
+  },
+  {
+    "id": "11",
+    "type": "design",
+    "title": "Class Inheritance",
+    "subtitle": "Extend functionality by reusing functionality in parent classes.",
+    "description": "A rapid way to define an object that is based on another object, retaining similar characteristics.",
+    "date": "2023-03-18T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2", "snippet"],
+    "image": "../assets/images/Image_by_ Monika_Schröder_ from_Pixabay.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
+  },
+  {
+    "id": "12",
+    "type": "design",
+    "title": "Class Types",
+    "subtitle": "The differences and when to use them.",
+    "description": "Choosing the right class type for particular use cases promotes efficient, maintainable, and easy to understand code.",
+    "date": "2023-03-18T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../assets/images/Image_by_Mike_Sweeney_from_Pixabay.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
+  },
+  {
+    "id": "13",
+    "type": "book",
+    "title": "How Computers Really Work",
+    "subtitle": "A Hands-On Guide to the Inner Workings of the Machine",
+    "description": "This is a very interesting and entertaining ready with plenty of hands-on activities. From binary to the internet, this book covers it all.",
+    "date": "2023-01-11T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [],
+    "image": "../../../assets/templates/13/how-computers-really-work_fullcvr_v08_front.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["books"]
+  },
+  {
+    "id": "14",
+    "type": "design",
+    "title": "Object Composition Delegation",
+    "subtitle": "Making object composition as powerful as inheritance.",
+    "description": "Object composition delegation is a design pattern that allows you to delegate functionality to composed objects. Object A composed of object B delegates some of its functionality to object B.",
+    "date": "2023-03-18T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2", "snippet"],
+    "image": "../assets/images/Image_by_Gerd_Altmann_from_Pixabay.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
+  },
+  {
+    "id": "15",
+    "type": "book",
+    "title": "Understanding Software",
+    "subtitle": "Embrace simplicity in software development.",
+    "description": "Max Kanat-Alexander presents an insight software development in a highly relatable way. A great read or listen.",
+    "date": "2022-01-18T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [],
+    "image": "../assets/templates/15/understandingsoftware.jpeg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["books"]
+  },
+  {
+    "id": "16",
+    "type": "learning",
+    "title": "SQ3R, Cornell Note Taking, and Spacing Effect",
+    "subtitle": "Survey, Question, Read, Recite, Review, Relate, Spacing",
+    "description": "SQ3R complimented with the Cornell Note Taking System and spacing effect is a hybrid reading comprehension strategy that helps you to read more efficiently and effectively. A great way to read technical books.",
+    "date": "2023-03-19T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [],
+    "image": "../assets/images/Image_by_ElasticComputeFarm_from_Pixabay.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["learning"]
+  },
+  {
+    "id": "17",
+    "type": "design",
+    "title": "OOP Acquaintance and Aggregation Relationships",
+    "subtitle": "Knowing the difference between acquaintance and aggregation relationships.",
+    "description": "Aggregation owns the object it aggregates. Acquaintance does not own the object but knows of other objects it is acquainted with. Knowing the difference between the two is important for designing maintainable and extensible code.",
+    "date": "2023-03-20T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../assets/images/Image_by_Francisco_Leão_from_Pixabay.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
+  },
+  {
+    "id": "18",
+    "type": "architecture",
+    "title": "Retry Pattern",
+    "subtitle": "Handle transient failures with the retry pattern.",
+    "description": "The retry pattern is a design pattern for the handling of transient failures. Transient failures are failures that are temporary and can be resolved by retrying the operation. ",
+    "date": "2023-03-25T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../assets/images/Image_by_Michael_Siebert_from_Pixabay.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["architecture"]
+  },
+  {
+    "id": "19",
+    "type": "assembly",
+    "title": "Factorial in ARM Assembly",
+    "subtitle": "Understanding Opcodes and Registers.",
+    "description": "This is a simple factorial program written in ARM assembly.",
+    "date": "2023-03-25T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": ["snippet"],
+    "image": "../assets/images/arm.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["assembly"]
+  },
+  {
+    "id": "20",
+    "type": "book",
+    "title": "The Science of Self-Learning",
+    "subtitle": "How to Learn Anything, Anytime, Anywhere",
+    "description": "The Science of Self-Learning by Peter Hollins is a must read for anyone who wants to learn more efficiently and effectively.",
+    "date": "2023-03-25T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [],
+    "image": "../../../assets/templates/20/The_Science_Of_Self_Learning.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["books", "learning"]
+  },
+  {
+    "id": "21",
+    "type": "learning",
+    "title": "Critical Thinking Questions",
+    "subtitle": "Generate critical thinking questions.",
+    "description": "Critical thinking question generator based on the The Science of Self-Learning by author Peter Hollins.",
+    "date": "2023-03-19T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [],
+    "callback": {
+      "name": "init",
+      "params": {}
     },
-    {
-        "id": "2",
-        "type" : "architecture",
-        "title": "Sidecar Pattern",
-        "subtitle": "Separate the functionality of an application into co-located components running along side the core application.",
-        "description": "Sidecar components are specialized co-located containers that communicate to the main application over a network interface using lightweight communication protocols such as HTTP, gRPC, or WebSockets.",
-        "date": "2023-03-10T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 3,
-        "content": "",
-        "tags": [
-            "sm2"
-        ],
-        "image": "../assets/templates/2/Image_by_Peter_Morth_from_Pixabay.jpg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-            "architecture"
-        ]
+    "image": "../assets/images/Image_by_Adrian_from_Pixabay.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["learning"]
+  },
+  {
+    "id": "22",
+    "type": "learning",
+    "title": "Online Course List",
+    "subtitle": "A list of online courses.",
+    "description": "Online courses, resources and ratings.",
+    "date": "2023-03-25T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [],
+    "callback": {
+      "styles": [],
+      "dependencies": [
+        "https://code.jquery.com/jquery-3.6.4.min.js",
+        "https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"
+      ],
+      "name": "init",
+      "params": {},
+      "delay": 5000
     },
-    {
-        "id": "3",
-        "type" : "code",
-        "title": "Chaos Engineering",
-        "subtitle": "A tool to introduce failure into the system intentionally.",
-        "description": "The Chaos Engineering methodology is to build confidence in the system's capability to withstand turbulent conditions in production by intentionally injecting failures into the system.",
-        "date": "2023-03-10T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 7,
-        "content": "",
-        "tags": [
-            "sm2",
-            "snippet"
-        ],
-        "image": "../assets/images/Image_by_Lawrence_Monk_from_Pixabay.jpg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-            "code",
-            "design"
-        ]
+    "image": "../assets/images/Image_by_Wynn_Pointaux_from_Pixabay.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": []
+  },
+  {
+    "id": "23",
+    "type": "architecture",
+    "title": "Rate Limiting Pattern",
+    "subtitle": "Avoid or minimize throttling errors with the rate limiting pattern.",
+    "description": "The Rate Limiting Pattern is a design pattern for the handling of throttled services or APIs that limit the number of requests that can be made within a given time period.",
+    "date": "2023-03-27T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../assets/images/Image_by_PublicDomainPictures_from_Pixabay.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["architecture"]
+  },
+  {
+    "id": "24",
+    "type": "design",
+    "title": "Mixin Class",
+    "subtitle": "Promote code reusability and modularity",
+    "description": "A mixin class is a special type of class in object-oriented programming that provides a specific functionality that can be added to other classes without the need for inheritance.",
+    "date": "2023-03-28T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../assets/images/Image_by_giovanni_gargiulo_from_Pixabay.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
+  },
+  {
+    "id": "25",
+    "type": "database",
+    "title": "Entity-Attribute-Value Model",
+    "subtitle": "The antipattern known as Entity-Attribute-Value.",
+    "description": "The Entity-Attribute-Value (EAV) model is a data model that stores entity attributes as name-value pairs rather than as columns of a table.",
+    "date": "2023-03-29T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 3,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../assets/images/Image_by_David_Zydd_from_Pixabay.png",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["database"]
+  },
+  {
+    "id": "26",
+    "type": "book",
+    "title": "Clean Code",
+    "subtitle": "A Handbook of Agile Software Craftsmanship",
+    "description": "Write better code with Clean Code by Robert C. Martin.",
+    "date": "2022-06-16T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 3,
+    "content": "",
+    "tags": [],
+    "image": "../assets/templates/26/clean_code_book.jpeg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["books"]
+  },
+  {
+    "id": "27",
+    "type": "architecture",
+    "title": "Claim Check Pattern",
+    "subtitle": "Handle large messages with claim checking.",
+    "description": "The Claim Check Pattern is a design pattern for the handling of large messages that are too large to be processed in a single transaction.",
+    "date": "2023-03-30T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../assets/images/Image_by_James_Henry_from_Pixabay.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["architecture"]
+  },
+  {
+    "id": "28",
+    "type": "book",
+    "title": "SQL Antipatterns",
+    "subtitle": "Avoid pitfalls and write better SQL",
+    "description": "A great read for anyone who writes SQL. Learn how to identify and avoid common SQL antipatterns.",
+    "date": "2023-03-31T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [],
+    "image": "../assets/templates/28/sql_antipatterns.jpeg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["books", "database"]
+  },
+  {
+    "id": "29",
+    "type": "database",
+    "title": "Hierarchy and Trees in SQL",
+    "subtitle": "How to model hierarchies and trees in SQL.",
+    "description": "Hierarchies and trees are a common data structure in many applications and there are several ways to model these structures in SQL. ",
+    "date": "2023-04-01T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 3,
+    "content": "",
+    "callback": {
+      "styles": [],
+      "dependencies": [
+        "https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.4/d3.min.js"
+      ],
+      "name": "init",
+      "params": {},
+      "delay": 500
     },
-    {
-        "id": "4",
-        "type" : "electronics",
-        "title": "4-bit Full Adder",
-        "subtitle": "Add two 4-bit numbers together using logic gates.",
-        "description": "A schematic and breadboard layout of a 4-bit adder using logic gates.",
-        "date": "2023-03-11T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 5,
-        "content": "",
-        "tags": [
-        ],
-        "image": "../assets/images/Image_by_axonite_from_Pixabay.jpg",
-        "imageAlt": "",
-        "references": [
-        ],
-        "categories": [
-            "electronics"
-        ]
-    },
-    {
-        "id": "5",
-        "type" : "architecture",
-        "title": "Anti-corruption Layer Pattern",
-        "subtitle": "A pattern to ensure that an application's design is not limited by dependencies on outside subsystems.",
-        "description": "Translates requests that one subsystem makes to the other subsystem.",
-        "date": "2023-03-14T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 3,
-        "content": "",
-        "tags": [
-            "sm2"
-        ],
-        "image": "../assets/images/Image_by_PIRO_from_Pixabay.jpg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-            "architecture"
-        ]
-    },
-    {
-        "id": "6",
-        "type" : "design",
-        "title": "Object Composition",
-        "subtitle": "Favor object composition over class inheritance.",
-        "description": "In object-oriented programming, object composition is a technique for creating complex objects by combining simpler objects or components.",
-        "date": "2023-03-17T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 5,
-        "content": "",
-        "tags": [
-            "sm2",
-            "snippet"
-        ],
-        "image": "../assets/images/Image_by_Magic_Creative_from_Pixabay.png",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-        "design"
-        ]
-    },
-    {
-        "id": "7",
-        "type" : "book",
-        "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
-        "subtitle": "OOP design patterns and how to use them.",
-        "description": "Design Patterns is a book by the Gang of Four (Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides) that describes software design patterns. The book's authors are often referred to as the Gang of Four (GoF).",
-        "date": "2023-03-16T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 1,
-        "content": "",
-        "tags": [
-        ],
-        "image": "../../../assets/templates/7/designpatterns_gof.jpeg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-            "books",
-            "design"
-        ]
-    },
-    {
-        "id": "8",
-        "type" : "book",
-        "title": "Deep Work: Rules for Focused Success in a Distracted World",
-        "subtitle": "Amazing book on how to focus and get things done.",
-        "description": "Deep Work is a book by Cal Newport that describes how to focus on deep work and how to get things done. A must read for the modern day developer.",
-        "date": "2023-03-17T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 1,
-        "content": "",
-        "tags": [
-        ],
-        "image": "../../../assets/templates/8/deepwork.jpg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-            "books",
-            "productivity"
-        ]
-    },
-    {
-        "id": "9",
-        "type" : "book",
-        "title": "The Pragmatic Programmer: Your Journey To Mastery, 20th Anniversary Edition (2nd Edition)",
-        "subtitle": "Get ready for a journey to mastery.",
-        "description": "The Pragmatic Programmer is a book by Andrew Hunt and David Thomas that describes how to be a better programmer. Another must read for the modern day developer.",
-        "date": "2022-03-17T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 1,
-        "content": "",
-        "tags": [
-        ],
-        "image": "../../../assets/templates/9/pragmaticprogrammer.jpg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-            "books"
-        ]
-    },
-    {
-        "id": "10",
-        "type" : "book",
-        "title": "Extreme Programming Explained: Embrace Change, 2nd Edition (The XP Series) 2nd Edition",
-        "subtitle": "Great book to pickup to learn about XP.",
-        "description": "Wow, this book is great. It's a great book to pickup to learn about XP. Get ready for an awakening.",
-        "date": "2023-02-13T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 1,
-        "content": "",
-        "tags": [
-        ],
-        "image": "../../../assets/templates/10/xp_programming.jpg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-            "books",
-            "productivity"
-        ]
-    },
-    {
-        "id": "11",
-        "type" : "design",
-        "title": "Class Inheritance",
-        "subtitle": "Extend functionality by reusing functionality in parent classes.",
-        "description": "A rapid way to define an object that is based on another object, retaining similar characteristics.",
-        "date": "2023-03-18T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 5,
-        "content": "",
-        "tags": [
-            "sm2",
-            "snippet"
-        ],
-        "image": "../assets/images/Image_by_ Monika_Schröder_ from_Pixabay.jpg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-        "design"
-        ]
-    },
-    {
-        "id": "12",
-        "type" : "design",
-        "title": "Class Types",
-        "subtitle": "The differences and when to use them.",
-        "description": "Choosing the right class type for particular use cases promotes efficient, maintainable, and easy to understand code.",
-        "date": "2023-03-18T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 5,
-        "content": "",
-        "tags": [
-            "sm2"
-        ],
-        "image": "../assets/images/Image_by_Mike_Sweeney_from_Pixabay.jpg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-        "design"
-        ]
-    },
-    {
-        "id": "13",
-        "type" : "book",
-        "title": "How Computers Really Work",
-        "subtitle": "A Hands-On Guide to the Inner Workings of the Machine",
-        "description": "This is a very interesting and entertaining ready with plenty of hands-on activities. From binary to the internet, this book covers it all.",
-        "date": "2023-01-11T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 1,
-        "content": "",
-        "tags": [
-        ],
-        "image": "../../../assets/templates/13/how-computers-really-work_fullcvr_v08_front.jpg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-            "books"
-        ]
-    },
-    {
-        "id": "14",
-        "type" : "design",
-        "title": "Object Composition Delegation",
-        "subtitle": "Making object composition as powerful as inheritance.",
-        "description": "Object composition delegation is a design pattern that allows you to delegate functionality to composed objects. Object A composed of object B delegates some of its functionality to object B.",
-        "date": "2023-03-18T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 5,
-        "content": "",
-        "tags": [
-            "sm2",
-            "snippet"
-        ],
-        "image": "../assets/images/Image_by_Gerd_Altmann_from_Pixabay.jpg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-        "design"
-        ]
-    },
-    {
-        "id": "15",
-        "type" : "book",
-        "title": "Understanding Software",
-        "subtitle": "Embrace simplicity in software development.",
-        "description": "Max Kanat-Alexander presents an insight software development in a highly relatable way. A great read or listen.",
-        "date": "2022-01-18T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 1,
-        "content": "",
-        "tags": [
-        ],
-        "image": "../assets/templates/15/understandingsoftware.jpeg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-        "books"
-        ]
-    },
-    {
-        "id": "16",
-        "type" : "learning",
-        "title": "SQ3R, Cornell Note Taking, and Spacing Effect",
-        "subtitle": "Survey, Question, Read, Recite, Review, Relate, Spacing",
-        "description": "SQ3R complimented with the Cornell Note Taking System and spacing effect is a hybrid reading comprehension strategy that helps you to read more efficiently and effectively. A great way to read technical books.",
-        "date": "2023-03-19T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 1,
-        "content": "",
-        "tags": [
-        ],
-        "image": "../assets/images/Image_by_ElasticComputeFarm_from_Pixabay.jpg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-        "learning"
-        ]
-    },
-    {
-        "id": "17",
-        "type" : "design",
-        "title": "OOP Acquaintance and Aggregation Relationships",
-        "subtitle": "Knowing the difference between acquaintance and aggregation relationships.",
-        "description": "Aggregation owns the object it aggregates. Acquaintance does not own the object but knows of other objects it is acquainted with. Knowing the difference between the two is important for designing maintainable and extensible code.",
-        "date": "2023-03-20T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 1,
-        "content": "",
-        "tags": [
-            "sm2"
-        ],
-        "image": "../assets/images/Image_by_Francisco_Leão_from_Pixabay.jpg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-        "design"
-        ]
-    },
-    {
-        "id": "18",
-        "type" : "architecture",
-        "title": "Retry Pattern",
-        "subtitle": "Handle transient failures with the retry pattern.",
-        "description": "The retry pattern is a design pattern for the handling of transient failures. Transient failures are failures that are temporary and can be resolved by retrying the operation. ",
-        "date": "2023-03-25T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 5,
-        "content": "",
-        "tags": [
-            "sm2"
-        ],
-        "image": "../assets/images/Image_by_Michael_Siebert_from_Pixabay.jpg",
-        "imageAlt": "",
-        "references": [
-        ],
-        "categories": [
-            "architecture"
-        ]
-    },
-    {
-        "id": "19",
-        "type" : "assembly",
-        "title": "Factorial in ARM Assembly",
-        "subtitle": "Understanding Opcodes and Registers.",
-        "description": "This is a simple factorial program written in ARM assembly.",
-        "date": "2023-03-25T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 1,
-        "content": "",
-        "tags": [
-            "snippet"
-        ],
-        "image": "../assets/images/arm.jpg",
-        "imageAlt": "",
-        "references": [
-        ],
-        "categories": [
-            "assembly"
-        ]
-    },
-    {
-        "id": "20",
-        "type" : "book",
-        "title": "The Science of Self-Learning",
-        "subtitle": "How to Learn Anything, Anytime, Anywhere",
-        "description": "The Science of Self-Learning by Peter Hollins is a must read for anyone who wants to learn more efficiently and effectively.",
-        "date": "2023-03-25T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 1,
-        "content": "",
-        "tags": [
-        ],
-        "image": "../../../assets/templates/20/The_Science_Of_Self_Learning.jpg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-            "books",
-            "learning"
-        ]
-    },
-    {
-        "id": "21",
-        "type" : "learning",
-        "title": "Critical Thinking Questions",
-        "subtitle": "Generate critical thinking questions.",
-        "description": "Critical thinking question generator based on the The Science of Self-Learning by author Peter Hollins.",
-        "date": "2023-03-19T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 1,
-        "content": "",
-        "tags": [
-        ],
-        "callback" : {
-            "name": "init",
-            "params": {}
-        },
-        "image": "../assets/images/Image_by_Adrian_from_Pixabay.jpg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-        "learning"
-        ]
-    },
-    {
-        "id": "22",
-        "type" : "learning",
-        "title": "Online Course List",
-        "subtitle": "A list of online courses.",
-        "description": "Online courses, resources and ratings.",
-        "date": "2023-03-25T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 1,
-        "content": "",
-        "tags": [
-        ],
-        "callback" : {
-            "styles": [
-
-            ],
-            "dependencies": [
-                "https://code.jquery.com/jquery-3.6.4.min.js",
-                "https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"
-            ],
-            "name": "init",
-            "params": {},
-            "delay": 5000
-        },
-        "image": "../assets/images/Image_by_Wynn_Pointaux_from_Pixabay.jpg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-        ]
-    },
-    {
-        "id": "23",
-        "type" : "architecture",
-        "title": "Rate Limiting Pattern",
-        "subtitle": "Avoid or minimize throttling errors with the rate limiting pattern.",
-        "description": "The Rate Limiting Pattern is a design pattern for the handling of throttled services or APIs that limit the number of requests that can be made within a given time period.",
-        "date": "2023-03-27T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 5,
-        "content": "",
-        "tags": [
-            "sm2"
-        ],
-        "image": "../assets/images/Image_by_PublicDomainPictures_from_Pixabay.jpg",
-        "imageAlt": "",
-        "references": [
-        ],
-        "categories": [
-            "architecture"
-        ]
-    },
-    {
-        "id": "24",
-        "type" : "design",
-        "title": "Mixin Class",
-        "subtitle": "Promote code reusability and modularity",
-        "description": "A mixin class is a special type of class in object-oriented programming that provides a specific functionality that can be added to other classes without the need for inheritance.",
-        "date": "2023-03-28T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 1,
-        "content": "",
-        "tags": [
-            "sm2"
-        ],
-        "image": "../assets/images/Image_by_giovanni_gargiulo_from_Pixabay.jpg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-        "design"
-        ]
-    },
-    {
-        "id": "25",
-        "type" : "database",
-        "title": "Entity-Attribute-Value Model",
-        "subtitle": "The antipattern known as Entity-Attribute-Value.",
-        "description": "The Entity-Attribute-Value (EAV) model is a data model that stores entity attributes as name-value pairs rather than as columns of a table.",
-        "date": "2023-03-29T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 3,
-        "content": "",
-        "tags": [
-            "sm2"
-        ],
-        "image": "../assets/images/Image_by_David_Zydd_from_Pixabay.png",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-        "database"
-        ]
-    },
-    {
-        "id": "26",
-        "type" : "book",
-        "title": "Clean Code",
-        "subtitle": "A Handbook of Agile Software Craftsmanship",
-        "description": "Write better code with Clean Code by Robert C. Martin.",
-        "date": "2022-06-16T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 3,
-        "content": "",
-        "tags": [
-        ],
-        "image": "../assets/templates/26/clean_code_book.jpeg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-        "books"
-        ]
-    },
-    {
-        "id": "27",
-        "type" : "architecture",
-        "title": "Claim Check Pattern",
-        "subtitle": "Handle large messages with claim checking.",
-        "description": "The Claim Check Pattern is a design pattern for the handling of large messages that are too large to be processed in a single transaction.",
-        "date": "2023-03-30T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 5,
-        "content": "",
-        "tags": [
-            "sm2"
-        ],
-        "image": "../assets/images/Image_by_James_Henry_from_Pixabay.jpg",
-        "imageAlt": "",
-        "references": [
-        ],
-        "categories": [
-            "architecture"
-        ]
-    }
-    ,
-    {
-        "id": "28",
-        "type" : "book",
-        "title": "SQL Antipatterns",
-        "subtitle": "Avoid pitfalls and write better SQL",
-        "description": "A great read for anyone who writes SQL. Learn how to identify and avoid common SQL antipatterns.",
-        "date": "2023-03-31T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 1,
-        "content": "",
-        "tags": [
-        ],
-        "image": "../assets/templates/28/sql_antipatterns.jpeg",
-        "imageAlt": "",
-        "references": [
-        ],
-        "categories": [
-            "books",
-            "database"
-        ]
-    },
-    {
-        "id": "29",
-        "type" : "database",
-        "title": "Hierarchy and Trees in SQL",
-        "subtitle": "How to model hierarchies and trees in SQL.",
-        "description": "Hierarchies and trees are a common data structure in many applications and there are several ways to model these structures in SQL. ",
-        "date": "2023-04-01T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 3,
-        "content": "",
-        "callback" : {
-            "styles": [
-
-            ],
-            "dependencies": [
-                "https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.4/d3.min.js"
-            ],
-            "name": "init",
-            "params": {},
-            "delay": 500
-        },
-        "tags": [
-            "sm2",
-            "snippet"
-        ],
-        "image": "../assets/images/Image_by_Joe_from_Pixabay.jpg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-        "database"
-        ]
-    },
-    {
-        "id": "30",
-        "type" : "web",
-        "title": "IndexedDB",
-        "subtitle": "Client-side storage for structured data",
-        "description": "IndexedDB is a low-level API for client-side storage of significant amounts of structured data, including files/blobs.",
-        "date": "2023-04-01T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 3,
-        "content": "",
-        "tags": [
-            "sm2"
-        ],
-        "image": "../assets/images/Image_by_200_Degrees_from_Pixabay.png",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-        "web",
-        "database"
-        ]
-    },
-    {
-        "id": "31",
-        "type" : "book",
-        "title": "Building Offline Applications with Angular",
-        "subtitle": "Develop Reliable, Performant Web Applications for Desktop and Mobile Platforms",
-        "description": "Author Venkata Keerti Kotaru shows you how to build offline applications with Angular.",
-        "date": "2023-04-01T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 1,
-        "content": "",
-        "tags": [
-        ],
-        "image": "../assets/templates/31/Building_Offline_Applications_with_Angular.jpeg",
-        "imageAlt": "",
-        "references": [
-        ],
-        "categories": [
-            "books",
-            "web"
-        ]
-    },
-    {
-        "id": "32",
-        "type" : "web",
-        "title": "Lazy Loading Images",
-        "subtitle": "Improve page load times by lazy loading images.",
-        "description": "Lazy loading images is a technique that improves page load times by loading images only when they are visible in the viewport.",
-        "date": "2023-04-02T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 3,
-        "content": "",
-        "tags": [
-            "sm2"
-        ],
-        "image": "../assets/images/relaxation-g823e33847_640.jpg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-        "web"
-        ]
-    },
-    {
-        "id": "33",
-        "type" : "book",
-        "title": "Front-end Performance",
-        "subtitle": "Performance is a key factor in the success of any web application.",
-        "description": "This short book has a number of topics that are important to consider when building a web application.",
-        "date": "2023-04-02T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 1,
-        "content": "",
-        "tags": [
-        ],
-        "image": "../assets/templates/33/front_end_performance.jpeg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-        "web",
-        "books"
-        ]
-    },
-    {
-        "id": "34",
-        "type" : "architecture",
-        "title": "ACID",
-        "subtitle": "Atomic, Consistent, Isolated, and Durable (ACID)",
-        "description": "Keep your application data consistent and reliable by using ACID transactions.",
-        "date": "2023-04-03T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 1,
-        "content": "",
-        "tags": [
-            "sm2"
-        ],
-        "image": "../assets/images/Image_by_PublicDomainPictures_from_Pixabay_2.jpg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-        "architecture",
-        "database"
-        ]
-    },
-    {
-        "id": "35",
-        "type" : "architecture",
-        "title": "Saga Distributed Transaction Pattern",
-        "subtitle": "Manage consistency across microservices using the Saga pattern.",
-        "description": "A distributed microservice architecture can be challenging to manage. To ensure consistency across microservices, consideration must be given to ensuring that all microservices are updated successfully or none are updated. (ACID)",
-        "date": "2023-04-03T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 1,
-        "content": "",
-        "tags": [
-            "sm2"
-        ],
-        "image": "../assets/images/Image_by_Prawny_from_Pixabay.jpg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-        "architecture"
-        ]
-    },
-    {
-        "id": "36",
-        "type" : "web",
-        "title": "Service Workers",
-        "subtitle": "Intercept and handle network requests.",
-        "description": "A foundation for building modern web applications, service workers allow web apps to be installable, work offline, receive notifications, and are reliable in low-bandwidth situations.", 
-        "date": "2023-04-03T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 1,
-        "content": "",
-        "tags": [
-            "sm2"
-        ],
-        "image": "../assets/images/Image_by_PollyDot_from_Pixabay.jpg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-        "web"
-        ]
-    },
-    {
-        "id": "39",
-        "type" : "linux",
-        "title": "Emulate Raspberry PI ARM on Linux",
-        "subtitle": "ARM emulation on Linux.",
-        "description": "Emulate ARM using QEMU on Linux with just a few commands.", 
-        "date": "2023-04-06T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 1,
-        "content": "",
-        "tags": [
-            "snippet"
-        ],
-        "image": "../assets/images/Image_by_OpenClipart-Vectors_from_Pixabay.png",
-        "imageAlt": "",
-        "references": [
-        ],
-        "categories": [
-            "assembly",
-            "linux"
-        ]
-    },
-    {
-        "id": "41",
-        "type" : "book",
-        "title": "Moonwalking with Einstein: The Art and Science of Remembering Everything",
-        "subtitle": "Authored by Joshua Foer",
-        "description": "A journalistic account of the author's journey to learn the art of memory.", 
-        "date": "2021-12-18T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 1,
-        "content": "",
-        "tags": [ ],
-        "image": "../assets/templates/41/moonwalking_with_einstein.jpg",
-        "imageAlt": "",
-        "references": [
-        ],
-        "categories": [
-            "books",
-            "learning"
-        ]
-    },
-    {
-        "id": "42",
-        "type" : "design",
-        "title": "Strategy Pattern aka (Policy Pattern)",
-        "subtitle": "Encapsulate behavior with object composition for enhanced code flexibility and runtime extensibility.",
-        "description": "A small demo project to highlight the basics of the Strategy Pattern.",
-        "date": "2023-04-15T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 5,
-        "content": "",
-        "tags": [
-            "sm2"
-        ],
-        "image": "../assets/templates/42/UML.jpg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-        "design"
-        ]
-    },
-    {
-        "id": "43",
-        "type" : "book",
-        "title": "Head First Design Patterns, 2nd Edition",
-        "subtitle": "Authored By Eric Freeman, Elisabeth Robson",
-        "description": "A great introduction to design patterns.", 
-        "date": "2022-04-18T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 1,
-        "content": "",
-        "tags": [ ],
-        "image": "../assets/templates/43/HeadFirstDesignPatterns.jpeg",
-        "imageAlt": "",
-        "references": [
-        ],
-        "categories": [
-            "books"
-        ]
-    },
-    {
-        "id": "44",
-        "type" : "development",
-        "title": "Copilot Self-signed certificate error on Windows with Visual Studio 2022",
-        "subtitle": "Documentation to assist with resolving the self-signed certificate error when using Copilot with Visual Studio 2022.",
-        "description": "[Error] An error occurred for 'RunOperation:RunOperation': StreamJsonRpc.RemoteInvocationException: Request signInInitiate failed with message: self signed certificate in certificate chain at StreamJsonRpc.JsonRpc.d__1451.MoveNext() --- End of stack trace from previous location where exception was thrown", 
-        "date": "2023-04-19T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 1,
-        "content": "",
-        "tags": [ "tip"],
-        "image": "../assets/images/Image_by_skylarvision_from_Pixabay.jpg",
-        "imageAlt": "",
-        "references": [
-        ],
-        "categories": [
-            "development",
-            "windows"
-        ]
-    },
-    {
-        "id": "45",
-        "type" : "learning",
-        "title": "Spaced Repetition Learning", 
-        "subtitle": "Improve retention and recall with spaced repetition learning.",
-        "description": "A learning technique that incorporates increasing intervals of time between subsequent review of previously learned material in order to exploit the psychological spacing effect.", 
-        "date": "2023-04-19T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 1,
-        "content": "",
-        "tags": [ "tip"],
-        "image": "../assets/images/Image_by_200_Degrees_from_Pixabay.png",
-        "imageAlt": "",
-        "references": [
-        ],
-        "categories": [
-            "learning",
-            "productivity"
-        ]
-    },
-        {
-        "id": "46",
-        "type" : "design",
-        "title": "Observer Pattern aka (Dependents, Publish-Subscribe)",
-        "subtitle": "Notify all dependents when a state changes.",
-        "description": "The observer pattern is a software design pattern in which an object, called the subject, maintains a list of its dependents, called observers, and notifies them automatically when the subject state changes.",
-        "date": "2023-04-21T19:08:51.568Z",
-        "author": "Adam Reed",
-        "avatar" : "AR",
-        "readTime": 5,
-        "content": "",
-        "tags": [
-            "sm2"
-        ],
-        "image": "../assets/templates/46/observerpattern.jpg",
-        "imageAlt": "",
-        "references": [
-
-        ],
-        "categories": [
-        "design"
-        ]
-    }
+    "tags": ["sm2", "snippet"],
+    "image": "../assets/images/Image_by_Joe_from_Pixabay.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["database"]
+  },
+  {
+    "id": "30",
+    "type": "web",
+    "title": "IndexedDB",
+    "subtitle": "Client-side storage for structured data",
+    "description": "IndexedDB is a low-level API for client-side storage of significant amounts of structured data, including files/blobs.",
+    "date": "2023-04-01T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 3,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../assets/images/Image_by_200_Degrees_from_Pixabay.png",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["web", "database"]
+  },
+  {
+    "id": "31",
+    "type": "book",
+    "title": "Building Offline Applications with Angular",
+    "subtitle": "Develop Reliable, Performant Web Applications for Desktop and Mobile Platforms",
+    "description": "Author Venkata Keerti Kotaru shows you how to build offline applications with Angular.",
+    "date": "2023-04-01T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [],
+    "image": "../assets/templates/31/Building_Offline_Applications_with_Angular.jpeg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["books", "web"]
+  },
+  {
+    "id": "32",
+    "type": "web",
+    "title": "Lazy Loading Images",
+    "subtitle": "Improve page load times by lazy loading images.",
+    "description": "Lazy loading images is a technique that improves page load times by loading images only when they are visible in the viewport.",
+    "date": "2023-04-02T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 3,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../assets/images/relaxation-g823e33847_640.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["web"]
+  },
+  {
+    "id": "33",
+    "type": "book",
+    "title": "Front-end Performance",
+    "subtitle": "Performance is a key factor in the success of any web application.",
+    "description": "This short book has a number of topics that are important to consider when building a web application.",
+    "date": "2023-04-02T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [],
+    "image": "../assets/templates/33/front_end_performance.jpeg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["web", "books"]
+  },
+  {
+    "id": "34",
+    "type": "architecture",
+    "title": "ACID",
+    "subtitle": "Atomic, Consistent, Isolated, and Durable (ACID)",
+    "description": "Keep your application data consistent and reliable by using ACID transactions.",
+    "date": "2023-04-03T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../assets/images/Image_by_PublicDomainPictures_from_Pixabay_2.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["architecture", "database"]
+  },
+  {
+    "id": "35",
+    "type": "architecture",
+    "title": "Saga Distributed Transaction Pattern",
+    "subtitle": "Manage consistency across microservices using the Saga pattern.",
+    "description": "A distributed microservice architecture can be challenging to manage. To ensure consistency across microservices, consideration must be given to ensuring that all microservices are updated successfully or none are updated. (ACID)",
+    "date": "2023-04-03T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../assets/images/Image_by_Prawny_from_Pixabay.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["architecture"]
+  },
+  {
+    "id": "36",
+    "type": "web",
+    "title": "Service Workers",
+    "subtitle": "Intercept and handle network requests.",
+    "description": "A foundation for building modern web applications, service workers allow web apps to be installable, work offline, receive notifications, and are reliable in low-bandwidth situations.",
+    "date": "2023-04-03T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../assets/images/Image_by_PollyDot_from_Pixabay.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["web"]
+  },
+  {
+    "id": "39",
+    "type": "linux",
+    "title": "Emulate Raspberry PI ARM on Linux",
+    "subtitle": "ARM emulation on Linux.",
+    "description": "Emulate ARM using QEMU on Linux with just a few commands.",
+    "date": "2023-04-06T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": ["snippet"],
+    "image": "../assets/images/Image_by_OpenClipart-Vectors_from_Pixabay.png",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["assembly", "linux"]
+  },
+  {
+    "id": "41",
+    "type": "book",
+    "title": "Moonwalking with Einstein: The Art and Science of Remembering Everything",
+    "subtitle": "Authored by Joshua Foer",
+    "description": "A journalistic account of the author's journey to learn the art of memory.",
+    "date": "2021-12-18T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [],
+    "image": "../assets/templates/41/moonwalking_with_einstein.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["books", "learning"]
+  },
+  {
+    "id": "42",
+    "type": "design",
+    "title": "Strategy Pattern aka (Policy Pattern)",
+    "subtitle": "Encapsulate behavior with object composition for enhanced code flexibility and runtime extensibility.",
+    "description": "A small demo project to highlight the basics of the Strategy Pattern.",
+    "date": "2023-04-15T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../assets/templates/42/UML.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
+  },
+  {
+    "id": "43",
+    "type": "book",
+    "title": "Head First Design Patterns, 2nd Edition",
+    "subtitle": "Authored By Eric Freeman, Elisabeth Robson",
+    "description": "A great introduction to design patterns.",
+    "date": "2022-04-18T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [],
+    "image": "../assets/templates/43/HeadFirstDesignPatterns.jpeg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["books"]
+  },
+  {
+    "id": "44",
+    "type": "development",
+    "title": "Copilot Self-signed certificate error on Windows with Visual Studio 2022",
+    "subtitle": "Documentation to assist with resolving the self-signed certificate error when using Copilot with Visual Studio 2022.",
+    "description": "[Error] An error occurred for 'RunOperation:RunOperation': StreamJsonRpc.RemoteInvocationException: Request signInInitiate failed with message: self signed certificate in certificate chain at StreamJsonRpc.JsonRpc.d__1451.MoveNext() --- End of stack trace from previous location where exception was thrown",
+    "date": "2023-04-19T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": ["tip"],
+    "image": "../assets/images/Image_by_skylarvision_from_Pixabay.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["development", "windows"]
+  },
+  {
+    "id": "45",
+    "type": "learning",
+    "title": "Spaced Repetition Learning",
+    "subtitle": "Improve retention and recall with spaced repetition learning.",
+    "description": "A learning technique that incorporates increasing intervals of time between subsequent review of previously learned material in order to exploit the psychological spacing effect.",
+    "date": "2023-04-19T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": ["tip"],
+    "image": "../assets/images/Image_by_200_Degrees_from_Pixabay.png",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["learning", "productivity"]
+  },
+  {
+    "id": "46",
+    "type": "design",
+    "title": "Observer Pattern aka (Dependents, Publish-Subscribe)",
+    "subtitle": "Notify all dependents when a state changes.",
+    "description": "The observer pattern is a software design pattern in which an object, called the subject, maintains a list of its dependents, called observers, and notifies them automatically when the subject state changes.",
+    "date": "2023-04-22T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../assets/templates/46/observerpattern.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
+  },
+  {
+    "id": "47",
+    "type": "design",
+    "title": "Decorator Pattern aka (Wrapper)",
+    "subtitle": "Open for extension, closed for modification.",
+    "description": "Wrap concrete classes with a decorator to add functionality without modifying the concrete class. ",
+    "date": "2024-04-23T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../assets/templates/47/decorator-pattern.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
+  }
 ]
