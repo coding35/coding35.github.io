@@ -769,5 +769,22 @@
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
+  },
+  {
+    "id": "48",
+    "type": "design",
+    "title": "Factory Method Pattern",
+    "subtitle": "An interface for object creation.",
+    "description": "Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.",
+    "date": "2028-04-23T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../assets/images/Image_by_200_Degrees_from_Pixabay.png",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
   }
 ]

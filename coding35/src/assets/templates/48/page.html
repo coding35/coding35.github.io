@@ -1,0 +1,55 @@
+<article>  
+
+    <p>
+        The factory in OOP is a design pattern that allows for the creation of objects 
+        without the need to specify the exact class of the object to create. A factory
+        can take one of two forms. It can be either a simple factory or a factory method.
+        A simple factory is a factory that creates only one type of object whereas a 
+        factory method is a factory that creates multiple types of objects. 
+    </p>
+      <p>
+        <strong>Remember:</strong>
+        <i>
+            Using the new operator is instantiating a concrete class resulting in tight coupling.
+            This practice is coding to an implementation and not to an interface. 
+            The factory pattern is the alternative to using the new.
+        </i>
+    </p>
+    <p>
+        The simple factory as its name suggests creates only one type of object. 
+        The client program only needs to know the interface of the object
+        that is being created and the responsibility for creating the object
+        and returning it to the client program is delegated to the factory. 
+        This allows for the client program to be decoupled from the object
+        creation process and allows for the factory to be able to change the
+        type of object that is being created without affecting the client program.
+    </p>
+    <p>
+        Similiar to the simple factory, the factory method also allows for the client
+        program to be decoupled from the object creation process but allows for
+        the creation of multiple types of objects. The factory method is an abstract
+        method that is implemented by the subclasses of the factory. The client program only needs to know the
+        interface of the object that is being created and the responsibility for
+        creating the object is delegated to the factory. The client program is decoupled
+        from the object creation process and allows for the factory to be able to change the
+        type of object that is being created without affecting the client program.
+    </p>
+
+
+
+
+    <div>
+        <h4>Reference</h4>
+        <ul>
+          <li>
+            Addison-Wesley. (2000). Chapter 3. Creational Patterns. In Design
+            patterns: Elements of reusable object-oriented software.
+          </li>
+          <li>
+            Freeman, E., &amp; Robson, E. (2020). Head First Design Patterns, 2nd
+            Edition
+          </li>
+        </ul>
+      </div>
+
+</article>
