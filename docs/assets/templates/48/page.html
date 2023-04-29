@@ -2,10 +2,21 @@
   <p>
     The factory in OOP is a design pattern that allows for the creation of
     objects without the need to specify the exact class of the object to create.
-    A factory can take one of two forms. It can be either a simple factory or a
-    factory method. A simple factory is a factory that creates only one type of
-    object whereas a factory method is a factory that creates multiple types of
-    objects.
+    A factory can take one of two primary forms, an factory method or an
+    abstract factory.
+  </p>
+  <p>
+    The factory method is a factory that creates objects using methods to keep
+    clients decoupled from concrete types. By using inheritance the factory
+    method allows a class to defer instantiation to subclasses. This factory
+    will create a single object and can be useful when the type of objects it
+    must create is not yet known.
+  </p>
+  <p>
+    The abstract factory is a factory that creates a family of component types
+    of objects and it does this by leveraging object composition. This factory
+    is useful when you have families of products that you want to make sure
+    belong together.
   </p>
   <p>
     <strong>Remember:</strong>
@@ -15,27 +26,6 @@
       interface. The factory pattern is the alternative to using the new.
     </i>
   </p>
-  <p>
-    The simple factory as its name suggests creates only one type of object. The
-    client program only needs to know the interface of the object that is being
-    created and the responsibility for creating the object and returning it to
-    the client program is delegated to the factory. This allows for the client
-    program to be decoupled from the object creation process and allows for the
-    factory to be able to change the type of object that is being created
-    without affecting the client program.
-  </p>
-  <p>
-    Similar to the simple factory, the factory method also allows for the client
-    program to be decoupled from the object creation process but allows for the
-    creation of multiple types of objects. The factory method is an abstract
-    method that is implemented by the subclasses of the factory. The client
-    program only needs to know the interface of the object that is being created
-    and the responsibility for creating the object is delegated to the factory.
-    The client program is decoupled from the object creation process and allows
-    for the factory to be able to change the type of object that is being
-    created without affecting the client program.
-  </p>
-
   <figure>
     <img
       src="../../../assets/templates/48/FactoryMethodPattern.jpg"
