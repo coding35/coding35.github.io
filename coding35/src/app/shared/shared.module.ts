@@ -5,15 +5,16 @@ import { SafePipe } from './pipe/safe.pipe';
 import { HeadsUpDialogComponent } from './dialog/heads-up/heads-up-dialog.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
+import { CategoryTitlePipe } from './pipe/category-title.pipe';
 
 @NgModule({
-  declarations: [NotFoundComponentComponent, SafePipe, HeadsUpDialogComponent],
+  declarations: [NotFoundComponentComponent, SafePipe, HeadsUpDialogComponent, CategoryTitlePipe],
   imports: [
     CommonModule,
     MatDialogModule,
     MatButtonModule
 
   ],
-  exports: [NotFoundComponentComponent, SafePipe]
+  exports: [NotFoundComponentComponent, SafePipe, CategoryTitlePipe]
 })
 export class SharedModule { }

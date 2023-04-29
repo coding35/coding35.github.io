@@ -43,6 +43,8 @@ const routes: Routes = [
   { path: 'windows', component: ContentListComponent, data: { page: 'windows' } },
   { path: 'web/:id', component: PageComponent, data: { page: 'web' } },
   { path: 'web', component: ContentListComponent, data: { page: 'web' } },
+  { path: 'SOLID/:id', component: PageComponent, data: { page: 'SOLID' } },
+  { path: 'SOLID', component: ContentListComponent, data: { page: 'SOLID' } },
   { path: 'category/:search', component: ContentListComponent, data: { page: 'category' } },
   { path: 'about', component: AboutComponent, data: { page: 'about' } },
   { path: 'contact', component: ContactComponent, data: { page: 'contact' } },

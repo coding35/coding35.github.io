@@ -11,7 +11,7 @@
         <mat-list-item class="list-item" role="listitem" *ngFor="let link of categoryLink.linkList"
             (click)="handleClick(link.url)">
             <span class="list-item-cell">
-                <span class="list-item-link">{{ link.title | titlecase }}</span>
+                <span class="list-item-link">{{ link.title | categoryTitle }}</span>
                 <mat-icon class="mat-icon-list-item">keyboard_arrow_right</mat-icon>
             </span>
         </mat-list-item>

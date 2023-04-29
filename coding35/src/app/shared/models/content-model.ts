@@ -49,6 +49,7 @@ export class Callback{
   delay!: number;
 }
 
+
 export enum ContentType {
   Architecture = "architecture",
   Video = "video",
@@ -58,7 +59,8 @@ export enum ContentType {
   Electronics = "electronics",
   Design = "design",
   Search = "search",
-  Database = "database"
+  Database = "database",
+  SOLID = "SOLID"
 }
 
 

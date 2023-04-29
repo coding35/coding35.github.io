@@ -1,4 +1,4 @@
-<h3 class="list-page-title">{{ pageTitle }} {{ category | titlecase }}</h3>
+<h3 class="list-page-title">{{ pageTitle }} {{ category | categoryTitle }}</h3>
 <div class="container-list" *ngIf="!notFound; else notFoundTemplate">
   <div *ngFor="let item of contentList" class="card">
     <mat-card class="content-card">
@@ -22,7 +22,7 @@
           <mat-chip
             *ngFor="let chip of item.categories"
             (click)="handleCategoryChipClick(chip)">
-            {{ chip }}
+            {{ chip | categoryTitle }}
           </mat-chip>
         </mat-chip-listbox>
         <div class="card-footer-container">
