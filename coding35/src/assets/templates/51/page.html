@@ -1,0 +1,51 @@
+<article>
+  <p>
+    The Singleton Pattern ensures a class has only one instance, and provides a
+    global point of access to it. This pattern is used when we want to ensure
+    that only one object of a particular class is instantiated. There are
+    several ways to implement the Singleton pattern.
+  </p>
+  <ul>
+    <li>Lazy Singleton Initialization</li>
+    <li>Eager Singleton Initialization</li>
+    <li>Singleton with Enum</li>
+  </ul>
+  <p>
+    <strong>Lazy Singleton</strong> Initialization is the most common way to
+    implement the Singleton. The Singleton object is created only if it is
+    needed per its name. This singleton is not thread-safe. If multiple threads
+    try to access the singleton at the same time, they may end up creating
+    multiple instances of the singleton. This can be fixed by using code to
+    synchronize the getInstance() method. However, this can cause performance
+    issues.
+  </p>
+  <p>
+    <strong>Eager Singleton</strong> Initialization is the simplest way to
+    implement the Singleton. The Singleton object is created when the class is
+    loaded into the memory. This singleton is thread-safe. However, this can
+    cause performance issues if the singleton is not used frequently.
+  </p>
+  <p>
+    <strong>Singleton with Enum</strong> is the best way to implement the
+    Singleton. The Singleton object is created when the class is loaded into the
+    memory. This singleton is thread-safe. This is the best way to implement the
+    Singleton because it is simple, provides serialization for free, and
+    provides protection against multiple instantiation.
+  </p>
+  <a href="https://github.com/coding35/singleton-pattern" target="_blank"
+  >View Example Code on GitHub</a
+>
+  <div>
+    <h4>Reference</h4>
+    <ul>
+      <li>
+        Addison-Wesley. (2000). Chapter 4. Structural Patterns. In Design
+        patterns: Elements of reusable object-oriented software.
+      </li>
+      <li>
+        Freeman, E., &amp; Robson, E. (2020). Head First Design Patterns, 2nd
+        Edition
+      </li>
+    </ul>
+  </div>
+</article>

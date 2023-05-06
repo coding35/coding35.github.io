@@ -820,5 +820,22 @@
     "imageAlt": "",
     "references": [],
     "categories": ["design", "solid"]
+  },
+  {
+    "id": "51",
+    "type": "design",
+    "title": "Singleton Pattern",
+    "subtitle": "Ensure a class has only one instance.",
+    "description": "The Singleton Pattern ensures a class has only one instance, and provides a global point of access to it.",
+    "date": "2028-05-05T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../assets/images/Image_by_Arek_Socha_from_Pixabay.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
   }
 ]
