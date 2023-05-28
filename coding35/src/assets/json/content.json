@@ -837,5 +837,39 @@
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
+  },
+  {
+    "id": "52",
+    "type": "design",
+    "title": "Command Pattern",
+    "subtitle": ".",
+    "description": "The Command Pattern",
+    "date": "2028-05-20T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../assets/templates/52/command-pattern.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
+  },
+  {
+    "id": "53",
+    "type": "operating-systems",
+    "title": "Virtual Memory",
+    "subtitle": "A memory management system used by operating systems.",
+    "description": "Virtual memory is a memory management system used by operating systems that provides each process isolation by assigning a virtual address space.",
+    "date": "2028-05-14T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../assets/images/Image_by_sin_won_jang_from_Pixabay.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["operating-systems"]
   }
 ]

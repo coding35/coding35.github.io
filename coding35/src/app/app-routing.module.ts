@@ -39,6 +39,8 @@ const routes: Routes = [
   { path: 'book', component: ContentListComponent, data: { page: 'book' } },
   { path: 'development/:id', component: PageComponent, data: { page: 'development' } },
   { path: 'development', component: ContentListComponent, data: { page: 'development' } },
+  { path: 'operating-systems/:id', component: PageComponent, data: { page: 'operating-systems' } },
+  { path: 'operating-systems', component: ContentListComponent, data: { page: 'operating-systems' } },
   { path: 'windows/:id', component: PageComponent, data: { page: 'windows' } },
   { path: 'windows', component: ContentListComponent, data: { page: 'windows' } },
   { path: 'web/:id', component: PageComponent, data: { page: 'web' } },
