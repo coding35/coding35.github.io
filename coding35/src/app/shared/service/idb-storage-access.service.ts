@@ -8,7 +8,7 @@ export class IdbStorageAccessService {
   data: IContentModel[] = [];
 
   private readonly database = 'Coding35';
-  private readonly version = 1;
+  private readonly version = 2;
   private readonly store = 'ContentStore';
 
   constructor(private windowObj: Window) {
