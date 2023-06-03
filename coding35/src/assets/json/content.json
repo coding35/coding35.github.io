@@ -871,5 +871,39 @@
     "imageAlt": "",
     "references": [],
     "categories": ["operating-systems"]
+  },
+  {
+    "id": "54",
+    "type": "design",
+    "title": "Adapter Pattern",
+    "subtitle": "Convert the interface of a class into another interface clients expect.",
+    "description": "The adapter pattern is a structural design pattern that allows objects with incompatible interfaces to collaborate.",
+    "date": "2028-06-03T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../assets/templates/54/adapter-pattern.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
+  },
+  {
+    "id": "55",
+    "type": "design",
+    "title": "Class Adapter Pattern",
+    "subtitle": "Adapt a class to another interface using inheritance.",
+    "description": "The Class Adapter Pattern is a structural design pattern that allows objects with incompatible interfaces to collaborate using inheritance.",
+    "date": "2028-06-04T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2", "snippet"],
+    "image": "../assets/templates/55/class-adapter-pattern.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
   }
 ]

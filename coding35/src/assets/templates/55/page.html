@@ -1,0 +1,61 @@
+<article>
+  <p>
+    The class adapter uses multiple inheritance to adapt one interface to
+    another. 
+  </p>
+
+  <figure>
+    <img
+      src="../../../assets/templates/55/class-adapter-pattern.jpg"
+      alt="Class Adapter Pattern"
+      class="img-responsive"
+    />
+    <figcaption></figcaption>
+  </figure>
+
+  <div>
+    <pre class="prettyprint">
+            #include &ltiostream&gt
+            class target {
+            public:
+                void request() {
+                    std::cout << "target request" << std::endl;
+                }
+            };
+            
+            class adaptee {
+            public:
+                void specificRequest() {
+                    std::cout << "Adaptee specificRequest" << std::endl;
+                }
+            };
+            
+            class adapter : public target, public adaptee {
+            
+            };
+            
+            
+            int main() {
+                adapter adapter;
+            
+                adapter.request();
+                adapter.specificRequest();
+                return 0;
+            }
+        </pre
+    >
+  </div>
+  <a href="https://github.com/coding35/class-adapter-pattern" target="_blank"
+    >View Example Code on GitHub</a
+  >
+
+  <div>
+    <h4>Reference</h4>
+    <ul>
+      <li>
+        Freeman, E., &amp; Robson, E. (2020). Head First Design Patterns, 2nd
+        Edition
+      </li>
+    </ul>
+  </div>
+</article>
