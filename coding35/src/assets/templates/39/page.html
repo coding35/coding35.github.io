@@ -55,7 +55,6 @@
     <li>
       Execute the following command to setup the VM
       <pre class="prettyprint">
-
             $ qemu-system-arm \ 
             -kernel ~/pi/kernel-qemu-4.4.34-jessie \
             -cpu arm1176 \ 
@@ -66,13 +65,24 @@
             -hda ~/pi/2017-04-10-raspbian-jessie.img \ 
             -nic user,hostfwd=tcp::5022-:22 \
             -no-reboot
-            /
       </pre>
-      <div>qemu-system-arm -kernel ~/pi/kernel-qemu-4.4.34-jessie -cpu arm1176 -m 256 -M versatilepb -serial stdio -append "root=/dev/sda2 rootfstype=ext4 rw" -hda ~/pi/2017-04-10-raspbian-jessie.img -nic user,hostfwd=tcp::5022-:22  -no-reboot
-      </div>
-    </li>
+      <caption>
+        <div>
+                  <i>Copy Friendly</i>
+        </div>
+
+        <sub>
+          qemu-system-arm -kernel ~/pi/kernel-qemu-4.4.34-jessie -cpu arm1176 -m
+          256 -M versatilepb -serial stdio -append "root=/dev/sda2
+          rootfstype=ext4 rw" -hda ~/pi/2017-04-10-raspbian-jessie.img -nic
+          user,hostfwd=tcp::5022-:22 -no-reboot
+        </sub>
+      </caption>
+
+    </li>      <br />
     <li>
-      Optionally, SSH into the VM using the following command after enabling SSH on the Raspberry PI VM.
+      Optionally, SSH into the VM using the following command after enabling SSH
+      on the Raspberry PI VM.
       <pre class="prettyprint">
             $ ssh pi@127.0.0.1 -p 5022
         </pre

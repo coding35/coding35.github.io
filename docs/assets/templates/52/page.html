@@ -1,6 +1,22 @@
 <article>
+  <p>
+    The command pattern is a behavioral design pattern that is useful when it is necessary
+    to separate the request from the execution logic of the request. It is often used
+    to log and audit changes in a system.
+  </p>
+  <p>
+    The command pattern encapsulates a request as an object to decouple the sender of the
+    request from the object that executes the request.
+  </p>
 
-<figure>
+  <ol>  
+    <li>Client - Creates a command object and sets its receiver</li>
+    <li>Command - Encapsulates a request as an object</li>
+    <li>Invoker - Asks the command to carry out the request</li>
+    <li>Receiver - Knows how to perform the operations associated with carrying out the request</li>
+  </ol>
+
+  <figure>
     <img
       src="../../../assets/templates/52/command-pattern.jpg"
       alt="Command Pattern"
