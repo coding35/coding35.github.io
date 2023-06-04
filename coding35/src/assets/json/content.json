@@ -905,5 +905,22 @@
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
+  },
+  {
+    "id": "56",
+    "type": "design",
+    "title": "Facade Pattern",
+    "subtitle": "Simplify the interface of a complex system.",
+    "description": "The Facade Pattern is a structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.",
+    "date": "2028-06-05T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../assets/templates/56/facade-pattern.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
   }
 ]
