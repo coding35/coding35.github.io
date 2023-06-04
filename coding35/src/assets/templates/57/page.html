@@ -1,1 +1,47 @@
-PLK
+<article>
+  <p>
+    The Principle of Least Knowledge (PLK) or Law of Demeter (LOD) is a design
+    guideline useful for developing object-oriented programs. The principle
+    states that for any object, it is important to control the number of classes
+    that it interacts with. This guideline ensures that our classes are loosely
+    coupled thereby making code easier to maintain and extend.
+  </p>
+  <p>
+    The overall goal of the PLK is to reduce the dependencies between classes
+    and promote encapsulation. An object should only interact with its immediate
+    neighbors and not with objects further away. An object should only
+    communicate with objects through its own interface.
+  </p>
+  <cite> "Only talk to your immediate friends." </cite>
+  <div>
+    <h4>An object should only call methods of:</h4>
+    <ul>
+      <li>Itself</li>
+      <li>Objects passed in as a parameter to the method</li>
+      <li>Any object it creates</li>
+      <li>Any components of the object</li>
+      <li>Method parameters</li>
+    </ul>
+  </div>
+  <p>
+    Following PLK should ensure a level of orthogonality in our code whereby a
+    component is independent of its peers. The more orthogonal a component is,
+    the less it knows about its peers and changes in one part of the code will
+    not affect other parts.
+  </p>
+  <h4>Example</h4>
+  <pre class="prettyprint">
+    class ClassA:
+        def doSomething(self, b):
+        b.doSomething()
+
+    class ClassB:
+        def doSomething(self):
+            c = ClassC()
+            c.doSomething()
+
+    class ClassC:
+        def doSomething(self):
+            # Perform some action
+</pre>
+</article>

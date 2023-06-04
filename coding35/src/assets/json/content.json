@@ -926,9 +926,9 @@
   {
     "id": "57",
     "type": "design",
-    "title": "Principle of Least Knowledge (PLK)",
+    "title": "Principle of Least Knowledge (PLK) or Law of Demeter (LOD)",
     "subtitle": "An object should know only its direct dependencies.",
-    "description": "A guideline to prevent tight coupling between objects. It states that any object should know as little as possible about the structure of other objects.",
+    "description": "A guideline to prevent tight coupling between objects. It states that any object should know as little as possible about the structure of other objects. Orthogonality is a key principle of PLK.",
     "date": "2023-06-06T19:08:51.568Z",
     "author": "Adam Reed",
     "avatar": "AR",
