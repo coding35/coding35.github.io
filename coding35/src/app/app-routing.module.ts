@@ -6,8 +6,6 @@ import { ContentListComponent } from './main/components/content-list/content-lis
 import { ForceDirectedTreeComponent } from './main/components/force-directed-tree/force-directed-tree.component';
 import { PageComponent } from './main/components/page/page.component';
 import { Sm2Component } from './sm2/sm2.component';
-import { IdbStorageAccessService } from './shared/service/idb-storage-access.service';
-
 
 const routes: Routes = [
   { path: 'sm2', component: Sm2Component, data: { page: 'SM2' } },
@@ -45,8 +43,8 @@ const routes: Routes = [
   { path: 'windows', component: ContentListComponent, data: { page: 'windows' } },
   { path: 'web/:id', component: PageComponent, data: { page: 'web' } },
   { path: 'web', component: ContentListComponent, data: { page: 'web' } },
-  { path: 'SOLID/:id', component: PageComponent, data: { page: 'SOLID' } },
-  { path: 'SOLID', component: ContentListComponent, data: { page: 'SOLID' } },
+  { path: 'design-principles/:id', component: PageComponent, data: { page: 'design-principles' } },
+  { path: 'design-principles', component: ContentListComponent, data: { page: 'design-principles' } },
   { path: 'category/:search', component: ContentListComponent, data: { page: 'category' } },
   { path: 'about', component: AboutComponent, data: { page: 'about' } },
   { path: 'contact', component: ContactComponent, data: { page: 'contact' } },

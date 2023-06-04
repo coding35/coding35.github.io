@@ -76,9 +76,9 @@ export class ContentListComponent implements OnInit {
             this.filter = ContentType.Book;
             this.pageTitle = 'Database';
             break;
-            case 'SOLID':
-              this.filter = ContentType.SOLID;
-              this.pageTitle = 'SOLID';
+            case '"design-principles"':
+              this.filter = ContentType.DesignPrinciples;
+              this.pageTitle = 'Design Principles"';
               break;
           default:
             this.pageTitle = 'Not Found';

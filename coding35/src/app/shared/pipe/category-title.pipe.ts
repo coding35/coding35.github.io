@@ -10,8 +10,8 @@ export class CategoryTitlePipe implements TitleCasePipe {
   transform(value: string | null | undefined): string | null;
   transform(value: unknown): string | null {
     switch (value) {
-      case 'solid':
-        return 'SOLID';
+      case 'design-principles':
+        return 'Design Principles';
       case 'design':
         return 'Design Patterns';
       case 'operating-systems':
