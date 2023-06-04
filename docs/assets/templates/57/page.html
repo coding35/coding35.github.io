@@ -29,19 +29,40 @@
     the less it knows about its peers and changes in one part of the code will
     not affect other parts.
   </p>
+  <figure>
+    <img
+      src="../../../assets/templates/57/principle-of-least-knowledge.jpg.jpg"
+      alt="Facade Pattern"
+      class="img-responsive"
+    />
+    <figcaption></figcaption>
+  </figure>
   <h4>Example</h4>
   <pre class="prettyprint">
-    class ClassA:
-        def doSomething(self, b):
-        b.doSomething()
-
-    class ClassB:
-        def doSomething(self):
-            c = ClassC()
-            c.doSomething()
-
-    class ClassC:
-        def doSomething(self):
-            # Perform some action
+    public class A
+    {
+        public void DoSomething(B b)
+        {
+            b.DoSomething();
+        }
+    }
+    
+    public class B
+    {
+        public void DoSomething()
+        {
+            C c = new C();
+            c.DoSomething();
+        }
+    }
+    
+    public class C
+    {
+        public void DoSomething()
+        {
+            // Perform some action
+        }
+    }
+    
 </pre>
 </article>
