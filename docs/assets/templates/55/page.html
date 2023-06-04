@@ -1,7 +1,16 @@
 <article>
   <p>
-    The class adapter uses multiple inheritance to adapt one interface to
-    another. 
+    The class adapter pattern uses multiple inheritance to adapt one interface
+    to another. Similar to the object adapter pattern, the class adapter pattern
+    allows incompatible interfaces to work together through the use of
+    inheritance. This pattern can only be used with languages that allow
+    multiple inheritance such as C++, Python and R to name a few. It is also
+    less flexible than the object adapter pattern because it requires the
+    adapter to inherit from both the target and adaptee classes. This means that
+    the adapter can only adapt one class unlike the object adapter which can
+    adapt multiple classes. Additionally, the class adapter pattern is less
+    flexible because it requires the adapter to override all of the adaptee's
+    methods. If the adaptee class is changed, so must the adapter class.
   </p>
 
   <figure>
