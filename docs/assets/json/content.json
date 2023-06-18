@@ -990,5 +990,39 @@
     "imageAlt": "",
     "references": [],
     "categories": ["books"]
+  },
+  {
+    "id": "61",
+    "type": "design",
+    "title": "Iterator Pattern",
+    "subtitle": "Iterate an aggregate without having to know how things are done.",
+    "description": "Access elements of an aggregate object sequentially without exposing its underlying representation.",
+    "date": "2023-06-17T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../../../assets/templates/61/iterator_pattern.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
+  },
+  {
+    "id": "62",
+    "type": "design",
+    "title": "Single Responsibility Principle (SRP)",
+    "subtitle": "A class should have only one reason to change.",
+    "description": "Assign each responsibility to one class, and only one class because modifying code provides opportunities for introducing bugs.",
+    "date": "2023-06-18T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../assets/images/Image_by_S_K_from_Pixabay.png",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design", "design-principles"]
   }
 ]

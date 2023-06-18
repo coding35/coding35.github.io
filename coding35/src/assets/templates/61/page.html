@@ -1,0 +1,43 @@
+<article>
+  <p>
+    The Iterator pattern allows the client the ability to access elements of an
+    aggregate object sequentially without exposing its underlying
+    representation. This pattern decouples the client from the implementation of
+    the collection class. The client can iterate over the collection without
+    knowing how the collection is implemented. (ie. Array, List, etc.). The
+    endgame here is template-method-pattern the iterator pattern allows the
+    collection to change its internal implementation without affecting the
+    client.
+  </p>
+  <p>
+    Transversal of the elements is now the responsibility of the iterator object
+    and not the aggregate object. The aggregate object is now responsible for
+    creating the iterator object and returning it to the client while iteration
+    responsibility is delegated to the iterator object.
+  </p>
+  <p>
+    This pattern simplifies the interface and implementation of the aggregate
+    object which simplifies the client code and assigns responsibility
+    accordingly.
+  </p>
+  <figure>
+    <img
+      src="../../../assets/templates/61/iterator_pattern.jpg"
+      alt="Iterator Pattern"
+      class="img-responsive"
+    />
+    <figcaption></figcaption>
+  </figure>
+  <a href="https://github.com/coding35/iterator_pattern" target="_blank"
+    >View Example Code on GitHub</a
+  >
+  <div>
+    <h4>Reference</h4>
+    <ul>
+      <li>
+        Freeman, E., &amp; Robson, E. (2020). Head First Design Patterns, 2nd
+        Edition
+      </li>
+    </ul>
+  </div>
+</article>
