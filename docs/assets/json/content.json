@@ -1024,5 +1024,22 @@
     "imageAlt": "",
     "references": [],
     "categories": ["design", "design-principles"]
+  },
+  {
+    "id": "63",
+    "type": "design",
+    "title": "Composite Pattern",
+    "subtitle": "Treat individual objects and compositions uniformly",
+    "description": "Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.",
+    "date": "2023-06-20T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../../../assets/templates/61/iterator_pattern2.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
   }
 ]
