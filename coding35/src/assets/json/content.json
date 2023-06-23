@@ -1041,5 +1041,23 @@
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
+  },
+  {
+    "id": "64",
+    "type": "design",
+    "title": "GOF Design Pattern Review",
+    "subtitle": "Reference for the GoF Design Patterns",
+    "description": "A reference guide for the GoF Design Patterns",
+    "date": "2023-06-22T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../assets/images/Image_by_Steve_Buissinne_from_Pixabay.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
   }
+
 ]
