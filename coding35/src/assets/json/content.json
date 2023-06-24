@@ -1058,6 +1058,23 @@
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
+  },
+  {
+    "id": "65",
+    "type": "architecture",
+    "title": "Cloud Computing",
+    "subtitle": "IaaS, PaaS, SaaS, FaaS",
+    "description": "On-demand availability of computer system resources, data storage and computing power, without direct active management by the user.",
+    "date": "2023-06-23T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../assets/images/Image_by_Nikin_from_Pixabay.png",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["architecture"]
   }
 
 ]
