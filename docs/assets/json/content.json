@@ -1075,6 +1075,23 @@
     "imageAlt": "",
     "references": [],
     "categories": ["architecture"]
+  },
+  {
+    "id": "66",
+    "type": "design",
+    "title": "State Pattern",
+    "subtitle": "Encapsulate state-based behavior and delegate behavior to the current state.",
+    "description": "Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.",
+    "date": "2023-06-24T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../../../assets/templates/66/state-pattern.jpg",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
   }
 
 ]

@@ -1,0 +1,63 @@
+<article>
+  <p>
+    While similar to the strategy pattern, the state pattern encapsulates state
+    of an object and delegates behavior to that state. This allows the object to
+    change its behavior at runtime. Basically, as state changes the context
+    delegates behavior to the current state. The client is unaware of the state
+    changes and the state changes are handled by the context.
+  </p>
+  <p>
+    The strategy pattern would generally depend on the client to change the
+    behavior at runtime.
+  </p>
+  <p>
+    Overall, the state pattern is a nice way to encapsulate and remove
+    conditional logic when dealing with behavior changes.
+  </p>
+  <ul>
+    <li>
+      Clients should not interact directly with the state objects. Interfacing
+      with the state objects is the domain of the context.
+    </li>
+    <li>
+      State transition handling can be performed in both the context and within
+      each individual state.
+    </li>
+    <li>
+      Sharing state objects is possible across multiple contexts. This can be
+      done by using static instance variables.
+    </li>
+    <li>
+      Error on the side of extra state objects. It is better to have more.
+    </li>
+    <li>
+      An interface or abstract class can be used to define the state objects.
+      Prefer abstract classes over interfaces here if possible to allow the
+      addition of methods in the future.
+    </li>
+  </ul>
+  <figure>
+    <img
+      src="../../../assets/templates/66/state-pattern.jpg"
+      alt="state pattern"
+      class="img-responsive"
+    />
+    <figcaption></figcaption>
+  </figure>
+  <a href="https://github.com/coding35/state-pattern" target="_blank"
+  >View Example Code on GitHub</a
+>
+<div>
+  <h4>Reference</h4>
+  <ul>
+    <li>
+      Freeman, E., &amp; Robson, E. (2020). Head First Design Patterns, 2nd
+      Edition
+    </li>
+    <li>
+      Gamma, E., Helm, R., Johnson, R., &amp; Vlissides, J. (2021). Design
+      patterns: Elements of reusable object-oriented software.
+    </li>
+  </ul>
+</div>
+</article>
