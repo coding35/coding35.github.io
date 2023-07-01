@@ -1092,6 +1092,23 @@
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
+  },
+  {
+    "id": "67",
+    "type": "web",
+    "title": "Quick Order Shopping Cart Project",
+    "subtitle": "A simplistic take on a quick order shopping cart in TypeScript",
+    "description": "A TypeScript project with templates for a quick order shopping cart and maybe a few design patterns WIP",
+    "date": "2023-07-01T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../../../assets/images/ecommerce.png",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["web"]
   }
 
 ]
