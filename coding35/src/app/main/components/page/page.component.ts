@@ -40,7 +40,6 @@ export class PageComponent implements OnInit {
             fetch(`../../assets/templates/${id}/page.html`)
               .then((response) => response.text())
               .then((html) => {
-                let json = data as ContentModel;
                 this.pageContent = data as ContentModel;
                 if (
                   this.pageContent === undefined ||
