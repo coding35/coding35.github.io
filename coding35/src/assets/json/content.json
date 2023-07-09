@@ -1211,5 +1211,22 @@
     "imageAlt": "",
     "references": [],
     "categories": ["reference"]
+  },
+  {
+    "id": "74",
+    "type": "web",
+    "title": "Next-Gen Codecs",
+    "subtitle": "A comparison of image codecs",
+    "description": "Improve website load times with next gen image codecs.",
+    "date": "2023-07-09T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../../../assets/templates/74/codecs",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["web"]
   }
 ]
