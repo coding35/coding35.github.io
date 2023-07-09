@@ -11,7 +11,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/images/shane-rounce-1ZZ96uESRJQ-unsplash-resize.jpg",
+    "image": "../assets/images/shane-rounce-1ZZ96uESRJQ-unsplash-resize",
     "imageAlt": "",
     "references": [],
     "categories": ["architecture"]
@@ -28,7 +28,7 @@
     "readTime": 3,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/templates/2/Image_by_Peter_Morth_from_Pixabay.jpg",
+    "image": "../assets/templates/2/Image_by_Peter_Morth_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["architecture"]
@@ -45,7 +45,7 @@
     "readTime": 7,
     "content": "",
     "tags": ["sm2", "snippet"],
-    "image": "../assets/images/Image_by_Lawrence_Monk_from_Pixabay.jpg",
+    "image": "../assets/images/Image_by_Lawrence_Monk_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["code", "design"]
@@ -62,7 +62,7 @@
     "readTime": 5,
     "content": "",
     "tags": [],
-    "image": "../assets/images/Image_by_axonite_from_Pixabay.jpg",
+    "image": "../assets/images/Image_by_axonite_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["electronics"]
@@ -79,7 +79,7 @@
     "readTime": 3,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/images/Image_by_PIRO_from_Pixabay.jpg",
+    "image": "../assets/images/Image_by_PIRO_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["architecture"]
@@ -96,7 +96,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2", "snippet"],
-    "image": "../assets/images/Image_by_Magic_Creative_from_Pixabay.png",
+    "image": "../assets/images/Image_by_Magic_Creative_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
@@ -113,7 +113,7 @@
     "readTime": 1,
     "content": "",
     "tags": [],
-    "image": "../../../assets/templates/7/designpatterns_gof.jpeg",
+    "image": "../../../assets/templates/7/designpatterns_gof",
     "imageAlt": "",
     "references": [],
     "categories": ["books", "design"]
@@ -130,7 +130,7 @@
     "readTime": 1,
     "content": "",
     "tags": [],
-    "image": "../../../assets/templates/8/deepwork.jpg",
+    "image": "../../../assets/templates/8/deepwork",
     "imageAlt": "",
     "references": [],
     "categories": ["books", "productivity"]
@@ -147,7 +147,7 @@
     "readTime": 1,
     "content": "",
     "tags": [],
-    "image": "../../../assets/templates/9/pragmaticprogrammer.jpg",
+    "image": "../../../assets/templates/9/pragmaticprogrammer",
     "imageAlt": "",
     "references": [],
     "categories": ["books"]
@@ -164,7 +164,7 @@
     "readTime": 1,
     "content": "",
     "tags": [],
-    "image": "../../../assets/templates/10/xp_programming.jpg",
+    "image": "../../../assets/templates/10/xp_programming",
     "imageAlt": "",
     "references": [],
     "categories": ["books", "productivity"]
@@ -181,7 +181,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2", "snippet"],
-    "image": "../assets/images/Image_by_ Monika_Schröder_ from_Pixabay.jpg",
+    "image": "../assets/images/Image_by_Monika_Schröder_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
@@ -198,7 +198,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/images/Image_by_Mike_Sweeney_from_Pixabay.jpg",
+    "image": "../assets/images/Image_by_Mike_Sweeney_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
@@ -215,7 +215,7 @@
     "readTime": 1,
     "content": "",
     "tags": [],
-    "image": "../../../assets/templates/13/how-computers-really-work_fullcvr_v08_front.jpg",
+    "image": "../../../assets/templates/13/how-computers-really-work_fullcvr_v08_front",
     "imageAlt": "",
     "references": [],
     "categories": ["books"]
@@ -232,7 +232,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2", "snippet"],
-    "image": "../assets/images/Image_by_Gerd_Altmann_from_Pixabay.jpg",
+    "image": "../assets/images/Image_by_Gerd_Altmann_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
@@ -249,7 +249,7 @@
     "readTime": 1,
     "content": "",
     "tags": [],
-    "image": "../assets/templates/15/understandingsoftware.jpeg",
+    "image": "../assets/templates/15/understandingsoftware",
     "imageAlt": "",
     "references": [],
     "categories": ["books"]
@@ -266,7 +266,7 @@
     "readTime": 1,
     "content": "",
     "tags": [],
-    "image": "../assets/images/Image_by_ElasticComputeFarm_from_Pixabay.jpg",
+    "image": "../assets/images/Image_by_ElasticComputeFarm_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["learning"]
@@ -283,7 +283,7 @@
     "readTime": 1,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/images/Image_by_Francisco_Leão_from_Pixabay.jpg",
+    "image": "../assets/images/Image_by_Francisco_Leão_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
@@ -300,7 +300,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/images/Image_by_Michael_Siebert_from_Pixabay.jpg",
+    "image": "../assets/images/Image_by_Michael_Siebert_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["architecture"]
@@ -317,7 +317,7 @@
     "readTime": 1,
     "content": "",
     "tags": ["snippet"],
-    "image": "../assets/images/arm.jpg",
+    "image": "../assets/images/arm",
     "imageAlt": "",
     "references": [],
     "categories": ["assembly"]
@@ -334,7 +334,7 @@
     "readTime": 1,
     "content": "",
     "tags": [],
-    "image": "../../../assets/templates/20/The_Science_Of_Self_Learning.jpg",
+    "image": "../../../assets/templates/20/The_Science_Of_Self_Learning",
     "imageAlt": "",
     "references": [],
     "categories": ["books", "learning"]
@@ -355,7 +355,7 @@
       "name": "init",
       "params": {}
     },
-    "image": "../assets/images/Image_by_Adrian_from_Pixabay.jpg",
+    "image": "../assets/images/Image_by_Adrian_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["learning"]
@@ -382,7 +382,7 @@
       "params": {},
       "delay": 5000
     },
-    "image": "../assets/images/Image_by_Wynn_Pointaux_from_Pixabay.jpg",
+    "image": "../assets/images/Image_by_Wynn_Pointaux_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": []
@@ -399,7 +399,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/images/Image_by_PublicDomainPictures_from_Pixabay.jpg",
+    "image": "../assets/images/Image_by_PublicDomainPictures_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["architecture"]
@@ -416,7 +416,7 @@
     "readTime": 1,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/images/Image_by_giovanni_gargiulo_from_Pixabay.jpg",
+    "image": "../assets/images/Image_by_giovanni_gargiulo_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
@@ -433,7 +433,7 @@
     "readTime": 3,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/images/Image_by_David_Zydd_from_Pixabay.png",
+    "image": "../assets/images/Image_by_David_Zydd_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["database"]
@@ -450,7 +450,7 @@
     "readTime": 3,
     "content": "",
     "tags": [],
-    "image": "../assets/templates/26/clean_code_book.jpeg",
+    "image": "../assets/templates/26/clean_code_book",
     "imageAlt": "",
     "references": [],
     "categories": ["books"]
@@ -467,7 +467,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/images/Image_by_James_Henry_from_Pixabay.jpg",
+    "image": "../assets/images/Image_by_James_Henry_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["architecture"]
@@ -484,7 +484,7 @@
     "readTime": 1,
     "content": "",
     "tags": [],
-    "image": "../assets/templates/28/sql_antipatterns.jpeg",
+    "image": "../assets/templates/28/sql_antipatterns",
     "imageAlt": "",
     "references": [],
     "categories": ["books", "database"]
@@ -510,7 +510,7 @@
       "delay": 500
     },
     "tags": ["sm2", "snippet"],
-    "image": "../assets/images/Image_by_Joe_from_Pixabay.jpg",
+    "image": "../assets/images/Image_by_Joe_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["database"]
@@ -527,7 +527,7 @@
     "readTime": 3,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/images/Image_by_200_Degrees_from_Pixabay.png",
+    "image": "../assets/images/Image_by_200_Degrees_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["web", "database"]
@@ -544,7 +544,7 @@
     "readTime": 1,
     "content": "",
     "tags": [],
-    "image": "../assets/templates/31/Building_Offline_Applications_with_Angular.jpeg",
+    "image": "../assets/templates/31/Building_Offline_Applications_with_Angular",
     "imageAlt": "",
     "references": [],
     "categories": ["books", "web"]
@@ -561,7 +561,7 @@
     "readTime": 3,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/images/relaxation-g823e33847_640.jpg",
+    "image": "../assets/images/relaxation-g823e33847_640",
     "imageAlt": "",
     "references": [],
     "categories": ["web"]
@@ -578,7 +578,7 @@
     "readTime": 1,
     "content": "",
     "tags": [],
-    "image": "../assets/templates/33/front_end_performance.jpeg",
+    "image": "../assets/templates/33/front_end_performance",
     "imageAlt": "",
     "references": [],
     "categories": ["web", "books"]
@@ -595,7 +595,7 @@
     "readTime": 1,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/images/Image_by_PublicDomainPictures_from_Pixabay_2.jpg",
+    "image": "../assets/images/Image_by_PublicDomainPictures_from_Pixabay_2",
     "imageAlt": "",
     "references": [],
     "categories": ["architecture", "database"]
@@ -612,7 +612,7 @@
     "readTime": 1,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/images/Image_by_Prawny_from_Pixabay.jpg",
+    "image": "../assets/images/Image_by_Prawny_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["architecture"]
@@ -629,7 +629,7 @@
     "readTime": 1,
     "content": "",
     "tags": ["sm2", "wip"],
-    "image": "../assets/images/Image_by_PollyDot_from_Pixabay.jpg",
+    "image": "../assets/images/Image_by_PollyDot_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["web"]
@@ -646,7 +646,7 @@
     "readTime": 1,
     "content": "",
     "tags": ["snippet"],
-    "image": "../assets/images/Image_by_OpenClipart-Vectors_from_Pixabay.png",
+    "image": "../assets/images/Image_by_OpenClipart-Vectors_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["assembly", "linux"]
@@ -663,7 +663,7 @@
     "readTime": 1,
     "content": "",
     "tags": [],
-    "image": "../assets/templates/41/moonwalking_with_einstein.jpg",
+    "image": "../assets/templates/41/moonwalking_with_einstein",
     "imageAlt": "",
     "references": [],
     "categories": ["books", "learning"]
@@ -680,7 +680,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/templates/42/strategy-pattern.jpg",
+    "image": "../assets/templates/42/strategy-pattern",
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
@@ -697,7 +697,7 @@
     "readTime": 1,
     "content": "",
     "tags": [],
-    "image": "../assets/templates/43/HeadFirstDesignPatterns.jpeg",
+    "image": "../assets/templates/43/HeadFirstDesignPatterns",
     "imageAlt": "",
     "references": [],
     "categories": ["books", "design"]
@@ -714,7 +714,7 @@
     "readTime": 1,
     "content": "",
     "tags": ["tip"],
-    "image": "../assets/images/Image_by_skylarvision_from_Pixabay.jpg",
+    "image": "../assets/images/Image_by_skylarvision_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["development", "windows"]
@@ -731,7 +731,7 @@
     "readTime": 1,
     "content": "",
     "tags": ["tip"],
-    "image": "../assets/images/Image_by_200_Degrees_from_Pixabay.png",
+    "image": "../assets/images/Image_by_200_Degrees_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["learning", "productivity"]
@@ -748,7 +748,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/templates/46/observerpattern.jpg",
+    "image": "../assets/templates/46/observerpattern",
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
@@ -765,7 +765,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/templates/47/decorator-pattern.jpg",
+    "image": "../assets/templates/47/decorator-pattern",
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
@@ -782,7 +782,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/images/Image_by_Clker-Free-Vector-Images_from_Pixabay.png",
+    "image": "../assets/images/Image_by_Clker-Free-Vector-Images_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
@@ -799,7 +799,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/images/Image_by_Vural_Yavaş_from_Pixabay.jpg",
+    "image": "../assets/images/Image_by_Vural_Yavaş_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["design", "design-principles"]
@@ -816,7 +816,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/templates/50/dependency_inversion_principle.jpg",
+    "image": "../assets/templates/50/dependency_inversion_principle",
     "imageAlt": "",
     "references": [],
     "categories": ["design", "design-principles"]
@@ -833,7 +833,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/images/Image_by_Arek_Socha_from_Pixabay.jpg",
+    "image": "../assets/images/Image_by_Arek_Socha_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
@@ -850,7 +850,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/templates/52/command-pattern.jpg",
+    "image": "../assets/templates/52/command-pattern",
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
@@ -867,7 +867,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/images/Image_by_sin_won_jang_from_Pixabay.jpg",
+    "image": "../assets/images/Image_by_sin_won_jang_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["operating-systems"]
@@ -884,7 +884,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/templates/54/adapter-pattern.jpg",
+    "image": "../assets/templates/54/adapter-pattern",
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
@@ -901,7 +901,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2", "snippet"],
-    "image": "../assets/templates/55/class-adapter-pattern.jpg",
+    "image": "../assets/templates/55/class-adapter-pattern",
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
@@ -918,7 +918,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/templates/56/facade-pattern.jpg",
+    "image": "../assets/templates/56/facade-pattern",
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
@@ -935,7 +935,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2", "snippet"],
-    "image": "../assets/templates/57/principle-of-least-knowledge.jpg",
+    "image": "../assets/templates/57/principle-of-least-knowledge",
     "imageAlt": "",
     "references": [],
     "categories": ["design", "design-principles"]
@@ -952,7 +952,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/templates/58/template-method-pattern.jpg",
+    "image": "../assets/templates/58/template-method-pattern",
     "imageAlt": "",
     "references": [],
     "categories": ["design", "design-principles"]
@@ -969,7 +969,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/images/Image_by_Jan_Alexander_from_Pixabay.jpg",
+    "image": "../assets/images/Image_by_Jan_Alexander_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["design", "design-principles"]
@@ -986,7 +986,7 @@
     "readTime": 1,
     "content": "",
     "tags": [],
-    "image": "../../../assets/templates/60/ElementsOfComputsSystems.jpg",
+    "image": "../../../assets/templates/60/ElementsOfComputsSystems",
     "imageAlt": "",
     "references": [],
     "categories": ["books"]
@@ -1003,7 +1003,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2"],
-    "image": "../../../assets/templates/61/iterator_pattern.jpg",
+    "image": "../../../assets/templates/61/iterator_pattern",
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
@@ -1020,7 +1020,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/images/Image_by_S_K_from_Pixabay.png",
+    "image": "../assets/images/Image_by_S_K_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["design", "design-principles"]
@@ -1037,7 +1037,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2"],
-    "image": "../../../assets/templates/63/composition-pattern.jpg",
+    "image": "../../../assets/templates/63/composition-pattern",
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
@@ -1054,7 +1054,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/images/Image_by_Steve_Buissinne_from_Pixabay.jpg",
+    "image": "../assets/images/Image_by_Steve_Buissinne_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
@@ -1071,7 +1071,7 @@
     "readTime": 1,
     "content": "",
     "tags": ["sm2"],
-    "image": "../assets/images/Image_by_Nikin_from_Pixabay.png",
+    "image": "../assets/images/Image_by_Nikin_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["architecture"]
@@ -1088,7 +1088,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2"],
-    "image": "../../../assets/templates/66/state-pattern.jpg",
+    "image": "../../../assets/templates/66/state-pattern",
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
@@ -1105,7 +1105,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2"],
-    "image": "../../../assets/images/ecommerce.png",
+    "image": "../../../assets/images/ecommerce",
     "imageAlt": "",
     "references": [],
     "categories": ["web"]
@@ -1122,7 +1122,7 @@
     "readTime": 1,
     "content": "",
     "tags": [],
-    "image": "../../../assets/templates/68/writegreatcode.jpeg",
+    "image": "../../../assets/templates/68/writegreatcode",
     "imageAlt": "",
     "references": [],
     "categories": ["books"]
@@ -1139,7 +1139,7 @@
     "readTime": 1,
     "content": "",
     "tags": ["sm2"],
-    "image": "../../../assets/templates/69/http.png",
+    "image": "../../../assets/templates/69/http",
     "imageAlt": "",
     "references": [],
     "categories": ["web"]
@@ -1156,7 +1156,7 @@
     "readTime": 1,
     "content": "",
     "tags": ["wip"],
-    "image": "../../../assets/images/Image_by_Jiří_Rotrekl_from_Pixabay.jpg",
+    "image": "../../../assets/images/Image_by_Jiří_Rotrekl_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["web"]
@@ -1173,7 +1173,7 @@
     "readTime": 1,
     "content": "",
     "tags": [],
-    "image": "../../../assets/templates/71/cppcrashcourse.jpeg",
+    "image": "../../../assets/templates/71/cppcrashcourse",
     "imageAlt": "",
     "references": [],
     "categories": ["books"]
@@ -1190,7 +1190,7 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2"],
-    "image": "../../../assets/templates/72/proxy-pattern.jpg",
+    "image": "../../../assets/templates/72/proxy-pattern",
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
@@ -1207,7 +1207,7 @@
     "readTime": 1,
     "content": "",
     "tags": [],
-    "image": "../../../assets/images/Image_by_DreamQuest_from_Pixabay.jpg",
+    "image": "../../../assets/images/Image_by_DreamQuest_from_Pixabay",
     "imageAlt": "",
     "references": [],
     "categories": ["reference"]

@@ -6,14 +6,24 @@
         <mat-card-title class="card-title">{{ item.title }}</mat-card-title>
         <mat-card-subtitle>{{ item.subtitle }}</mat-card-subtitle>
       </mat-card-header>
-      <img
-        mat-card-image
-        class="image-responsive"
-        src="{{ item.image }}"
-        alt="{{ item.imageAlt }}"
-        (click)="handleReadMore(item.id)"
-        [loading]="handleLazyLoadingImg(item)"
+      <picture>
+        <source
+          srcset="{{item.image}}.webp"
+          type="image/webp"
+        />
+        <source
+          srcset="{{item.image}}.jpg"
+          type="image/jpeg"
+        />
+        <img
+          mat-card-image
+          class="image-responsive"
+          src="{{ item.image }}"
+          alt="{{ item.imageAlt }}"
+          (click)="handleReadMore(item.id)"
+          [loading]="handleLazyLoadingImg(item)"
       />
+      </picture>
       <mat-card-content>
         <p>
           {{ item.description }}
