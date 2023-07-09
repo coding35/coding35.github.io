@@ -25,6 +25,9 @@
                 Resource Load Time (40%)
                 Element Render Delay (<10%)        browser received the resource and the browser rendered the resource
               * how to reduce TTFB so HTML can be delivered as quickly as possible
+                * fetch priority in Chrome  link fetchpriority="high" rel="preload" href="img/" as="image" ... in the head or on the element itself
+                * make sure the image is discoverable as soon as possible.
+                * preload scanning is a microsoft innovation that scans the page for preload links and starts downloading them as soon as possible
                 * prefetching
                 * Pre-rendering
                 * Reduce redirects
