@@ -26,7 +26,7 @@ export class PageComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private search: SearchService,
-    private indexDbSvc: IdbStorageAccessService,
+    private indexDbSvc: IdbStorageAccessService
   ) {}
 
   ngOnInit(): void {
@@ -37,57 +37,54 @@ export class PageComponent implements OnInit {
           this.notFound = true;
         }
         this.indexDbSvc.get(id).then((data) => {
-            fetch(`../../assets/templates/${id}/page.html`)
-              .then((response) => response.text())
-              .then((html) => {
-                this.pageContent = data as ContentModel;
-                if (
-                  this.pageContent === undefined ||
-                  html.indexOf('Cannot GET /assets') > -1
-                ) {
-                  this.notFound = true;
-                } else {
-                  this.pageContent.content = html;
-                  if (this.pageContent.tags.some((tag) => tag === 'snippet')) {
-                    setTimeout(() => {
-                      window.PR.prettyPrint();
-                    }, 0);
-                  }
-                  if (this.pageContent.callback.name) {
-                    const callback = this.pageContent.callback;
-                    setTimeout(() => {
-                      if (callback.styles) {
-                        callback.styles.forEach((style: string) => {
-                          const link = document.createElement('link');
-                          link.href = style;
-                          link.type = 'text/css';
-                          link.rel = 'stylesheet';
-                          console.log(link);
-                          document.head.appendChild(link);
-                        });
-                      }
-                          if (callback.dependencies) {
-                            callback.dependencies.forEach(
-                              (dependency: string) => {
-                                const script = document.createElement('script');
-                                script.src = dependency;
-                                document.body.appendChild(script);
-                              }
-                            );
-                          }
-                      fetch(`../../assets/templates/${id}/script.js`)
-                        .then((response) => response.text())
-                        .then((data) => {
-
-                          var script = document.createElement('script');
-                          script.innerHTML = data;
-                          document.body.appendChild(script);
-                        });
-                    }, this.pageContent.callback.delay | 0);
-                  }
+          fetch(`../../assets/templates/${id}/page.html`)
+            .then((response) => response.text())
+            .then((html) => {
+              this.pageContent = data as ContentModel;
+              if (
+                this.pageContent === undefined ||
+                html.indexOf('Cannot GET /assets') > -1
+              ) {
+                this.notFound = true;
+              } else {
+                this.pageContent.content = html;
+                if (this.pageContent.tags.some((tag) => tag === 'snippet')) {
+                  setTimeout(() => {
+                    window.PR.prettyPrint();
+                  }, 0);
                 }
-              });
-          });
+                if (this.pageContent.callback.name) {
+                  const callback = this.pageContent.callback;
+                  setTimeout(() => {
+                    if (callback.styles) {
+                      callback.styles.forEach((style: string) => {
+                        const link = document.createElement('link');
+                        link.href = style;
+                        link.type = 'text/css';
+                        link.rel = 'stylesheet';
+                        console.log(link);
+                        document.head.appendChild(link);
+                      });
+                    }
+                    if (callback.dependencies) {
+                      callback.dependencies.forEach((dependency: string) => {
+                        const script = document.createElement('script');
+                        script.src = dependency;
+                        document.body.appendChild(script);
+                      });
+                    }
+                    fetch(`../../assets/templates/${id}/script.js`)
+                      .then((response) => response.text())
+                      .then((data) => {
+                        var script = document.createElement('script');
+                        script.innerHTML = data;
+                        document.body.appendChild(script);
+                      });
+                  }, this.pageContent.callback.delay | 0);
+                }
+              }
+            });
+        });
       }
     });
     this.search.ee.subscribe((search: string) => {

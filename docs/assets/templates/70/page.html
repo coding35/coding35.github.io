@@ -1,12 +1,65 @@
 
 
 <article>
-
-    A list of developer centric resources I have decided to document for reference and to share with others.
+  <h1>Web Performance</h1>
 
     <ul>
         <li>http protocols</li>
         <li>compression gzip / br</li>
+        <li>Core web vitals
+          how users experience the speed, responsiveness, and visual stability of your page.
+          scoring badly on these metrics can affect your search engine ranking
+
+          * Loading
+            * Largest Contentful Paint (LCP)
+              * Render time of largest 'visible' element on a given page.
+              * Never lazy load the LCP Element
+              * CSS is render blocking
+              * inline critical styles
+              * reduce initial Compress
+              * Defer non critical CSS
+              * < 2.5s good, > 2.5s < 4s needs improvement, > 4s poor    
+              * 40-10-40-10 Rule
+                Time to first Byte (TTFB) (40%) 
+                Resource Load Delay (<10%) 
+                Resource Load Time (40%)
+                Element Render Delay (<10%)        browser received the resource and the browser rendered the resource
+              * how to reduce TTFB so HTML can be delivered as quickly as possible
+                * prefetching
+                * Pre-rendering
+                * Reduce redirects
+                * Serve from origin / single domain
+                * HTTP/2 or HTTP/3
+                * Predictive prefetching (Guess.js)
+                * Use pre-rendered (generate static HTML at build time) vs Server-side rendering (SSR)
+                * CDN
+                * Caching
+                * Minify
+                * Compress
+                * Optimize Images
+                * Optimize Fonts
+                * Optimize CSS
+                * Optimize JS
+                * Optimize HTML
+                * Optimize Server
+                * Optimize Database
+              * Tools to measure
+                * Lighthouse for development but not great for production
+                * PageSpeed Insights collected from real people visiting this site
+                * Find LCP by using Chrome Performance Tab Timings and looking for the largest element
+                
+          
+          * Interactivity
+            * First Input Delay (FID)
+
+          * Visual Stability
+            * Cumulative Layout Shift (CLS)  
+          
+          why
+            how
+            what
+
+        </li>
     </ul>
   <div>
     <h4>Reference</h4>

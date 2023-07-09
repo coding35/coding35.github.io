@@ -1,0 +1,52 @@
+<article>
+  <p>
+    The proxy pattern is a structural design pattern that lets you substitute a
+    placeholder for another object to control access (local or remote), that is
+    expensive to create, or is in need of securing. It can be used when you want
+    to add some additional behaviors to an object of some existing class without
+    changing the client code but there may be a better strategy to adding
+    additional behavior.
+    <br />Basically, the proxy intercepts all calls to the real object and does
+    something like logging, caching, checking authentication/authorization
+    making a request to a remote service, returning a placeholder value, etc.
+  </p>
+  <p>
+    <strong>Remote Proxy:</strong> A proxy that acts like a local representative
+    for an object that lives in a different/remote address space.
+  </p>
+  <p>
+    <strong>Virtual Proxy:</strong> A proxy that acts as a placeholder for an
+    expensive to create object and will often times defer the creation of the
+    object until needed. One use case may be to display a loading spinner while
+    the object is being created and the request is being processed.
+  </p>
+  <p>
+    <strong>Protection Proxy:</strong> A proxy that controls access to an object
+    based on permissions.
+  </p>
+
+  <figure>
+    <img
+      src="../../../assets/templates/72/proxy-pattern.jpg"
+      alt="proxy pattern"
+      class="img-responsive"
+    />
+    <figcaption></figcaption>
+  </figure>
+  <a href="https://github.com/coding35/proxy-pattern" target="_blank"
+    >View Example Code on GitHub</a
+  >
+  <div>
+    <h4>Reference</h4>
+    <ul>
+      <li>
+        Freeman, E., &amp; Robson, E. (2020). Head First Design Patterns, 2nd
+        Edition
+      </li>
+      <li>
+        Gamma, E., Helm, R., Johnson, R., &amp; Vlissides, J. (2021). Design
+        patterns: Elements of reusable object-oriented software.
+      </li>
+    </ul>
+  </div>
+</article>

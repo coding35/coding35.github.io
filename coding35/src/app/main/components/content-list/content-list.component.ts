@@ -76,18 +76,22 @@ export class ContentListComponent implements OnInit {
             this.filter = ContentType.Book;
             this.pageTitle = 'Database';
             break;
-            case '"design-principles"':
-              this.filter = ContentType.DesignPrinciples;
-              this.pageTitle = 'Design Principles"';
-              break;
+          case '"design-principles"':
+            this.filter = ContentType.DesignPrinciples;
+            this.pageTitle = 'Design Principles"';
+            break;
+          case 'reference':
+            this.filter = ContentType.Reference;
+            this.pageTitle = 'Reference';
+            break;
           default:
             this.pageTitle = 'Not Found';
             this.notFound = true;
             break;
         }
-        
+
         this.indexDbSvc.getAll<IContentModel[]>('ContentStore').then((data) => {
-          data = data.filter((f) => !f.tags.toLocaleString().includes("wip"));
+          data = data.filter((f) => !f.tags.toLocaleString().includes('wip'));
           const search = this.route.snapshot.params['search'] || '';
           if (this.filter == ContentType.Any) {
             if (search) {
@@ -108,7 +112,9 @@ export class ContentListComponent implements OnInit {
                   new Date(b.date).getTime() - new Date(a.date).getTime()
               );
           }
-          this.eagerLoadImageList = this.contentList.slice(0, 4).map((m) => m.id);
+          this.eagerLoadImageList = this.contentList
+            .slice(0, 4)
+            .map((m) => m.id);
         });
       }
     });
@@ -117,7 +123,7 @@ export class ContentListComponent implements OnInit {
       this.category = val || 'All';
       this.filter = ContentType.Search;
       this.indexDbSvc.getAll<IContentModel[]>('ContentStore').then((data) => {
-        data = data.filter((f) => !f.tags.toLocaleString().includes("wip"));
+        data = data.filter((f) => !f.tags.toLocaleString().includes('wip'));
         let content = data as ContentModel[];
         this.contentList = content
           .filter(

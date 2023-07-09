@@ -50,8 +50,6 @@ export class Callback{
 }
 
 
-
-
 export enum ContentType {
   Architecture = "architecture",
   Video = "video",
@@ -62,7 +60,8 @@ export enum ContentType {
   Design = "design",
   Search = "search",
   Database = "database",
-  DesignPrinciples = "design-principles"
+  DesignPrinciples = "design-principles",
+  Reference = "reference"
 }
 
 
