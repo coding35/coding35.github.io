@@ -15,6 +15,9 @@ export interface IContentModel {
   id: string;
   references: Reference[];
   categories: string[];
+  fetchpriority: string;
+  rel: string;
+  loading: string;
 
 }
 
@@ -35,6 +38,9 @@ export class ContentModel implements IContentModel {
     id: string = '';
     references: Reference[] = [];
     categories: string[] = [];
+    fetchpriority: string = 'low';
+    rel: string = 'auto';
+    loading: string = 'lazy';
 
     constructor(data: IContentModel) {
       Object.assign(this, data);

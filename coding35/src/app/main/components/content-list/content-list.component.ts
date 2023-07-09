@@ -112,9 +112,13 @@ export class ContentListComponent implements OnInit {
                   new Date(b.date).getTime() - new Date(a.date).getTime()
               );
           }
-          this.eagerLoadImageList = this.contentList
-            .slice(0, 4)
-            .map((m) => m.id);
+
+          this.contentList
+            .slice(0, 4).forEach((f) => {
+              f.loading = 'eager';
+              f.fetchpriority = 'high';
+              f.rel = 'preload';
+            })         
         });
       }
     });
@@ -155,10 +159,6 @@ export class ContentListComponent implements OnInit {
 
   handleCategoryChipClick(chip: string) {
     this.router.navigate([`/category/${chip}`]);
-  }
-
-  handleLazyLoadingImg(item: IContentModel) {
-    return this.eagerLoadImageList.includes(item.id) ? 'eager' : 'lazy';
   }
 
   ngOnDestroy() {

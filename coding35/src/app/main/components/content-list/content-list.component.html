@@ -21,7 +21,10 @@
           src="{{ item.image }}"
           alt="{{ item.imageAlt }}"
           (click)="handleReadMore(item.id)"
-          [loading]="handleLazyLoadingImg(item)"
+          as="image"
+          attr.fetchpriority="{{ item.fetchpriority }}"
+          attr.rel="{{ item.rel }}"
+          loading="{{ item.loading }}"
       />
       </picture>
       <mat-card-content>
