@@ -5,7 +5,13 @@ import {
   Renderer2,
   ViewChild,
 } from '@angular/core';
-import { ActivatedRoute, NavigationEnd, NavigationSkipped, Router, Scroll } from '@angular/router';
+import {
+  ActivatedRoute,
+  NavigationEnd,
+  NavigationSkipped,
+  Router,
+  Scroll,
+} from '@angular/router';
 import { Subscription } from 'rxjs';
 import {
   ContentModel,
@@ -43,11 +49,19 @@ export class ContentListComponent implements OnInit {
 
   ngOnInit(): void {
     this.routerSubscription = this.router.events.subscribe(async (val) => {
-      if(val instanceof NavigationSkipped){
-        this.renderer.setStyle(this.content!.nativeElement, 'visibility', 'visible');
+      if (val instanceof NavigationSkipped) {
+        this.renderer.setStyle(
+          this.content!.nativeElement,
+          'visibility',
+          'visible'
+        );
         return;
       }
-      this.renderer.setStyle(this.content!.nativeElement, 'visibility', 'hidden');
+      this.renderer.setStyle(
+        this.content!.nativeElement,
+        'visibility',
+        'hidden'
+      );
       if (val instanceof NavigationEnd || val instanceof Scroll) {
         let page = this.route.snapshot.data['page'];
         switch (page) {
@@ -135,17 +149,16 @@ export class ContentListComponent implements OnInit {
             f.rel = 'preload';
           });
           this.load.ee.emit('content-list');
-          setTimeout(() => {
-            this.renderer.setStyle(this.content!.nativeElement, 'visibility', 'visible');
-          }, 500);
-        
+          this.renderer.setStyle(
+            this.content!.nativeElement,
+            'visibility',
+            'visible'
+          );
         });
-        
       }
     });
 
     this.search.ee.subscribe((val) => {
-      this.renderer.setStyle(this.content!.nativeElement, 'visibility', 'hidden');
       this.category = val || 'All';
       this.filter = ContentType.Search;
       this.indexDbSvc.getAll<IContentModel[]>('ContentStore').then((data) => {

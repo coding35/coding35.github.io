@@ -13,9 +13,7 @@ export class ContentComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     this.load.ee.subscribe((val) => {
-      setTimeout(() => {
       this.renderer.setStyle(this.content!.nativeElement, 'visibility', 'visible');
-      }, 500);
     });
   }
 }
