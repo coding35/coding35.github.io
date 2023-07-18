@@ -5,7 +5,7 @@ import {
   Renderer2,
   ViewChild,
 } from '@angular/core';
-import { ActivatedRoute, NavigationEnd, Router, Scroll } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, NavigationSkipped, Router, Scroll } from '@angular/router';
 import { Subscription } from 'rxjs';
 import {
   ContentModel,
@@ -13,6 +13,7 @@ import {
   IContentModel,
 } from 'src/app/shared/models/content-model';
 import { IdbStorageAccessService } from 'src/app/shared/service/idb-storage-access.service';
+import { LoadService } from 'src/app/shared/service/load.service';
 import { SearchService } from 'src/app/shared/service/search.service';
 
 @Component({
@@ -21,7 +22,8 @@ import { SearchService } from 'src/app/shared/service/search.service';
   styleUrls: ['./content-list.component.scss'],
 })
 export class ContentListComponent implements OnInit {
-  @ViewChild('content') content: ElementRef<HTMLDivElement> | undefined;
+  @ViewChild('content_list') content: ElementRef<HTMLDivElement> | undefined;
+
   contentList: ContentModel[] = [];
   notFound: boolean = false;
   pageTitle: string = 'Not Found';
@@ -35,11 +37,17 @@ export class ContentListComponent implements OnInit {
     private router: Router,
     private search: SearchService,
     private indexDbSvc: IdbStorageAccessService,
-    private renderer: Renderer2
+    private renderer: Renderer2,
+    private load: LoadService
   ) {}
 
   ngOnInit(): void {
     this.routerSubscription = this.router.events.subscribe(async (val) => {
+      if(val instanceof NavigationSkipped){
+        this.renderer.setStyle(this.content!.nativeElement, 'visibility', 'visible');
+        return;
+      }
+      this.renderer.setStyle(this.content!.nativeElement, 'visibility', 'hidden');
       if (val instanceof NavigationEnd || val instanceof Scroll) {
         let page = this.route.snapshot.data['page'];
         switch (page) {
@@ -126,20 +134,18 @@ export class ContentListComponent implements OnInit {
             f.fetchpriority = 'high';
             f.rel = 'preload';
           });
-
-          console.log(this.contentList);
+          this.load.ee.emit('content-list');
           setTimeout(() => {
-            this.renderer.setStyle(
-              this.content!.nativeElement,
-              'display',
-              'initial'
-            );
-          }, 20);
+            this.renderer.setStyle(this.content!.nativeElement, 'visibility', 'visible');
+          }, 500);
+        
         });
+        
       }
     });
 
     this.search.ee.subscribe((val) => {
+      this.renderer.setStyle(this.content!.nativeElement, 'visibility', 'hidden');
       this.category = val || 'All';
       this.filter = ContentType.Search;
       this.indexDbSvc.getAll<IContentModel[]>('ContentStore').then((data) => {
