@@ -10,9 +10,9 @@
           <mat-card-subtitle>{{ item.subtitle }}</mat-card-subtitle>
         </mat-card-header>
         <picture>
-          <source srcset="{{item.image}}.avif" type="image/avif" />
-          <source srcset="{{item.image}}.webp" type="image/webp" />
-          <source srcset="{{item.image}}.jpg" type="image/jpeg" />
+          <source srcset="{{item.image}}.avif" type="image/avif"/>
+          <source srcset="{{item.image}}.webp" type="image/webp"/>
+          <source srcset="{{item.image}}.jpg" type="image/jpeg"/>
           <img
             mat-card-image
             class="image-responsive"
@@ -23,6 +23,7 @@
             attr.fetchpriority="{{ item.fetchpriority }}"
             attr.rel="{{ item.rel }}"
             loading="{{ item.loading }}"
+            height="600"
           />
         </picture>
         <mat-card-content>
