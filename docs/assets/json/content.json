@@ -1215,7 +1215,7 @@
   {
     "id": "74",
     "type": "web",
-    "title": "Next-Gen Codecs",
+    "title": "Next-Gen Image Codecs",
     "subtitle": "A comparison of image codecs",
     "description": "Improve website load times with next gen image codecs.",
     "date": "2023-07-09T19:08:51.568Z",
@@ -1228,5 +1228,22 @@
     "imageAlt": "",
     "references": [],
     "categories": ["web"]
+  },
+  {
+    "id": "75",
+    "type": "design",
+    "title": "Compound Patterns",
+    "subtitle": "Solve a problem with two or more patterns",
+    "description": "A compound pattern is a combination of two or more patterns that solve a general or recurring design problem.",
+    "date": "2023-07-19T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../../../assets/images/",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
   }
 ]

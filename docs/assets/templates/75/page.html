@@ -1,5 +1,38 @@
 <article>
-    <p>Compound patterns</p>
+    <p>A compound pattern is simply a design pattern that incorporates two or more other patterns to solve a problem.
+        An example of a compound pattern is the Model-View-Controller pattern, which incorporates the Observer,
+        Strategy, and Composite patterns.
+    </p>
+    <p>
+        In MVC, the model makes use of the observer pattern to notify the view of any changes to the model. The
+        controller
+        is the strategy for the view to allow for a view to use different implementations of the controller to change
+        the
+        behavior of the view. The view is a composite of other views. (ie. partials etc). In conjunction, these patterns
+        keep the design clear and flexible.
+    </p>
+    <p>
+        Should a controller needing to be reused by a different model, the adapter pattern can be used to adapt the new
+        model to the existing controller.
+    </p>
+    <aside>
+        <p>
+            Adapted to the web, the MVC pattern functions where by the model may not have the ability to directly
+            communicate with the view. Instead, the controller acts as the intermediary between the model and the view.
+        </p>
+    </aside>
 
-
+    <div>
+        <h4>Reference</h4>
+        <ul>
+            <li>
+                Freeman, E., &amp; Robson, E. (2020). Head First Design Patterns, 2nd
+                Edition
+            </li>
+            <li>
+                Gamma, E., Helm, R., Johnson, R., &amp; Vlissides, J. (2021). Design
+                patterns: Elements of reusable object-oriented software.
+            </li>
+        </ul>
+    </div>
 </article>

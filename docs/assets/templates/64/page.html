@@ -38,47 +38,63 @@
       <tr>
         <th>Pattern</th>
         <th>Description</th>
+        <th>Classification</th>
+        <th>Class/Object Pattern</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>Adapter Pattern</td>
         <td>Changes the interface of one or more classes.</td>
+        <td>Structural</td>
+        <td>Class</td>
       </tr>
       <tr>
         <td>Class Adapter Pattern</td>
         <td>
-            Uses multiple inheritance to adapt one interface to another.
+          Uses multiple inheritance to adapt one interface to another.
         </td>
+        <td>Structural</td>
+        <td>Class</td>
       </tr>
       <tr>
         <td>Command Pattern</td>
         <td>
-            Decouple the sender of the request from the object that executes it.
+          Decouple the sender of the request from the object that executes it.
         </td>
+        <td>Behavioral</td>
+        <td>Object</td>
       </tr>
       <tr>
         <td>Composite Pattern</td>
         <td>
           Clients treat collections of objects and individual objects uniformly.
         </td>
+        <td>Structural</td>
+        <td>Object</td>
       </tr>
       <tr>
         <td>Decorator Pattern</td>
         <td>
-            Allows for the dynamic wrapping of objects in order to modify their.
-            behavior
+          Allows for the dynamic wrapping of objects in order to modify their.
+          behavior
         </td>
+        <td>Structural</td>
+        <td>Object</td>
       </tr>
       <tr>
         <td>Facade Pattern</td>
         <td>Simplifies the interface of a group of classes</td>
+        <td>Structural</td>
+        <td>Object</td>
       </tr>
       <tr>
         <td>Factory Method Pattern</td>
         <td>
-            Creates an instance of several derived classes.
+          Creates an instance of several derived classes.
         </td>
+        <td>Creational</td>
+        <td>Class</td>
       </tr>
       <tr>
         <td>Iterator Pattern</td>
@@ -86,24 +102,32 @@
           Provides a way to traverse a collection of objects without exposing
           the collection's implementation.
         </td>
+        <td>Behavioral</td>
+        <td>Object</td>
       </tr>
       <tr>
         <td>Observer Pattern</td>
         <td>
           Allows a group of objects to be notified when some state changes.
         </td>
+        <td>Behavioral</td>
+        <td>Object</td>
       </tr>
       <tr>
         <td>Proxy Pattern</td>
         <td>
           Wrap an object to control access to it.
         </td>
+        <td>Structural</td>
+        <td>Object</td>
       </tr>
       <tr>
         <td>State Pattern</td>
         <td>
           Encapsulates state-based behavior and uses delegation behavior to the current state.
         </td>
+        <td>Behavioral</td>
+        <td>Object</td>
       </tr>
       <tr>
         <td>Strategy Pattern</td>
@@ -111,15 +135,40 @@
           Encapsulates interchangeable behaviors and uses delegation to decide.
           which one to use
         </td>
+        <td>Behavioral</td>
+        <td>Object</td>
       </tr>
       <tr>
         <td>Template Method Pattern</td>
         <td>
-            Create a template for an algorithm and let subclasses redefine certain steps.
+          Create a template for an algorithm and let subclasses redefine certain steps.
         </td>
+        <td>Behavioral</td>
+        <td>Class</td>
       </tr>
     </tbody>
   </table>
+  <h3>Classifications</h3>
+  <ul>
+    <li><strong>Creational Patterns:</strong> Involves object instantiation and a way to decouple a client from the
+      objects it
+      needs to instantiate.</li>
+    <li>
+      <strong>Behavioral Patterns:</strong> How classes and objects interact and distribute responsibility.
+    </li>
+    <li>
+      <strong>Structural Patterns:</strong> How classes and objects are composed to form larger structures.
+    </li>
+    <li><strong>Class Patterns:</strong> How relationships between classes are defined via inheritance. Relationships in
+      class patterns are established at compile time.</li>
+    <li>
+      <strong>
+        Object Patterns:
+      </strong>
+      Describes relationships between objects and are primarily defined by composition. Relationships in object patterns
+      are typically created at runtime and are more dynamic and flexible.
+    </li>
+  </ul>
   <div>
     <h4>Reference</h4>
     <ul>
