@@ -1241,9 +1241,26 @@
     "readTime": 5,
     "content": "",
     "tags": ["sm2"],
-    "image": "../../../assets/images/",
+    "image": "../../../assets/templates/75/mvcpattern",
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
+  },
+  {
+    "id": "76",
+    "type": "web",
+    "title": "Convert Between Image Formats",
+    "subtitle": "Increase web performance with next gen image formats",
+    "description": "The Magick CLI can be used to convert between image formats, resize images, blur, crop and more.",
+    "date": "2023-10-01T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [],
+    "image": "../assets/images/Image_by_Gerd_Altmann_from_Pixabay2",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["web", "linux"]
   }
 ]
