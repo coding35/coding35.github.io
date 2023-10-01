@@ -7,6 +7,8 @@
         <li>http protocols</li>
         <li>compression gzip / br</li>
         <li>Core web vitals
+
+          LCP
           how users experience the speed, responsiveness, and visual stability of your page.
           scoring badly on these metrics can affect your search engine ranking
 
@@ -55,6 +57,12 @@
           
           * Interactivity
             * First Input Delay (FID)
+            * defer scripts if not primary
+            * use preconnect if possible
+            * Lazy load third party scripts (partytown.builder.io) 
+            * use web workers
+            * self host third party scripts
+            * webworker cache third party scripts
 
           * Visual Stability
             * Cumulative Layout Shift (CLS)  
