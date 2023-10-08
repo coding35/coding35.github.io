@@ -1,0 +1,38 @@
+<article>
+  <p>Improve web performance by using next-generation image codecs.</p>
+
+  <h3>Step 1. Convert PNG to JPG, AVIF, and WEBP</h3>
+  <pre class="prettyprint">
+    magick '*.png' -set filename:fn '%t' -background none '(' +clone -write "jpeg:%[filename:fn].jpg" ')' \
+     '(' +clone -define webp:lossless=false -write "avif:%[filename:fn].avif" ')' \
+     '(' +clone -define webp:lossless=false -write "webp:%[filename:fn].webp" ')' null:
+    </pre
+  >
+  <h3>Step 2. HTML Picture Element</h3>
+  <picture>
+    <source
+      srcset="../../../assets/templates/76/picture_syntax.avif"
+      type="image/avif"
+      alt="html picture syntax"
+    />
+    <source
+      srcset="../../../assets/templates/76/picture_syntax.webp"
+      type="image/webp"
+      alt="html picture syntax"
+    />
+    <img
+      src="../../../assets/templates/76/picture_syntax.jpg"
+      alt="html picture syntax"
+      width="800px"
+    />
+  </picture>
+  <div>
+    <h4>Reference</h4>
+    <ul>
+      <li>
+        LLC, I. S. (n.d.). Convert between image formats. ImageMagick.
+        https://imagemagick.org/script/convert.php
+      </li>
+    </ul>
+  </div>
+</article>
