@@ -13,88 +13,20 @@
     Delegation is a form of object composition that introduces enhanced reuse
     capabilities of composed objects by delegating specific task to another
     object with the added benefit of being able to change the behavior of the
-    composed object at runtime.
+    composed object at <b>run-time</b>.
   </p>
   <p>
     The advantage of delegation is that it allows composition of behaviors at
-    run-time. This technique increases flexibility but also introduces
-    complexity and can be difficult to understand. Additionally, usages can
+    <b>run-time</b>. This technique increases flexibility but also introduces
+    complexity and can be difficult to understand. Usages can
     introduce performance inefficiencies since the composed object is determined
-    at runtime.
+    at <b>run-time</b>.
   </p>
   <p>
     Overall, this approach is flexible and allows for greater reusability of
     code where smaller objects can be composed together and swapped in and out
     as needed.
   </p>
-  <p>
-    In the following example, the Animal class is the parent class, and the Dog
-    and Cat classes are the subclasses. The Dog and Cat classes inherit the name
-    property and vocalize method from the Animal class. The Dog class overrides
-    the vocalize method and adds a new fetch method. The Cat class overrides the
-    vocalize method and adds a new scratch method.
-  </p>
-  <div>
-    <h4>Example</h4>
-    <pre class="prettyprint">
-    #include &ltiostream&gt
-
-    using namespace std;
-
-    // Engine class
-    class Engine {
-    public:
-        void start() {
-            std::cout << "Engine started.\n";
-        }
-        void idle() {
-            std::cout << "Engine idling.\n";
-        }
-        void stop() {
-            std::cout << "Engine stopped.\n";
-        }
-    };
-    
-    // Car class delegates some functionality to the engine object
-    class Car {
-    private:
-        Engine engine;
-    
-    public:
-        void start() {
-            engine.start();
-            std::cout << "Car started.\n";
-        }
-    
-        void idle() {
-            engine.idle();
-            std::cout << "Car idling.\n";
-        }
-    
-        void stop() {
-            engine.stop();
-            std::cout << "Car stopped.\n";
-        }
-    };
-    
-    int main() {
-        Car car;
-        car.start();
-        car.idle();
-        car.stop();
-        return 0;
-    }
-    
-        </pre
-    >
-    <h5>Output</h5>
-
-    <div>Engine started.</div>
-    <div>Car started.</div>
-    <div>Engine idling.</div>
-    <div>Car idling.</div>
-    <div>Engine stopped.</div>
-    <div>Car stopped.</div>
     <div>
       <h4>Reference</h4>
       <ul>

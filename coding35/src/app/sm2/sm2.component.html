@@ -83,18 +83,18 @@
       </mat-button-toggle>
     </mat-button-toggle-group>
   </div>
-  <div>
-    <div id="ReviewCount">
-      {{ cardsReviewed }} of {{ cardsToReview }} Reviewed
-    </div>
-    <div id="ExportImport">
-      <button mat-button color="Primary" (click)="export()">Export</button>
-      <button mat-button color="Primary" (click)="import()">Import</button>
-      <button mat-button color="Primary" (click)="loadFromDropbox()">
-        Load
-      </button>
-      <button mat-button color="Primary" (click)="saveToDropbox()">Save</button>
-      <button mat-button color="Primary" (click)="setKey()">Key</button>
-    </div>
-  </div>
 </ng-template>
+<div>
+  <div id="ReviewCount">
+    {{ cardsReviewed }} of {{ cardsToReview }} Reviewed
+  </div>
+  <div id="ExportImport">
+    <button mat-button color="Primary" (click)="export()">Export</button>
+    <button mat-button color="Primary" (click)="import()">Import</button>
+    <button mat-button color="Primary" (click)="loadFromDropbox()">
+      Load
+    </button>
+    <button mat-button color="Primary" (click)="saveToDropbox()">Save</button>
+    <button mat-button color="Primary" (click)="setKey()">Key</button>
+  </div>
+</div>

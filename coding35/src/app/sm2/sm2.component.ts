@@ -148,6 +148,9 @@ export class Sm2Component implements OnInit {
             const data = JSON.parse(content as string);
             localStorage.setItem('dropboxKey', data.key);
           }
+          if(localStorage.getItem('dropboxKey')){
+            alert('key set');
+          }
         };
       }
     };
@@ -160,6 +163,7 @@ export class Sm2Component implements OnInit {
         .uploadFile(JSON.stringify(allContent), '/sm2.json')
         .then(() => {
           console.log('saved');
+          alert('saved');
         })
         .catch((err) => {
           console.error(err);
@@ -182,6 +186,7 @@ export class Sm2Component implements OnInit {
               this.indexDbSvc.update<IFlashCard>(element, 'Sm2Store');
             });
           }
+          alert('loaded');
         };
       })
       .catch((err: any) => {
