@@ -1108,7 +1108,8 @@
     "image": "../../../assets/images/ecommerce",
     "imageAlt": "",
     "references": [],
-    "categories": ["web"]
+    "categories": ["web"],
+    "display" : false
   },
   {
     "id": "68",

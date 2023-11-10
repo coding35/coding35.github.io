@@ -18,6 +18,7 @@ export interface IContentModel {
   fetchpriority: string;
   rel: string;
   loading: string;
+  display: boolean;
 
 }
 
@@ -40,11 +41,13 @@ export class ContentModel implements IContentModel {
     categories: string[] = [];
     fetchpriority: string = 'low';
     rel: string = 'auto';
-    loading: string = 'lazy';
+    loading: string = 'lazy';  
+    display: boolean = true;
 
     constructor(data: IContentModel) {
       Object.assign(this, data);
     }
+
 }
 
 export class Callback{

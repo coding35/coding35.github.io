@@ -16,4 +16,12 @@ export class ContentComponent implements AfterViewInit {
       this.renderer.setStyle(this.content!.nativeElement, 'visibility', 'visible');
     });
   }
+
+  public showSideBar(): boolean {
+    const url = window.location.href;
+    if (url.includes('sm2')) {
+      return false;
+    }
+    return true;
+  }
 }

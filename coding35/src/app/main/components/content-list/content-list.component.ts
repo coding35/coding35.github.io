@@ -121,7 +121,7 @@ export class ContentListComponent implements OnInit {
         }
 
         this.indexDbSvc.getAll<IContentModel[]>('ContentStore').then((data) => {
-          data = data.filter((f) => !f.tags.toLocaleString().includes('wip'));
+          data = data.filter((f) => !f.tags.toLocaleString().includes('wip') && f.display);
           const search = this.route.snapshot.params['search'] || '';
           if (this.filter == ContentType.Any) {
             if (search) {
@@ -162,7 +162,7 @@ export class ContentListComponent implements OnInit {
       this.category = val || 'All';
       this.filter = ContentType.Search;
       this.indexDbSvc.getAll<IContentModel[]>('ContentStore').then((data) => {
-        data = data.filter((f) => !f.tags.toLocaleString().includes('wip'));
+        data = data.filter((f) => !f.tags.toLocaleString().includes('wip') && f.display);
         let content = data as ContentModel[];
         this.contentList = content
           .filter(

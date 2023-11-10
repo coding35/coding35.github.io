@@ -1,91 +1,100 @@
-<div id="ReviewPanel">
-  <mat-accordion *ngIf="currentCard">
-    <mat-expansion-panel hideToggle="false" #mep="matExpansionPanel">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          {{ currentCard.front }}
-        </mat-panel-title>
-      </mat-expansion-panel-header>
-      <p>{{ currentCard.back }}</p>
-      <mat-accordion>
-        <mat-expansion-panel hideToggle="false" #mep="matExpansionPanel">
-          <mat-expansion-panel-header>
-            <mat-panel-title> Review </mat-panel-title>
-          </mat-expansion-panel-header>
-          <app-review [card]="currentCard"></app-review>
-        </mat-expansion-panel>
-      </mat-accordion>
-    </mat-expansion-panel>
-  </mat-accordion>
-  <mat-button-toggle-group
-    [(ngModel)]="buttonToggle"
-    id="ReviewButtonGroup"
-    #group="matButtonToggleGroup"
-    (change)="practice(currentCard, group.value)"
-  >
-    <mat-button-toggle
-      class="review-btn"
-      value="0"
-      #tooltip="matTooltip"
-      matTooltip="complete blackout"
-      matTooltipPosition="below"
-    >
-      0
-    </mat-button-toggle>
-    <mat-button-toggle
-      class="review-btn"
-      value="1"
-      #tooltip="matTooltip"
-      matTooltip="incorrect response; the correct one remembered"
-      matTooltipPosition="below"
-    >
-      1
-    </mat-button-toggle>
-    <mat-button-toggle
-      class="review-btn"
-      value="2"
-      #tooltip="matTooltip"
-      matTooltip="incorrect response; where the correct one seemed easy to recall."
-      matTooltipPosition="below"
-    >
-      2
-    </mat-button-toggle>
-    <mat-button-toggle
-      class="review-btn"
-      value="3"
-      #tooltip="matTooltip"
-      matTooltip="correct response recalled with serious difficulty"
-      matTooltipPosition="below"
-    >
-      3
-    </mat-button-toggle>
-    <mat-button-toggle
-      class="review-btn"
-      value="4"
-      #tooltip="matTooltip"
-      matTooltip="correct response after a hesitation"
-      matTooltipPosition="below"
-    >
-      4
-    </mat-button-toggle>
-    <mat-button-toggle
-      class="review-btn"
-      value="5"
-      #tooltip="matTooltip"
-      matTooltip="perfect response"
-      matTooltipPosition="below"
-    >
-      5
-    </mat-button-toggle>
-  </mat-button-toggle-group>
+<div *ngIf="cardsReviewed === cardsToReview; else review_panel">
+  <h3>SM2 Session Complete</h3>
 </div>
-<div>
-  <div id="ReviewCount">{{ cardsReviewed }} of {{ cardsToReview }} Reviewed</div>
-  <div id="ExportImport">
-    <button mat-button color="Primary" (click)="export()">Export</button>
-    <button mat-button color="Primary" (click)="import()">Import</button>
-    <button mat-button color="Primary" (click)="loadFromDropbox()">Load</button>
-    <button mat-button color="Primary" (click)="saveToDropbox()">Save</button>
-    <button mat-button color="Primary" (click)="setKey()">Key</button>
+<ng-template #review_panel>
+  <div id="ReviewPanel">
+    <mat-accordion *ngIf="currentCard">
+      <mat-expansion-panel hideToggle="false" #mep="matExpansionPanel">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{ currentCard.front }}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>{{ currentCard.back }}</p>
+        <mat-accordion>
+          <mat-expansion-panel hideToggle="false" #mep="matExpansionPanel">
+            <mat-expansion-panel-header>
+              <mat-panel-title> Review </mat-panel-title>
+            </mat-expansion-panel-header>
+            <app-review [card]="currentCard"></app-review>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <mat-button-toggle-group
+      [(ngModel)]="buttonToggle"
+      id="ReviewButtonGroup"
+      #group="matButtonToggleGroup"
+      (change)="practice(currentCard, group.value)"
+    >
+      <mat-button-toggle
+        class="review-btn"
+        value="0"
+        #tooltip="matTooltip"
+        matTooltip="complete blackout"
+        matTooltipPosition="below"
+      >
+        0
+      </mat-button-toggle>
+      <mat-button-toggle
+        class="review-btn"
+        value="1"
+        #tooltip="matTooltip"
+        matTooltip="incorrect response; the correct one remembered"
+        matTooltipPosition="below"
+      >
+        1
+      </mat-button-toggle>
+      <mat-button-toggle
+        class="review-btn"
+        value="2"
+        #tooltip="matTooltip"
+        matTooltip="incorrect response; where the correct one seemed easy to recall."
+        matTooltipPosition="below"
+      >
+        2
+      </mat-button-toggle>
+      <mat-button-toggle
+        class="review-btn"
+        value="3"
+        #tooltip="matTooltip"
+        matTooltip="correct response recalled with serious difficulty"
+        matTooltipPosition="below"
+      >
+        3
+      </mat-button-toggle>
+      <mat-button-toggle
+        class="review-btn"
+        value="4"
+        #tooltip="matTooltip"
+        matTooltip="correct response after a hesitation"
+        matTooltipPosition="below"
+      >
+        4
+      </mat-button-toggle>
+      <mat-button-toggle
+        class="review-btn"
+        value="5"
+        #tooltip="matTooltip"
+        matTooltip="perfect response"
+        matTooltipPosition="below"
+      >
+        5
+      </mat-button-toggle>
+    </mat-button-toggle-group>
   </div>
-</div>
+  <div>
+    <div id="ReviewCount">
+      {{ cardsReviewed }} of {{ cardsToReview }} Reviewed
+    </div>
+    <div id="ExportImport">
+      <button mat-button color="Primary" (click)="export()">Export</button>
+      <button mat-button color="Primary" (click)="import()">Import</button>
+      <button mat-button color="Primary" (click)="loadFromDropbox()">
+        Load
+      </button>
+      <button mat-button color="Primary" (click)="saveToDropbox()">Save</button>
+      <button mat-button color="Primary" (click)="setKey()">Key</button>
+    </div>
+  </div>
+</ng-template>

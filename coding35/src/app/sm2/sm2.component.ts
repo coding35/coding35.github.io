@@ -29,41 +29,50 @@ export class Sm2Component implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.indexDbSvc.getAll<IContentModel[]>('ContentStore').then((allContent) => {
-      this.indexDbSvc.getAll<IFlashCard[]>('Sm2Store').then((pastSession: IFlashCard[]) => {
-        let sm2Content = new Session(
-          allContent.filter((x) => x.tags.indexOf('sm2') > -1)
-        );
-        this.indexDbSvc.getAll<IFlashCard[]>('Sm2Store').then((data) => {
-          this.allCards = data;
-          this.cardsToReview = data.length;
-          this.getCard();
-        });
-                    console.log(pastSession);
 
-        sm2Content.flashcards.forEach((element: IFlashCard) => {
-          if (!pastSession.find((x) => x.contentId === element.contentId)) {
-            this.indexDbSvc.insert<IFlashCard>(element, 'Sm2Store');
-          } else {
-            let cardToUpdate = pastSession.find(
-              (x) => x.contentId === element.contentId
-            );
-            cardToUpdate?.back === element.back;
-            cardToUpdate?.front === element.front;
-            cardToUpdate?.type === element.type;
-            cardToUpdate?.path === element.path;
-            this.indexDbSvc.update<IFlashCard>(cardToUpdate!, 'Sm2Store');
-          }
-        });
+    this.indexDbSvc
+      .getAll<IContentModel[]>('ContentStore')
+      .then((allContent) => {   
+
+        this.indexDbSvc
+          .getAll<IFlashCard[]>('Sm2Store')
+          .then((pastSession: IFlashCard[]) => {
+            let sm2Content = new Session(
+              allContent.filter((x) => x.tags.indexOf('sm2') > -1)
+            );        
+            this.indexDbSvc.getAll<IFlashCard[]>('Sm2Store').then((data) => {
+              this.allCards = data.filter((x) => { return new Date(x.dueDate) <= new Date(Date.now()) }).slice(0, 10);
+              this.getCard();
+            });
+            sm2Content.flashcards.forEach((element: IFlashCard) => {
+              if (!pastSession.find((x) => x.contentId === element.contentId)) {
+                this.indexDbSvc.insert<IFlashCard>(element, 'Sm2Store');
+              } else {
+                let cardToUpdate = pastSession.find(
+                  (x) => x.contentId === element.contentId
+                );
+                cardToUpdate?.back === element.back;
+                cardToUpdate?.front === element.front;
+                cardToUpdate?.type === element.type;
+                cardToUpdate?.path === element.path;
+                this.indexDbSvc.update<IFlashCard>(cardToUpdate!, 'Sm2Store');
+              }
+            });
+          });
       });
-    });
   }
 
   getCard(): void {
     this.cardsReviewed = this.reviewedCardIds.length;
     let cards = this.allCards.filter((x) => {
-      return new Date(x.dueDate) <= new Date(Date.now()) && !this.reviewedCardIds.includes(x.id);
-    })!;
+      return (
+        new Date(x.dueDate) <= new Date(Date.now()) &&
+        !this.reviewedCardIds.includes(x.id)
+      );
+    })!
+    if (!this.cardsReviewed) {
+      this.cardsToReview = cards.length;
+    }
     this.currentCard = cards[Math.floor(Math.random() * cards.length)];
   }
 
