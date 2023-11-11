@@ -385,7 +385,8 @@
     "image": "../assets/images/Image_by_Wynn_Pointaux_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": []
+    "categories": [],
+    "display": false
   },
   {
     "id": "23",

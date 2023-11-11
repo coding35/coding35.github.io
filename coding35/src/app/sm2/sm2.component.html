@@ -1,4 +1,4 @@
-<div *ngIf="cardsReviewed === cardsToReview; else review_panel">
+<div *ngIf="sessionComplete; else review_panel">
   <h3>SM2 Session Complete</h3>
 </div>
 <ng-template #review_panel>

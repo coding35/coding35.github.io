@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoadService } from 'src/app/shared/service/load.service';
 
 @Component({
   selector: 'app-about',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
 
+  constructor(load: LoadService) {
+    load.ee.emit('about');
+   }
 }

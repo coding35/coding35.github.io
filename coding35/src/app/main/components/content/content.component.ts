@@ -8,12 +8,14 @@ import { LoadService } from 'src/app/shared/service/load.service';
 })
 export class ContentComponent implements AfterViewInit {
   @ViewChild('content') content: ElementRef<HTMLDivElement> | undefined;
+  @ViewChild('navBar') navBar: ElementRef<HTMLDivElement> | undefined;
   constructor(private renderer: Renderer2, private load: LoadService) { 
   }
 
   ngAfterViewInit(): void {
     this.load.ee.subscribe((val) => {
       this.renderer.setStyle(this.content!.nativeElement, 'visibility', 'visible');
+      this.renderer.setStyle(this.navBar!.nativeElement, 'visibility', 'visible');
     });
   }
 

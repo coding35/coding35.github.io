@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router';
 import { ReviewComponent } from './components/review/review.component';
 import { SharedModule } from "../shared/shared.module";
 import { FormsModule } from '@angular/forms';
-import { DropboxService } from './service/dropbox';
+import { DropboxService } from '../shared/service/dropbox';
 
 @NgModule({
     declarations: [Sm2Component, ReviewComponent],

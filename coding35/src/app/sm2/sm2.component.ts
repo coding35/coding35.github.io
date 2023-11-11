@@ -5,8 +5,9 @@ import { SuperMemoGrade, supermemo } from 'supermemo';
 import { IdbStorageAccessService } from '../shared/service/idb-storage-access.service';
 import { IFlashCard } from './interface/IFlashCard';
 import { Session } from './questions/Session';
-import { DropboxService } from './service/dropbox';
+import { DropboxService } from '../shared/service/dropbox';
 import { IContentModel } from '../shared/models/content-model';
+import { LoadService } from '../shared/service/load.service';
 
 @Component({
   selector: 'app-sm2',
@@ -22,26 +23,30 @@ export class Sm2Component implements OnInit {
   cardsToReview: number = 0;
   cardsReviewed: number = 0;
   reviewedCardIds: number[] = [];
+  sessionComplete: boolean = false;
 
   constructor(
     private indexDbSvc: IdbStorageAccessService,
-    private dropbox: DropboxService
+    private dropbox: DropboxService,
+    private load: LoadService
   ) {}
 
   ngOnInit(): void {
-
     this.indexDbSvc
       .getAll<IContentModel[]>('ContentStore')
-      .then((allContent) => {   
-
+      .then((allContent) => {
         this.indexDbSvc
           .getAll<IFlashCard[]>('Sm2Store')
           .then((pastSession: IFlashCard[]) => {
             let sm2Content = new Session(
               allContent.filter((x) => x.tags.indexOf('sm2') > -1)
-            );        
+            );
             this.indexDbSvc.getAll<IFlashCard[]>('Sm2Store').then((data) => {
-              this.allCards = data.filter((x) => { return new Date(x.dueDate) <= new Date(Date.now()) }).slice(0, 10);
+              this.allCards = data
+                .filter((x) => {
+                  return new Date(x.dueDate) <= new Date(Date.now());
+                })
+                .slice(0, 10);
               this.getCard();
             });
             sm2Content.flashcards.forEach((element: IFlashCard) => {
@@ -60,6 +65,8 @@ export class Sm2Component implements OnInit {
             });
           });
       });
+    this.setSessionStatus();
+    this.load.ee.emit('sm2');
   }
 
   getCard(): void {
@@ -69,7 +76,7 @@ export class Sm2Component implements OnInit {
         new Date(x.dueDate) <= new Date(Date.now()) &&
         !this.reviewedCardIds.includes(x.id)
       );
-    })!
+    })!;
     if (!this.cardsReviewed) {
       this.cardsToReview = cards.length;
     }
@@ -148,7 +155,7 @@ export class Sm2Component implements OnInit {
             const data = JSON.parse(content as string);
             localStorage.setItem('dropboxKey', data.key);
           }
-          if(localStorage.getItem('dropboxKey')){
+          if (localStorage.getItem('dropboxKey')) {
             alert('key set');
           }
         };
@@ -192,5 +199,12 @@ export class Sm2Component implements OnInit {
       .catch((err: any) => {
         console.error(err);
       });
+  }
+
+  setSessionStatus(): void {
+    if (this.cardsReviewed === this.cardsToReview) {
+      this.sessionComplete = true;
+    }
+    this.sessionComplete = false;
   }
 }

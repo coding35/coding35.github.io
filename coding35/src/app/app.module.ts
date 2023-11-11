@@ -35,7 +35,7 @@ import { CookieModule } from 'ngx-cookie';
       useFactory: (svc: IdbStorageAccessService) => () => svc.init(),
       deps: [IdbStorageAccessService], multi: true
     },
-    { provide: LocationStrategy, useClass: HashLocationStrategy },
+    //{ provide: LocationStrategy, useClass: HashLocationStrategy },
     { provide: Window, useValue: window }
   ],
   bootstrap: [AppComponent]

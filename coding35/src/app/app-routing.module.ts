@@ -6,9 +6,11 @@ import { ContentListComponent } from './main/components/content-list/content-lis
 import { ForceDirectedTreeComponent } from './main/components/force-directed-tree/force-directed-tree.component';
 import { PageComponent } from './main/components/page/page.component';
 import { Sm2Component } from './sm2/sm2.component';
+import { Fsm2Component } from './fsm2/fsm2.component';
 
 const routes: Routes = [
   { path: 'sm2', component: Sm2Component, data: { page: 'SM2' } },
+  { path: 'fsm2', component: Fsm2Component, data: { page: 'FSM2' } },
   { path: 'architecture/:id', component: PageComponent, data: { page: 'architecture' } },
   { path: 'architecture', component: ContentListComponent, data: { page: 'architecture' } },
   { path: 'design/:id', component: PageComponent, data: { page: 'design' } },
