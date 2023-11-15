@@ -1046,9 +1046,9 @@
   {
     "id": "64",
     "type": "design",
-    "title": "GOF Design Pattern Review",
-    "subtitle": "Reference for the GoF Design Patterns",
-    "description": "A reference guide for the GoF Design Patterns",
+    "title": "Design Pattern Review",
+    "subtitle": "Reference for Design Patterns",
+    "description": "A reference guide for Design Patterns",
     "date": "2023-06-22T19:08:51.568Z",
     "author": "Adam Reed",
     "avatar": "AR",
@@ -1264,5 +1264,22 @@
     "imageAlt": "",
     "references": [],
     "categories": ["web", "linux"]
+  },
+  {
+    "id": "77",
+    "type": "design",
+    "title": "Visitor Pattern",
+    "subtitle": "Pass in references to other classes that have the desired functionality to influence the behavior of the class we wish to modify.",
+    "description": "Allow changes or additions to a class's structure by passing into a class other classes with the same method structure but different functionality, and using that passed-in class's method to change the class's behavior.",
+    "date": "2023-11-12T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../../../assets/templates/77/visitor_pattern",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
   }
 ]
