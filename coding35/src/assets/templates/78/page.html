@@ -1,0 +1,12 @@
+<article>
+    <p>
+        Double-Checked Locking is a software design pattern used to reduce the overhead of acquiring a lock by first
+        testing the locking criterion (the "lock hint") without actually acquiring the lock. Only if the locking 
+        criterion check indicates that locking is required does the actual locking logic proceed.
+    </p>
+    <p>
+        With the singleton, this technique can be used to initialize a singleton in a thread safe way by first checking
+        the instance variable is not null and then locking the class to ensure that only one thread can create the instance.
+        In later versions of C# this may no longer be needed with the use of the Lazy&lt;T&gt; instancing.
+    </p>
+</article>

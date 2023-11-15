@@ -1,0 +1,53 @@
+<article>
+    <p>A behavioral design pattern, the Visitor
+        pattern allows you to add or define new
+        functionality to an object without changing
+        the object's code. The new logic resides in
+        a separate object called the Visitor.</p>
+    </p>
+    <h3>Implications</h3>
+    <ul>
+        <li>Allows for adding new behaviors to an object without changing its code.</li>
+        <li>Allows for gathering related behaviors and accumulating state across differing classes.</li>
+        <li>Can be costly if changing class hierarchies is likely. Interface updates will have to be made for all
+            visitors to match.</li>
+        <li>Encapsulation can also be broken if the visitor is given access to private members of the visited class.
+        </li>
+    </ul>
+
+
+    <h3>Use Cases</h3>
+    <ul>
+        <li>An object structure contains many classes of objects with differing interfaces, and you want to perform
+            operations on these objects that depend on their concrete classes.</li>
+
+        <li>Many distinct and unrelated operations need to be performed on objects in an object structure, and you want
+            to avoid “polluting” their classes with these operations. Visitor lets you keep related operations together
+            by defining them in one class. When the object structure is shared by many applications, use Visitor to put
+            operations in just those applications that need them.</li>
+
+        <li>The classes defining the object structure rarely change, but you often want to define new operations over
+            the structure. Changing the object structure classes requires redefining the interface to all visitors,
+            which is potentially costly. If the object structure classes change often, then it's probably better to
+            define the operations in those classes.
+        </li>
+    </ul>
+
+    <figure>
+        <picture>
+            <source srcset="../../../assets/templates/77/visitor_pattern.avif" type="image/avif" alt="mvc pattern">
+            <source srcset="../../../assets/templates/77/visitor_pattern.webp" type="image/webp" alt="mvc pattern">
+            <img src="../../../assets/templates/77/visitor_pattern.jpg" alt="visitor pattern" width="400px" />
+        </picture>
+    </figure>
+    <a href="https://github.com/coding35/visitor-pattern" target="_blank">View Example Code on GitHub</a>
+    <div>
+        <h4>Reference</h4>
+        <ul>
+            <li>
+                Gamma, E., Helm, R., Johnson, R., &amp; Vlissides, J. (2021). Design
+                patterns: Elements of reusable object-oriented software.
+            </li>
+        </ul>
+    </div>
+</article>
