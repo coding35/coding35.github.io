@@ -5,6 +5,7 @@
       >{{ pageContent?.date | date }} | Posted By: {{ pageContent?.author }} |
       {{ pageContent?.readTime }} min read</span
     >
+    <div *ngIf="pageContent?.updatedate"><small>Updated {{pageContent?.updatedate | date}}</small></div>
   </div>
   <div [innerHtml]="pageContent?.content | safe : 'html'"></div>
 </article>

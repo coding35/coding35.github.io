@@ -1,0 +1,75 @@
+<style>
+    table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        min-width: 400px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+
+    table thead tr {
+        background-color: #054f7d;
+        color: #ffffff;
+        text-align: left;
+    }
+
+    table th,
+    table td {
+        padding: 12px 15px;
+        border: solid 1px lightgrey;
+    }
+
+    table tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+
+    table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+
+    table tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
+    }
+</style>
+<article>
+    <p>Comparison between Singleton and Static Classes</p>
+    <table>
+        <thead>
+            <th>Singleton</th>
+            <th>Static Class</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Can implement interfaces</td>
+                <td>No interfaces, just a collection of static methods and functions</td>
+            </tr>
+            <tr>
+                <td>Can be passed as a arguments to methods</td>
+                <td>Cannot be passed as a arguments</td>
+            </tr>
+            <tr>
+                <td>Can be dependancy injected and used in other design patterns</td>
+                <td>Cannot be injected</td>
+            </tr>
+            <tr>
+                <td>Can be assigned to variables</td>
+                <td>Cannot be assigned to variables</td>
+            </tr>
+            <tr>
+                <td>Supports polymorphism</td>
+                <td>Purely procedural</td>
+            </tr>
+            <tr>
+                <td>Can have state</td>
+                <td>Can only access global state</td>
+            </tr>
+            <tr>
+                <td>Can be serilized which will allow them to be stored, transferred over the wire</td>
+                <td>No support for serialization</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</article>

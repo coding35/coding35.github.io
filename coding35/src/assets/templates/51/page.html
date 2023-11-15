@@ -11,16 +11,16 @@
     <li>Singleton with Enum</li>
   </ul>
   <p>
-    <strong>Lazy Singleton</strong> Initialization is the most common way to
-    implement the Singleton. The Singleton object is created only if it is
-    needed per its name. This singleton is not thread-safe. If multiple threads
+    <strong>Lazy Singleton</strong> initialization is the most common way and default way to
+    implement the Singleton. The Singleton object is created only when it is
+    needed. This singleton is not thread-safe. If multiple threads
     try to access the singleton at the same time, they may end up creating
     multiple instances of the singleton. This can be fixed by using code to
     synchronize the getInstance() method. However, this can cause performance
     issues.
   </p>
   <p>
-    <strong>Eager Singleton</strong> Initialization is the simplest way to
+    <strong>Eager Singleton</strong> initialization is the simplest way to
     implement the Singleton. The Singleton object is created when the class is
     loaded into the memory. This singleton is thread-safe. However, this can
     cause performance issues if the singleton is not used frequently.
@@ -32,9 +32,21 @@
     Singleton because it is simple, provides serialization for free, and
     provides protection against multiple instantiation.
   </p>
-  <a href="https://github.com/coding35/singleton-pattern" target="_blank"
-  >View Example Code on GitHub</a
->
+  <h4>Notes</h4>
+  <ul>
+    <li>A single, private, parameterless constructor.</li>
+    <li>Should be marked as sealed.</li>
+    <li>A private static field holds the only reference to the instance in the singleton class it self.</li>
+    <li>The application accesses the singleton using a public static method.</li>
+    <li>In C# Static Constructors run only once per appdomain which makes it good for Singleton Use. This avoids having beforefieldinit applied
+      which makes our singleton behavior lazier. This also removes the need for locks and improves performance. See Nested Class example </li>
+    </li>
+    <li>
+      Look to use Lazy&lt;T&gt; for thread safety and performance.
+    </li>
+  </ul>  
+
+  <a href="https://github.com/coding35/singleton-pattern" target="_blank">View Example Code on GitHub</a>
   <div>
     <h4>Reference</h4>
     <ul>

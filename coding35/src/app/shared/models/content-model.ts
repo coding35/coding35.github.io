@@ -19,6 +19,7 @@ export interface IContentModel {
   rel: string;
   loading: string;
   display: boolean;
+  updatedate: Date | null;
 
 }
 
@@ -43,6 +44,7 @@ export class ContentModel implements IContentModel {
     rel: string = 'auto';
     loading: string = 'lazy';  
     display: boolean = true;
+    updatedate: Date | null = null;
 
     constructor(data: IContentModel) {
       Object.assign(this, data);

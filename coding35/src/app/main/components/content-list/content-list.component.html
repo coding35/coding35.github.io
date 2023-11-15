@@ -10,31 +10,19 @@
           <mat-card-subtitle>{{ item.subtitle }}</mat-card-subtitle>
         </mat-card-header>
         <picture>
-          <source srcset="{{item.image}}.avif" type="image/avif"/>
-          <source srcset="{{item.image}}.webp" type="image/webp"/>
-          <source srcset="{{item.image}}.jpg" type="image/jpeg"/>
-          <img
-            mat-card-image
-            class="image-responsive"
-            src="{{ item.image }}"
-            alt="{{ item.imageAlt }}"
-            (click)="handleReadMore(item.id)"
-            as="image"
-            attr.fetchpriority="{{ item.fetchpriority }}"
-            attr.rel="{{ item.rel }}"
-            loading="{{ item.loading }}"
-            height="600"
-          />
+          <source srcset="{{item.image}}.avif" type="image/avif" />
+          <source srcset="{{item.image}}.webp" type="image/webp" />
+          <source srcset="{{item.image}}.jpg" type="image/jpeg" />
+          <img mat-card-image class="image-responsive" src="{{ item.image }}" alt="{{ item.imageAlt }}"
+            (click)="handleReadMore(item.id)" as="image" attr.fetchpriority="{{ item.fetchpriority }}"
+            attr.rel="{{ item.rel }}" loading="{{ item.loading }}" height="600" />
         </picture>
         <mat-card-content>
           <p>
             {{ item.description }}
           </p>
           <mat-chip-listbox class="list-box" aria-label="Categories">
-            <mat-chip
-              *ngFor="let chip of item.categories"
-              (click)="handleCategoryChipClick(chip)"
-            >
+            <mat-chip *ngFor="let chip of item.categories" (click)="handleCategoryChipClick(chip)">
               {{ chip | categoryTitle }}
             </mat-chip>
           </mat-chip-listbox>
@@ -48,6 +36,7 @@
                 </button>
               </mat-card-actions>
             </div>
+            <div *ngIf="item.updatedate" class="card-footer-item-date"><small>Updated {{item.updatedate | date}}</small></div>
           </div>
         </mat-card-content>
       </mat-card>

@@ -837,7 +837,8 @@
     "image": "../assets/images/Image_by_Arek_Socha_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
+    "categories": ["design"],
+    "updatedate" : "2023-11-15T19:08:51.568Z"
   },
   {
     "id": "52",
@@ -1269,8 +1270,8 @@
     "id": "77",
     "type": "design",
     "title": "Visitor Pattern",
-    "subtitle": "Pass in references to other classes that have the desired functionality to influence the behavior of the class we wish to modify.",
-    "description": "Allow changes or additions to a class's structure by passing into a class other classes with the same method structure but different functionality, and using that passed-in class's method to change the class's behavior.",
+    "subtitle": "Represent an operation to be performed on the elements of an object structure.",
+    "description": "Visitor lets you define a new operation without changing the classes of the elements on which it operates.",
     "date": "2023-11-12T19:08:51.568Z",
     "author": "Adam Reed",
     "avatar": "AR",
@@ -1281,5 +1282,40 @@
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
+  },
+  {
+    "id": "78",
+    "type": "code",
+    "title": "Double-Checked Locking",
+    "subtitle": "",
+    "description": "",
+    "date": "2023-11-15T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["code"]
+  },
+  {
+    "id": "79",
+    "type": "design",
+    "title": "Singletons VS Static Classes",
+    "subtitle": "",
+    "description": "",
+    "date": "2023-11-16T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
   }
 ]
+

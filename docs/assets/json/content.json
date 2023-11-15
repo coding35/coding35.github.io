@@ -837,7 +837,8 @@
     "image": "../assets/images/Image_by_Arek_Socha_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
+    "categories": ["design"],
+    "updatedate" : "2023-11-15T19:08:51.568Z"
   },
   {
     "id": "52",
@@ -1046,9 +1047,9 @@
   {
     "id": "64",
     "type": "design",
-    "title": "GOF Design Pattern Review",
-    "subtitle": "Reference for the GoF Design Patterns",
-    "description": "A reference guide for the GoF Design Patterns",
+    "title": "Design Pattern Review",
+    "subtitle": "Reference for Design Patterns",
+    "description": "A reference guide for Design Patterns",
     "date": "2023-06-22T19:08:51.568Z",
     "author": "Adam Reed",
     "avatar": "AR",
@@ -1264,5 +1265,57 @@
     "imageAlt": "",
     "references": [],
     "categories": ["web", "linux"]
+  },
+  {
+    "id": "77",
+    "type": "design",
+    "title": "Visitor Pattern",
+    "subtitle": "Represent an operation to be performed on the elements of an object structure.",
+    "description": "Visitor lets you define a new operation without changing the classes of the elements on which it operates.",
+    "date": "2023-11-12T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../../../assets/templates/77/visitor_pattern",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
+  },
+  {
+    "id": "78",
+    "type": "code",
+    "title": "Double-Checked Locking",
+    "subtitle": "",
+    "description": "",
+    "date": "2023-11-15T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["code"]
+  },
+  {
+    "id": "79",
+    "type": "design",
+    "title": "Singletons VS Static Classes",
+    "subtitle": "",
+    "description": "",
+    "date": "2023-11-16T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
   }
 ]
+
