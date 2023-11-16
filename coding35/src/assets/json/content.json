@@ -1298,7 +1298,8 @@
     "image": "",
     "imageAlt": "",
     "references": [],
-    "categories": ["code"]
+    "categories": ["code"],
+    "display" : false
   },
   {
     "id": "79",
@@ -1315,7 +1316,8 @@
     "image": "",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
+    "categories": ["design"],
+    "display" : false
   }
 ]
 
