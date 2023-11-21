@@ -1298,8 +1298,7 @@
     "image": "",
     "imageAlt": "",
     "references": [],
-    "categories": ["code"],
-    "display" : false
+    "categories": ["code"]
   },
   {
     "id": "79",
@@ -1316,8 +1315,24 @@
     "image": "",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"],
-    "display" : false
+    "categories": ["design"]
+  },
+  {
+    "id": "80",
+    "type": "design",
+    "title": "Null Object Pattern",
+    "subtitle": "Avoid null checks",
+    "description": "Avoid null checks by providing a default object.",
+    "date": "2023-11-21T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
   }
 ]
 
