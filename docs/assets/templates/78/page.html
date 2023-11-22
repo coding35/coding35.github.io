@@ -9,4 +9,45 @@
         the instance variable is not null and then locking the class to ensure that only one thread can create the instance.
         In later versions of C# this may no longer be needed with the use of the Lazy&lt;T&gt; instancing.
     </p>
+    <pre class="prettyprint">
+        public sealed class BasicSingletonThreadSafeWithBetterLocking
+        {
+            private static BasicSingletonThreadSafeWithBetterLocking? _instance;
+            private static string? _randomString;
+            private static readonly object _lock = new object(); // make sure this is always private and not shared.
+
+            public static BasicSingletonThreadSafeWithBetterLocking Instance
+            {
+                get
+                {
+                    // Ensures only one thread can access this block of code at a time. 
+                    // Instance synchronization is performed only when the instance is null.
+                    // This is known as double-checked locking and is a pattern designed to
+                    // reduce the overhead of acquiring a lock by first testing the locking
+                    // criterion (the _instance field) without obtaining the lock.
+                    if (_instance == null)
+                    {
+                        lock (_lock)
+                        {
+                            _instance ??= new BasicSingletonThreadSafeWithBetterLocking();
+                        }
+                    }
+                    return _instance;
+                }
+            }
+
+            // private constructor
+            private BasicSingletonThreadSafeWithBetterLocking()
+            {
+                _randomString = Guid.NewGuid().ToString();
+            }
+
+            public static void Print()
+            {
+                Console.WriteLine($"Basic Singleton ThreadSafe With Better Locking: {_randomString}");
+            }
+        }
+    </pre>
+
+    <a href="https://github.com/coding35/singleton-pattern/blob/main/SingletonPattern/Singleton/V2Examples/BasicSingletonThreadSafeWithBetterLocking.cs" target="_blank">View Example Code on GitHub</a>
 </article>
