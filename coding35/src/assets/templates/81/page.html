@@ -1,0 +1,121 @@
+<article>
+  <p>GOF definition:</p>
+  <q
+    ><strong
+      ><i
+        >A flyweight is a shared object that can be used in multiple contexts
+        simultaneously.</i
+      ></strong
+    >
+    The flyweight acts as an independent object in each context—it's
+    indistinguishable from an instance of the object that's not shared.
+    Flyweights cannot make assumptions about the context in which they operate.
+    The key concept here is the distinction between intrinsic and extrinsic
+    state. Intrinsic state is stored in the flyweight; it consists of
+    information that's independent of the flyweight's context, thereby making it
+    sharable. Extrinsic state depends on and varies with the flyweight's context
+    and therefore can't be shared. Client objects are responsible for passing
+    extrinsic state to the flyweight when it needs it.</q
+  >
+
+  <h4>Key Concepts</h4>
+  <ul>
+    <li>
+      <strong>Minimize memory usage</strong> by sharing data as much as possible
+      with other similar objects.
+    </li>
+    <li>Understand the difference between intrinsic and extrinsic state.</li>
+    <li>
+      Generally, the flyweight pattern is used when you need to create a large
+      number of heavy but similar objects. This pattern aims to reduce the use
+      of large blocks of memory.
+    </li>
+    <li>
+      The smaller but configurable objects are called "Flyweights" while the
+      larger objects are called "Contexts or Templates".
+    </li>
+  </ul>
+
+  <h4>Terms</h4>
+  <ul>
+    <li>
+      <strong>Intrinsic state</strong> : The term "intrinsic" refers to
+      qualities, characteristics, or properties that are inherent, essential, or
+      natural to a particular thing or entity. These are traits that exist
+      within the thing itself, rather than being dependent on external factors.
+      Intrinsic attributes are integral to the nature or identity of the object
+      and are not easily separable from it.
+    </li>
+    <li>
+      <strong>Extrinsic state</strong> : The term "extrinsic" refers to
+      qualities, characteristics, or factors that are external, rather than
+      inherent or essential to a particular thing or entity. Extrinsic
+      attributes are not inherent to the nature or identity of the object but
+      instead depend on external influences or circumstances. These external
+      factors can come from the environment, context, or external forces.
+    </li>
+  </ul>
+  <h4>Example of Intrinsic and Extrinsic Data</h4>
+  <p>
+    Suppose you have a cup of regular coffee. The cup is the object, and the
+    coffee is the data. The coffee is intrinsic to the cup because it is
+    essential to the cup's identity. The cup is not a cup without the coffee.
+    The coffee is extrinsic to the cup because it can be changed without
+    changing the cup's identity. You can change the coffee to tea, and the cup
+    is still a cup.
+  </p>
+  <h4>Considerations</h4>
+  <ul>
+    <li>
+      A multithreaded environment may create multiple unwanted objects similar
+      to the Singleton. A Solution to this may include double-checked lock.
+    </li>
+    <li>
+      It adds additional layer of programming and can be hard to debug and
+      maintain.
+    </li>
+    <li>
+        An unshared flyweight is a flyweight that cannot be shared. 
+        This is usually the case when the flyweight object is mutable.
+    </li>
+  </ul>
+
+  <h4>Example</h4>
+  <figure>
+    <picture>
+      <source
+        srcset="../../../assets/templates/81/flyweight-pattern.avif"
+        type="image/avif"
+        alt="flyweight pattern"
+      />
+      <source
+        srcset="../../../assets/templates/81/flyweight-pattern.webp"
+        type="image/webp"
+        alt="flyweight pattern"
+      />
+      <img
+        src="../../../assets/templates/81/flyweight-pattern.jpg"
+        alt="flyweight pattern"
+        width="600px"
+      />
+    </picture>
+  </figure>
+  <a href="https://github.com/coding35/flyweight-pattern" target="_blank"
+    >View Example Code on GitHub</a
+  >
+  <div>
+    <h4>Reference</h4>
+    <ul>
+      <li>
+        Gamma, E., Helm, R., Johnson, R., &amp; Vlissides, J. (2021). Design
+        patterns: Elements of reusable object-oriented software.
+      </li>
+      <li>
+        Sarcar, V. (2018). Chapter 10. Flyweight Pattern. In Design Patterns in C# A Hands-on Guide with Real-World Examples. Apress. 
+      </li>
+      <li>
+        Pluralsight. (2020, 04 27). C# Design Patterns: Flyweight.
+    </li>
+    </ul>
+  </div>
+</article>

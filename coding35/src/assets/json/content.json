@@ -1333,6 +1333,23 @@
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
+  },
+  {
+    "id": "81",
+    "type": "design",
+    "title": "Flyweight Pattern",
+    "subtitle": "Minimize memory usage by sharing data as much as possible with other similar objects",
+    "description": "When a large number of objects need to be created and most object state is categorized as extrinsic.",
+    "date": "2023-11-23T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../../../assets/templates/81/flyweight-pattern",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
   }
 ]
 
