@@ -1367,6 +1367,23 @@
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
+  },
+  {
+    "id": "83",
+    "type": "design",
+    "title": "UML",
+    "subtitle": "Unified Modeling Language",
+    "description": "communicate software concepts and structure using pictures or equivalent.",
+    "date": "2023-12-01T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../../../assets/templates/83/specification-pattern",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
   }
 ]
 

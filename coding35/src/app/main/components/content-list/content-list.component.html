@@ -10,12 +10,14 @@
           <mat-card-subtitle>{{ item.subtitle }}</mat-card-subtitle>
         </mat-card-header>
         <picture>
-          <source srcset="{{item.image}}.avif" type="image/avif" />
+          <source srcset="{{item.image}}.avif" type="image/avif"/>
           <source srcset="{{item.image}}.webp" type="image/webp" />
           <source srcset="{{item.image}}.jpg" type="image/jpeg" />
           <img mat-card-image class="image-responsive" src="{{ item.image }}" alt="{{ item.imageAlt }}"
             (click)="handleReadMore(item.id)" as="image" attr.fetchpriority="{{ item.fetchpriority }}"
-            attr.rel="{{ item.rel }}" loading="{{ item.loading }}" height="600" />
+            attr.rel="{{ item.rel }}" loading="{{ item.loading }}" height="600" 
+            onerror="this.onerror=null;this.src='../../../assets/images/placeholder-image.jpg';"
+            />
         </picture>
         <mat-card-content>
           <p>
