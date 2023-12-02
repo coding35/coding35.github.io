@@ -1350,6 +1350,23 @@
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
+  },
+  {
+    "id": "82",
+    "type": "design",
+    "title": "Specification Pattern",
+    "subtitle": "Express, manage, and evaluate complex conditions",
+    "description": "The specification pattern is a useful alternative to creating large, complex queries because it allows you to build up a query in small, digestible pieces.",
+    "date": "2023-11-25T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../../../assets/templates/82/specification-pattern",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["design"]
   }
 ]
 

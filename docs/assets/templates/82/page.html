@@ -1,0 +1,135 @@
+<article>
+  <p>
+    The specification pattern is a behavioral design pattern that allows you to
+    define a set of criteria and apply them to an object to determine if it
+    meets the criteria. The specification pattern is a useful alternative to
+    creating large, complex queries because it allows you to build up a query in
+    small, digestible pieces.
+  </p>
+  <p>
+    Created by Eric Evans and Martin Fowler
+    <a href="https://martinfowler.com/apsupp/spec.pdf" target="_blank"
+      >Specification Pattern Documentation</a
+    >
+  </p>
+  <p>
+    Documented in the book by Eric Evans
+    <a
+      href="https://www.oreilly.com/library/view/domain-driven-design-tackling/0321125215/"
+      target="_blank"
+      >Domain-Driven Design: Tackling Complexity in the Heart of Software</a
+    >
+  </p>
+  <p>
+    Here are some reasons why the Specification Pattern is beneficial in the
+    context of rule engines:
+  </p>
+  <p>
+    Rule engines are systems that evaluate a set of rules or conditions to make
+    decisions or take actions. The Specification Pattern is well-suited for
+    expressing and managing these rules in a modular and maintainable way.
+  </p>
+
+  <p>
+    Here are some reasons why the Specification Pattern is beneficial in the
+    context of rule engines:
+  </p>
+  <ul>
+    <li>
+      <strong>Modularity</strong>: Specifications allow you to encapsulate
+      individual rules or conditions in separate classes. This modularity makes
+      it easier to manage and maintain the rules, as each specification class is
+      responsible for a specific condition.
+    </li>
+
+    <li>
+      <strong>Reusability</strong>: Specifications can be reused across
+      different rules or combined in various ways to create more complex
+      conditions. This promotes code reuse and reduces duplication of logic.
+    </li>
+
+    <li>
+      <strong>Readability</strong>: The pattern enhances the readability of the
+      rules by providing a clear and structured way to express conditions. Each
+      specification class focuses on a specific aspect of the rule, making the
+      overall logic easier to understand.
+    </li>
+
+    <li>
+      <strong>Flexibility</strong>: With composite specifications (like
+      AndSpecification, OrSpecification), you can easily combine and modify
+      rules to create more sophisticated conditions. This flexibility is crucial
+      in rule engines where conditions may need to evolve or be adjusted
+      frequently.
+    </li>
+
+    <li>
+      <strong>Testing</strong>: Specifications can be individually tested,
+      providing a high level of confidence that each rule is functioning as
+      expected. This makes it easier to verify and maintain the correctness of
+      individual conditions.
+    </li>
+
+    <li>
+      <strong>Encapsulation</strong>: The Specification Pattern helps
+      encapsulate the complexity of rule evaluation within dedicated classes.
+      This abstraction makes it easier to modify or extend the rule engine
+      without affecting the rest of the system.
+    </li>
+  </ul>
+  <p>
+    Overall, the Specification Pattern is a powerful tool for building rule
+    engines, offering a clean and organized way to express, manage, and evaluate
+    complex conditions or rules
+  </p>
+  <ul>
+    <li>Avoid domain knowledge duplication.</li>
+    <li>Declarative approach.</li>
+  </ul>
+  <h4>Example</h4>
+  <figure>
+    <picture>
+      <source
+        srcset="../../../assets/templates/82/specification-pattern.avif"
+        type="image/avif"
+        alt="flyweight pattern"
+      />
+      <source
+        srcset="../../../assets/templates/82/specification-pattern.webp"
+        type="image/webp"
+        alt="flyweight pattern"
+      />
+      <img
+        src="../../../assets/templates//82/specification-pattern.jpg"
+        alt="flyweight pattern"
+        width="600px"
+      />
+    </picture>
+  </figure>
+
+  <a href="https://github.com/coding35/specification-pattern" target="_blank"
+    >View Example Code on GitHub</a
+  >
+
+  <div>
+    <h4>Reference</h4>
+    <ul>
+      <li>
+        <a
+          href="https://martinfowler.com/apsupp/spec.pdf"
+          target="_blank"
+          >Specification Pattern Documentation</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.oreilly.com/library/view/domain-driven-design-tackling/0321125215/"
+          target="_blank"
+          >Domain-Driven Design: Tackling Complexity in the Heart of Software</a
+        >
+      <li>
+        Pluralsight. (2017, 06 26). Specification Pattern in C#.
+    </li>
+    </ul>
+  </div>
+</article>
