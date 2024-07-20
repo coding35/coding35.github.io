@@ -1419,5 +1419,22 @@
     "references": [],
     "categories": ["electronics"]
   }
+  ,{
+    "id": "86",
+    "type": "electronics",
+    "title": "AND Gate",
+    "subtitle": "A basic Logic Gate that produces an output that is true only if all its inputs are true.",
+    "description": "The AND gate is a digital logic gate that produces an output that is true only if all its inputs are true.",
+    "date": "2024-07-20T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../../../assets/templates/86/AND",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["electronics"]
+  }
 ]
 
