@@ -1504,6 +1504,22 @@
     "imageAlt": "",
     "references": [],
     "categories": ["electronics"]
+  }  ,{
+    "id": "100",
+    "type": "book",
+    "title": "Natural Language Processing with Python and",
+    "subtitle": "Authored by Yuli Vasiliev",
+    "description": "This book is a practical guide to Natural Language Processing using Python and spaCy.",
+    "date": "2024-07-10T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [],
+    "image": "../../../assets/templates/100/NLP",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["books"]
   }
 ]
 
