@@ -1371,10 +1371,10 @@
   {
     "id": "83",
     "type": "design",
-    "title": "UML",
+    "title": "UML TODO",
     "subtitle": "Unified Modeling Language",
-    "description": "communicate software concepts and structure using pictures or equivalent.",
-    "date": "2023-12-01T19:08:51.568Z",
+    "description": "Communicate software concepts and structure using pictures or equivalent.",
+    "date": "",
     "author": "Adam Reed",
     "avatar": "AR",
     "readTime": 5,
@@ -1384,6 +1384,40 @@
     "imageAlt": "",
     "references": [],
     "categories": ["design"]
+  }
+  ,{
+    "id": "84",
+    "type": "electronics",
+    "title": "NAND Gate",
+    "subtitle": "A universal gate, meaning it can be used to create any other type of gate.",
+    "description": "A NAND gate is a digital logic gate that produces an output that is false only if all its inputs are true. ",
+    "date": "2024-07-20T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../../../assets/templates/84/NAND",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["electronics"]
+  }
+  ,{
+    "id": "85",
+    "type": "electronics",
+    "title": "NOT Gate",
+    "subtitle": "A basic Logic Gate that inverts the input signal.",
+    "description": "The NOT gate is a digital logic gate that produces an output that is false only if its input is true.",
+    "date": "2024-07-20T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 5,
+    "content": "",
+    "tags": ["sm2"],
+    "image": "../../../assets/templates/85/NOT",
+    "imageAlt": "",
+    "references": [],
+    "categories": ["electronics"]
   }
 ]
 
