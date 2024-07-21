@@ -10,11 +10,15 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/images/shane-rounce-1ZZ96uESRJQ-unsplash-resize",
     "imageAlt": "",
     "references": [],
-    "categories": ["architecture"]
+    "categories": [
+      "architecture"
+    ]
   },
   {
     "id": "2",
@@ -27,11 +31,15 @@
     "avatar": "AR",
     "readTime": 3,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/templates/2/Image_by_Peter_Morth_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["architecture"]
+    "categories": [
+      "architecture"
+    ]
   },
   {
     "id": "3",
@@ -44,11 +52,17 @@
     "avatar": "AR",
     "readTime": 7,
     "content": "",
-    "tags": ["sm2", "snippet"],
+    "tags": [
+      "sm2",
+      "snippet"
+    ],
     "image": "../assets/images/Image_by_Lawrence_Monk_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["code", "design"]
+    "categories": [
+      "code",
+      "design"
+    ]
   },
   {
     "id": "4",
@@ -65,7 +79,9 @@
     "image": "../assets/images/Image_by_axonite_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["electronics"]
+    "categories": [
+      "electronics"
+    ]
   },
   {
     "id": "5",
@@ -78,11 +94,15 @@
     "avatar": "AR",
     "readTime": 3,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/images/Image_by_PIRO_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["architecture"]
+    "categories": [
+      "architecture"
+    ]
   },
   {
     "id": "6",
@@ -95,11 +115,16 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2", "snippet"],
+    "tags": [
+      "sm2",
+      "snippet"
+    ],
     "image": "../assets/images/Image_by_Magic_Creative_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
+    "categories": [
+      "design"
+    ]
   },
   {
     "id": "7",
@@ -116,7 +141,10 @@
     "image": "../../../assets/templates/7/designpatterns_gof",
     "imageAlt": "",
     "references": [],
-    "categories": ["books", "design"]
+    "categories": [
+      "books",
+      "design"
+    ]
   },
   {
     "id": "8",
@@ -133,7 +161,10 @@
     "image": "../../../assets/templates/8/deepwork",
     "imageAlt": "",
     "references": [],
-    "categories": ["books", "productivity"]
+    "categories": [
+      "books",
+      "productivity"
+    ]
   },
   {
     "id": "9",
@@ -150,7 +181,9 @@
     "image": "../../../assets/templates/9/pragmaticprogrammer",
     "imageAlt": "",
     "references": [],
-    "categories": ["books"]
+    "categories": [
+      "books"
+    ]
   },
   {
     "id": "10",
@@ -167,7 +200,10 @@
     "image": "../../../assets/templates/10/xp_programming",
     "imageAlt": "",
     "references": [],
-    "categories": ["books", "productivity"]
+    "categories": [
+      "books",
+      "productivity"
+    ]
   },
   {
     "id": "11",
@@ -180,11 +216,16 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2", "snippet"],
+    "tags": [
+      "sm2",
+      "snippet"
+    ],
     "image": "../assets/images/Image_by_Monika_Schröder_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
+    "categories": [
+      "design"
+    ]
   },
   {
     "id": "12",
@@ -197,11 +238,15 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/images/Image_by_Mike_Sweeney_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
+    "categories": [
+      "design"
+    ]
   },
   {
     "id": "13",
@@ -218,7 +263,9 @@
     "image": "../../../assets/templates/13/how-computers-really-work_fullcvr_v08_front",
     "imageAlt": "",
     "references": [],
-    "categories": ["books"]
+    "categories": [
+      "books"
+    ]
   },
   {
     "id": "14",
@@ -231,11 +278,16 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2", "snippet"],
+    "tags": [
+      "sm2",
+      "snippet"
+    ],
     "image": "../assets/images/Image_by_Gerd_Altmann_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
+    "categories": [
+      "design"
+    ]
   },
   {
     "id": "15",
@@ -252,7 +304,9 @@
     "image": "../assets/templates/15/understandingsoftware",
     "imageAlt": "",
     "references": [],
-    "categories": ["books"]
+    "categories": [
+      "books"
+    ]
   },
   {
     "id": "16",
@@ -269,7 +323,9 @@
     "image": "../assets/images/Image_by_ElasticComputeFarm_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["learning"]
+    "categories": [
+      "learning"
+    ]
   },
   {
     "id": "17",
@@ -282,11 +338,15 @@
     "avatar": "AR",
     "readTime": 1,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/images/Image_by_Francisco_Leão_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
+    "categories": [
+      "design"
+    ]
   },
   {
     "id": "18",
@@ -299,11 +359,15 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/images/Image_by_Michael_Siebert_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["architecture"]
+    "categories": [
+      "architecture"
+    ]
   },
   {
     "id": "19",
@@ -316,11 +380,15 @@
     "avatar": "AR",
     "readTime": 1,
     "content": "",
-    "tags": ["snippet"],
+    "tags": [
+      "snippet"
+    ],
     "image": "../assets/images/arm",
     "imageAlt": "",
     "references": [],
-    "categories": ["assembly"]
+    "categories": [
+      "assembly"
+    ]
   },
   {
     "id": "20",
@@ -337,7 +405,10 @@
     "image": "../../../assets/templates/20/The_Science_Of_Self_Learning",
     "imageAlt": "",
     "references": [],
-    "categories": ["books", "learning"]
+    "categories": [
+      "books",
+      "learning"
+    ]
   },
   {
     "id": "21",
@@ -358,7 +429,9 @@
     "image": "../assets/images/Image_by_Adrian_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["learning"]
+    "categories": [
+      "learning"
+    ]
   },
   {
     "id": "22",
@@ -399,11 +472,15 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/images/Image_by_PublicDomainPictures_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["architecture"]
+    "categories": [
+      "architecture"
+    ]
   },
   {
     "id": "24",
@@ -416,11 +493,15 @@
     "avatar": "AR",
     "readTime": 1,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/images/Image_by_giovanni_gargiulo_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
+    "categories": [
+      "design"
+    ]
   },
   {
     "id": "25",
@@ -433,11 +514,15 @@
     "avatar": "AR",
     "readTime": 3,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/images/Image_by_David_Zydd_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["database"]
+    "categories": [
+      "database"
+    ]
   },
   {
     "id": "26",
@@ -454,7 +539,9 @@
     "image": "../assets/templates/26/clean_code_book",
     "imageAlt": "",
     "references": [],
-    "categories": ["books"]
+    "categories": [
+      "books"
+    ]
   },
   {
     "id": "27",
@@ -467,11 +554,15 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/images/Image_by_James_Henry_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["architecture"]
+    "categories": [
+      "architecture"
+    ]
   },
   {
     "id": "28",
@@ -488,7 +579,10 @@
     "image": "../assets/templates/28/sql_antipatterns",
     "imageAlt": "",
     "references": [],
-    "categories": ["books", "database"]
+    "categories": [
+      "books",
+      "database"
+    ]
   },
   {
     "id": "29",
@@ -510,11 +604,16 @@
       "params": {},
       "delay": 500
     },
-    "tags": ["sm2", "snippet"],
+    "tags": [
+      "sm2",
+      "snippet"
+    ],
     "image": "../assets/images/Image_by_Joe_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["database"]
+    "categories": [
+      "database"
+    ]
   },
   {
     "id": "30",
@@ -527,11 +626,16 @@
     "avatar": "AR",
     "readTime": 3,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/images/Image_by_200_Degrees_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["web", "database"]
+    "categories": [
+      "web",
+      "database"
+    ]
   },
   {
     "id": "31",
@@ -548,7 +652,10 @@
     "image": "../assets/templates/31/Building_Offline_Applications_with_Angular",
     "imageAlt": "",
     "references": [],
-    "categories": ["books", "web"]
+    "categories": [
+      "books",
+      "web"
+    ]
   },
   {
     "id": "32",
@@ -561,11 +668,15 @@
     "avatar": "AR",
     "readTime": 3,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/images/relaxation-g823e33847_640",
     "imageAlt": "",
     "references": [],
-    "categories": ["web"]
+    "categories": [
+      "web"
+    ]
   },
   {
     "id": "33",
@@ -582,7 +693,10 @@
     "image": "../assets/templates/33/front_end_performance",
     "imageAlt": "",
     "references": [],
-    "categories": ["web", "books"]
+    "categories": [
+      "web",
+      "books"
+    ]
   },
   {
     "id": "34",
@@ -595,11 +709,16 @@
     "avatar": "AR",
     "readTime": 1,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/images/Image_by_PublicDomainPictures_from_Pixabay_2",
     "imageAlt": "",
     "references": [],
-    "categories": ["architecture", "database"]
+    "categories": [
+      "architecture",
+      "database"
+    ]
   },
   {
     "id": "35",
@@ -612,11 +731,15 @@
     "avatar": "AR",
     "readTime": 1,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/images/Image_by_Prawny_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["architecture"]
+    "categories": [
+      "architecture"
+    ]
   },
   {
     "id": "36",
@@ -629,11 +752,16 @@
     "avatar": "AR",
     "readTime": 1,
     "content": "",
-    "tags": ["sm2", "wip"],
+    "tags": [
+      "sm2",
+      "wip"
+    ],
     "image": "../assets/images/Image_by_PollyDot_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["web"]
+    "categories": [
+      "web"
+    ]
   },
   {
     "id": "39",
@@ -646,11 +774,16 @@
     "avatar": "AR",
     "readTime": 1,
     "content": "",
-    "tags": ["snippet"],
+    "tags": [
+      "snippet"
+    ],
     "image": "../assets/images/Image_by_OpenClipart-Vectors_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["assembly", "linux"]
+    "categories": [
+      "assembly",
+      "linux"
+    ]
   },
   {
     "id": "41",
@@ -667,7 +800,10 @@
     "image": "../assets/templates/41/moonwalking_with_einstein",
     "imageAlt": "",
     "references": [],
-    "categories": ["books", "learning"]
+    "categories": [
+      "books",
+      "learning"
+    ]
   },
   {
     "id": "42",
@@ -680,11 +816,15 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/templates/42/strategy-pattern",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
+    "categories": [
+      "design"
+    ]
   },
   {
     "id": "43",
@@ -701,7 +841,10 @@
     "image": "../assets/templates/43/HeadFirstDesignPatterns",
     "imageAlt": "",
     "references": [],
-    "categories": ["books", "design"]
+    "categories": [
+      "books",
+      "design"
+    ]
   },
   {
     "id": "44",
@@ -714,11 +857,16 @@
     "avatar": "AR",
     "readTime": 1,
     "content": "",
-    "tags": ["tip"],
+    "tags": [
+      "tip"
+    ],
     "image": "../assets/images/Image_by_skylarvision_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["development", "windows"]
+    "categories": [
+      "development",
+      "windows"
+    ]
   },
   {
     "id": "45",
@@ -731,11 +879,16 @@
     "avatar": "AR",
     "readTime": 1,
     "content": "",
-    "tags": ["tip"],
+    "tags": [
+      "tip"
+    ],
     "image": "../assets/images/Image_by_200_Degrees_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["learning", "productivity"]
+    "categories": [
+      "learning",
+      "productivity"
+    ]
   },
   {
     "id": "46",
@@ -748,11 +901,15 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/templates/46/observerpattern",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
+    "categories": [
+      "design"
+    ]
   },
   {
     "id": "47",
@@ -765,11 +922,15 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/templates/47/decorator-pattern",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
+    "categories": [
+      "design"
+    ]
   },
   {
     "id": "48",
@@ -782,11 +943,15 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/images/Image_by_Clker-Free-Vector-Images_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
+    "categories": [
+      "design"
+    ]
   },
   {
     "id": "49",
@@ -799,11 +964,16 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/images/Image_by_Vural_Yavaş_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["design", "design-principles"]
+    "categories": [
+      "design",
+      "design-principles"
+    ]
   },
   {
     "id": "50",
@@ -816,11 +986,16 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/templates/50/dependency_inversion_principle",
     "imageAlt": "",
     "references": [],
-    "categories": ["design", "design-principles"]
+    "categories": [
+      "design",
+      "design-principles"
+    ]
   },
   {
     "id": "51",
@@ -833,12 +1008,16 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/images/Image_by_Arek_Socha_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"],
-    "updatedate" : "2023-11-15T19:08:51.568Z"
+    "categories": [
+      "design"
+    ],
+    "updatedate": "2023-11-15T19:08:51.568Z"
   },
   {
     "id": "52",
@@ -851,11 +1030,15 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/templates/52/command-pattern",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
+    "categories": [
+      "design"
+    ]
   },
   {
     "id": "53",
@@ -868,11 +1051,15 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/images/Image_by_sin_won_jang_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["operating-systems"]
+    "categories": [
+      "operating-systems"
+    ]
   },
   {
     "id": "54",
@@ -885,11 +1072,15 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/templates/54/adapter-pattern",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
+    "categories": [
+      "design"
+    ]
   },
   {
     "id": "55",
@@ -902,11 +1093,16 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2", "snippet"],
+    "tags": [
+      "sm2",
+      "snippet"
+    ],
     "image": "../assets/templates/55/class-adapter-pattern",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
+    "categories": [
+      "design"
+    ]
   },
   {
     "id": "56",
@@ -919,11 +1115,15 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/templates/56/facade-pattern",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
+    "categories": [
+      "design"
+    ]
   },
   {
     "id": "57",
@@ -936,11 +1136,17 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2", "snippet"],
+    "tags": [
+      "sm2",
+      "snippet"
+    ],
     "image": "../assets/templates/57/principle-of-least-knowledge",
     "imageAlt": "",
     "references": [],
-    "categories": ["design", "design-principles"]
+    "categories": [
+      "design",
+      "design-principles"
+    ]
   },
   {
     "id": "58",
@@ -953,11 +1159,16 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/templates/58/template-method-pattern",
     "imageAlt": "",
     "references": [],
-    "categories": ["design", "design-principles"]
+    "categories": [
+      "design",
+      "design-principles"
+    ]
   },
   {
     "id": "59",
@@ -970,11 +1181,16 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/images/Image_by_Jan_Alexander_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["design", "design-principles"]
+    "categories": [
+      "design",
+      "design-principles"
+    ]
   },
   {
     "id": "60",
@@ -991,7 +1207,9 @@
     "image": "../../../assets/templates/60/ElementsOfComputsSystems",
     "imageAlt": "",
     "references": [],
-    "categories": ["books"]
+    "categories": [
+      "books"
+    ]
   },
   {
     "id": "61",
@@ -1004,11 +1222,15 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../../../assets/templates/61/iterator_pattern",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
+    "categories": [
+      "design"
+    ]
   },
   {
     "id": "62",
@@ -1021,11 +1243,16 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/images/Image_by_S_K_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["design", "design-principles"]
+    "categories": [
+      "design",
+      "design-principles"
+    ]
   },
   {
     "id": "63",
@@ -1038,11 +1265,15 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../../../assets/templates/63/composition-pattern",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
+    "categories": [
+      "design"
+    ]
   },
   {
     "id": "64",
@@ -1055,11 +1286,15 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/images/Image_by_Steve_Buissinne_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
+    "categories": [
+      "design"
+    ]
   },
   {
     "id": "65",
@@ -1072,11 +1307,15 @@
     "avatar": "AR",
     "readTime": 1,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../assets/images/Image_by_Nikin_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["architecture"]
+    "categories": [
+      "architecture"
+    ]
   },
   {
     "id": "66",
@@ -1089,11 +1328,15 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../../../assets/templates/66/state-pattern",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
+    "categories": [
+      "design"
+    ]
   },
   {
     "id": "67",
@@ -1106,12 +1349,16 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../../../assets/images/ecommerce",
     "imageAlt": "",
     "references": [],
-    "categories": ["web"],
-    "display" : false
+    "categories": [
+      "web"
+    ],
+    "display": false
   },
   {
     "id": "68",
@@ -1128,7 +1375,9 @@
     "image": "../../../assets/templates/68/writegreatcode",
     "imageAlt": "",
     "references": [],
-    "categories": ["books"]
+    "categories": [
+      "books"
+    ]
   },
   {
     "id": "69",
@@ -1141,11 +1390,15 @@
     "avatar": "AR",
     "readTime": 1,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../../../assets/templates/69/http",
     "imageAlt": "",
     "references": [],
-    "categories": ["web"]
+    "categories": [
+      "web"
+    ]
   },
   {
     "id": "70",
@@ -1158,11 +1411,15 @@
     "avatar": "AR",
     "readTime": 1,
     "content": "",
-    "tags": ["wip"],
+    "tags": [
+      "wip"
+    ],
     "image": "../../../assets/images/Image_by_Jiří_Rotrekl_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["web"]
+    "categories": [
+      "web"
+    ]
   },
   {
     "id": "71",
@@ -1179,7 +1436,9 @@
     "image": "../../../assets/templates/71/cppcrashcourse",
     "imageAlt": "",
     "references": [],
-    "categories": ["books"]
+    "categories": [
+      "books"
+    ]
   },
   {
     "id": "72",
@@ -1192,11 +1451,15 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../../../assets/templates/72/proxy-pattern",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
+    "categories": [
+      "design"
+    ]
   },
   {
     "id": "73",
@@ -1213,7 +1476,9 @@
     "image": "../../../assets/images/Image_by_DreamQuest_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["reference"]
+    "categories": [
+      "reference"
+    ]
   },
   {
     "id": "74",
@@ -1226,11 +1491,15 @@
     "avatar": "AR",
     "readTime": 1,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../../../assets/templates/74/codecs",
     "imageAlt": "",
     "references": [],
-    "categories": ["web"]
+    "categories": [
+      "web"
+    ]
   },
   {
     "id": "75",
@@ -1243,11 +1512,15 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../../../assets/templates/75/mvcpattern",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
+    "categories": [
+      "design"
+    ]
   },
   {
     "id": "76",
@@ -1264,7 +1537,10 @@
     "image": "../assets/images/Image_by_Gerd_Altmann_from_Pixabay2",
     "imageAlt": "",
     "references": [],
-    "categories": ["web", "linux"]
+    "categories": [
+      "web",
+      "linux"
+    ]
   },
   {
     "id": "77",
@@ -1277,11 +1553,15 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../../../assets/templates/77/visitor_pattern",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
+    "categories": [
+      "design"
+    ]
   },
   {
     "id": "78",
@@ -1294,11 +1574,16 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2", "snippet"],
+    "tags": [
+      "sm2",
+      "snippet"
+    ],
     "image": "../../../assets/templates/78/double-checked-lock",
     "imageAlt": "",
     "references": [],
-    "categories": ["code"]
+    "categories": [
+      "code"
+    ]
   },
   {
     "id": "79",
@@ -1311,11 +1596,15 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../../../assets/templates/79/Image_by_Oleg_Gamulinskii_from_Pixabay",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
+    "categories": [
+      "design"
+    ]
   },
   {
     "id": "80",
@@ -1328,11 +1617,15 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../../../assets/templates/80/null-object-pattern",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
+    "categories": [
+      "design"
+    ]
   },
   {
     "id": "81",
@@ -1345,11 +1638,15 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../../../assets/templates/81/flyweight-pattern",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
+    "categories": [
+      "design"
+    ]
   },
   {
     "id": "82",
@@ -1362,13 +1659,16 @@
     "avatar": "AR",
     "readTime": 5,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../../../assets/templates/82/specification-pattern",
     "imageAlt": "",
     "references": [],
-    "categories": ["design"]
-  }
-  ,
+    "categories": [
+      "design"
+    ]
+  },
   {
     "id": "83",
     "type": "book",
@@ -1384,9 +1684,11 @@
     "image": "../../../assets/templates/83/CPrimerPlus",
     "imageAlt": "",
     "references": [],
-    "categories": ["books"]
-  }
-  ,{
+    "categories": [
+      "books"
+    ]
+  },
+  {
     "id": "84",
     "type": "electronics",
     "title": "NAND Gate",
@@ -1397,13 +1699,17 @@
     "avatar": "AR",
     "readTime": 1,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../../../assets/templates/84/NAND",
     "imageAlt": "",
     "references": [],
-    "categories": ["electronics"]
-  }
-  ,{
+    "categories": [
+      "electronics"
+    ]
+  },
+  {
     "id": "85",
     "type": "electronics",
     "title": "NOT Gate",
@@ -1414,13 +1720,17 @@
     "avatar": "AR",
     "readTime": 1,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../../../assets/templates/85/NOT",
     "imageAlt": "",
     "references": [],
-    "categories": ["electronics"]
-  }
-  ,{
+    "categories": [
+      "electronics"
+    ]
+  },
+  {
     "id": "86",
     "type": "electronics",
     "title": "AND Gate",
@@ -1431,13 +1741,17 @@
     "avatar": "AR",
     "readTime": 1,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../../../assets/templates/86/AND",
     "imageAlt": "",
     "references": [],
-    "categories": ["electronics"]
-  }
-  ,{
+    "categories": [
+      "electronics"
+    ]
+  },
+  {
     "id": "87",
     "type": "electronics",
     "title": "OR Gate",
@@ -1448,13 +1762,17 @@
     "avatar": "AR",
     "readTime": 1,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../../../assets/templates/87/OR",
     "imageAlt": "",
     "references": [],
-    "categories": ["electronics"]
-  }
-  ,{
+    "categories": [
+      "electronics"
+    ]
+  },
+  {
     "id": "88",
     "type": "electronics",
     "title": "XOR Gate",
@@ -1465,13 +1783,17 @@
     "avatar": "AR",
     "readTime": 1,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../../../assets/templates/88/XOR",
     "imageAlt": "",
     "references": [],
-    "categories": ["electronics"]
-  }
-  ,{
+    "categories": [
+      "electronics"
+    ]
+  },
+  {
     "id": "89",
     "type": "electronics",
     "title": "MUX",
@@ -1482,13 +1804,17 @@
     "avatar": "AR",
     "readTime": 1,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../../../assets/templates/89/MUX",
     "imageAlt": "",
     "references": [],
-    "categories": ["electronics"]
-  }
-  ,{
+    "categories": [
+      "electronics"
+    ]
+  },
+  {
     "id": "90",
     "type": "electronics",
     "title": "DMUX",
@@ -1499,12 +1825,17 @@
     "avatar": "AR",
     "readTime": 1,
     "content": "",
-    "tags": ["sm2"],
+    "tags": [
+      "sm2"
+    ],
     "image": "../../../assets/templates/90/DMUX",
     "imageAlt": "",
     "references": [],
-    "categories": ["electronics"]
-  }  ,{
+    "categories": [
+      "electronics"
+    ]
+  },
+  {
     "id": "100",
     "type": "book",
     "title": "Natural Language Processing with Python and",
@@ -1519,7 +1850,29 @@
     "image": "../../../assets/templates/100/NLP",
     "imageAlt": "",
     "references": [],
-    "categories": ["books"]
+    "categories": [
+      "books"
+    ]
+  },
+  {
+    "id": "101",
+    "type": "electronics",
+    "title": "NOT16",
+    "subtitle": "16-bit NOT Gate also known as an inverter gate.",
+    "description": "The NOT16 gate is a digital logic gate that produces an output that is false only if its input is true for each of the 16 bits.",
+    "date": "2024-07-21T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+      "sm2"
+    ],
+    "image": "../../../assets/templates/101/Not16",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "electronics"
+    ]
   }
 ]
-

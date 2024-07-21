@@ -2,12 +2,12 @@
      display: grid;
      grid-template-areas:
          "content-area sidebar";
-    justify-content: space-between;
     justify-items: end;
  }
 
  .content-area {
      grid-area: content-area;
+     width: 100%;
  }
 
  .sidebar {
