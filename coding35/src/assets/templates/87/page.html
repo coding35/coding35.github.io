@@ -48,6 +48,18 @@
               The internal circuit of the OR gate.
             </p>
           </figcaption>
+          <h3>HDL</h3>
+          <pre class="prettyprint">
+            CHIP Or {
+              IN a, b;
+              OUT out;
+          
+              PARTS:
+                Not(in=a, out=outa);
+                Not(in=b, out=outb);
+                Nand(a=outa, b=outb, out=out);
+          }
+          </pre>
     <div>
       <h4>Reference</h4>
       <ul>

@@ -264,7 +264,8 @@
     "imageAlt": "",
     "references": [],
     "categories": [
-      "books"
+      "books",
+      "electronics"
     ]
   },
   {
@@ -1208,7 +1209,8 @@
     "imageAlt": "",
     "references": [],
     "categories": [
-      "books"
+      "books",
+      "electronics"
     ]
   },
   {
@@ -1700,7 +1702,8 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2"
+      "sm2",
+      "snippet"
     ],
     "image": "../../../assets/templates/84/NAND",
     "imageAlt": "",
@@ -1721,7 +1724,8 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2"
+      "sm2",
+      "snippet"
     ],
     "image": "../../../assets/templates/85/NOT",
     "imageAlt": "",
@@ -1742,7 +1746,8 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2"
+      "sm2",
+      "snippet"
     ],
     "image": "../../../assets/templates/86/AND",
     "imageAlt": "",
@@ -1763,7 +1768,8 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2"
+      "sm2",
+      "snippet"
     ],
     "image": "../../../assets/templates/87/OR",
     "imageAlt": "",
@@ -1784,7 +1790,8 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2"
+      "sm2",
+      "snippet"
     ],
     "image": "../../../assets/templates/88/XOR",
     "imageAlt": "",
@@ -1796,7 +1803,7 @@
   {
     "id": "89",
     "type": "electronics",
-    "title": "MUX",
+    "title": "MUX Gate",
     "subtitle": "Multiplexer 2 x 1",
     "description": "A combination logic circuit that selects binary information from one of many input lines and directs it to a single output line.",
     "date": "2024-07-20T19:08:51.568Z",
@@ -1805,7 +1812,8 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2"
+      "sm2",
+      "snippet"
     ],
     "image": "../../../assets/templates/89/MUX",
     "imageAlt": "",
@@ -1817,7 +1825,7 @@
   {
     "id": "90",
     "type": "electronics",
-    "title": "DMUX",
+    "title": "DMUX Gate",
     "subtitle": "Demultiplexer 1 x 2",
     "description": "A combination logic circuit that directs binary information from a single input line to one of two output lines.",
     "date": "2024-07-20T19:08:51.568Z",
@@ -1826,7 +1834,8 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2"
+      "sm2",
+      "snippet"
     ],
     "image": "../../../assets/templates/90/DMUX",
     "imageAlt": "",
@@ -1851,13 +1860,14 @@
     "imageAlt": "",
     "references": [],
     "categories": [
-      "books"
+      "books",
+      "machine learning"
     ]
   },
   {
     "id": "101",
     "type": "electronics",
-    "title": "NOT16",
+    "title": "NOT16 Gate",
     "subtitle": "16-bit NOT Gate also known as an inverter gate.",
     "description": "The NOT16 gate is a digital logic gate that produces an output that is false only if its input is true for each of the 16 bits.",
     "date": "2024-07-21T19:08:51.568Z",
@@ -1866,9 +1876,140 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2"
+      "sm2",
+      "snippet"
     ],
     "image": "../../../assets/templates/101/Not16",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "electronics"
+    ]
+  },
+  {
+    "id": "102",
+    "type": "book",
+    "title": "Computer Architecture",
+    "subtitle": "From the stone age to the quantum age",
+    "description": "A comprehensive guide to computer architecture.",
+    "date": "2023-06-08T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [],
+    "image": "../../../assets/templates/102/ComputerArchitecture",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "books",
+      "electronics"
+    ]
+  },
+  {
+    "id": "103",
+    "type": "electronics",
+    "title": "AND16 Gate",
+    "subtitle": "16-bit AND Gate",
+    "description": "The AND16 gate is a digital logic gate that produces an output that is true only if all its inputs are true for each of the 16 bits.",
+    "date": "2024-07-21T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+      "sm2",
+      "snippet"
+    ],
+    "image": "../../../assets/templates/103/And16",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "electronics"
+    ]
+  },
+  {
+    "id": "104",
+    "type": "electronics",
+    "title": "OR16 Gate",
+    "subtitle": "16-bit OR Gate",
+    "description": "The OR16 gate is a digital logic gate that produces an output that is true if ANY of its inputs are true for each of the 16 bits.",
+    "date": "2024-07-21T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+      "sm2",
+      "snippet"
+    ],
+    "image": "../../../assets/templates/104/OR16",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "electronics"
+    ]
+  },
+  {
+    "id": "105",
+    "type": "electronics",
+    "title": "MUX16 Gate",
+    "subtitle": "16-bit MUX Gate",
+    "description": "The MUX16 gate is a combination logic circuit that selects binary information from one of many input lines and directs it to a single output line for each of the 16 bits.",
+    "date": "2024-07-21T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+      "sm2",
+      "snippet"
+    ],
+    "image": "../../../assets/templates/105/MUX16_abb",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "electronics"
+    ]
+  },
+  {
+    "id": "106",
+    "type": "electronics",
+    "title": "Or8Way Gate",
+    "subtitle": "8-bit Or Gate",
+    "description": "The Or8Way gate is a digital logic gate that produces an output that is true if ANY of its inputs are true for each of the 8 bits.",
+    "date": "2024-07-21T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+      "sm2",
+      "snippet"
+    ],
+    "image": "../../../assets/templates/106/Or8Way",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "electronics"
+    ]
+  },
+  {
+    "id": "107",
+    "type": "electronics",
+    "title": "Mux4Way16 Gate",
+    "subtitle": "16-bit Mux4Way Gate",
+    "description": "The Mux4Way16 gate is a combination logic circuit that selects binary information from one of many input lines and directs it to a single output line for each of the 16 bits.",
+    "date": "2024-07-21T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+      "sm2",
+      "snippet"
+    ],
+    "image": "../../../assets/templates/107/Mux4Way16",
     "imageAlt": "",
     "references": [],
     "categories": [

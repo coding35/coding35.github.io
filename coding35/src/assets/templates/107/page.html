@@ -1,0 +1,64 @@
+<article>
+    <p>
+       The Mux4Way16 gate is a combination logic circuit that selects binary information from one of many input lines and directs it to a single output line for each of the 16 bits.
+    <figure>
+        <pre class="prettyprint">
+            |        a         |        b         |        c         |        d         | sel  |       out        |
+            | 0000000000000000 | 0000000000000000 | 0000000000000000 | 0000000000000000 |  00  | 0000000000000000 |
+            | 0000000000000000 | 0000000000000000 | 0000000000000000 | 0000000000000000 |  01  | 0000000000000000 |
+            | 0000000000000000 | 0000000000000000 | 0000000000000000 | 0000000000000000 |  10  | 0000000000000000 |
+            | 0000000000000000 | 0000000000000000 | 0000000000000000 | 0000000000000000 |  11  | 0000000000000000 |
+            | 0001001000110100 | 1001100001110110 | 1010101010101010 | 0101010101010101 |  00  | 0001001000110100 |
+            | 0001001000110100 | 1001100001110110 | 1010101010101010 | 0101010101010101 |  01  | 1001100001110110 |
+            | 0001001000110100 | 1001100001110110 | 1010101010101010 | 0101010101010101 |  10  | 1010101010101010 |
+            | 0001001000110100 | 1001100001110110 | 1010101010101010 | 0101010101010101 |  11  | 0101010101010101 ||
+            ...
+        </pre>
+    </figure>
+    <figcaption>
+      <p>
+        This example shows a 16-input Mux4Way16 gate truth table. 
+        The output is the value of the selected input. 
+        If select is true, the output is the value of d. 
+        If select is false, the output is the value of c. 
+        If select is true, the output is the value of b. 
+        If select is false, the output is the value of a.
+    </p>
+    </figcaption>
+    <figure>
+      <picture>
+        <source srcset="../../../assets/templates/107/Mux4Way16.avif" type="image/avif" alt="Logisim Diagram MUX16" />
+        <source srcset="../../../assets/templates/107/Mux4Way16.webp" type="image/webp" alt="Logisim Diagram MUX16" />
+        <img src="../../../assets/templates/107/Mux4Way16.jpg" alt="Logisim Diagram Mux4Way16" />
+      </picture>
+    </figure>
+    <figcaption>
+      <p>
+        The internal circuit of the Mux4Way16 gate.
+      </p>
+    </figcaption>
+    <h3>HDL</h3>
+    <pre class="prettyprint">
+        CHIP Mux4Way16 {
+            IN a[16], b[16], c[16], d[16], sel[2];
+            OUT out[16];
+            
+            PARTS:
+                Mux16(a=a, b=b, sel=sel[0], out=outx);
+                Mux16(a=c, b=d, sel=sel[0], out=outy);
+                Mux16(a=outx, b=outy, sel=sel[1], out=out);
+        }
+    </pre>
+    <div>
+      <h4>Reference</h4>
+      <ul>
+        <li>
+          Fox, C. (2024). Computer architecture: From the stone age to the quantum age. No Starch Press.
+        </li>
+        <li>
+          Nisan, N., & Schocken, S. (2021). The Elements of Computing Systems: Building a modern computer from first
+          principles. The MIT Press.
+        </li>
+      </ul>
+    </div>
+  </article>

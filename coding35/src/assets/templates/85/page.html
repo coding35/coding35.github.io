@@ -48,6 +48,15 @@
               The internal circuit of the NOT gate.
             </p>
           </figcaption>
+          <h3>HDL</h3>
+          <pre class="prettyprint">
+            CHIP Not {
+              IN in;
+              OUT out;
+              PARTS:
+                Nand(a=in, b=in, out=out);
+            }
+          </pre>
     <div>
       <h4>Reference</h4>
       <ul>
