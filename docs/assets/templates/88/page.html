@@ -49,6 +49,18 @@
               The internal circuit of the XOR gate.
             </p>
           </figcaption>
+          <h3>HDL</h3>
+          <pre class="prettyprint">
+            CHIP Xor {
+              IN a, b;
+              OUT out;
+          
+              PARTS:
+              Or(a=a, b=b, out=outa);
+              Nand(a=a, b=b, out=outb);
+              And(a=outa, b=outb, out=out); 
+          }
+          </pre>
     <div>
       <h4>Reference</h4>
       <ul>

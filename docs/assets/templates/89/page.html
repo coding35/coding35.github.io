@@ -28,6 +28,19 @@
             The internal circuit of the MUX gate.
         </p>
     </figcaption>
+    <h3>HDL</h3>
+    <pre class="prettyprint">
+        CHIP Mux {
+            IN a, b, sel;
+            OUT out;
+        
+            PARTS:
+             Not(in=sel, out=c);
+             And(a=c, b=a, out=outa);
+             And(a=sel, b=b, out=outb);
+             Or(a=outa, b=outb, out=out);
+        }
+    </pre>
     <div>
         <h4>Reference</h4>
         <ul>

@@ -1,0 +1,60 @@
+<article>
+    <p>
+      The Or8Way gate is an 8-bit digital logic gate that produces an output that is true when any of its inputs are true.
+    <figure>
+        <pre class="prettyprint">
+            |     in     |out|
+            |  00000000  | 0 |
+            |  11111111  | 1 |
+            |  00010000  | 1 |
+            |  00000001  | 1 |
+            |  00100110  | 1 |
+            ...
+        </pre>
+    </figure>
+    <figcaption>
+      <p>
+        This example shows an 8-input Or gate truth table. The output is true when any of the 8 inputs are true.
+    </p>
+    </figcaption>
+    <figure>
+      <picture>
+        <source srcset="../../../assets/templates/106/Or8Way.avif" type="image/avif" alt="Logisim Diagram MUX16" />
+        <source srcset="../../../assets/templates/106/Or8Way.webp" type="image/webp" alt="Logisim Diagram MUX16" />
+        <img src="../../../assets/templates/106/Or8Way.jpg" alt="Logisim Diagram MUX16" />
+      </picture>
+    </figure>
+    <figcaption>
+      <p>
+        The internal circuit of the Or8Way gate.
+      </p>
+    </figcaption>
+    <h3>HDL</h3>
+    <pre class="prettyprint">
+        CHIP Or8Way {
+            IN in[8];
+            OUT out;
+        
+            PARTS:
+            Or(a=in[0], b=in[1], out=out0);
+            Or(a=in[2], b=in[3], out=out1);
+            Or(a=in[4], b=in[5], out=out2);
+            Or(a=in[6], b=in[7], out=out3);
+            Or(a=out0, b=out1, out=out4);
+            Or(a=out2, b=out3, out=out5);
+            Or(a=out4, b=out5, out=out);
+        }
+    </pre>
+    <div>
+      <h4>Reference</h4>
+      <ul>
+        <li>
+          Fox, C. (2024). Computer architecture: From the stone age to the quantum age. No Starch Press.
+        </li>
+        <li>
+          Nisan, N., & Schocken, S. (2021). The Elements of Computing Systems: Building a modern computer from first
+          principles. The MIT Press.
+        </li>
+      </ul>
+    </div>
+  </article>
