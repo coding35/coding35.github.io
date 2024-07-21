@@ -54,7 +54,7 @@ export class IdbStorageAccessService {
     this.indexedDb = event.target.result;
     this.setupStore("ContentStore", "content");
     this.setupStore("Sm2Store",  "session");
-    this.setupStore("FSm2Store",  "session");
+    //this.setupStore("FSm2Store",  "session");
   }
 
 

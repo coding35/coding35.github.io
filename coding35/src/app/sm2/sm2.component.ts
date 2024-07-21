@@ -42,7 +42,16 @@ export class Sm2Component implements OnInit {
               allContent.filter((x) => x.tags.indexOf('sm2') > -1)
             );
             this.indexDbSvc.getAll<IFlashCard[]>('Sm2Store').then((data) => {
-              this.allCards = data
+              //randomize(data);
+              const randomizeData = (array: IFlashCard[]) => { 
+                for (let i = array.length - 1; i > 0; i--) {
+                  const j = Math.floor(Math.random() * (i + 1));
+                  [array[i], array[j]] = [array[j], array[i]];
+                }
+                return array;
+              };
+              const randomized = randomizeData(data);
+              this.allCards = randomized
                 .filter((x) => {
                   return new Date(x.dueDate) <= new Date(Date.now());
                 })
