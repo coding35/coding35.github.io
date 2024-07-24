@@ -1,0 +1,80 @@
+<article>
+    <p>
+        The DMux8Way gate is a digital logic gate that takes one input and distributes it to one of eight outputs based
+        on the value of the select input.
+    <pre class="prettyprint">
+        |in |  sel  | a | b | c | d | e | f | g | h |
+        | 0 |  000  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+        | 0 |  001  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+        | 0 |  010  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+        | 0 |  011  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+        | 0 |  100  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+        | 0 |  101  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+        | 0 |  110  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+        | 0 |  111  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+        | 1 |  000  | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+        | 1 |  001  | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+        | 1 |  010  | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+        | 1 |  011  | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+        | 1 |  100  | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
+        | 1 |  101  | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+        | 1 |  110  | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
+        | 1 |  111  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
+            ...
+        </pre>
+    </figure>
+    <figcaption>
+        <p>
+            This example shows a 1-input DMux8Way gate truth table.
+        <pre class="prettyprint">
+        [a, b, c, d, e, f, g, h] = [in, 0,  0,  0,  0,  0,  0,  0] if sel = 000
+                            [0, in,  0,  0,  0,  0,  0,  0] if sel = 001
+                            [0,  0, in,  0,  0,  0,  0,  0] if sel = 010
+                            [0,  0,  0, in,  0,  0,  0,  0] if sel = 011
+                            [0,  0,  0,  0, in,  0,  0,  0] if sel = 100
+                            [0,  0,  0,  0,  0, in,  0,  0] if sel = 101
+                            [0,  0,  0,  0,  0,  0, in,  0] if sel = 110
+                            [0,  0,  0,  0,  0,  0,  0, in] if sel = 111
+         </pre>
+        </p>
+    </figcaption>
+    <figure>
+        <picture>
+            <source srcset="../../../assets/templates/110/DMux8Way.avif" type="image/avif"
+                alt="Logisim Diagram DMux8Way" />
+            <source srcset="../../../assets/templates/110/DMux8Way.webp" type="image/webp"
+                alt="Logisim Diagram DMux8Way" />
+            <img src="../../../assets/templates/110/DMux8Way.jpg" alt="Logisim Diagram DMux8Way" />
+        </picture>
+    </figure>
+    <figcaption>
+        <p>
+            The internal circuit of the DMux8Way gate.
+        </p>
+    </figcaption>
+    <h3>HDL</h3>
+    <pre class="prettyprint">
+        CHIP DMux8Way {
+            IN in, sel[3];
+            OUT a, b, c, d, e, f, g, h;
+        
+            PARTS:
+            DMux(in=in, sel=sel[2], a=c1, b=c2);
+            DMux8Way(in=c1, sel[0]=sel[0], sel[1]=sel[1], a=a, b=b, c=c, d=d);
+            DMux8Way(in=c2, sel[0]=sel[0], sel[1]=sel[1], a=e, b=f, c=g, d=h);
+        }
+    </pre>
+    <div>
+        <h4>Reference</h4>
+        <ul>
+            <li>
+                Fox, C. (2024). Computer architecture: From the stone age to the quantum age. No Starch Press.
+            </li>
+            <li>
+                Nisan, N., & Schocken, S. (2021). The Elements of Computing Systems: Building a modern computer from
+                first
+                principles. The MIT Press.
+            </li>
+        </ul>
+    </div>
+</article>

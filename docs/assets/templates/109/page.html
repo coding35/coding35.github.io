@@ -1,0 +1,58 @@
+<article>
+    <p>
+       The DMux4Way gate is a digital logic gate that takes one input and distributes it to one of four outputs based on the value of the select input.
+        <pre class="prettyprint">
+            |in | sel  | a | b | c | d |
+            | 0 |  00  | 0 | 0 | 0 | 0 |
+            | 0 |  01  | 0 | 0 | 0 | 0 |
+            | 0 |  10  | 0 | 0 | 0 | 0 |
+            | 0 |  11  | 0 | 0 | 0 | 0 |
+            | 1 |  00  | 1 | 0 | 0 | 0 |
+            | 1 |  01  | 0 | 1 | 0 | 0 |
+            | 1 |  10  | 0 | 0 | 1 | 0 |
+            | 1 |  11  | 0 | 0 | 0 | 1 |
+            ...
+        </pre>
+    </figure>
+    <figcaption>
+      <p>
+        This example shows a 1-input DMux4Way gate truth table. The output is the value of the selected input. If select is 00, the output is the value of a. If select is 01, the output is the value of b. If select is 10, the output is the value of c. If select is 11, the output is the value of d.
+    </p>
+    </figcaption>
+    <figure>
+      <picture>
+        <source srcset="../../../assets/templates/109/DMux4Way.avif" type="image/avif" alt="Logisim Diagram DMux4Way" />
+        <source srcset="../../../assets/templates/109/DMux4Way.webp" type="image/webp" alt="Logisim Diagram DMux4Way" />
+        <img src="../../../assets/templates/109/DMux4Way.jpg" alt="Logisim Diagram DMux4Way" />
+      </picture>
+    </figure>
+    <figcaption>
+      <p>
+        The internal circuit of the DMux4Way gate.
+      </p>
+    </figcaption>
+    <h3>HDL</h3>
+    <pre class="prettyprint">
+        CHIP DMux4Way {
+            IN in, sel[2];
+            OUT a, b, c, d;
+        
+            PARTS:
+                DMux(in=in, sel=sel[1], a=c1, b=c2);
+                DMux(in=c1, sel=sel[0], a=a, b=b);
+                DMux(in=c2, sel=sel[0], a=c, b=d);
+        }        
+    </pre>
+    <div>
+      <h4>Reference</h4>
+      <ul>
+        <li>
+          Fox, C. (2024). Computer architecture: From the stone age to the quantum age. No Starch Press.
+        </li>
+        <li>
+          Nisan, N., & Schocken, S. (2021). The Elements of Computing Systems: Building a modern computer from first
+          principles. The MIT Press.
+        </li>
+      </ul>
+    </div>
+  </article>

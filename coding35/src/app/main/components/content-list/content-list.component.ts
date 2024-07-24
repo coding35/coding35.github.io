@@ -85,6 +85,10 @@ export class ContentListComponent implements OnInit {
             this.filter = ContentType.Book;
             this.pageTitle = 'Book List';
             break;
+            case 'machine-learning':
+              this.filter = ContentType.MachineLearning;
+              this.pageTitle = 'Machine Learning';
+              break;
           case 'electronics':
             this.filter = ContentType.Electronics;
             this.pageTitle = 'Electronics';

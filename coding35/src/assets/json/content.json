@@ -2015,5 +2015,95 @@
     "categories": [
       "electronics"
     ]
+  },
+  {
+    "id": "108",
+    "type": "electronics",
+    "title": "Mux8Way16 Gate",
+    "subtitle": "16-bit Mux8Way16 Gate",
+    "description": "The Mux8Way16 gate is a combination logic circuit that selects binary information from one of many input lines and directs it to a single output line for each of the 16 bits.",
+    "date": "2024-07-21T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+      "sm2",
+      "snippet"
+    ],
+    "image": "../../../assets/templates/108/Mux8Way16",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "electronics"
+    ]
+  },
+  {
+    "id": "109",
+    "type": "electronics",
+    "title": "DMux4Way Gate",
+    "subtitle": "4-way Demultiplexer",
+    "description": "The DMux4Way gate is a combination logic circuit that directs binary information from a single input line to one of four output lines.",
+    "date": "2024-07-22T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+      "sm2",
+      "snippet"
+    ],
+    "image": "../../../assets/templates/109/DMux4Way",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "electronics"
+    ]
+  }
+  ,
+  {
+    "id": "110",
+    "type": "electronics",
+    "title": "DMux8Way Gate",
+    "subtitle": "8-way Demultiplexer",
+    "description": "The DMux8Way gate is a combination logic circuit that directs binary information from a single input line to one of eight output lines.",
+    "date": "2024-07-22T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+      "sm2",
+      "snippet"
+    ],
+    "image": "../../../assets/templates/110/DMux8Way",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "electronics"
+    ]
+  }
+  ,
+  {
+    "id": "111",
+    "type": "machine-learning",
+    "title": "Vector Math",
+    "subtitle": "A brief overview of vector math",
+    "description": "Vector math is a branch of mathematics that deals with vectors, which are quantities that have both magnitude and direction.",
+    "date": "2024-07-23T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+      "sm2",
+      "snippet"
+    ],
+    "image": "../../../assets/templates/111/VectorSample",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "machine learning"
+    ]
   }
 ]

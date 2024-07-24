@@ -72,7 +72,8 @@ export enum ContentType {
   Search = "search",
   Database = "database",
   DesignPrinciples = "design-principles",
-  Reference = "reference"
+  Reference = "reference",
+  MachineLearning = "machine-learning"
 }
 
 

@@ -1,0 +1,74 @@
+<article>
+    <p>
+        Vectorization is the process of converting text data into numerical data that can be used by machine learning
+        algorithms.
+        This process is essential for natural language processing (NLP) tasks, such as sentiment analysis, text
+        classification, and named entity recognition.
+    </p>
+    <table class="table table-bordered">
+        <tr>
+            <th></th>
+            <th>Country</th>
+            <th>Capital</th>
+            <th>Greek</th>
+            <th>Italian</th>
+        </tr>
+        <tr>
+            <td>Italy</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Rome</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Greece</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Athens</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+    </table>
+    <figcaption>
+        <p>
+            This example shows a vectorization table for country and capital names. The table represents the countries
+            and
+            capitals as binary vectors, where 1 indicates the presence of a word in the text data, and 0 indicates the
+            absence of a word.
+        </p>
+    </figcaption>
+
+    <p>
+        Given Italy - Rome = X - Athens (X = Greece), we can calculate the vector representation of X by subtracting the
+        vector representation of Rome from the vector representation of Italy and adding the vector representation of
+        Athens. </p>
+    <pre class="prettyprint">
+        Italy - Rome = [1, 0, 0, 1] - [0, 1, 0, 1] = [1, -1, 0, 0]
+
+        X = Italy - Rome + Athens = [1, -1, 0, 0] + [0, 1, 1, 0] = [1, 0, 1, 0] = Greece
+
+        Therefore, the vector representation of Greece is [1, 0, 1, 0].
+    </pre>
+
+    <h4>Reference</h4>
+    <ul>
+        <li>
+            Vasiliev, Y. (2020). Natural language processing with python and spacy: A practical introduction. No Starch
+            Press.
+        </li>
+    </ul>
+    </div>
+</article>
