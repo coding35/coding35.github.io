@@ -2105,5 +2105,27 @@
     "categories": [
       "machine learning"
     ]
+  }  ,
+  {
+    "id": "112",
+    "type": "electronics",
+    "title": "HalfAdder",
+    "subtitle": "A digital circuit that performs the addition of two bits.",
+    "description": "A half adder is a digital circuit that performs the addition of two bits.",
+    "date": "2024-07-24T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+      "sm2",
+      "snippet"
+    ],
+    "image": "../../../assets/templates/112/HalfAdder",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "electronics"
+    ]
   }
 ]
