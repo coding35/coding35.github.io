@@ -2127,5 +2127,27 @@
     "categories": [
       "electronics"
     ]
+  } ,
+  {
+    "id": "113",
+    "type": "electronics",
+    "title": "Full-Adder",
+    "subtitle": "A digital circuit that performs the addition of three bits.",
+    "description": "A full adder is a digital circuit that performs the addition of three bits.",
+    "date": "2025-07-24T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+      "sm2",
+      "snippet"
+    ],
+    "image": "../../../assets/templates/113/FullAddr",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "electronics"
+    ]
   }
 ]

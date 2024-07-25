@@ -1,7 +1,6 @@
 <article>
     <p>   
         XOR also known as the exclusive OR gate is a digital logic gate that outputs true only when the number of true inputs is odd. 
-        The XOR gate is a two-input gate that produces an output that is true only when the number of true inputs is odd. 
          </p>
         <figure>
             <picture>
@@ -21,11 +20,6 @@
               />
             </picture>
           </figure>
-          <figcaption>
-            <p>
-                The XOR gate is a digital logic gate that produces an output that is true only when the number of true inputs is odd.
-            </p>
-          </figcaption>
           <figure>
             <picture>
               <source
@@ -56,9 +50,9 @@
               OUT out;
           
               PARTS:
-              Or(a=a, b=b, out=outa);
-              Nand(a=a, b=b, out=outb);
-              And(a=outa, b=outb, out=out); 
+                Or(a=a, b=b, out=outa);
+                Nand(a=a, b=b, out=outb);
+                And(a=outa, b=outb, out=out); 
           }
           </pre>
     <div>
