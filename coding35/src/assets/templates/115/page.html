@@ -1,0 +1,47 @@
+<article>
+    <p>
+        A Inc16 is a digital logic gate that increments a 16-bit binary number by 1.
+    </p>
+    <figure>
+        <picture>
+            <source srcset="../../../assets/templates/115/Inc16.avif" type="image/avif"
+                alt="Logisim Diagram FullAdder" />
+            <source srcset="../../../assets/templates/115/Inc16.webp" type="image/webp"
+                alt="Logisim Diagram FullAdder" />
+            <img src="../../../assets/templates/115/Inc16.jpg" alt="Inc16 Diagram FullAdder" />
+        </picture>
+    </figure>
+    <figcaption>
+        <p>
+            The internal circuit of the Inc16.
+        </p>
+    </figcaption>
+    <figure>
+
+    </figure>
+    <figcaption>
+        <p>
+
+        </p>
+    </figcaption>
+    <h3>HDL</h3>
+    <pre class="prettyprint">
+        CHIP Inc16 {
+            IN in[16];
+            OUT out[16];
+        
+            PARTS:
+            Add16(a = in, b[0]=true, b[1..15]=false, out = out);
+        }
+    </pre>
+    <div>
+        <h4>Reference</h4>
+        <ul>
+            <li>
+                Nisan, N., & Schocken, S. (2021). The Elements of Computing Systems: Building a modern computer from
+                first
+                principles. The MIT Press.
+            </li>
+        </ul>
+    </div>
+</article>

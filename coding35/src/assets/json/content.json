@@ -2149,5 +2149,50 @@
     "categories": [
       "electronics"
     ]
+  },
+  {
+    "id": "114",
+    "type": "electronics",
+    "title": "SR Latch",
+    "subtitle": "Also known as a Set-Reset Latch ",
+    "description": "The SR Latch is a type of digital circuit that has two stable states and can be used to store state information",
+    "date": "2025-07-26T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+      "sm2",
+      "snippet"
+    ],
+    "image": "../../../assets/templates/114/SRLatch",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "electronics"
+    ]
+  }
+  ,
+  {
+    "id": "115",
+    "type": "electronics",
+    "title": "Inc16",
+    "subtitle": "A digital circuit that increments a 16-bit number.",
+    "description": "The Inc16 gate is a digital circuit that increments a 16-bit number.",
+    "date": "2025-07-26T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+      "sm2",
+      "snippet"
+    ],
+    "image": "../../../assets/templates/116/Inc16",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "electronics"
+    ]
   }
 ]
