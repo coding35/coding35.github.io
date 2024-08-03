@@ -1,0 +1,85 @@
+<article>
+    <p>
+        A SR Latch also known as a Set-Reset Latch is a type of digital circuit that has two stable states and can be 
+        used to store state information. The SR Latch has two inputs, S and R, and two outputs, Q and Q'. The SR Latch
+        is a fundamental building block in digital electronics and is used in many applications such as memory storage
+        and sequential logic circuits.
+        This example shows an SR Latch using NOR gates. Alternatively, an SR Latch can be implemented using NAND gates.
+    </p>
+    <figure>
+        <picture>
+            <source srcset="../../../assets/templates/114/SRLatch.avif" type="image/avif"
+                alt="Logisim Diagram SRLatch" />
+            <source srcset="../../../assets/templates/114/SRLatch.webp" type="image/webp"
+                alt="Logisim Diagram SRLatch" />
+            <img src="../../../assets/templates/114/SRLatch.jpg" alt="Logisim Diagram SRLatch" />
+        </picture>
+    </figure>
+    <figcaption>
+        <p>
+            The internal circuit of the SR Latch.
+        </p>
+    </figcaption>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>S</th>
+          <th>R</th>
+          <th>NOTQ</th>
+          <th>Q</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      </tbody>
+    </table>
+    <figcaption>
+        <p>
+     
+        </p>
+    </figcaption>
+    <h3>HDL</h3>
+    <pre class="prettyprint">
+        CHIP SRLatch {
+            IN S, R;
+            OUT Q, Q_;
+        
+            PARTS:
+                NOR(a=S, b=Q, out=Q_);
+                NOR(a=Q_, b=R, out=Q)
+        }
+    </pre>
+    <div>
+        <h4>Reference</h4>
+        <ul>
+            <li>
+                Nisan, N., & Schocken, S. (2021). The Elements of Computing Systems: Building a modern computer from
+                first
+                principles. The MIT Press.
+            </li>
+        </ul>
+    </div>
+</article>
