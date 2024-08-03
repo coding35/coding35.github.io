@@ -2134,7 +2134,7 @@
     "title": "Full-Adder",
     "subtitle": "A digital circuit that performs the addition of three bits.",
     "description": "A full adder is a digital circuit that performs the addition of three bits.",
-    "date": "2025-07-24T19:08:51.568Z",
+    "date": "2024-07-24T19:08:51.568Z",
     "author": "Adam Reed",
     "avatar": "AR",
     "readTime": 1,
@@ -2144,6 +2144,73 @@
       "snippet"
     ],
     "image": "../../../assets/templates/113/FullAddr",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "electronics"
+    ]
+  },
+  {
+    "id": "114",
+    "type": "electronics",
+    "title": "SR Latch",
+    "subtitle": "Also known as a Set-Reset Latch ",
+    "description": "The SR Latch is a type of digital circuit that has two stable states and can be used to store state information",
+    "date": "2024-07-26T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+      "sm2",
+      "snippet"
+    ],
+    "image": "../../../assets/templates/114/SRLatch",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "electronics"
+    ]
+  }
+  ,
+  {
+    "id": "115",
+    "type": "electronics",
+    "title": "Inc16",
+    "subtitle": "A digital circuit that increments a 16-bit number.",
+    "description": "The Inc16 gate is a digital circuit that increments a 16-bit number.",
+    "date": "2024-07-26T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+      "sm2",
+      "snippet"
+    ],
+    "image": "../../../assets/templates/115/Inc16",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "electronics"
+    ]
+  },
+  {
+    "id": "116",
+    "type": "electronics",
+    "title": "Add16",
+    "subtitle": "A digital circuit that adds two 16-bit numbers.",
+    "description": "The Add16 gate is a digital circuit that adds two 16-bit numbers.",
+    "date": "2024-08-03T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+      "sm2",
+      "snippet"
+    ],
+    "image": "../../../assets/templates/116/Add16",
     "imageAlt": "",
     "references": [],
     "categories": [

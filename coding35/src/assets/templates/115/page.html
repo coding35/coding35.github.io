@@ -5,10 +5,10 @@
     <figure>
         <picture>
             <source srcset="../../../assets/templates/115/Inc16.avif" type="image/avif"
-                alt="Logisim Diagram FullAdder" />
+                alt="Logisim Diagram Inc16" />
             <source srcset="../../../assets/templates/115/Inc16.webp" type="image/webp"
-                alt="Logisim Diagram FullAdder" />
-            <img src="../../../assets/templates/115/Inc16.jpg" alt="Inc16 Diagram FullAdder" />
+                alt="Logisim Diagram Inc16" />
+            <img src="../../../assets/templates/115/Inc16.jpg" alt="Logisim Diagram Inc16" />
         </picture>
     </figure>
     <figcaption>
@@ -16,12 +16,17 @@
             The internal circuit of the Inc16.
         </p>
     </figcaption>
-    <figure>
-
+    <pre class="prettyprint">
+        |        in        |       out        |
+        | 0000000000000000 | 0000000000000001 |
+        | 1111111111111111 | 0000000000000000 |
+        | 0000000000000101 | 0000000000000110 |
+        | 1111111111111011 | 1111111111111100 |
+        </pre>
     </figure>
     <figcaption>
         <p>
-
+            This example shows a 16-bit Inc16 gate truth table.
         </p>
     </figcaption>
     <h3>HDL</h3>
