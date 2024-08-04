@@ -2216,5 +2216,46 @@
     "categories": [
       "electronics"
     ]
-  }
+  }  ,
+  {
+    "id": "117",
+    "type": "machine-learning",
+    "title": "Machine Learning, Data Science and Generative AI with Python",
+    "subtitle": "An introduction to machine learning, data science, and generative AI with Python",
+    "description": "Machine learning, AI, and data mining techniques, which include deep learning and neural networks with TensorFlow and Keras; generative models with variational autoencoders and generative adversarial networks; data visualization in Python with Matplotlib and Seaborn; transfer learning, sentiment analysis, image recognition, and classification; regression analysis, K-Means Clustering, Principal Component Analysis, training/testing and cross-validation, Bayesian methods, decision trees, and random forests.",
+    "date": "2024-08-03T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+      "snippet"
+    ],
+    "image": "../../../assets/templates/117/cover",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "machine learning"
+    ]
+  }  ,
+  {
+    "id": "118",
+    "type": "machine-learning",
+    "title": "Types of data : Numerical, Categorical, Ordinal",
+    "subtitle": "General types of data in machine learning",
+    "description": "A brief overview of the general types of data in machine learning.",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+      "sm2"
+    ],
+    "image": "../../../assets/templates/118/tabular_data",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "machine learning"
+    ]
+  } 
 ]
