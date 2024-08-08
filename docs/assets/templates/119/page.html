@@ -1,0 +1,112 @@
+<article>
+    <p>
+        This ALU is based on the ALU from the book "The Elements of Computing Systems" by Nisan and Schocken.
+        Its primary purpose is to perform arithmetic and logical operations on two 16-bit binary numbers.
+        The ALU has 7 control bits that control the operation of the ALU. The control bits are zx, nx, zy, ny, f, no.
+    </p>
+    <figure>
+        <picture>
+            <source srcset="../../../assets/templates/119/ALU.avif" type="image/avif" alt="Logisim Diagram ALU" />
+            <source srcset="../../../assets/templates/119/ALU.webp" type="image/webp" alt="Logisim Diagram ALU" />
+            <img src="../../../assets/templates/119/ALU.jpg" alt="Logisim Diagram ALU" />
+        </picture>
+    </figure>
+    <figcaption>
+        <p>
+            The internal circuit of the ALU.
+        </p>
+    </figcaption>
+
+    <pre class="prettyprint">
+        |        x         |        y         |zx |nx |zy |ny | f |no |       out        |
+        | 0000000000000000 | 1111111111111111 | 1 | 0 | 1 | 0 | 1 | 0 | 0000000000000000 |
+        | 0000000000000000 | 1111111111111111 | 1 | 1 | 1 | 1 | 1 | 1 | 0000000000000001 |
+        | 0000000000000000 | 1111111111111111 | 1 | 1 | 1 | 0 | 1 | 0 | 1111111111111111 |
+        | 0000000000000000 | 1111111111111111 | 0 | 0 | 1 | 1 | 0 | 0 | 0000000000000000 |
+        | 0000000000000000 | 1111111111111111 | 1 | 1 | 0 | 0 | 0 | 0 | 1111111111111111 |
+        | 0000000000000000 | 1111111111111111 | 0 | 0 | 1 | 1 | 0 | 1 | 1111111111111111 |
+        | 0000000000000000 | 1111111111111111 | 1 | 1 | 0 | 0 | 0 | 1 | 0000000000000000 |
+        | 0000000000000000 | 1111111111111111 | 0 | 0 | 1 | 1 | 1 | 1 | 0000000000000000 |
+        | 0000000000000000 | 1111111111111111 | 1 | 1 | 0 | 0 | 1 | 1 | 0000000000000001 |
+        | 0000000000000000 | 1111111111111111 | 0 | 1 | 1 | 1 | 1 | 1 | 0000000000000001 |
+        | 0000000000000000 | 1111111111111111 | 1 | 1 | 0 | 1 | 1 | 1 | 0000000000000000 |
+        | 0000000000000000 | 1111111111111111 | 0 | 0 | 1 | 1 | 1 | 0 | 1111111111111111 |
+        | 0000000000000000 | 1111111111111111 | 1 | 1 | 0 | 0 | 1 | 0 | 1111111111111110 |
+        | 0000000000000000 | 1111111111111111 | 0 | 0 | 0 | 0 | 1 | 0 | 1111111111111111 |
+        | 0000000000000000 | 1111111111111111 | 0 | 1 | 0 | 0 | 1 | 1 | 0000000000000001 |
+        | 0000000000000000 | 1111111111111111 | 0 | 0 | 0 | 1 | 1 | 1 | 1111111111111111 |
+        | 0000000000000000 | 1111111111111111 | 0 | 0 | 0 | 0 | 0 | 0 | 0000000000000000 |
+        | 0000000000000000 | 1111111111111111 | 0 | 1 | 0 | 1 | 0 | 1 | 1111111111111111 |
+        | 0101101110100000 | 0001111011010010 | 1 | 0 | 1 | 0 | 1 | 0 | 0000000000000000 |
+        | 0101101110100000 | 0001111011010010 | 1 | 1 | 1 | 1 | 1 | 1 | 0000000000000001 |
+        | 0101101110100000 | 0001111011010010 | 1 | 1 | 1 | 0 | 1 | 0 | 1111111111111111 |
+        | 0101101110100000 | 0001111011010010 | 0 | 0 | 1 | 1 | 0 | 0 | 0101101110100000 |
+        | 0101101110100000 | 0001111011010010 | 1 | 1 | 0 | 0 | 0 | 0 | 0001111011010010 |
+        | 0101101110100000 | 0001111011010010 | 0 | 0 | 1 | 1 | 0 | 1 | 1010010001011111 |
+        | 0101101110100000 | 0001111011010010 | 1 | 1 | 0 | 0 | 0 | 1 | 1110000100101101 |
+        | 0101101110100000 | 0001111011010010 | 0 | 0 | 1 | 1 | 1 | 1 | 1010010001100000 |
+        | 0101101110100000 | 0001111011010010 | 1 | 1 | 0 | 0 | 1 | 1 | 1110000100101110 |
+        | 0101101110100000 | 0001111011010010 | 0 | 1 | 1 | 1 | 1 | 1 | 0101101110100001 |
+        | 0101101110100000 | 0001111011010010 | 1 | 1 | 0 | 1 | 1 | 1 | 0001111011010011 |
+        | 0101101110100000 | 0001111011010010 | 0 | 0 | 1 | 1 | 1 | 0 | 0101101110011111 |
+        | 0101101110100000 | 0001111011010010 | 1 | 1 | 0 | 0 | 1 | 0 | 0001111011010001 |
+        | 0101101110100000 | 0001111011010010 | 0 | 0 | 0 | 0 | 1 | 0 | 0111101001110010 |
+        | 0101101110100000 | 0001111011010010 | 0 | 1 | 0 | 0 | 1 | 1 | 0011110011001110 |
+        | 0101101110100000 | 0001111011010010 | 0 | 0 | 0 | 1 | 1 | 1 | 1100001100110010 |
+        | 0101101110100000 | 0001111011010010 | 0 | 0 | 0 | 0 | 0 | 0 | 0001101010000000 |
+        | 0101101110100000 | 0001111011010010 | 0 | 1 | 0 | 1 | 0 | 1 | 0101111111110010 |
+    </pre>
+    <p>
+        This example shows the ALU truth table.
+    </p>
+    <h3>HDL</h3>
+    <pre class="prettyprint">
+        CHIP ALU {
+            IN  
+                x[16], y[16],  // 16-bit inputs        
+                zx, // zero the x input?
+                nx, // negate the x input?
+                zy, // zero the y input?
+                ny, // negate the y input?
+                f,  // compute (out = x + y) or (out = x & y)?
+                no; // negate the out output?
+            OUT 
+                out[16], // 16-bit output
+                zr,      // if (out == 0) equals 1, else 0
+                ng;      // if (out < 0)  equals 1, else 0
+        
+            PARTS:
+              Mux16(a=x, sel=zx, out=x1);                       // load in x array
+              Not16(in=x1, out=notx);                           // negate x array
+              Mux16(a=x1, b=notx, sel=nx, out=x2);              // output negated x array
+        
+              Mux16(a=y, sel=zy, out=y1);                       // load in y array
+              Not16(in=y1, out=noty);                           // negate y array                   
+              Mux16(a=y1, b=noty, sel=ny, out=y2);              // output negated y array   
+        
+              Add16(a=x2, b=y2, out=added);                     // add x and y bits    
+              And16(a=x2, b=y2, out=xyAnd);                     // bitwise and x and y bits
+              Mux16(a=xyAnd, b=added, sel=f, out=result);       // output either added or "anded" bits based on f control.
+                
+              Not16(in=result, out=notResult);                  // negate result bits
+              Mux16(a=result, b=notResult, sel=no, out=out, out[0..7]=first8bits, out[8..15]=second8bits, out[15]=lastbit);    // output either result or negated result bits based on no control.
+        
+              Or8Way(in=first8bits, out=lsb);
+              Or8Way(in=second8bits, out=msb);                         
+              Or(a=lsb, b=msb, out=orOut);                     // or the most and least significant bits of out
+              Not(in=orOut, out=zr);                            // zr is 1 if all bits in out are 0, otherwise zr is 0
+        
+              And(a=lastbit, b=true, out=ng);                   // ng is 1 if the most significant bit of out is 1, otherwise ng is 0
+        }
+    </pre>
+    <div>
+        <h4>Reference</h4>
+        <ul>
+            <li>
+                Nisan, N., & Schocken, S. (2021). The Elements of Computing Systems: Building a modern computer from
+                first
+                principles. The MIT Press.
+            </li>
+        </ul>
+    </div>
+</article>

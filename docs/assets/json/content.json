@@ -2059,8 +2059,7 @@
     "categories": [
       "electronics"
     ]
-  }
-  ,
+  },
   {
     "id": "110",
     "type": "electronics",
@@ -2082,8 +2081,7 @@
     "categories": [
       "electronics"
     ]
-  }
-  ,
+  },
   {
     "id": "111",
     "type": "machine-learning",
@@ -2105,7 +2103,7 @@
     "categories": [
       "machine learning"
     ]
-  }  ,
+  },
   {
     "id": "112",
     "type": "electronics",
@@ -2127,7 +2125,7 @@
     "categories": [
       "electronics"
     ]
-  } ,
+  },
   {
     "id": "113",
     "type": "electronics",
@@ -2171,8 +2169,7 @@
     "categories": [
       "electronics"
     ]
-  }
-  ,
+  },
   {
     "id": "115",
     "type": "electronics",
@@ -2216,7 +2213,7 @@
     "categories": [
       "electronics"
     ]
-  }  ,
+  },
   {
     "id": "117",
     "type": "machine-learning",
@@ -2237,7 +2234,7 @@
     "categories": [
       "machine learning"
     ]
-  }  ,
+  },
   {
     "id": "118",
     "type": "machine-learning",
@@ -2257,5 +2254,26 @@
     "categories": [
       "machine learning"
     ]
-  } 
+  },
+  {
+    "id": "119",
+    "type": "electronics",
+    "title": "ALU - Arithmetic Logic Unit",
+    "subtitle": "A digital circuit that performs arithmetic and logical operations.",
+    "description": "ALU based on the Hack computer architecture described in the book The Elements of Computing Systems.",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+      "sm2",
+      "snippet"
+    ],
+    "image": "../../../assets/templates/119/ALU",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "electronics"
+    ]
+  }
 ]
