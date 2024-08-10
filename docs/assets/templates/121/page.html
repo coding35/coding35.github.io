@@ -1,0 +1,65 @@
+<article>
+    <p>
+        A single bit register is a sequential device that stores a single bit of data. It is composed of a data flip-flop
+        (DFF) and a multiplexer (Mux). The Mux is used to control the input of the DFF. When the load input is set to 1,
+        the Mux will pass the input value to the DFF. When the load input is set to 0, the Mux will pass the output value
+        of the DFF to itself. The output of the DFF is the output of the single bit register.
+    </p>
+    <figure>
+        <picture>
+            <source srcset="../../../assets/templates/121/SingleBitRegister.avif" type="image/avif" alt="Logisim Diagram Single Bit Register." />
+            <source srcset="../../../assets/templates/121/SingleBitRegister.webp" type="image/webp" alt="Logisim Diagram Single Bit Register." />
+            <img src="../../../assets/templates/121/SingleBitRegister.jpg" alt="Logisim Diagram Single Bit Register." />
+        </picture>
+    </figure>
+    <figcaption>
+        <p>
+            The internal circuit of the Single Bit Register.
+        </p>
+    </figcaption>
+
+    <pre class="prettyprint">
+        | time |in |load|out|
+        | 0+   | 0 | 0  | 0 |
+        | 1    | 0 | 0  | 0 |
+        | 1+   | 0 | 1  | 0 |
+        | 2    | 0 | 1  | 0 |
+        | 2+   | 1 | 0  | 0 |
+        | 3    | 1 | 0  | 0 |
+        | 3+   | 1 | 1  | 0 |
+        | 4    | 1 | 1  | 1 |
+        | 4+   | 0 | 0  | 1 |
+        | 5    | 0 | 0  | 1 |
+        | 5+   | 1 | 0  | 1 |
+        | 6    | 1 | 0  | 1 |
+        | 6+   | 0 | 1  | 1 |
+        | 7    | 0 | 1  | 0 |
+        | 7+   | 1 | 1  | 0 |
+        | 8    | 1 | 1  | 1 |
+        | 8+   | 0 | 0  | 1 |
+    </pre>
+    <p>
+        This example shows Single Bit Register truth table.
+    </p>
+    <h3>HDL</h3>
+    <pre class="prettyprint">
+        CHIP Bit {
+            IN in, load;
+            OUT out;
+        
+            PARTS:
+            Mux(a = t1 , b = in , sel = load , out = o);
+            DFF(in = o, out = t1, out = out);
+        }
+    </pre>
+    <div>
+        <h4>Reference</h4>
+        <ul>
+            <li>
+                Nisan, N., & Schocken, S. (2021). The Elements of Computing Systems: Building a modern computer from
+                first
+                principles. The MIT Press.
+            </li>
+        </ul>
+    </div>
+</article>
