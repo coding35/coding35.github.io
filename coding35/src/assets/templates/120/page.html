@@ -1,12 +1,17 @@
 <article>
     <p>
-        A data flip flop or DFF is an elementary sequential device that is the basic building block component used to construct memory chips.
+        A data flip flop or DFF is an elementary sequential device that is the basic building block component used to
+        construct memory chips.
+        The clock is used to pulse the DFF, which causes the DFF to store the input value.
+        The DFF has two inputs, a data input and a clock input.
+        Due to the speed of the signal from the clock, two inverters are used to delay the signal just long enough for
+        the AND gate to produce a high output.
     </p>
     <figure>
         <picture>
-            <source srcset="../../../assets/templates/120/DFF.avif" type="image/avif" alt="Logisim Diagram DFF" />
-            <source srcset="../../../assets/templates/120/DFF.webp" type="image/webp" alt="Logisim Diagram DFF" />
-            <img src="../../../assets/templates/120/DFF.jpg" alt="Logisim Diagram DFF" />
+            <source srcset="../../../assets/templates/120/DFF_v1.avif" type="image/avif" alt="Logisim Diagram DFF" />
+            <source srcset="../../../assets/templates/120/DFF_v1.webp" type="image/webp" alt="Logisim Diagram DFF" />
+            <img src="../../../assets/templates/120/DFF_v1.jpg" alt="Logisim Diagram DFF" />
         </picture>
     </figure>
     <figcaption>
@@ -14,6 +19,14 @@
             The internal circuit of the DFF.
         </p>
     </figcaption>
+    <pre class="prettyprint">
+            a b | x y
+            ~~~~~~~~~
+            0 0 | ? ?
+            0 1 | ? ?
+            1 0 | 0 1
+            1 1 | 1 0
+    </pre>
     <div>
         <h4>Reference</h4>
         <ul>
