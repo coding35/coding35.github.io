@@ -2241,6 +2241,7 @@
     "title": "Types of data : Numerical, Categorical, Ordinal",
     "subtitle": "General types of data in machine learning",
     "description": "A brief overview of the general types of data in machine learning.",
+    "date": "2024-08-04T19:08:51.568Z",
     "author": "Adam Reed",
     "avatar": "AR",
     "readTime": 1,
@@ -2261,6 +2262,7 @@
     "title": "ALU - Arithmetic Logic Unit",
     "subtitle": "A digital circuit that performs arithmetic and logical operations.",
     "description": "ALU based on the Hack computer architecture described in the book The Elements of Computing Systems.",
+    "date": "2024-08-05T19:08:51.568Z",
     "author": "Adam Reed",
     "avatar": "AR",
     "readTime": 1,
@@ -2281,7 +2283,29 @@
     "type": "electronics",
     "title": "DFF - Data Flip-Flop",
     "subtitle": "A digital circuit used to construct memory chips.",
-    "description": "A data flip flop or DFF is an elementary sequential device is the basic component used to construct memory chips.",
+    "description": "A data flip flop or DFF is an elementary sequential device that is the basic building block component used to construct memory chips.",
+    "date": "2024-08-10T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+      "sm2"
+    ],
+    "image": "../../../assets/templates/120/DFF",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "electronics"
+    ]
+  },
+  {
+    "id": "121",
+    "type": "electronics",
+    "title": "Single Bit Register",
+    "subtitle": "Stores a single bit of data",
+    "description": "A single bit register is a sequential device that stores a single bit of data. It is composed of a data flip-flop (DFF) and a multiplexer (Mux).",
+    "date": "2024-08-10T19:08:51.568Z",
     "author": "Adam Reed",
     "avatar": "AR",
     "readTime": 1,
@@ -2290,7 +2314,7 @@
       "sm2",
       "snippet"
     ],
-    "image": "../../../assets/templates/120/DFF",
+    "image": "../../../assets/templates/121/SingleBitRegister",
     "imageAlt": "",
     "references": [],
     "categories": [
