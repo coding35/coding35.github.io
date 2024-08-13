@@ -1,0 +1,89 @@
+<article>
+    <p>
+        A register is a sequential device that stores a binary number. It is composed of multiple data flip-flops (DFF). The 
+        register HDL illustrates the construction of a 16-bit register using 16 single bit registers (Bit Register).
+    </p>
+    <figure>
+        <picture>
+            <source srcset="../../../assets/templates/122/Register.avif" type="image/avif" alt="Logisim Diagram Register." />
+            <source srcset="../../../assets/templates/122/Register.webp" type="image/webp" alt="Logisim Diagram Register." />
+            <img src="../../../assets/templates/122/Register.jpg" alt="Logisim Diagram Register." />
+        </picture>
+    </figure>
+    <figcaption>
+        <p>
+            The internal circuit of the Register.
+        </p>
+    </figcaption>
+
+    <pre class="prettyprint">
+        |time |   in   |load|  out   |
+        | 0+  |      0 |  0 |      0 |
+        | 1   |      0 |  0 |      0 |
+        | 1+  |      0 |  1 |      0 |
+        | 2   |      0 |  1 |      0 |
+        | 2+  | -32123 |  0 |      0 |
+        | 3   | -32123 |  0 |      0 |
+        | 3+  |  11111 |  0 |      0 |
+        | 4   |  11111 |  0 |      0 |
+        | 4+  | -32123 |  1 |      0 |
+        | 5   | -32123 |  1 | -32123 |
+        | 5+  | -32123 |  1 | -32123 |
+        | 6   | -32123 |  1 | -32123 |
+        | 6+  | -32123 |  0 | -32123 |
+        | 7   | -32123 |  0 | -32123 |
+        | 7+  |  12345 |  1 | -32123 |
+        | 8   |  12345 |  1 |  12345 |
+        | 8+  |      0 |  0 |  12345 |
+        | 9   |      0 |  0 |  12345 |
+        | 9+  |      0 |  1 |  12345 |
+        | 10  |      0 |  1 |      0 |
+        | 10+ |      1 |  0 |      0 |
+        | 11  |      1 |  0 |      0 |
+        | 11+ |      1 |  1 |      0 |
+        | 12  |      1 |  1 |      1 |
+        | 12+ |      2 |  0 |      1 |
+        | 13  |      2 |  0 |      1 |
+        | 13+ |      2 |  1 |      1 |
+        | 14  |      2 |  1 |      2 |
+        | 14+ |      4 |  0 |      2 |
+    </pre>
+    <p>
+        This example shows 16-bit Register truth table.
+    </p>
+    <h3>HDL</h3>
+    <pre class="prettyprint">
+        CHIP Register {
+            IN in[16], load;
+            OUT out[16];
+        
+            PARTS:
+                Bit(in=in[0], load=load, out=out[0]);
+                Bit(in=in[1], load=load, out=out[1]);
+                Bit(in=in[2], load=load, out=out[2]);
+                Bit(in=in[3], load=load, out=out[3]);
+                Bit(in=in[4], load=load, out=out[4]);
+                Bit(in=in[5], load=load, out=out[5]);
+                Bit(in=in[6], load=load, out=out[6]);
+                Bit(in=in[7], load=load, out=out[7]);
+                Bit(in=in[8], load=load, out=out[8]);
+                Bit(in=in[9], load=load, out=out[9]);
+                Bit(in=in[10], load=load, out=out[10]);
+                Bit(in=in[11], load=load, out=out[11]);
+                Bit(in=in[12], load=load, out=out[12]);
+                Bit(in=in[13], load=load, out=out[13]);
+                Bit(in=in[14], load=load, out=out[14]);
+                Bit(in=in[15], load=load, out=out[15]);
+            }
+    </pre>
+    <div>
+        <h4>Reference</h4>
+        <ul>
+            <li>
+                Nisan, N., & Schocken, S. (2021). The Elements of Computing Systems: Building a modern computer from
+                first
+                principles. The MIT Press.
+            </li>
+        </ul>
+    </div>
+</article>
