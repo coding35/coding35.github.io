@@ -1,0 +1,67 @@
+<article>
+    <p>
+        A 4-bit left shifter is a combinational circuit that shifts the input data to the left by one bit. The circuit has 
+        four inputs and four outputs. The input data is shifted to the left by one bit. The leftmost bit is shifted out,
+    <figure>
+        <picture>
+            <source srcset="../../../assets/templates/124/4BitLeftShifter.avif" type="image/avif"
+                alt="Logisim Diagram Left Shifter" />
+            <source srcset="../../../assets/templates/124/4BitLeftShifter.webp" type="image/webp"
+                alt="Logisim Diagram Left Shifter" />
+            <img src="../../../assets/templates/124/4BitLeftShifter.jpg" alt="Logisim Diagram Left Shifter" />
+        </picture>
+    </figure>
+    <figcaption>
+        <p>
+            The internal circuit 4-bit left shifter.
+        </p>
+    </figcaption>
+
+    <pre class="prettyprint">
+        a b c d s | x y z u
+        ~~~~~~~~~~~~~~~~~~~
+        0 0 0 0 0 | 0 0 0 0
+        0 0 0 0 1 | 0 0 0 0
+        0 0 0 1 0 | 0 0 0 1
+        0 0 0 1 1 | 0 0 1 0
+        0 0 1 0 0 | 0 0 1 0
+        0 0 1 0 1 | 0 1 0 0
+        0 0 1 1 0 | 0 0 1 1
+        0 0 1 1 1 | 0 1 1 0
+        0 1 0 0 0 | 0 1 0 0
+        0 1 0 0 1 | 1 0 0 0
+        0 1 0 1 0 | 0 1 0 1
+        0 1 0 1 1 | 1 0 1 0
+        0 1 1 0 0 | 0 1 1 0
+        0 1 1 0 1 | 1 1 0 0
+        0 1 1 1 0 | 0 1 1 1
+        0 1 1 1 1 | 1 1 1 0
+        1 0 0 0 0 | 1 0 0 0
+        1 0 0 0 1 | 0 0 0 0
+        1 0 0 1 0 | 1 0 0 1
+        1 0 0 1 1 | 0 0 1 0
+        1 0 1 0 0 | 1 0 1 0
+        1 0 1 0 1 | 0 1 0 0
+        1 0 1 1 0 | 1 0 1 1
+        1 0 1 1 1 | 0 1 1 0
+        1 1 0 0 0 | 1 1 0 0
+        1 1 0 0 1 | 1 0 0 0
+        1 1 0 1 0 | 1 1 0 1
+        1 1 0 1 1 | 1 0 1 0
+        1 1 1 0 0 | 1 1 1 0
+        1 1 1 0 1 | 1 1 0 0
+        1 1 1 1 0 | 1 1 1 1
+        1 1 1 1 1 | 1 1 1 0
+    </pre>
+    <p>
+        This example shows 4-bit left shift truth table.
+    </p>
+    <div>
+        <h4>Reference</h4>
+        <ul>
+            <li>
+                Fox, C. (2024). Computer architecture: From the stone age to the quantum age. No Starch Press.
+              </li>
+        </ul>
+    </div>
+</article>

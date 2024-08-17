@@ -97,7 +97,7 @@
     "tags": [
       "sm2"
     ],
-    "image": "../assets/images/Image_by_PIRO_from_Pixabay",
+    "image": "../../../assets/templates/5/DALL_E_Wasteland",
     "imageAlt": "",
     "references": [],
     "categories": [
@@ -1702,7 +1702,6 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2",
       "snippet"
     ],
     "image": "../../../assets/templates/84/NAND",
@@ -1724,7 +1723,6 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2",
       "snippet"
     ],
     "image": "../../../assets/templates/85/NOT",
@@ -1746,7 +1744,6 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2",
       "snippet"
     ],
     "image": "../../../assets/templates/86/AND",
@@ -1768,7 +1765,6 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2",
       "snippet"
     ],
     "image": "../../../assets/templates/87/OR",
@@ -1790,7 +1786,6 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2",
       "snippet"
     ],
     "image": "../../../assets/templates/88/XOR",
@@ -1812,7 +1807,6 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2",
       "snippet"
     ],
     "image": "../../../assets/templates/89/MUX",
@@ -1834,7 +1828,6 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2",
       "snippet"
     ],
     "image": "../../../assets/templates/90/DMUX",
@@ -1876,7 +1869,6 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2",
       "snippet"
     ],
     "image": "../../../assets/templates/101/Not16",
@@ -1918,7 +1910,6 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2",
       "snippet"
     ],
     "image": "../../../assets/templates/103/And16",
@@ -1940,7 +1931,6 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2",
       "snippet"
     ],
     "image": "../../../assets/templates/104/OR16",
@@ -1962,7 +1952,6 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2",
       "snippet"
     ],
     "image": "../../../assets/templates/105/MUX16_abb",
@@ -1984,7 +1973,6 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2",
       "snippet"
     ],
     "image": "../../../assets/templates/106/Or8Way",
@@ -2006,7 +1994,6 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2",
       "snippet"
     ],
     "image": "../../../assets/templates/107/Mux4Way16",
@@ -2028,7 +2015,6 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2",
       "snippet"
     ],
     "image": "../../../assets/templates/108/Mux8Way16",
@@ -2050,7 +2036,6 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2",
       "snippet"
     ],
     "image": "../../../assets/templates/109/DMux4Way",
@@ -2072,7 +2057,6 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2",
       "snippet"
     ],
     "image": "../../../assets/templates/110/DMux8Way",
@@ -2116,7 +2100,6 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2",
       "snippet"
     ],
     "image": "../../../assets/templates/112/HalfAdder",
@@ -2138,7 +2121,6 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2",
       "snippet"
     ],
     "image": "../../../assets/templates/113/FullAddr",
@@ -2160,7 +2142,6 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2",
       "snippet"
     ],
     "image": "../../../assets/templates/114/SRLatch",
@@ -2182,7 +2163,6 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2",
       "snippet"
     ],
     "image": "../../../assets/templates/115/Inc16",
@@ -2204,7 +2184,6 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2",
       "snippet"
     ],
     "image": "../../../assets/templates/116/Add16",
@@ -2268,7 +2247,6 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2",
       "snippet"
     ],
     "image": "../../../assets/templates/119/ALU",
@@ -2290,9 +2268,8 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2"
     ],
-    "image": "../../../assets/templates/120/DFF",
+    "image": "../../../assets/templates/120/DFF_v1",
     "imageAlt": "",
     "references": [],
     "categories": [
@@ -2311,10 +2288,72 @@
     "readTime": 1,
     "content": "",
     "tags": [
-      "sm2",
       "snippet"
     ],
     "image": "../../../assets/templates/121/SingleBitRegister",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "electronics"
+    ]
+  },
+  {
+    "id": "122",
+    "type": "electronics",
+    "title": "16-bit Register",
+    "subtitle": "A register capable of storing 16 bits of data", 
+    "description": "A 16-bit register is a sequential device that stores 16 bits of data utilizing 16 single bit registers.",
+    "date": "2024-08-11T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+      "snippet"
+    ],
+    "image": "../../../assets/templates/122/Register",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "electronics"
+    ]
+  },
+  {
+    "id": "123",
+    "type": "electronics",
+    "title": "Astable N555 Timer",
+    "subtitle": "Generate a continuous output waveform", 
+    "description": "An Astable N555 Timer Circuit is a type of multivibrator that generates a continuous output waveform.",
+    "date": "2024-08-14T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+      "snippet"
+    ],
+    "image": "../../../assets/templates/123/N555",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "electronics"
+    ]
+  },
+  {
+    "id": "124",
+    "type": "electronics",
+    "title": "4-bit Left Shifter",
+    "subtitle": "Shifts a 4-bit number to the left by one bit",
+    "description": "A combinational circuit that shifts the input data to the left by one bit. ",
+    "date": "2024-08-14T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+      "snippet"
+    ],
+    "image": "../../../assets/templates/124/4BitLeftShifter",
     "imageAlt": "",
     "references": [],
     "categories": [
