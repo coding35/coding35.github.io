@@ -1996,7 +1996,7 @@
     "tags": [
       "snippet"
     ],
-    "image": "../../../assets/templates/107/Mux4Way16",
+    "image": "../../../assets/templates/107/Mux4Way16_v2",
     "imageAlt": "",
     "references": [],
     "categories": [
@@ -2336,7 +2336,8 @@
     "imageAlt": "",
     "references": [],
     "categories": [
-      "electronics"
+      "electronics",
+      "analog"
     ]
   },
   {
@@ -2354,6 +2355,29 @@
       "snippet"
     ],
     "image": "../../../assets/templates/124/4BitLeftShifter",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "electronics",
+      "analog"
+    ]
+  }
+  ,
+  {
+    "id": "125",
+    "type": "electronics",
+    "title": "Manchester Baby",
+    "subtitle": "The world's first stored-program computer",
+    "description": "The Baby’s CPU used around 500 vacuum tubes, together with diodes and other components. It implemented an instruction set of seven instructions. In modern terms, the Baby was a 32-bit machine, with 32 addresses each storing one 32-bit word.",
+    "date": "2024-08-18T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+      "snippet"
+    ],
+    "image": "../../../assets/templates/125/logisim_baby",
     "imageAlt": "",
     "references": [],
     "categories": [
