@@ -1,0 +1,80 @@
+<article>
+    <p>
+        A 16-bit counter or PC (Program Counter) is a register that stores the address of the next instruction to be
+        executed. The PC is incremented by one after each instruction is executed. The PC can be reset to zero, loaded 
+        with a new value, or incremented by one.
+    </p>
+    <figure>
+        <picture>
+            <source srcset="../../../assets/templates/128/16bitCounter.avif" type="image/avif" alt="Logisim Diagram 16Bit Counter." />
+            <source srcset="../../../assets/templates/128/16bitCounter.webp" type="image/webp" alt="Logisim Diagram 16Bit Counter." />
+            <img src="../../../assets/templates/128/16bitCounter.jpg" alt="Logisim Diagram 16Bit Counter." />
+        </picture>
+    </figure>
+    <figcaption>
+        <p>
+            The internal circuit of the Register.
+        </p>
+    </figcaption>
+
+    <pre class="prettyprint">
+        |time |   in   |reset|load | inc |  out   |
+        | 0+  |      0 |  0  |  0  |  0  |      0 |
+        | 1   |      0 |  0  |  0  |  0  |      0 |
+        | 1+  |      0 |  0  |  0  |  1  |      0 |
+        | 2   |      0 |  0  |  0  |  1  |      1 |
+        | 2+  | -32123 |  0  |  0  |  1  |      1 |
+        | 3   | -32123 |  0  |  0  |  1  |      2 |
+        | 3+  | -32123 |  0  |  1  |  1  |      2 |
+        | 4   | -32123 |  0  |  1  |  1  | -32123 |
+        | 4+  | -32123 |  0  |  0  |  1  | -32123 |
+        | 5   | -32123 |  0  |  0  |  1  | -32122 |
+        | 5+  | -32123 |  0  |  0  |  1  | -32122 |
+        | 6   | -32123 |  0  |  0  |  1  | -32121 |
+        | 6+  |  12345 |  0  |  1  |  0  | -32121 |
+        | 7   |  12345 |  0  |  1  |  0  |  12345 |
+        | 7+  |  12345 |  1  |  1  |  0  |  12345 |
+        | 8   |  12345 |  1  |  1  |  0  |      0 |
+        | 8+  |  12345 |  0  |  1  |  1  |      0 |
+        | 9   |  12345 |  0  |  1  |  1  |  12345 |
+        | 9+  |  12345 |  1  |  1  |  1  |  12345 |
+        | 10  |  12345 |  1  |  1  |  1  |      0 |
+        | 10+ |  12345 |  0  |  0  |  1  |      0 |
+        | 11  |  12345 |  0  |  0  |  1  |      1 |
+        | 11+ |  12345 |  1  |  0  |  1  |      1 |
+        | 12  |  12345 |  1  |  0  |  1  |      0 |
+        | 12+ |      0 |  0  |  1  |  1  |      0 |
+        | 13  |      0 |  0  |  1  |  1  |      0 |
+        | 13+ |      0 |  0  |  0  |  1  |      0 |
+        | 14  |      0 |  0  |  0  |  1  |      1 |
+        | 14+ |  22222 |  1  |  0  |  0  |      1 |
+        | 15  |  22222 |  1  |  0  |  0  |      0 |
+    </pre>
+    <p>
+        This example shows 16-bit Register truth table.
+    </p>
+    <h3>HDL</h3>
+    <pre class="prettyprint">
+        CHIP PC {
+            IN in[16], reset, load, inc;
+            OUT out[16];
+            
+            PARTS:
+                Inc16(in=oo,out=incd);
+                Mux16(a=oo,b=incd,sel=inc,out=o);
+                Mux16(a=o,b=in,sel=load,out=uu);
+                Mux16(a=uu,b[0..15]=false,sel=reset,out=this);      
+                Register(in=this,load=true,out=out,out=oo);
+        }
+    </pre>
+    <div>
+        <h4>Reference</h4>
+        <ul>
+            <li>
+                Nisan, N., & Schocken, S. (2021). The Elements of Computing Systems: Building a modern computer from
+                first
+                principles. The MIT Press.
+            </li>
+        </ul>
+    </div>
+</article>

@@ -2383,5 +2383,65 @@
     "categories": [
       "electronics"
     ]
-  }
+  }  ,
+  {
+    "id": "126",
+    "type": "code",
+    "title": "Function, Procedures and Methods",
+    "subtitle": "Side Effects",
+    "description": ".",
+    "date": "2024-08-21T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+    ],
+    "image": "../../../assets/templates/126/coding",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "code"
+    ]
+  } ,
+  {
+    "id": "127",
+    "type": "architecture",
+    "title": "Domain-Driven Design Distilled",
+    "subtitle": "On-demand Course",
+    "description": "DDD: What it is, what problems it solves, how it works, and how to quickly gain value from it.",
+    "date": "2024-08-25T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+    ],
+    "image": "../../../assets/templates/127/image",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "architecture"
+    ]
+  },  {
+    "id": "128",
+    "type": "electronics",
+    "title": "16-bit Counter",
+    "subtitle": "A program counter (PC)",
+    "description": "PC (Program Counter) is a register that stores the address of the next instruction to be  executed. The PC is incremented by one after each instruction is executed. The PC can be reset to zero, loaded with a new value, or incremented by one.",
+    "date": "2024-08-27T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+      "snippet"
+    ],
+    "image": "../../../assets/templates/128/16bitCounter",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "electronics"
+    ]
+  } 
 ]
