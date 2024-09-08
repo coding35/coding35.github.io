@@ -8,9 +8,9 @@
             <h4>Understanding the Context and Domain</h4>
             <ul>
                 <li>Bounded context with intrinsic language.</li>
-                <li>Avoid the ball of mud. I think this is means stay within a context.</li>
+                <li>Avoid the ball of mud. I think this means stay within a context.</li>
                 <li>Don't allow technology to be the sole solution to a business process.</li>
-                <li>Can use adapter pattern to interface with the domain context withouth polluting the domain model.
+                <li>Can use adapter pattern to interface with the domain context without polluting the domain model.
                 </li>
             </ul>
             <h4>Strategic Design with Subdomains</h4>
@@ -23,16 +23,127 @@
                 <li>Legacy systems can be broken down into logical models or area of expertise, can be considered
                     subdomain and in turn a bounded context.</li>
                 <li>A supporting subdomain is necessary to support a core domain. It may not need the kind of investment
-                    given to the core but instead rely on external
-                    services or systems.
-                </li>
-                <li>
-
-                </li>
+                    given to the core but instead rely on external services or systems.</li>
             </ul>
-            <h3>???</h3>
-            </p>
+            <h4>Section 4: Stategic Design with Context Mapping</h4>
+            <ul>
+                <ul><strong>Shared Kernel</strong>
+                    <li>Rare that two teams will share a core model</li>
+                </ul>
+                <ul><strong>Customer-Supplier</strong>
+                    <li>Upstream team will have an impact on the downstream team.</li>
+                    <li>Upstream team needs to satisfy the downstream team.</li>
+                </ul>
+                <ul><strong>Conformist</strong>
+                    <li>Upstream and downstream team relationship. The downstream team will just conform to the upstream
+                        team.</li>
+                </ul>
+                <ul><strong>Anti-Corruption Layer</strong>
+                    <li>Two teams with separate models but the downstream team does not want to be influenced by the
+                        upstream team model. Its a translation layer that transforms the upstream model to something
+                        that
+                        works for the downstream team.</li>
+                </ul>
+                <ul><strong>Open Host Service</strong>
+                    < <li>A well documented and defined model created by the upstream team that is easy to translate and
+                        consume by the downstream team.</li>
+                </ul>
+                <ul><strong>Published Language</strong>
+                    <li>A well documented data format created by the upstream team that allows the downstream team to
+                        very
+                        comfortably consume data from the upstream team. Common for open host service to provide this.
+                    </li>
+                </ul>
+                <ul><strong>Separate Ways</strong>
+                    <li>Integration that could take place between teams but for some reason, team two goes a separate
+                        way.
+                    </li>
+                </ul>
+                <ul><strong>Big Ball of Mud</strong>
+                    <li>When you make changes in one part of the model, it will very likely have an impact in another
+                        part
+                        of the model in another area. Rippling problems. Avoid it. If you have to integrate, try to use
+                        an
+                        anti-corruption layer.</li>
+                </ul>
+                <ul><strong>Making good use of Context Mapping</strong>
+                    <li>A client bounded context communicating with a service bounded context.</li>
+                    <li>RPC calls can fail to complete integration but when it works its quite capable. OHS/PL on
+                        service
+                        and ACL on client</li>
+                    <li>RESTful HTTP. OHS/PL on service and ACL on client. Design the resources to work with the
+                        clients,
+                        The service shouldn’t force consumers into a conformist relationship.</li>
+                    <li>Messaging. Pub/Sub with some messaging mechanism. Must support at least one delivery. The
+                        subscribing context must be idempotent meaning it must have the ability to de-duplicate a
+                        redelivered message.</li>
+                </ul>
+            </ul>
+            <h4>Section 5: Tactical Design with Aggregates</h4>
+            <ul>
+                <li>Right size modeling of Aggregates</li>
+                <li>Abstract Carefully</li>
+                <li>Breakup Aggregates and compose aggregates within.</li>
+                <li>Depending on if updates are needed immediately across aggregates compose them together. If not,
+                    aggregates can be separated for eventual consistency.</li>
+                <li>Testable Units</li>
+                <li>Design aggregates to accommodate unit tests.</li>
+                <li>Small aggregates will help make aggregates testable.</li>
+                <li>Testing for the correctness and robustness of each of the aggregate components.</li>
+            </ul>
+            <h4>Section 6: Tactical Design with Domain Events</h4>
+            <ul>
+                <li>A publishing bounded context interfaces with a messaging system which then notifies any domain
+                    bounded contexts subscriber.</li>
+                <li>Ensure messages to subscribers adheres to causal consistency. Think of instant messaging system
+                    where messages are kept in order.</li>
+                <li>Designing, Implementing, and Using Domain Events</li>
+                <li>Create interface for all domain events with timestamp getter.</li>
+                <li>Example might be something like:</li>
+                <ol>
+                    <li>Product added to cart. ProductAddedToCart</li>
+                    <li>Event is created. ProductCommittedToCart with same properties as ProductAddedToCart.</li>
+                    <li>The ProductCommittedToCart Event reads data from the ProductAddedToCart and notifies other
+                        domain subscribers.</li>
+                </ol>
+                <li>Event Sourcing</li>
+                <li>An interesting concept. Based on a stream of messages into the message store, the aggregate class
+                    can be reconstituted with all the event data.</li>
+            </ul>
+            <h4>Section 7: Acceleration and Management Tools</h4>
+            <ul>
+                <ul><strong>Event Storming</strong>
+                    < <li>A process of discovering the implementation detail.</li>
+                        <li>Focus on a business process. Everybody on the team learns about the models needed.</li>
+                        <li>Asking the right questions of the right people. Domain experts must be present.</li>
+                        <li>Events are something that happened. ProductCreated, OrderSubmitted, etc. Asking for an event
+                            is the
+                            first step in creating domain events. A left to right time series will be created.</li>
+                        <li>Step 1. Create event time series from left to right.</li>
+                        <li>Step 2. Discover the commands that will cause the domain event(s). A time series lane will
+                            have
+                            command and event, command and event, etc…</li>
+                        <li>Step 3. Define the Aggregates/objects of the model. Aggregates handles the commands and emit
+                            domain
+                            events. The aggregate is the binding.</li>
+                        <li>Step 4. Identify Context Boundaries. Identify the core domain, what is important to the
+                            business and
+                            what is generic.</li>
+                        <li>Step 5. Understand certain views that are important to the user.</li>
+                        <li>SWOT Analysis</li>
+                        <li>Can be handy to visualize where the teams focus needs to happen. Can be helpful to identify
+                            gaps in
+                            knowledge.</li>
+                        <li>Modeling Spikes in and Modeling Debt</li>
+                        <li>Velocity changes from inception to refinement. Late learning will cause the model to be
+                            adjusted.
+                            Revisiting the model is debt.</li>
+                        <li>Identifying Tasks and Estimates</li>
+                        <li>While Event Storming, estimates on the Command, Events, and Aggregates can be created.</li>
+                </ul>
+            </ul>
         </div>
+    </div>
     </div>
     <div>
         <h4>Reference</h4>

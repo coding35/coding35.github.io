@@ -2443,5 +2443,25 @@
     "categories": [
       "electronics"
     ]
-  } 
+  },  {
+    "id": "129",
+    "type": "operating-systems",
+    "title": "Bootloader",
+    "subtitle": "Loads the operating system into memory",
+    "description": "A bootloader is a small program that loads the operating system into memory when a computer is turned on or restarted. The bootloader is the first program that runs when a computer is turned on, and it is responsible for loading the operating system into memory and starting it.",
+    "date": "2024-08-31T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+      "snippet"
+    ],
+    "image": "../../../assets/templates/129/bootloader",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "operating-systems"
+    ]
+  }  
 ]

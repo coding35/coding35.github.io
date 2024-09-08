@@ -1,0 +1,63 @@
+<article>
+    <p>
+        The bootloader is a small program that loads the operating system into memory. The intersting thing about the bootloader is how
+        it starts in 16-bit mode and given a 32-bit or 64-bit system it switches up to the appropriate mode.
+    </p>
+    <figure>
+        <picture>
+            <source srcset="../../../assets/templates/129/bootloader.avif" type="image/avif" alt="bootloader." />
+            <source srcset="../../../assets/templates/129/bootloader.webp" type="image/webp" alt="bootloader." />
+            <img src="../../../assets/templates/129/bootloader.jpg" alt="bootloader." />
+        </picture>
+    </figure>
+
+
+
+    <h3>ASM</h3>
+    <pre class="prettyprint">
+        bits 16                ; tell NASM we're only using 16-bit x86
+        org 0x7c00             ; base address for bootloader to place this code
+        section .data          ; this segment is read-write data
+        
+        message db '  _____ ____  _____   ____              _     _                 _           ', 13, 10
+                db ' / ____|___ \| ____| |  _ \            | |   | |               | |          ', 13, 10
+                db '| |      __) | |__   | |_) | ___   ___ | |_  | | ___   __ _  __| | ___ _ __ ', 13, 10
+                db '| |     |__ <|___ \  |  _ < / _ \ / _ \| __| | |/ _ \ / _` |/ _` |/ _ \  __|', 13, 10
+                db '| |____ ___) |___) | | |_) | (_) | (_) | |_  | | (_) | (_| | (_| |  __/ |   ', 13, 10
+                db ' \_____|____/|____/  |____/ \___/ \___/ \__| |_|\___/ \__,_|\__,_|\___|_|   ', 13, 10, 0
+        section .text          ; this segment is read-only code
+        entry:
+          jmp start
+        printer:               ; subroutine for printing ASCII strings
+          lodsb                ; load SI into AL and increment SI [next char]
+          or al, al            ; check if the end of the string
+          jz printer_end;
+          int 0x10             ; otherwise, call interrupt to print char
+          jmp printer          ; loop
+        printer_end:
+          ret                  ; return flow
+        start:
+          mov si, message        ; say what we want to print
+          mov ah, 0x0e
+          call printer         ; print it                      ; ** add your own code here ... **
+          hlt
+        times 510-($-$$) db 0  ; zero out rest of 512-byte boot sector
+        dw 0xaa55              ; code to mark sector as bootable
+    
+    </pre>
+
+    <h3>CLI to Create ISO</h3>
+    <pre class="prettyprint">
+        mkisofs -R -J -c boot/bootcat -b boot/loader.sys -no-emul-boot -o cd.iso cd
+    </pre>
+
+    <a href="../../../assets/templates/129/source_iso.zip" download>Download Source Code</a>
+    <div>
+        <h4>Reference</h4>
+        <ul>
+            <li>
+                Fox, C. (2024). Computer architecture: From the stone age to the quantum age. No Starch Press.
+            </li>
+        </ul>
+    </div>
+</article>
