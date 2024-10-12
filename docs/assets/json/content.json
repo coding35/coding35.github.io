@@ -2463,5 +2463,47 @@
     "categories": [
       "operating-systems"
     ]
-  }  
+  },
+     {
+    "id": "130",
+    "type": "electronics",
+    "title": "The Art of Doing Electronics for Everyone",
+    "subtitle": "Course Presented by Michael Eramo",
+    "description": "Learn circuits, components, and how to build them.",
+    "date": "2023-09-08T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [
+     
+    ],
+    "image": "../../../assets/templates/130/artofelectronics",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "electronics"
+    ]
+  },
+  {
+ "id": "131",
+ "type": "electronics",
+ "title": "Kirchhoff's Current Law (KCL)",
+ "subtitle": "The sum of the currents flowing into a node in a circuit is equal to the sum of the currents flowing out of that node",
+ "description": "KCL is used to analyze circuits and find the unknown currents and voltages. It is a powerful tool in circuit analysis and is widely used in electrical engineering.",
+ "date": "2023-09-09T19:08:51.568Z",
+ "author": "Adam Reed",
+ "avatar": "AR",
+ "readTime": 1,
+ "content": "",
+ "tags": [
+  
+ ],
+ "image": "../../../assets/templates/130/artofelectronics",
+ "imageAlt": "",
+ "references": [],
+ "categories": [
+   "electronics"
+ ]
+}
 ]

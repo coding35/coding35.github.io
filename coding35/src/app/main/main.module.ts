@@ -17,6 +17,7 @@ import { ForceDirectedTreeComponent } from './components/force-directed-tree/for
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
+import { KanbanBoardComponent } from './components/kanban-board/kanban-board.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FormsModule } from '@angular/forms';
     ContentListComponent,
     AboutComponent,
     ContactComponent,
-    ForceDirectedTreeComponent
+    ForceDirectedTreeComponent,
+    KanbanBoardComponent
   ],
   imports: [
     CommonModule,
@@ -41,7 +43,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     AppRoutingModule
   ],
-  exports: [ContentComponent]
+  exports: [ContentComponent, KanbanBoardComponent]
 
 })
 export class MainModule { }
