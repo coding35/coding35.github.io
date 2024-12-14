@@ -2267,8 +2267,7 @@
     "avatar": "AR",
     "readTime": 1,
     "content": "",
-    "tags": [
-    ],
+    "tags": [],
     "image": "../../../assets/templates/120/DFF_v1",
     "imageAlt": "",
     "references": [],
@@ -2301,7 +2300,7 @@
     "id": "122",
     "type": "electronics",
     "title": "16-bit Register",
-    "subtitle": "A register capable of storing 16 bits of data", 
+    "subtitle": "A register capable of storing 16 bits of data",
     "description": "A 16-bit register is a sequential device that stores 16 bits of data utilizing 16 single bit registers.",
     "date": "2024-08-11T19:08:51.568Z",
     "author": "Adam Reed",
@@ -2322,7 +2321,7 @@
     "id": "123",
     "type": "electronics",
     "title": "Astable N555 Timer",
-    "subtitle": "Generate a continuous output waveform", 
+    "subtitle": "Generate a continuous output waveform",
     "description": "An Astable N555 Timer Circuit is a type of multivibrator that generates a continuous output waveform.",
     "date": "2024-08-14T19:08:51.568Z",
     "author": "Adam Reed",
@@ -2361,8 +2360,7 @@
       "electronics",
       "analog"
     ]
-  }
-  ,
+  },
   {
     "id": "125",
     "type": "electronics",
@@ -2383,7 +2381,7 @@
     "categories": [
       "electronics"
     ]
-  }  ,
+  },
   {
     "id": "126",
     "type": "code",
@@ -2395,15 +2393,14 @@
     "avatar": "AR",
     "readTime": 1,
     "content": "",
-    "tags": [
-    ],
+    "tags": [],
     "image": "../../../assets/templates/126/coding",
     "imageAlt": "",
     "references": [],
     "categories": [
       "code"
     ]
-  } ,
+  },
   {
     "id": "127",
     "type": "architecture",
@@ -2415,15 +2412,15 @@
     "avatar": "AR",
     "readTime": 1,
     "content": "",
-    "tags": [
-    ],
+    "tags": [],
     "image": "../../../assets/templates/127/image",
     "imageAlt": "",
     "references": [],
     "categories": [
       "architecture"
     ]
-  },  {
+  },
+  {
     "id": "128",
     "type": "electronics",
     "title": "16-bit Counter",
@@ -2443,7 +2440,8 @@
     "categories": [
       "electronics"
     ]
-  },  {
+  },
+  {
     "id": "129",
     "type": "operating-systems",
     "title": "Bootloader",
@@ -2464,7 +2462,7 @@
       "operating-systems"
     ]
   },
-     {
+  {
     "id": "130",
     "type": "electronics",
     "title": "The Art of Doing Electronics for Everyone",
@@ -2475,9 +2473,7 @@
     "avatar": "AR",
     "readTime": 1,
     "content": "",
-    "tags": [
-     
-    ],
+    "tags": [],
     "image": "../../../assets/templates/130/artofelectronics",
     "imageAlt": "",
     "references": [],
@@ -2486,24 +2482,41 @@
     ]
   },
   {
- "id": "131",
- "type": "electronics",
- "title": "Kirchhoff's Current Law (KCL)",
- "subtitle": "The sum of the currents flowing into a node in a circuit is equal to the sum of the currents flowing out of that node",
- "description": "KCL is used to analyze circuits and find the unknown currents and voltages. It is a powerful tool in circuit analysis and is widely used in electrical engineering.",
- "date": "2023-09-09T19:08:51.568Z",
- "author": "Adam Reed",
- "avatar": "AR",
- "readTime": 1,
- "content": "",
- "tags": [
-  
- ],
- "image": "../../../assets/templates/130/artofelectronics",
- "imageAlt": "",
- "references": [],
- "categories": [
-   "electronics"
- ]
-}
+    "id": "131",
+    "type": "electronics",
+    "title": "Kirchhoff's Current Law (KCL)",
+    "subtitle": "The sum of the currents flowing into a node in a circuit is equal to the sum of the currents flowing out of that node",
+    "description": "KCL is used to analyze circuits and find the unknown currents and voltages. It is a powerful tool in circuit analysis and is widely used in electrical engineering.",
+    "date": "2023-09-09T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [],
+    "image": "../../../assets/templates/130/artofelectronics",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "electronics"
+    ]
+  },
+  {
+    "id": "132",
+    "type": "book",
+    "title": "Code: The Hidden Language of Computer Hardware and Software, 2nd Edition",
+    "subtitle": "Authored by Charles Petzold",
+    "description": "From the simple ticking of clocks to the worldwide hum of the internet, Code reveals the essence of the digital revolution.",
+    "date": "2024-12-14T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [],
+    "image": "../../../assets/templates/132/codebook",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "books"
+    ]
+  }
 ]
