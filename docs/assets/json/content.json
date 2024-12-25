@@ -2518,5 +2518,24 @@
     "categories": [
       "books"
     ]
+  },
+  {
+    "id" : "133",
+    "type": "electronics",
+    "title": "Processor Microarchitecture",
+    "subtitle": "The design of a computer processor",
+    "description": "Processor microarchitecture is the design of a computer processor. It is the implementation of the instruction set architecture (ISA) of a computer in hardware.",
+    "date": "2024-12-24T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [],
+    "image": "../../../assets/templates/133/microarchitectureprocessor",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "electronics"
+    ]
   }
 ]

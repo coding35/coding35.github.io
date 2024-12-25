@@ -1,0 +1,89 @@
+<div>
+    <h3>Processor Microarchitectures</h3>
+    <p>
+        The following processors are based on the MIPS architecture. MIPS stands for Microprocessor without Interlocked
+        Pipeline Stages.
+        MIPS is a reduced instruction set computer (RISC) architecture that makes the common case fast by including
+        only simple, commonly used instructions. The number of instructions is kept small so that the hardware required
+        to decode the instruction and its operands can be simple, small, and fast. More elaborate operations that are
+        less common are performed using sequences of multiple simple instructions.
+    </p>
+
+    <h4>Single-Cycle Processor</h4>
+    <ul>
+        <li>
+            Requires a clock cycle to complete an instruction.
+        </li>
+        <li>
+            Each clock cycle must be long enough to complete the longest instruction.
+        </li>
+        <li>
+            Requires multiple adders wich can increase cost.
+        </li>
+        <li>
+            Has separate memories. One for instructions and one for data.
+        </li>
+        <li>
+            Considered the simplest design.
+        </li>
+    </ul>
+
+    <h4>Multi-Cycle Processor</h4>
+    <ul>
+        <li>
+            Instructions are broken down into multiple simple steps.
+        </li>
+        <li>
+            With multiple steps, the system can complete an instruction in multiple clock cycles. It can be
+            considered a state machine.
+        </li>
+        <li>
+            Requires fewer adders than a single-cycle processor but requires additional nonarchitectural registers
+            and multiplexers.
+        </li>
+        <li>
+            Has combined memory for instructions and data.
+        </li>
+        <li>
+            The state between cycles can lead to more complex control logic.
+        </li>
+    </ul>
+    <h4>Pipelined Processor</h4>
+    <ul>
+        <li>
+            Improves throughput by subdividing the instruction execution into into five stages: instruction fetch,
+            instruction decode, execute, memory access, and write back.
+        </li>
+        <li>
+            With five steps, five instructions can be processed at the same time. and because each stage is only a
+            fifth of the time,
+            the clock cycle can be faster thereby increasing throughput.
+        </li>
+        <li>
+            The challenge with pipelining is dealing with hazards. Hazards are situations that prevent the next
+            instruction from
+            executing during its designated clock cycle.
+        </li>
+    </ul>
+    <h4>Superscalar Processor</h4>
+    <ul>
+        <li>
+            Capable of executing multiple instructions simultaneously.
+        </li>
+
+    </ul>
+
+
+
+
+    <div>
+        <h4>Reference</h4>
+        <ul>
+            <li>
+                David Harris, Sarah Harris Digital Design and Computer Architecture, Second Edition, Morgan
+                Kaufmann, 2013.
+            </li>
+        </ul>
+    </div>
+
+</div>
