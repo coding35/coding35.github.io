@@ -2537,5 +2537,24 @@
     "categories": [
       "electronics"
     ]
+  },
+  {
+    "id": "134",
+    "type": "electronics",
+    "title": "16-bit Neumann in C",
+    "subtitle": "The design of a 16-bit Neumann architecture",
+    "description": "This project involves implementing a 16-bit Neumann architecture in C, focusing on the key components and their interactions.",
+    "date": "2025-08-23T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [],
+    "image": "../../../assets/templates/134/16bitneumann",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "electronics"
+    ]
   }
 ]
