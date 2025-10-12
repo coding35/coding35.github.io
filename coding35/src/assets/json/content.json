@@ -2556,5 +2556,24 @@
     "categories": [
       "electronics"
     ]
+  },
+  {
+    "id": "135",
+    "type": "machine-learning",
+    "title": "Perceptrons",
+    "subtitle": "Small, fast switches working together in AI system to solve big problems.",
+    "description": "A decision making model that could take input signals, process them and \"then\" decide whether to turn on or off.",
+    "date": "2025-10-12T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [],
+    "image": "../../../assets/templates/135/perceptron",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "machine-learning"
+    ]
   }
 ]
