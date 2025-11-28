@@ -2575,5 +2575,23 @@
     "categories": [
       "machine-learning"
     ]
+  },  {
+    "id": "136",
+    "type": "book",
+    "title": "Bare Metal C",
+    "subtitle": "Embedded Programming for the Real World",
+    "description": "Bare Metal C is a practical guide to programming microcontrollers in C without an operating system.",
+    "date": "2025-11-28T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [],
+    "image": "../../../assets/templates/136/Bare_Metal_C",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "books"
+    ]
   }
 ]
