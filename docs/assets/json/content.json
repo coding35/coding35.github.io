@@ -2593,5 +2593,23 @@
     "categories": [
       "books"
     ]
+  },  {
+    "id": "137",
+    "type": "book",
+    "title": "Beginning Azure Functions: Building Scalable and Serverless Apps",
+    "subtitle": "Building Scalable and Serverless Apps",
+    "description": "This book is a practical guide to building serverless applications using Azure Functions.",
+    "date": "2025-11-05T19:08:51.568Z",
+    "author": "Adam Reed",
+    "avatar": "AR",
+    "readTime": 1,
+    "content": "",
+    "tags": [],
+    "image": "../../../assets/templates/137/Beginning_Azure_Functions",
+    "imageAlt": "",
+    "references": [],
+    "categories": [
+      "books"
+    ]
   }
 ]
